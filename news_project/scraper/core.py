@@ -198,10 +198,11 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
    - 日期 (date): 具体日期。
    - 来源 (venue): 新闻来源名称。
 2. **深度评分 (Scoring)**：
-   - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation**.
+   - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing**.
    - `impact_score` (0-10): 行业影响力。重磅产品发布(GPT-5, Vision Pro 2) 或 重大技术突破(Sora) 得 10 分；普通更新 3-5 分。
    - `is_tech_release` (bool): 是否有**即刻可用**的技术发布 (Open Source, Model Weights, Public Beta)。
    - `score_reason` (str): 一句话解释打分理由 (e.g., "重磅模型 GPT-5 发布").
+   - 'negtive score'(-100-0): 不关心监管政策、法律还有CPU和显卡的基础设施硬件消息, 出现给负分。
 3. 过滤非新闻内容。只返回 JSON 数组。
 
 网页内容：
