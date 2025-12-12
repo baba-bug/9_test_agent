@@ -36,7 +36,7 @@ async def fetch_webpage(url: str) -> str:
             if match:
                 category = match.group(1)
                 # Query the last 15 papers to save tokens
-                api_url = f"http://export.arxiv.org/api/query?search_query=cat:{category}&sortBy=submittedDate&sortOrder=descending&max_results=15"
+                api_url = f"http://export.arxiv.org/api/query?search_query=cat:{category}&sortBy=submittedDate&sortOrder=descending&max_results=30"
                 
                 async with AsyncSession(impersonate="chrome120") as s:
                     response = await s.get(api_url)
@@ -138,6 +138,12 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
     """
     client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url=DEEPSEEK_BASE_URL)
     
+    client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url=DEEPSEEK_BASE_URL)
+    
+    # 获取今天日期
+    from datetime import date
+    today_str = date.today().strftime("%Y-%m-%d")
+
     cleaned_text = clean_html_for_ai(html, url)
     
     if not cleaned_text:
@@ -158,12 +164,13 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
    - 标题 (title): 英文原题
    - 链接 (link): 必须是绝对路径。
    - 摘要 (summary): **中文总结**，侧重研究方法、贡献和创新点。
-   - 日期 (date): 发表或上传日期。
+   - 日期 (date): 格式统一为 `YYYY-MM-DD`. 如果文中日期不明确，默认为今天 ({today_str}).
    - 发表处 (venue): 期刊/会议名称。
 2. **深度评分 (Scoring)**：
    - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation**. 相关度越高分数越高。
    - `impact_score` (0-10): 学术影响力。发表在 CCF A (如 CVPR, CHI, NeurIPS) 或 Top Journal (Nature/Science) 得 10 分；CCF B 得 5 分；一般会议 2 分；Arxiv 预印本 1 分。
    - `is_tech_release` (bool): 论文是否伴随代码发布(GitHub)、模型权重发布(HuggingFace)或 Demo 发布。
+   - `code_url` (str): 如果 `is_tech_release` 为真，提取具体的开源链接 (GitHub/HuggingFace), 否则为 null.
    - `score_reason` (str): 一句话解释打分理由 (e.g., "Agent领域CCF A类论文，且开源代码").
 3. 过滤非论文内容。只返回 JSON 数组。
 
@@ -184,6 +191,7 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
         "ai_score": 95,
         "impact_score": 10,
         "is_tech_release": true,
+        "code_url": "https://github.com/...",
         "score_reason": "High interest Agent paper in CVPR with Code."
     }}
 ]
@@ -195,12 +203,13 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
    - 标题 (title): 英文原题
    - 链接 (link): 必须是绝对路径。
    - 摘要 (summary): **中文总结**，侧重发生了什么事、产品发布或商业影响。
-   - 日期 (date): 具体日期。
+   - 日期 (date): 格式统一为 `YYYY-MM-DD`. 如果文中日期不明确，默认为今天 ({today_str}).
    - 来源 (venue): 新闻来源名称。
 2. **深度评分 (Scoring)**：
    - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing**.
    - `impact_score` (0-10): 行业影响力。重磅产品发布(GPT-5, Vision Pro 2) 或 重大技术突破(Sora) 得 10 分；普通更新 3-5 分。
    - `is_tech_release` (bool): 是否有**即刻可用**的技术发布 (Open Source, Model Weights, Public Beta)。
+   - `code_url` (str): 如果 `is_tech_release` 为真，提取具体的开源链接 (GitHub/HuggingFace), 否则为 null.
    - `score_reason` (str): 一句话解释打分理由 (e.g., "重磅模型 GPT-5 发布").
    - 'negtive score'(-100-0): 不关心监管政策、法律还有CPU和显卡的基础设施硬件消息, 出现给负分。
 3. 过滤非新闻内容。只返回 JSON 数组。

@@ -95,8 +95,17 @@ async def monitor_news():
             # Let's use x2 to make Impact very visible.
             impact = int(article.get('impact_score', 0)) * 2
             
-            # 3. Tech Release Boost (+20)
-            tech_boost = 20 if article.get('is_tech_release') else 0
+            # 3. Tech Release Boost (+200)
+            # Papers: MUST have code_url to get boost (ignore "paper with code" claims if no link)
+            # News: Trust is_tech_release (for Product Launches) or code_url
+            is_paper = article.get('type') == 'paper'
+            has_code = bool(article.get('code_url'))
+            is_release = article.get('is_tech_release')
+            
+            if is_paper:
+                tech_boost = 200 if has_code else 0
+            else:
+                tech_boost = 200 if (is_release or has_code) else 0
             
             return semantic + impact + tech_boost
         except:
@@ -165,6 +174,8 @@ async def monitor_news():
             print(f"    ⭐ {news.get('score_reason', 'Base')}")
             print(f"   📅 {news.get('date', 'N/A')} | 🏢 {news.get('venue', news.get('source_domain', ''))}")
             print(f"   🔗 {news['link']}")
+            if news.get('code_url'):
+                print(f"   💻 Code: {news['code_url']}")
             print(f"   🇨🇳 {news['summary']}")
             print("-" * 20)
 
@@ -176,6 +187,8 @@ async def monitor_news():
             print(f"    ⭐ {paper.get('score_reason', 'Base')}")
             print(f"   📅 {paper.get('date', 'N/A')} | 🏛 {paper.get('venue', 'Arxiv')}")
             print(f"   🔗 {paper['link']}")
+            if paper.get('code_url'):
+                print(f"   💻 Code: {paper['code_url']}")
             print(f"   🇨🇳 {paper['summary']}")
             print("-" * 20)
         print("")
