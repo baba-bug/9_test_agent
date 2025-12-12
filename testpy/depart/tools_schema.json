@@ -1,0 +1,141 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "detect_fixations",
+      "description": "从头部位置时间序列数据中检测固定点",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "description": "头部位置时间序列数据"
+          },
+          "dt_thresh": {
+            "type": "number",
+            "default": 0.1,
+            "description": "时间间隔阈值"
+          },
+          "dur_thresh": {
+            "type": "number",
+            "default": 0.08,
+            "description": "持续时间阈值"
+          }
+        },
+        "required": [
+          "data"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "analyze_spatial_distribution",
+      "description": "分析点集的空间分布特征",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "points": {
+            "type": "array",
+            "description": "点坐标数组"
+          }
+        },
+        "required": [
+          "points"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "clean_dataframe",
+      "description": "对DataFrame进行数据清洗和异常值处理",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "df": {
+            "type": "object",
+            "description": "输入DataFrame"
+          },
+          "column": {
+            "type": "string",
+            "description": "需要处理的列名"
+          },
+          "threshold": {
+            "type": "number",
+            "default": 0.99,
+            "description": "分位数阈值"
+          }
+        },
+        "required": [
+          "df",
+          "column"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "analyze_group_statistics",
+      "description": "分析DataFrame中指定列的分组统计信息",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "df": {
+            "type": "object",
+            "description": "输入DataFrame"
+          },
+          "column": {
+            "type": "string",
+            "description": "需要分析的数值列名"
+          },
+          "groupby": {
+            "type": "string",
+            "default": "Condition",
+            "description": "分组列名"
+          }
+        },
+        "required": [
+          "df",
+          "column"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "visualize_distributions",
+      "description": "创建数据分布可视化图表",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "df": {
+            "type": "object",
+            "description": "输入DataFrame"
+          },
+          "column": {
+            "type": "string",
+            "description": "需要可视化的数值列名"
+          },
+          "visualization_type": {
+            "type": "string",
+            "enum": [
+              "condition_boxplot",
+              "correctness_section_boxplot"
+            ],
+            "description": "可视化类型选择"
+          }
+        },
+        "required": [
+          "df",
+          "column",
+          "visualization_type"
+        ]
+      }
+    }
+  }
+]

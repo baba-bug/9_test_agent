@@ -1,0 +1,213 @@
+{
+  "tools": [
+    {
+      "name": "detect_fixations",
+      "purpose": "从头部位置时间序列数据中检测固定点",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "description": "头部位置时间序列数据"
+          },
+          "dt_thresh": {
+            "type": "number",
+            "default": 0.1,
+            "description": "时间间隔阈值"
+          },
+          "dur_thresh": {
+            "type": "number",
+            "default": 0.08,
+            "description": "持续时间阈值"
+          }
+        },
+        "required": ["data"]
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "fixations": {
+            "type": "array",
+            "description": "检测到的固定点列表，包含开始/结束索引和时间信息"
+          }
+        },
+        "required": ["fixations"]
+      },
+      "impl": [
+        {
+          "module": "eyetracking.fixation",
+          "symbol": "detect_fixations"
+        }
+      ]
+    },
+    {
+      "name": "analyze_spatial_distribution",
+      "purpose": "分析点集的空间分布特征",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "points": {
+            "type": "array",
+            "description": "点坐标数组"
+          }
+        },
+        "required": ["points"]
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "mean_distance": {
+            "type": "number",
+            "description": "最近邻距离均值"
+          },
+          "std_distance": {
+            "type": "number",
+            "description": "最近邻距离标准差"
+          },
+          "histogram": {
+            "type": "object",
+            "description": "距离分布直方图"
+          }
+        },
+        "required": ["mean_distance", "std_distance", "histogram"]
+      },
+      "impl": [
+        {
+          "module": "scipy.spatial.KDTree",
+          "symbol": "nearest_neighbor_stats"
+        }
+      ]
+    },
+    {
+      "name": "clean_dataframe",
+      "purpose": "对DataFrame进行数据清洗和异常值处理",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "df": {
+            "type": "object",
+            "description": "输入DataFrame"
+          },
+          "column": {
+            "type": "string",
+            "description": "需要处理的列名"
+          },
+          "threshold": {
+            "type": "number",
+            "default": 0.99,
+            "description": "分位数阈值"
+          }
+        },
+        "required": ["df", "column"]
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "cleaned_df": {
+            "type": "object",
+            "description": "清洗后的DataFrame"
+          },
+          "removed_count": {
+            "type": "integer",
+            "description": "移除的异常值数量"
+          }
+        },
+        "required": ["cleaned_df", "removed_count"]
+      },
+      "impl": [
+        {
+          "module": "pandas.DataFrame",
+          "symbol": "remove_outliers"
+        }
+      ]
+    },
+    {
+      "name": "analyze_group_statistics",
+      "purpose": "分析DataFrame中指定列的分组统计信息",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "df": {
+            "type": "object",
+            "description": "输入DataFrame"
+          },
+          "column": {
+            "type": "string",
+            "description": "需要分析的数值列名"
+          },
+          "groupby": {
+            "type": "string",
+            "default": "Condition",
+            "description": "分组列名"
+          }
+        },
+        "required": ["df", "column"]
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "statistics": {
+            "type": "object",
+            "description": "各分组的均值和方差统计结果"
+          }
+        },
+        "required": ["statistics"]
+      },
+      "impl": [
+        {
+          "module": "pandas.DataFrame",
+          "symbol": "analyze_condition"
+        }
+      ]
+    },
+    {
+      "name": "visualize_distributions",
+      "purpose": "创建数据分布可视化图表",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "df": {
+            "type": "object",
+            "description": "输入DataFrame"
+          },
+          "column": {
+            "type": "string",
+            "description": "需要可视化的数值列名"
+          },
+          "visualization_type": {
+            "type": "string",
+            "enum": ["condition_boxplot", "correctness_section_boxplot"],
+            "description": "可视化类型选择"
+          }
+        },
+        "required": ["df", "column", "visualization_type"]
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "plot_data": {
+            "type": "object",
+            "description": "绘图数据信息"
+          },
+          "image_path": {
+            "type": "string",
+            "description": "生成图表的保存路径"
+          }
+        },
+        "required": ["plot_data", "image_path"]
+      },
+      "impl": [
+        {
+          "module": "matplotlib.pyplot",
+          "symbol": "plot_boxplot",
+          "notes": "当visualization_type为condition_boxplot时调用"
+        },
+        {
+          "module": "plot_boxplot_IsCorrect_Section",
+          "symbol": "plot_boxplot_IsCorrect_Section",
+          "notes": "当visualization_type为correctness_section_boxplot时调用"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "display_name": "eyetracking.fixation:detect_fixations",
+    "signature": "def detect_fixations(data, dt_thresh=0.1, dur_thresh=0.08) -> pd.DataFrame",
+    "doc": "从头部位置时间序列数据中检测固定点。通过滑动窗口计算位置分散度，当分散度低于阈值且持续时间满足要求时识别为固定点。返回包含开始/结束索引和时间的DataFrame。",
+    "intent_tags": [
+      "眼动分析",
+      "固定点检测",
+      "时间序列分割",
+      "运动稳定性识别"
+    ]
+  },
+  {
+    "display_name": "scipy.spatial.KDTree:nearest_neighbor_stats",
+    "signature": "def nearest_neighbor_stats(points) -> dict",
+    "doc": "计算点集中每个点到其最近邻点的距离统计信息，包括均值、标准差和直方图分布。",
+    "intent_tags": [
+      "空间分析",
+      "距离统计",
+      "点云分析"
+    ]
+  },
+  {
+    "display_name": "pandas.DataFrame:remove_outliers",
+    "signature": "def remove_outliers(df, column, threshold=0.99) -> DataFrame",
+    "doc": "从DataFrame指定列中移除超过指定分位数阈值的异常值。计算列的分位数，保留小于等于该值的行。",
+    "intent_tags": [
+      "数据清洗",
+      "异常值处理",
+      "分位数过滤"
+    ]
+  },
+  {
+    "display_name": "pandas.DataFrame.analyze_condition",
+    "signature": "def analyze_condition(df, column, groupby='Condition') -> DataFrame",
+    "doc": "分析指定列在不同分组条件下的均值和方差。通过groupby参数指定分组列，返回包含各组的均值和方差统计结果。",
+    "intent_tags": [
+      "数据分析",
+      "统计汇总",
+      "分组聚合"
+    ]
+  },
+  {
+    "display_name": "matplotlib.pyplot:plot_boxplot",
+    "signature": "def plot_boxplot(df, column) -> None",
+    "doc": "绘制不同condition下的箱线图，使用seaborn库创建，按Condition分组并以IsCorrect为色调区分，自动设置y轴从0开始并显示网格。",
+    "intent_tags": [
+      "数据可视化",
+      "统计分析",
+      "箱线图绘制"
+    ]
+  },
+  {
+    "display_name": "plot_boxplot_IsCorrect_Section",
+    "signature": "def plot_boxplot_IsCorrect_Section(df, column) -> None",
+    "doc": "绘制不同IsCorrect和Section（MEMORY/RECALL）下指定数值列的箱线图，用于比较正确/错误答案在不同阶段的分布差异。",
+    "intent_tags": [
+      "数据可视化",
+      "分布比较",
+      "箱线图",
+      "分类数据分析"
+    ]
+  }
+]

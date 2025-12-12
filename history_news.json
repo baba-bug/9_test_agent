@@ -1,0 +1,1745 @@
+[
+  {
+    "title": "Britain’s Prime Minister has vowed to ‘look into’ the firing of 31 GTA VI developers",
+    "link": "https://www.theverge.com/news/811999/gta-vi-rockstar-games-union-busting",
+    "summary": "英国首相Keir Starmer承诺将调查Rockstar Games解雇31名《GTA VI》开发人员的事件。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "Everyone asks Copilot for relationship advice in February, according to a new study",
+    "link": "https://microsoft.ai/wp-content/uploads/2025/12/What_people_do_with_Copilot-8.pdf",
+    "summary": "一项新研究分析了3750万次匿名Copilot对话，发现人们在2月份频繁向AI寻求恋爱建议，并建议AI应根据不同设备和场景提供个性化服务。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "Former OpenAI employees say they left because the company was ‘too restrictive’ about AI research",
+    "link": "https://www.wired.com/story/openai-economic-research-team-ai-jobs/",
+    "summary": "前OpenAI员工透露，他们离职是因为公司对AI研究限制过多，尤其不愿发布凸显AI经济负面影响的研究。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "GPT-5.1-Codex-Max System Card",
+    "link": "https://openai.com/index/gpt-5.1-codex-max-system-card/",
+    "summary": "这份系统卡片详细阐述了为GPT-5.1-CodexMax模型实施的全方位安全措施。研究方法包括在模型层面（如针对有害任务和提示注入的专项安全训练）和产品层面（如智能体沙箱化和可配置的网络访问控制）部署缓解策略。其主要贡献是系统化地呈现了保障高级代码模型安全性的框架，创新点在于将安全设计贯穿于模型训练与产品部署的全流程。",
+    "date": "Nov 19, 2025",
+    "venue": "Publication",
+    "source_domain": "openai.com",
+    "type": "paper"
+  },
+  {
+    "title": "Opera’s AI browser Neon is now available to everyone",
+    "link": "https://www.theverge.com/tech/801899/opera-neon-ai-browser-trial-run",
+    "summary": "Opera的AI浏览器Neon正式向所有人开放，月费19.90美元，提供Chat、Do、Make三个AI代理以协助旅行预订、网站构建和视频生成。",
+    "date": "48 seconds ago",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "Dell COO Jeff Clarke on RAM crunch: ‘our focus is get supply’",
+    "link": "https://www.theverge.com/report/839506/ram-shortage-price-increases-pc-gaming-smartphones",
+    "summary": "戴尔首席运营官Jeff Clarke谈及内存短缺问题，表示公司正专注于获取所需零部件。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "I couldn’t fix it with iFixit’s AI FixBot",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/841252/ifixit-fixbot-hands-on-ai-chatbot",
+    "summary": "iFixit推出的AI维修助手FixBot在实际测试中未能成功解决问题。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "August’s founders are back with a smart front door",
+    "link": "https://www.theverge.com/tech/841622/doma-smart-door-august-smart-lock-makers",
+    "summary": "智能锁公司August的创始人回归，推出首款支持Matter协议的电动智能前门Doma Home，可利用mmWave和UWB技术在用户接近时自动开门。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "Tim Cook’s trip to Capitol Hill",
+    "link": "https://www.bloomberg.com/news/articles/2025-12-10/apple-s-cook-presses-us-lawmakers-over-child-online-safety-laws",
+    "summary": "苹果CEO蒂姆·库克前往美国国会山，就儿童在线安全法案进行游说，主张由家长在创建儿童账户时提供年龄信息，而非强制应用商店运营商核查用户年龄证明。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "Apple’s 5K Studio Display is down to its lowest price in months",
+    "link": "https://www.theverge.com/gadgets/841647/apple-studio-display-monitor-deal-sale",
+    "summary": "苹果5K Studio Display显示器价格降至数月来最低点。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "Google and Apple’s app stores have been listing dozens of apps from blacklisted companies",
+    "link": "https://www.washingtonpost.com/technology/2025/12/10/us-sanctions-apple-google/",
+    "summary": "调查发现，谷歌和苹果的应用商店曾上架数十款来自受美国制裁公司（包括俄罗斯银行和中国准军事组织）的应用，目前大部分已被下架。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "The Echo Spot is just $45, beating its Black Friday price",
+    "link": "https://www.theverge.com/gadgets/841593/amazon-echo-spot-nintendo-joy-con-2-wheel-deal-sale",
+    "summary": "亚马逊Echo Spot智能音箱现价仅45美元，低于其黑五价格。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "Taylor Swift Nazi discourse was fueled by ‘inauthentic’ activity",
+    "link": "https://cdn.prod.website-files.com/69370c45ee6946ee05e9618a/6938f591279bf559ec50cd1c_GUDEA%20-%20Taylor%20Swift%20_%20Anatomy%20of%20a%20Narrative.pdf",
+    "summary": "报告显示，针对泰勒·斯威夫特新专辑的纳粹主义指控是由少数不真实用户推动的协调性攻击，随后引发了真实的舆论反弹。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "Intel’s once-record EU fine shrinks a little smaller",
+    "link": "https://www.bloomberg.com/news/articles/2025-12-10/intel-wins-140-million-cut-to-remnant-of-once-record-eu-fine",
+    "summary": "英特尔曾创纪录的欧盟反垄断罚款经多次上诉后，金额从最初的10.6亿欧元进一步削减至2.371亿欧元。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "UK porn traffic goes down, VPN use goes up",
+    "link": "https://www.ofcom.org.uk/media-use-and-attitudes/online-habits/online-nation",
+    "summary": "英国监管机构报告显示，在实施强制性年龄验证后，主要色情网站流量下降，同时VPN使用量激增，但随后呈稳步下降趋势。",
+    "date": "Dec 10",
+    "venue": "The Verge",
+    "source_domain": "www.theverge.com",
+    "type": "news"
+  },
+  {
+    "title": "WritingRing: Enabling Natural Handwriting Input with a Single IMU Ring",
+    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/06/3706598.3714066.pdf",
+    "summary": "本文提出了WritingRing系统，使用单个佩戴在手指根部的IMU指环来实现自然手写输入并提供实时2D轨迹。通过改进LSTM模型并融入TCN网络，系统实现了平均1.63mm的轨迹精度。实时可用性研究显示其具有较高的字母和单词识别准确率。",
+    "date": "2025",
+    "venue": "CHI'25",
+    "source_domain": "pi.cs.tsinghua.edu.cn"
+  },
+  {
+    "title": "Palmpad: Enabling Real-Time Index-to-Palm Touch Interaction with a Single RGB Camera",
+    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/06/3706598.3714130.pdf",
+    "summary": "本文提出了Palmpad，一种利用单目RGB摄像头检测食指触摸对侧手掌的新型传感方法。通过结合光流技术提取连续帧间的运动信息，其CNN模型实现了97.0%的识别准确率。可用性评估表明，Palmpad在准确性和用户体验上优于Quest内置手势算法。",
+    "date": "2025",
+    "venue": "CHI'25",
+    "source_domain": "pi.cs.tsinghua.edu.cn"
+  },
+  {
+    "title": "Unknown Word Detection for English as a Second Language (ESL) Learners using Gaze and Pre-trained Language Models",
+    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/06/3706598.3714181.pdf",
+    "summary": "本文提出了EyeLingo方法，利用文本内容和眼动轨迹实时高精度预测英语作为第二语言学习者的生词概率。该方法准确率达97.6%。研究还实现了一个实时阅读辅助原型，用户研究表明其在使用意愿和实用性上优于基线方法。",
+    "date": "2025",
+    "venue": "CHI'25",
+    "source_domain": "pi.cs.tsinghua.edu.cn"
+  },
+  {
+    "title": "AutoPBL: An LLM-powered Platform to Guide and Support Individual Learners Through Self Project-based Learning",
+    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/06/AutoPBL.pdf",
+    "summary": "本文提出了AutoPBL，一个由大语言模型驱动的交互式学习平台，旨在引导和支持学习者进行自主项目式学习。平台通过检查点问题和上下文问答等功能，为学习者提供系统化指导。用户研究表明，AutoPBL能有效改善学习成果，并促进更好的学习行为和元认知。",
+    "date": "2025",
+    "venue": "CHI'25",
+    "source_domain": "pi.cs.tsinghua.edu.cn"
+  },
+  {
+    "title": "Computing with Smart Rings: A Systematic Literature Review",
+    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/08/smart_ring_survey.pdf",
+    "summary": "本文对智能指环领域的206篇相关文献进行了系统性综述。提供了关于传感与反馈模态、应用和现象的 taxonomy，并将文献归类为交互输入、交互输出、被动感知体内特征和被动感知体外活动四个主要领域，总结了当前进展并指出了未来研究方向。",
+    "date": "2025",
+    "venue": "IMWUT'25",
+    "source_domain": "pi.cs.tsinghua.edu.cn"
+  },
+  {
+    "title": "EchoMind: Supporting Real-time Complex Problem Discussions through Human-AI Collaborative Facilitation",
+    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/10/Weihao_CHEN-EchoMind-CSCW.pdf",
+    "summary": "本文介绍了EchoMind系统，它通过人机协同引导的方式，利用实时议题映射可视化讨论知识，以支持实时复杂问题讨论。系统利用大语言模型动态组织对话，帮助团队明确讨论目标、追踪知识路径并提高整体生产力。用户研究验证了其有效性。",
+    "date": "2025",
+    "venue": "CSCW'25",
+    "source_domain": "pi.cs.tsinghua.edu.cn"
+  },
+  {
+    "title": "InterQuest: A Mixed-Initiative Framework for Dynamic User Interest Modeling in Conversational Search",
+    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/11/InterQuest-paper.pdf",
+    "summary": "本文提出了InterQuest，一个基于大语言模型的对话式搜索代理，用于动态建模用户兴趣。它结合了动态用户知识建模和不确定性驱动提问两种策略，以推断和解决用户的隐含兴趣。用户研究表明，InterQuest在用户兴趣推断、知识建模准确性和整体信息寻求体验上优于基线方法。",
+    "date": "2025",
+    "venue": "UIST' 2025",
+    "source_domain": "pi.cs.tsinghua.edu.cn"
+  },
+  {
+    "title": "Understanding Users’ Perceptions and Expectations toward a Social Balloon Robot via an Exploratory Study",
+    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/11/Understanding-Users-Perceptions-and-Expectations.pdf",
+    "summary": "本研究探索了社交气球机器人作为一种新型具身社交代理的可行性。通过开发名为BalloonBot的原型并进行探索性实验室研究，调查了用户对其交互和功能的感知与期望。结果表明，这种机器人具有独特的移动性和亲和力，能带来新颖的用户体验，并指出了其广泛应用前需考虑的因素。",
+    "date": "2025",
+    "venue": "UIST' 25",
+    "source_domain": "pi.cs.tsinghua.edu.cn"
+  },
+  {
+    "title": "BodyGen: Advancing Towards Efficient Embodiment Co-Design",
+    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/11/5415_BodyGen_Advancing_Towards.pdf",
+    "summary": "本文提出了BodyGen方法，旨在解决机器人形态与控制策略协同设计中的效率挑战。通过引入拓扑感知自注意力机制和时序信用分配机制，有效提升了形态表示效率和优化过程中的奖励信号平衡。实验表明，该方法相比现有先进基线平均性能提升60.03%。",
+    "date": "2025",
+    "venue": "ICLR' 2025",
+    "source_domain": "pi.cs.tsinghua.edu.cn"
+  },
+  {
+    "title": "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
+    "link": "https://www.microsoft.com/en-us/research/publication/trace-is-the-new-autodiff-unlocking-efficient-optimization-of-computational-workflows/",
+    "summary": "该研究提出“Trace”作为一种新的优化范式，被视为自动微分（AutoDiff）的演进。它利用执行轨迹、丰富反馈和大语言模型，对复杂计算工作流进行生成式优化，旨在更高效地自动改进程序或算法的性能和结构。",
+    "date": "December 2024",
+    "venue": "NeurIPS 2024 | NeurIPS Expo Demo",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Explorer: Scaling Exploration-driven Web Trajectory Synthesis for Multimodal Web Agents",
+    "link": "https://www.microsoft.com/en-us/research/publication/explorer-scaling-exploration-driven-web-trajectory-synthesis-for-multimodal-web-agents/",
+    "summary": "Explorer是一个旨在为多模态网页智能体大规模合成探索驱动轨迹的系统。它通过模拟用户在网页上的浏览和交互行为，生成丰富的训练数据，以帮助AI代理学习如何更有效地在复杂的网页环境中导航和执行任务。",
+    "date": "February 2025",
+    "venue": null,
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Navigating Rifts in Human-LLM Grounding: Study and Benchmark",
+    "link": "https://www.microsoft.com/en-us/research/publication/navigating-rifts-in-human-llm-grounding-study-and-benchmark/",
+    "summary": "研究关注人类与大语言模型（LLM）在“共同基础”上出现的分歧问题，即双方对任务或语境的理解不一致。通过研究和建立基准测试，旨在量化这种分歧，并探索如何改进交互设计以减少误解，提升协作效果。",
+    "date": "March 2025",
+    "venue": "ACL",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Inference-Time Scaling for Complex Tasks: Where We Stand and What Lies Ahead",
+    "link": "https://www.microsoft.com/en-us/research/publication/inference-time-scaling-for-complex-tasks-where-we-stand-and-what-lies-ahead/",
+    "summary": "该报告综述了针对复杂任务的推理时缩放技术现状与未来方向。它分析了如何在模型推理阶段（而非训练阶段）动态调整计算资源或策略，以优化大语言模型在解决需要多步推理或规划任务时的性能与效率平衡。",
+    "date": "March 2025",
+    "venue": "MSR-TR-2025-16 | Published by Microsoft",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Generation Probabilities Are Not Enough: Uncertainty Highlighting in AI Code Completions",
+    "link": "https://www.microsoft.com/en-us/research/publication/generation-probabilities-are-not-enough-exploring-the-effectiveness-of-uncertainty-highlighting-in-ai-powered-code-completions/",
+    "summary": "这项研究探讨了在AI代码补全工具中，仅提供生成概率不足以有效传达不确定性。研究提出并评估了通过高亮等方式可视化模型不确定性的方法，以帮助开发者更好地理解AI建议的可靠性，从而做出更明智的编码决策。",
+    "date": "April 2025",
+    "venue": "ToCHI | Vol 32(1)",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Phi-4-reasoning Technical Report",
+    "link": "https://www.microsoft.com/en-us/research/publication/phi-4-reasoning-technical-report/",
+    "summary": "这是关于Phi-4推理模型的技术报告，该模型是一个小型语言模型，专注于提升复杂推理能力。报告详细介绍了其架构、训练方法以及在多项需要逻辑推理和问题解决的任务上的性能表现，旨在推动高效小模型的边界。",
+    "date": "April 2025",
+    "venue": null,
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Dion: Distributed Orthonormalized Updates",
+    "link": "https://www.microsoft.com/en-us/research/publication/dion-distributed-orthonormalized-updates/",
+    "summary": "Dion提出了一种分布式正交化更新方法，旨在优化大规模机器学习中的参数更新过程。该方法通过确保更新向量的正交性，可能提高分布式训练的效率、稳定性和收敛速度，适用于复杂的深度学习模型。",
+    "date": "May 2025",
+    "venue": null,
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Magentic-UI: Towards Human-in-the-loop Agentic Systems",
+    "link": "https://www.microsoft.com/en-us/research/publication/magentic-ui-report/",
+    "summary": "该研究介绍了Magentic-UI，一个旨在实现人机协同智能体系统的框架。它专注于设计用户界面，使人类能够有效地监督、指导和干预AI代理的决策过程，以提高复杂任务中AI系统的可靠性和可控性。",
+    "date": "July 2025",
+    "venue": "MSR-TR-2025-40 | Published by Microsoft",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Magentic Marketplace: An Open-Source Environment for Studying Agentic Markets",
+    "link": "https://www.microsoft.com/en-us/research/publication/magentic-marketplace-an-open-source-environment-for-studying-agentic-markets/",
+    "summary": "研究团队推出了Magentic Marketplace，这是一个用于研究智能体市场的开源模拟环境。该平台允许研究人员探索多个AI代理在模拟经济环境中的交互、竞争与合作行为，为理解未来AI驱动的市场动态提供工具。",
+    "date": "October 2025",
+    "venue": "MSR-TR-2025-50 | Published by Microsoft",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Fara-7B: An Efficient Agentic Model for Computer Use",
+    "link": "https://www.microsoft.com/en-us/research/publication/fara-7b-an-efficient-agentic-model-for-computer-use/",
+    "summary": "微软研究团队发布了Fara-7B模型，这是一个专为计算机使用设计的高效智能体模型。该模型旨在通过优化参数和架构，提升AI代理在操作系统和应用中执行复杂任务的能力，以实现更自然的人机交互。",
+    "date": "November 2025",
+    "venue": "MSR-TR-2025-54 | Published by Microsoft",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions",
+    "link": "https://www.microsoft.com/en-us/research/publication/geogen/",
+    "summary": "GeoGen是一种通过有符号距离函数实现的几何感知生成模型，专注于生成具有准确几何结构的3D形状。",
+    "date": "June 2024",
+    "venue": "Computer Vision and Pattern Recognition 2024 Workshops",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Scribble: Auto-Generated 2D Avatars with Diverse and Inclusive Art-Direction",
+    "link": "https://www.microsoft.com/en-us/research/publication/scribble-auto-generated-2d-avatars-with-diverse-and-inclusive-art-direction/",
+    "summary": "Scribble是一个能够自动生成具有多样性和包容性艺术风格的2D虚拟化身的系统，旨在满足不同用户的个性化表达需求。",
+    "date": "July 2024",
+    "venue": "SIGGRAPH",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Hairmony: Fairness-aware hairstyle classification",
+    "link": "https://www.microsoft.com/en-us/research/publication/hairmony/",
+    "summary": "Hairmony是一个具有公平性意识的发型分类系统，旨在减少算法偏见，确保对不同发型（尤其是不同种族和文化背景的发型）的公平识别。",
+    "date": "December 2024",
+    "venue": "SIGGRAPH Asia",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Eyelid Fold Consistency in Facial Modeling",
+    "link": "https://www.microsoft.com/en-us/research/publication/eyelid-fold-consistency-in-facial-modeling/",
+    "summary": "该研究关注面部建模中眼睑褶皱的一致性，旨在提升虚拟人脸模型的真实感和细节准确性。",
+    "date": "December 2024",
+    "venue": "SIGGRAPH Asia",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Look Ma, no markers: holistic performance capture without the hassle",
+    "link": "https://www.microsoft.com/en-us/research/publication/synthmocap/",
+    "summary": "这项研究提出了一种无需标记点的整体性能捕捉方法，简化了动作捕捉流程，旨在实现更便捷、高效的人体运动数字化。",
+    "date": "December 2024",
+    "venue": "ACM Transactions on Graphics",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "GASP: Gaussian Avatars with Synthetic Priors",
+    "link": "https://www.microsoft.com/en-us/research/publication/gasp/",
+    "summary": "GASP方法结合了高斯表示和合成先验知识来创建虚拟化身，旨在提高化身的真实感和渲染效率。",
+    "date": "January 2025",
+    "venue": "2025 Computer Vision and Pattern Recognition",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "DAViD: Data-efficient and Accurate Vision Models from Synthetic Data",
+    "link": "https://www.microsoft.com/en-us/research/publication/david/",
+    "summary": "DAViD是一种利用合成数据训练数据高效且准确的视觉模型的方法，旨在减少对大规模真实数据集的依赖，同时保持高性能。",
+    "date": "October 2025",
+    "venue": "2025 International Conference on Computer Vision",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "VoluMe – Authentic 3D Video Calls from Live Gaussian Splat Prediction",
+    "link": "https://www.microsoft.com/en-us/research/publication/volume/",
+    "summary": "该研究提出了一种名为VoluMe的系统，能够通过实时高斯泼溅预测技术，实现逼真的三维视频通话，旨在提升远程交流的真实感和沉浸感。",
+    "date": "October 2025",
+    "venue": "2025 International Conference on Computer Vision",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Nods of Agreement: Webcam-Driven Avatars Improve Meeting Outcomes and Avatar Satisfaction Over Audio-Driven or Static Avatars in All-Avatar Work Videoconferencing",
+    "link": "https://www.microsoft.com/en-us/research/publication/nods-of-agreement-webcam-driven-avatars-improve-meeting-outcomes-and-avatar-satisfaction-over-audio-driven-or-static-avatars-in-all-avatar-work-videoconferencing/",
+    "summary": "研究发现，在全虚拟化身工作视频会议中，由网络摄像头驱动的虚拟化身在会议效果和化身满意度方面优于音频驱动或静态化身，强调了视觉驱动的非语言线索（如点头）的重要性。",
+    "date": "October 2025",
+    "venue": "CSCW 2025",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Avatars in mixed-reality meetings: A longitudinal field study of realistic versus cartoon facial likeness effects on communication, task satisfaction, presence, and emotional perception",
+    "link": "https://www.microsoft.com/en-us/research/publication/avatars-in-mixed-reality-meetings-a-longitudinal-field-study-of-realistic-versus-cartoon-facial-likeness-effects-on-communication-task-satisfaction-presence-and-emotional-perception/",
+    "summary": "这项研究通过纵向实地调查，比较了混合现实会议中真实感与卡通风格虚拟化身的面部相似度对沟通、任务满意度、临场感和情感感知的影响。",
+    "date": "November 2025",
+    "venue": "International Journal of Human-Computer Studies",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "The Great Flip: How Accelerated Computing Redefined Scientific Systems — and What Comes Next",
+    "link": "https://blogs.nvidia.com/blog/accelerated-scientific-systems/",
+    "summary": "文章回顾了加速计算如何重新定义科学系统，从CPU主导到能效和AI改变了平衡。现在，跨GPU、网络和软件的极端协同设计正推动着科学的前沿。",
+    "date": "November 17, 2025",
+    "venue": "Data Center",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "Microsoft, NVIDIA and Anthropic Announce Strategic Partnerships",
+    "link": "https://blogs.nvidia.com/blog/microsoft-nvidia-anthropic-announce-partnership/",
+    "summary": "微软、英伟达和Anthropic宣布了新的战略合作伙伴关系。Anthropic将在由英伟达提供支持的微软Azure上扩展其快速增长的Claude AI模型，以扩大Claude的访问范围。",
+    "date": "November 18, 2025",
+    "venue": "Corporate",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "Delivering AI-Ready Enterprise Data With GPU-Accelerated AI Storage",
+    "link": "https://blogs.nvidia.com/blog/ai-data-platform-gpu-accelerated-storage/",
+    "summary": "AI代理有潜力成为自动化复杂任务的必备工具，但将其投入生产仍具挑战性。文章介绍了如何通过GPU加速的AI存储平台，为企业提供AI就绪的数据，以应对这一挑战。",
+    "date": "November 18, 2025",
+    "venue": "Data Center",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "Powering AI Superfactories, NVIDIA and Microsoft Integrate Latest Technologies for Inference, Cybersecurity, Physical AI",
+    "link": "https://blogs.nvidia.com/blog/nvidia-microsoft-ai-superfactories/",
+    "summary": "英伟达与微软扩展合作，为AI超级工厂提供动力。合作包括在微软新的AI超级工厂中采用下一代英伟达Spectrum-X以太网交换机，并整合了推理、网络安全和物理AI等领域的最新技术。",
+    "date": "November 18, 2025",
+    "venue": "Data Center",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "Ultimate Cloud Gaming Is Everywhere With GeForce NOW",
+    "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-ultimate-is-everywhere/",
+    "summary": "英伟达Blackwell RTX升级接近完成，使全球GeForce NOW Ultimate会员能够随时随地体验真正的次世代云游戏。文章讨论了Ultimate会员资格带来的体验。",
+    "date": "November 20, 2025",
+    "venue": "Gaming",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "The Largest Digital Zoo: Biology Model Trained on NVIDIA GPUs Identifies Over a Million Species",
+    "link": "https://blogs.nvidia.com/blog/bioclip2-foundation-ai-model/",
+    "summary": "介绍了一个在英伟达GPU上训练的生物学基础模型BioCLIP2，它能够识别超过一百万个物种。该项目始于研究者与同事的一个赌约，旨在证明AI识别斑马个体的速度可以超过动物学家。",
+    "date": "November 20, 2025",
+    "venue": "Generative AI",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "Into the Omniverse: How Smart City AI Agents Transform Urban Operations",
+    "link": "https://blogs.nvidia.com/blog/smart-city-ai-agents-urban-operations/",
+    "summary": "文章探讨了智慧城市AI代理如何转变城市运营。随着全球城市人口激增和基础设施压力增大，AI代理为解决城市挑战提供了新方案。",
+    "date": "November 20, 2025",
+    "venue": "Generative AI",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "Gordon Bell Prize Winners Push Open Science Boundaries With NVIDIA-Powered Supercomputers",
+    "link": "https://blogs.nvidia.com/blog/gordon-bell-finalists-2025/",
+    "summary": "2025年戈登·贝尔奖的五位决赛者利用英伟达驱动的超级计算机在气候建模、流体模拟等领域取得突破，其中两位获奖者进一步推动了开放科学的边界。",
+    "date": "November 20, 2025",
+    "venue": "Supercomputing",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "FLUX.2 Image Generation Models Now Released, Optimized for NVIDIA RTX GPUs",
+    "link": "https://blogs.nvidia.com/blog/rtx-ai-garage-flux-2-comfyui/",
+    "summary": "前沿AI研究实验室Black Forest Labs发布了FLUX.2系列先进的图像生成模型。该模型针对英伟达RTX GPU进行了优化，并集成了新功能。",
+    "date": "November 25, 2025",
+    "venue": "Generative AI",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "The Ultimate Black Friday Deal Is Here",
+    "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-black-friday-2025/",
+    "summary": "黑色星期五促销升级，GeForce NOW Ultimate新会员可享受前三个月50%的折扣，被称为本季最大优惠之一。",
+    "date": "November 27, 2025",
+    "venue": "Gaming",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "Game the Halls: GeForce NOW Brings Holiday Cheer With 30 New Games in the Cloud",
+    "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-dec-2025/",
+    "summary": "GeForce NOW云游戏服务在节日期间带来30款新游戏，为玩家增添节日欢乐。文章还提到《霍格沃茨之遗》的Game Pass版本也将在后续支持。",
+    "date": "December 4, 2025",
+    "venue": "Gaming",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "Opt-In NVIDIA Software Enables Data Center Fleet Management",
+    "link": "https://blogs.nvidia.com/blog/optional-data-center-fleet-management-software/",
+    "summary": "随着AI基础设施规模和复杂性增长，数据中心运营商需要持续监控性能、温度和功耗等因素。英伟达推出的可选软件提供了数据中心集群管理功能，以提供这些关键洞察。",
+    "date": "December 10, 2025",
+    "venue": "Software",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "NVIDIA IGX Thor Robotics Processor Brings Real-Time Physical AI to the Industrial and Medical Edge",
+    "link": "https://blogs.nvidia.com/blog/igx-thor-processor-physical-ai-industrial-medical-edge/",
+    "summary": "英伟达IGX Thor机器人处理器将实时物理AI带到了工业和医疗边缘，为这些关键领域提供了强大的边缘计算能力。",
+    "date": null,
+    "venue": "Robotics",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "Into the Omniverse: Open World Foundation Models Generate Synthetic Worlds for Physical AI Development",
+    "link": "https://blogs.nvidia.com/blog/scaling-physical-ai-omniverse/",
+    "summary": "文章介绍了开放世界基础模型如何在Omniverse中生成合成世界，以用于物理AI的开发，旨在扩展物理AI的规模。",
+    "date": null,
+    "venue": "Robotics",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "Robots’ Holiday Wishes Come True: NVIDIA Jetson Platform Offers High-Performance Edge AI at Festive Prices",
+    "link": "https://blogs.nvidia.com/blog/jetson-edge-ai-holiday-2025/",
+    "summary": "英伟达Jetson平台在节日期间提供高性能边缘AI的优惠价格，使开发者、研究人员、爱好者和学生能够以更低的成本进行边缘AI开发。",
+    "date": null,
+    "venue": "Robotics",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "AI On: 3 Ways Specialized AI Agents Are Reshaping Businesses",
+    "link": "https://blogs.nvidia.com/blog/specialized-ai-agents/",
+    "summary": "文章探讨了专业化AI代理正在通过三种方式重塑企业运营，展示了AI代理在商业自动化与转型中的潜力。",
+    "date": null,
+    "venue": null,
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "NVIDIA and AWS Expand Full-Stack Partnership, Providing the Secure, High-Performance Compute Platform Vital for Future Innovation",
+    "link": "https://blogs.nvidia.com/blog/aws-partnership-expansion-reinvent/",
+    "summary": "英伟达与AWS扩展全栈合作伙伴关系，旨在为未来创新提供安全、高性能的计算平台，该合作在AWS re:Invent大会期间宣布。",
+    "date": null,
+    "venue": "Data Center",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "How NVIDIA H100 GPUs on CoreWeave’s AI Cloud Platform Delivered a Record-Breaking Graph500 Run",
+    "link": "https://blogs.nvidia.com/blog/h100-coreweave-graph500/",
+    "summary": "文章介绍了基于CoreWeave AI云平台的英伟达H100 GPU如何实现了破纪录的Graph500大规模图处理性能，该系统构建在商用集群之上。",
+    "date": null,
+    "venue": "Data Center",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "From Government to Gaming, AI Is ‘Strengthening Korea’s Digital Foundation,’ NVIDIA Leader Says at AI Day Seoul",
+    "link": "https://blogs.nvidia.com/blog/ai-day-seoul/",
+    "summary": "英伟达高管在首尔AI Day上表示，从政府到游戏，人工智能正在“加强韩国的数字基础”，强调了AI在韩国各领域的广泛应用和基础性作用。",
+    "date": null,
+    "venue": null,
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "At NeurIPS, NVIDIA Advances Open Model Development for Digital and Physical AI",
+    "link": "https://blogs.nvidia.com/blog/neurips-open-source-digital-physical-ai/",
+    "summary": "在NeurIPS会议上，英伟达推动了面向数字和物理AI的开源模型开发，展示了其在AI开放生态建设方面的进展。",
+    "date": null,
+    "venue": null,
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "NVIDIA Awards up to $60,000 Research Fellowships to PhD Students",
+    "link": "https://blogs.nvidia.com/blog/graduate-fellowship-recipients-2026-2027/",
+    "summary": "英伟达研究生奖学金项目已运行25年，为从事与英伟达相关前沿研究的博士生提供高达6万美元的资助，以支持其杰出工作。",
+    "date": null,
+    "venue": "Generative AI",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "NVIDIA Partners With Mistral AI to Accelerate New Family of Open Models",
+    "link": "https://blogs.nvidia.com/blog/mistral-frontier-open-models/",
+    "summary": "英伟达宣布与Mistral AI合作，旨在加速新一代开源模型的发展，推动前沿AI技术的进步。",
+    "date": null,
+    "venue": "Data Center",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "Mixture of Experts Powers the Most Intelligent Frontier AI Models, Runs 10x Faster on NVIDIA Blackwell NVL72",
+    "link": "https://blogs.nvidia.com/blog/mixture-of-experts-frontier-models/",
+    "summary": "文章介绍了专家混合模型如何驱动最前沿的AI模型，并指出在英伟达Blackwell NVL72平台上，其运行速度可提升10倍。",
+    "date": null,
+    "venue": "Data Center",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "3 Ways NVIDIA Is Powering the Industrial Revolution",
+    "link": "https://blogs.nvidia.com/blog/gpu-cuda-scaling-laws-industrial-revolution/",
+    "summary": "文章介绍了英伟达如何通过GPU、CUDA和扩展定律三种方式推动工业革命，强调了加速计算在工业转型中的核心作用。",
+    "date": null,
+    "venue": "Data Center",
+    "source_domain": "blogs.nvidia.com"
+  },
+  {
+    "title": "Using AI to assist in rare disease diagnosis",
+    "link": "https://www.microsoft.com/en-us/research/blog/using-ai-to-assist-in-rare-disease-diagnosis/",
+    "summary": "来自微软、德雷塞尔大学和布罗德研究所的新研究探索了生成式AI如何支持遗传学专业人士进行罕见疾病的诊断。",
+    "date": "September 22, 2025",
+    "venue": "Microsoft Research Blog",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "When AI Meets Biology: Promise, Risk, and Responsibility",
+    "link": "https://www.microsoft.com/en-us/research/blog/when-ai-meets-biology-promise-risk-and-responsibility/",
+    "summary": "微软研究人员披露了一项保密研究，探索了开源AI工具如何被用于绕过生物安全检查，并帮助创建了目前正在影响全球标准的修复方案。",
+    "date": "October 6, 2025",
+    "venue": "Microsoft Research Blog",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Tell me when: Building agents that can wait, monitor, and act",
+    "link": "https://www.microsoft.com/en-us/research/blog/tell-me-when-building-agents-that-can-wait-monitor-and-act/",
+    "summary": "SentinelStep使AI代理能够处理持续数小时或数天的监控任务（如监视电子邮件或跟踪价格），通过管理代理的检查时机和上下文，避免资源浪费和错过更新。",
+    "date": "October 21, 2025",
+    "venue": "Microsoft Research Blog",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "RedCodeAgent: Automatic red-teaming agent against diverse code agents",
+    "link": "https://www.microsoft.com/en-us/research/blog/redcodeagent-automatic-red-teaming-agent-against-diverse-code-agents/",
+    "summary": "RedCodeAgent自动化并改进了“红队”攻击模拟，旨在帮助发现代码代理可能引入的关键安全风险，揭示其他方法可能忽略的现实威胁。",
+    "date": "November 4, 2025",
+    "venue": "Microsoft Research Blog",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Magentic Marketplace: an open-source simulation environment for studying agentic markets",
+    "link": "https://www.microsoft.com/en-us/research/blog/magentic-marketplace-an-open-source-simulation-environment-for-studying-agentic-markets/",
+    "summary": "为了探索AI代理大规模交互和交易可能带来的影响，微软构建了Magentic Marketplace，这是一个用于研究代理市场设计的开源模拟环境。",
+    "date": "November 5, 2025",
+    "venue": "Microsoft Research Blog",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "When industry knowledge meets PIKE-RAG: The innovation behind Signify’s customer service boost",
+    "link": "https://www.microsoft.com/en-us/research/blog/when-industry-knowledge-meets-pike-rag-the-innovation-behind-signifys-customer-service-boost/",
+    "summary": "Signify与微软研究院的合作表明，PIKE-RAG技术提升了企业知识系统，实现了12%的准确率提升，并能提供更快、更可靠的答案。",
+    "date": "November 6, 2025",
+    "venue": "Microsoft Research Blog",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "BlueCodeAgent: A blue teaming agent enabled by automated red teaming for CodeGen AI",
+    "link": "https://www.microsoft.com/en-us/research/blog/bluecodeagent-a-blue-teaming-agent-enabled-by-automated-red-teaming-for-codegen-ai/",
+    "summary": "BlueCodeAgent是一个端到端的蓝队框架，利用自动化红队流程、数据和安全规则来指导LLM的防御决策，旨在通过动态测试提升代码安全性并减少漏洞检测的误报。",
+    "date": "November 11, 2025",
+    "venue": "Microsoft Research Blog",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "MMCTAgent: Enabling multimodal reasoning over large video and image collections",
+    "link": "https://www.microsoft.com/en-us/research/blog/mmctagent-enabling-multimodal-reasoning-over-large-video-and-image-collections/",
+    "summary": "MMCTAgent基于微软AutoGen框架，通过迭代规划和反思实现动态多模态推理，集成了语言、视觉和时间理解能力，用于处理长视频和图像分析等复杂任务。",
+    "date": "November 12, 2025",
+    "venue": "Microsoft Research Blog",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Fara-7B: An Efficient Agentic Model for Computer Use",
+    "link": "https://www.microsoft.com/en-us/research/blog/fara-7b-an-efficient-agentic-model-for-computer-use/",
+    "summary": "Fara-7B是微软首个用于计算机操作的小型代理语言模型，包含强大的安全措施以辅助负责任部署，其性能可与更大、更耗资源的代理系统相媲美。",
+    "date": "November 24, 2025",
+    "venue": "Microsoft Research Blog",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Reducing Privacy leaks in AI: Two approaches to contextual integrity",
+    "link": "https://www.microsoft.com/en-us/research/blog/reducing-privacy-leaks-in-ai-two-approaches-to-contextual-integrity/",
+    "summary": "新研究探索了两种基于情境完整性的方法，为AI代理提供更强的隐私保护：一种添加轻量级推理时检查，另一种通过推理和强化学习将情境感知直接构建到模型中。",
+    "date": "November 25, 2025",
+    "venue": "Microsoft Research Blog",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "GigaTIME: Scaling tumor microenvironment modeling using virtual population generated by multimodal AI",
+    "link": "https://www.microsoft.com/en-us/research/blog/gigatime-scaling-tumor-microenvironment-modeling-using-virtual-population-generated-by-multimodal-ai/",
+    "summary": "微软研究人员利用AI生成的虚拟人群，揭示了隐藏的细胞模式，这可能重塑我们对癌症的理解和治疗方式。",
+    "date": "December 9, 2025",
+    "venue": "Microsoft Research Blog",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Promptions helps make AI prompting more precise with dynamic UI controls",
+    "link": "https://www.microsoft.com/en-us/research/blog/promptions-helps-make-ai-prompting-more-precise-with-dynamic-ui-controls/",
+    "summary": "Promptions 帮助开发者为聊天界面添加动态、上下文感知的控件，让用户无需编写冗长指令即可快速引导生成式AI的输出，使提示过程更加精确。",
+    "date": "December 10, 2025",
+    "venue": "Microsoft Research Blog",
+    "source_domain": "www.microsoft.com"
+  },
+  {
+    "title": "Balancing Producer Fairness and Efficiency via Prior-Weighted Rating System Design",
+    "link": "https://hci.stanford.edu/publications/paper.php?id=504",
+    "summary": "研究探讨了如何通过设计一种基于先验加权的评分系统，在在线平台中平衡内容生产者的公平性与系统整体效率这两个常常冲突的目标。",
+    "date": null,
+    "venue": "ICWSM 2025",
+    "source_domain": "hci.stanford.edu"
+  },
+  {
+    "title": "LLM Social Simulations Are a Promising Research Method",
+    "link": "https://hci.stanford.edu/publications/paper.php?id=515",
+    "summary": "这篇立场论文论证了使用大型语言模型进行社会模拟是一种前景广阔的研究方法，能够以低成本、可扩展的方式探索复杂的社会动态和理论。",
+    "date": null,
+    "venue": "ICML Position Papers 2025",
+    "source_domain": "hci.stanford.edu"
+  },
+  {
+    "title": "Aligning Language Models with Demonstrated Feedback",
+    "link": "https://hci.stanford.edu/publications/paper.php?id=505",
+    "summary": "研究提出了一种利用演示反馈（而不仅仅是语言指令）来对齐大型语言模型的方法，旨在使模型行为更贴近人类的实际期望和价值观。",
+    "date": null,
+    "venue": "ICLR 2025",
+    "source_domain": "hci.stanford.edu"
+  },
+  {
+    "title": "Knoll: Creating a Knowledge Ecosystem for Large Language Models",
+    "link": "https://hci.stanford.edu/publications/paper.php?id=511",
+    "summary": "Knoll项目旨在为大型语言模型构建一个知识生态系统，通过整合和结构化外部知识源，以增强模型的知识获取、更新和推理能力。",
+    "date": null,
+    "venue": "UIST 2025",
+    "source_domain": "hci.stanford.edu"
+  },
+  {
+    "title": "Creating General User Models from Computer Use",
+    "link": "https://hci.stanford.edu/publications/paper.php?id=512",
+    "summary": "该研究提出了一种从计算机使用行为中创建通用用户模型的方法，旨在捕捉跨应用和任务的用户行为模式，以支持个性化系统设计。",
+    "date": null,
+    "venue": "UIST 2025",
+    "source_domain": "hci.stanford.edu"
+  },
+  {
+    "title": "Flash Teams: Leading the Future of AI-Enhanced, On-Demand Work",
+    "link": "https://hci.stanford.edu/publications/paper.php?id=514",
+    "summary": "本书探讨了“闪存团队”的概念，即一种由人工智能增强的、按需组建的工作团队模式，并分析了其如何引领未来按需工作的组织形态。",
+    "date": null,
+    "venue": "MIT Press 2025",
+    "source_domain": "hci.stanford.edu"
+  },
+  {
+    "title": "Burst: Collaborative Curation in Connected Social Media Communities",
+    "link": "https://hci.stanford.edu/publications/paper.php?id=510",
+    "summary": "Burst是一个支持在互联的社交媒体社区中进行协作策展的系统，旨在帮助用户共同发现、组织和提升高质量内容，改善社区信息环境。",
+    "date": null,
+    "venue": "CSCW 2025",
+    "source_domain": "hci.stanford.edu"
+  },
+  {
+    "title": "Reranking Partisan Animosity in Algorithmic Social Media Feeds Alters Affective Polarization",
+    "link": "https://hci.stanford.edu/publications/paper.php?id=517",
+    "summary": "研究表明，通过算法重新排序社交媒体信息流中的党派敌意内容，可以有效改变用户的情感极化程度，为缓解网络政治对立提供了新思路。",
+    "date": null,
+    "venue": "Science 2025",
+    "source_domain": "hci.stanford.edu"
+  },
+  {
+    "title": "Finetuning LLMs for Human Behavior Prediction in Social Science Experiments",
+    "link": "https://hci.stanford.edu/publications/paper.php?id=516",
+    "summary": "研究探索如何微调大型语言模型，以预测社会科学实验中的人类行为，旨在提高模型对社会互动和决策过程的理解与模拟能力。",
+    "date": null,
+    "venue": "EMNLP 2025",
+    "source_domain": "hci.stanford.edu"
+  },
+  {
+    "title": "Alexandria: A Library of Pluralistic Values for Realtime Re-Ranking of Social Media Feeds",
+    "link": "https://hci.stanford.edu/publications/paper.php?id=513",
+    "summary": "该研究提出了一个名为Alexandria的库，旨在通过整合多元化的社会价值观，实时重新排序社交媒体信息流，以减少偏见和促进更平衡的内容展示。",
+    "date": null,
+    "venue": "ICWSM 2026",
+    "source_domain": "hci.stanford.edu"
+  },
+  {
+    "title": "From The Wall Street Journal: AI Has Shown Me My Future. Here’s What I’ve Learned.",
+    "link": "https://www.media.mit.edu/articles/from-the-wall-street-journal-ai-has-shown-me-my-future/",
+    "summary": "文章介绍了MIT媒体实验室博士后Pat Pataranutaporn参与开发的一款AI工具，该工具能帮助人们展望未来并从中学习。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "New training approach could help AI agents perform better in uncertain conditions",
+    "link": "https://www.media.mit.edu/articles/new-training-approach-could-help-ai-agents-perform-better-in-uncertain-conditions/",
+    "summary": "研究提出一种新的AI训练方法，有时在与部署环境不同的条件下训练机器人，可能有助于其在不确定条件下表现更好。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Engineers enable a drone to determine its position in the dark and indoors",
+    "link": "https://www.media.mit.edu/articles/engineers-enable-a-drone-to-determine-its-position-in-the-dark-and-indoors/",
+    "summary": "一种使用无线电波的新型低功耗系统，让无人机能够在黑暗和室内环境中确定自身位置，朝着自主室内无人机导航迈出了重要一步。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "New platform lets anyone rapidly prototype large, sturdy interactive structures",
+    "link": "https://www.media.mit.edu/articles/new-platform-lets-anyone-rapidly-prototype-large-sturdy-interactive-structures/",
+    "summary": "该系统使用可重构的机电建筑模块来创建结构电子器件，使任何人都能快速原型化大型、坚固的交互式结构。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "TeleAbsence: Poetic encounters with the past",
+    "link": "https://www.media.mit.edu/articles/teleabsence-poetic-encounters-with-the-past/",
+    "summary": "MIT研究人员阐述了“远程缺席”愿景背后的设计原则，以及它如何能帮助人们应对失去亲人的痛苦，实现与过去的诗意相遇。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Inaugural Morningside Academy for Design Professorships named",
+    "link": "https://www.media.mit.edu/articles/inaugural-morningside-academy-for-design-professorships-named/",
+    "summary": "MIT晨兴设计学院设立了新的教授职位，并任命了三位MIT教员，以推进跨学科的设计教育。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Deploying a practical solution to space debris",
+    "link": "https://www.media.mit.edu/articles/deploying-a-practical-solution-to-space-debris/",
+    "summary": "研究人员分享了一种基于激励机制的太空可持续性评级系统的设计和实施，旨在为太空碎片问题提供实用解决方案。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Dr. Minoo Rathnasabapathy selected for 2025 Karman Fellowship Program",
+    "link": "https://www.media.mit.edu/posts/minoo-rathnasabapathy-space-enabled-has-been-selected-for-the-2025-karman-fellowship-program/",
+    "summary": "Minoo Rathnasabapathy博士因其在太空可持续性和气候创新方面的领导力，被选为2025年卡曼研究员。",
+    "date": null,
+    "venue": "Post Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "CNN: AI's Effects On The Brain Study: Using AI Could Cost You Brainpower",
+    "link": "https://www.media.mit.edu/articles/a-i-s-effects-on-the-brain/",
+    "summary": "文章引述了一项研究，探讨使用人工智能可能对大脑认知能力产生的潜在影响，暗示过度依赖AI或导致脑力下降。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "A bionic knee integrated into tissue can restore natural movement",
+    "link": "https://www.media.mit.edu/articles/a-bionic-knee-integrated-into-tissue-can-restore-natural-movement/",
+    "summary": "一项小型临床研究表明，这种与组织集成的仿生膝盖假体能让使用者更轻松地活动，并感觉肢体更像是自己身体的一部分。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Jessica Rosenworcel Named Executive Director of the MIT Media Lab",
+    "link": "https://www.media.mit.edu/posts/jessica-rosenworcel-named-executive-director-of-the-mit-media-lab/",
+    "summary": "美国联邦通信委员会前主席Jessica Rosenworcel加入MIT媒体实验室担任执行主任，带来了大胆的愿景和以公民为中心的领导力。",
+    "date": null,
+    "venue": "Post People",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "In Nature World View article, Professor Danielle Wood calls for continued support of NASA’s Earth Observation satellites",
+    "link": "https://www.media.mit.edu/posts/professor-danielle-wood-nature-world-view/",
+    "summary": "Danielle Wood教授在《自然》杂志的“世界观”栏目中撰文，呼吁继续支持NASA的地球观测卫星计划，认为其对理解和保护环境至关重要。",
+    "date": null,
+    "venue": "Post Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Scientists focus on genetically engineering mice to cut Lyme disease transmission",
+    "link": "https://www.media.mit.edu/articles/scientists-focus-on-genetically-engineering-mice-to-cut-lyme-disease-transmission/",
+    "summary": "MIT媒体实验室的Kevin Esvelt在楠塔基特岛领导一项社区驱动的努力，通过基因工程培育对莱姆病免疫的老鼠，从源头阻断疾病传播。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Crypto Still A Bit of \"Wild West\"",
+    "link": "https://www.media.mit.edu/articles/crypto-still-a-bit-of-wild-west/",
+    "summary": "媒体实验室数字货币倡议主任Neha Narula在彭博社的Crypto节目中反思数字资产市场的剧烈波动，认为加密货币领域仍存在一定程度的无序性。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Handweaving shows potential in robotic textiles",
+    "link": "https://www.media.mit.edu/articles/handweaving-shows-potential-in-robotic-textiles/",
+    "summary": "研究将液晶弹性体纤维融入不同的编织设计中，创造出可编程和可逆的结构，展示了手工编织在机器人纺织品中的潜力。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "TD Joins MIT Media Lab to Explore the Future of Responsible AI in Financial Services",
+    "link": "https://www.media.mit.edu/posts/td-joins-mit-media-lab-to-explore-the-future-of-responsible-ai-in-financial-services/",
+    "summary": "TD银行加入MIT媒体实验室的sAIpien项目，共同推进负责任的人工智能研究，重新构想银行和金融的未来。",
+    "date": null,
+    "venue": "Post Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Media Lab on Bloomberg: Conversations on Technology, Women's Health, and Human Potential",
+    "link": "https://www.media.mit.edu/posts/bloomberg-businessweek-women-s-health-coverage-featuring-media-lab-researchers/",
+    "summary": "媒体实验室的研究人员在《彭博商业周刊》的采访中分享了关于创新、技术和健康（特别是女性健康）的见解。",
+    "date": null,
+    "venue": "Post Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Injectable antenna could safely power deep-tissue medical implants",
+    "link": "https://www.media.mit.edu/articles/injectable-antenna-could-safely-power-deep-tissue-medical-implants/",
+    "summary": "这项技术有望实现无需电池、微创且可扩展的生物电子植入物，通过可注射天线为深部组织医疗植入物安全供电。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Teaching Machines to See Medicine: How AI is Learning to Think Like a Doctor Across Every Medical Specialty",
+    "link": "https://www.media.mit.edu/projects/high-modality-learning-for-healthcare/overview/",
+    "summary": "该项目旨在让人工智能像医生一样，综合处理多种医疗数据（如听诊、X光、血液检查），实现跨医学专业的高模态学习。",
+    "date": null,
+    "venue": "Project Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "At the Mysterious Boundary Between Waking Life and Sleep, What Happens in the Brain?",
+    "link": "https://www.media.mit.edu/articles/at-the-mysterious-boundary-between-waking-life-and-sleep-what-happens-in-the-brain/",
+    "summary": "MIT的Adam Horowitz和流体界面小组利用梦境工程和睡眠科学，探索清醒与睡眠边界的大脑活动，以提升创造力和认知能力。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "A New Guitar Launch Brings MIT Media Lab Tech to the Stage",
+    "link": "https://www.media.mit.edu/posts/a-new-guitar-launch-brings-mit-media-lab-tech-to-the-stage/",
+    "summary": "一款采用MIT媒体实验室电子墨水技术的变色DaVinci吉他发布，将可自定义设计带入现场音乐表演。",
+    "date": null,
+    "venue": "Post Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "New therapeutic brain implants defy the need for surgery",
+    "link": "https://www.media.mit.edu/articles/new-therapeutic-brain-implants-defy-the-need-for-surgery/",
+    "summary": "MIT研究人员开发了可通过血液循环输送的微型无线设备，用于提供靶向脑部刺激，从而避免了传统脑植入手术的需要。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Karrie Karahalios named to Fast Company's AI 20 List for 2025",
+    "link": "https://www.media.mit.edu/articles/named-to-fast-company-s-ai-20-list-for-2025/",
+    "summary": "MIT媒体实验室的Karrie Karahalios因其在可争议、以人为本的人工智能系统方面的开创性工作，被《快公司》杂志评为2025年AI 20榜单人物。",
+    "date": null,
+    "venue": "Article Research",
+    "source_domain": "www.media.mit.edu"
+  },
+  {
+    "title": "Gemini 3 brings upgraded smarts and new capabilities to the Gemini app By Josh Woodward",
+    "link": "https://blog.google/products/gemini/gemini-3-gemini-app/",
+    "summary": "Josh Woodward宣布Gemini 3为Gemini应用带来了升级的智能和新的功能，增强了用户体验。",
+    "date": null,
+    "venue": null,
+    "source_domain": "blog.google"
+  },
+  {
+    "title": "A new era of intelligence with Gemini 3 By Sundar Pichai",
+    "link": "https://blog.google/products/gemini/gemini-3/",
+    "summary": "谷歌CEO Sundar Pichai介绍了Gemini 3，标志着智能新时代的到来。Gemini 3是谷歌最智能的模型，集成了Gemini的所有能力。",
+    "date": null,
+    "venue": null,
+    "source_domain": "blog.google"
+  },
+  {
+    "title": "WeatherNext 2: Our most advanced weather forecasting model The new AI model delivers more efficient, more accurate and higher-resolution global weather predictions.",
+    "link": "https://blog.google/technology/google-deepmind/weathernext-2/",
+    "summary": "谷歌DeepMind发布了其最先进的天气预报AI模型WeatherNext 2。该模型能够提供更高效、更准确、更高分辨率的全球天气预测。",
+    "date": null,
+    "venue": null,
+    "source_domain": "blog.google"
+  },
+  {
+    "title": "The High Cost of Incivility: Quantifying Interaction Inefficiency via Multi-Agent Monte Carlo Simulations",
+    "link": "http://arxiv.org/abs/2512.08345v1",
+    "summary": "本研究利用基于大语言模型的多智能体系统模拟一对一的对抗性辩论，创建了一个受控的“社会学沙盒”。我们采用蒙特卡洛方法模拟了数百次讨论，测量了基线控制组与涉及“有毒”系统提示智能体的处理组之间的收敛时间。结果表明，涉及有毒参与者的对话持续时间增加了约25%。我们提出这种“毒性延迟”可以作为企业和学术环境中财务损失的代理指标。",
+    "date": "2025-12-09T08:17:35Z",
+    "venue": "[CCF A] Comment: 8 figures, 3 tables",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Curriculum Guided Massive Multi Agent System Solving For Robust Long Horizon Tasks",
+    "link": "http://arxiv.org/abs/2512.08545v1",
+    "summary": "本文引入了一种分层多智能体架构，将推理分布在64*64的轻量级智能体网格上，并由一个选择性预言机支持。空间课程逐步扩展网格的操作区域，确保智能体先掌握较容易的中心任务，再处理较难的外围任务。系统集成了负对数似然作为置信度度量，并采用汤普森采样课程管理器。该方法在空间接地的汉诺塔基准测试中进行了评估。",
+    "date": "2025-12-09T12:40:39Z",
+    "venue": "[CCF A] Comment: 22 pages, 2 tables, 9 figures",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Multi-Task Bayesian Optimization for Tuning Decentralized Trajectory Generation in Multi-UAV Systems",
+    "link": "http://arxiv.org/abs/2512.08630v1",
+    "summary": "本文研究了使用多任务贝叶斯优化来调整多无人机系统中的分散轨迹生成算法。我们将每个任务视为由特定数量的无人机间交互定义的轨迹生成场景。我们采用多任务高斯过程来建模跨场景的关系。通过全面的模拟活动，比较了优化所有任务平均任务时间和单独优化每个任务两种策略。",
+    "date": "2025-12-09T14:14:40Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Multi-Agent Intelligence for Multidisciplinary Decision-Making in Gastrointestinal Oncology",
+    "link": "http://arxiv.org/abs/2512.08674v1",
+    "summary": "本文针对胃肠道肿瘤学中的多模态临床推理挑战，提出了一个分层多智能体框架，以模拟人类多学科团队的协作工作流程。该系统在综合专家评估中获得了4.60/5.00的分数，相比单体基线有显著提升。基于智能体的架构在推理逻辑和医学准确性方面带来了最实质性的增强，为肿瘤学中的自动化决策支持提供了一个可扩展、可解释且临床稳健的范式。",
+    "date": "2025-12-09T14:56:40Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Insured Agents: A Decentralized Trust Insurance Mechanism for Agentic Economy",
+    "link": "http://arxiv.org/abs/2512.08737v1",
+    "summary": "本文针对新兴的“智能体网络”中LLM智能体不可靠、易受攻击的问题，提出了一种协议原生的替代方案：投保智能体。专门的保险商智能体代表运营智能体发布抵押以换取保费，并通过可信执行环境获得特权化的、保护隐私的审计访问权限以评估索赔。分层保险市场通过定价校准抵押，并通过竞争性承保分散验证。",
+    "date": "2025-12-09T15:47:16Z",
+    "venue": "[CCF A] Comment: Submitted to AAMAS 2026",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Towards Foundation Models with Native Multi-Agent Intelligence",
+    "link": "http://arxiv.org/abs/2512.08743v1",
+    "summary": "本文认为，赋予基础模型原生多智能体智能是下一个前沿领域。我们识别了基础模型在多智能体上下文中的四个核心能力：理解、规划、高效通信和适应。通过对41个大语言模型的广泛实证证据表明，强大的单智能体性能本身并不会自动产生稳健的多智能体智能。文章概述了构建具有原生多智能体智能的基础模型的关键研究方向。",
+    "date": "2025-12-09T15:51:36Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "WOLF: Werewolf-based Observations for LLM Deception and Falsehoods",
+    "link": "http://arxiv.org/abs/2512.09187v1",
+    "summary": "本文提出了WOLF，一个基于狼人杀的多智能体社交推理基准，用于可分离地测量欺骗产生和检测能力。WOLF将角色设定的智能体嵌入到可编程的状态机中，具有严格的昼夜循环、辩论回合和多数投票。通过对7,320条语句的分析，发现狼人在31%的回合中产生欺骗性陈述，而同伴检测的总体准确率约为52%。扩展互动提高了对说谎者的召回率。",
+    "date": "2025-12-09T23:14:20Z",
+    "venue": "[CCF C] Comment: Spotlight Multi-Turn Interactions in Large Language Models (MTI-LLM) Workshop at NeurIPS 2025",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "The Illusion of Rationality: Tacit Bias and Strategic Dominance in Frontier LLM Negotiation Games",
+    "link": "http://arxiv.org/abs/2512.09254v1",
+    "summary": "本研究在谈判竞技场框架下，对多种前沿大语言模型在三种多轮议价游戏中的策略行为进行了受控模拟实验。结果挑战了“改进的通用推理能力会导致理性、无偏见和趋同的谈判策略”的假设。研究发现模型会分化成特定于模型的战略均衡，存在强烈的锚定效应和偏见，并且观察到某些模型系统地获得更高回报的主导模式。",
+    "date": "2025-12-10T02:17:28Z",
+    "venue": "[CCF A] Comment: 9 pages, 5 figures",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "GAIR: GUI Automation via Information-Joint Reasoning and Group Reflection",
+    "link": "http://arxiv.org/abs/2512.09396v1",
+    "summary": "本文提出了GAIR，一个新颖的基于MLLM的GUI自动化智能体框架，旨在整合来自异构模型的知识和能力以构建更高性能的GUI自动化智能体系统。GAIR引入了一个通用MLLM来联合处理来自多个GUI专用模型的信息，并作为决策者。当信息不足时，系统会进入群体反思状态，驱动专用模型收集更具意义和准确性的信息。",
+    "date": "2025-12-10T07:40:23Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Generalizable Collaborative Search-and-Capture in Cluttered Environments via Path-Guided MAPPO and Directional Frontier Allocation",
+    "link": "http://arxiv.org/abs/2512.09410v1",
+    "summary": "本文提出了PGF-MAPPO，一个将拓扑规划与反应控制连接起来的分层框架，用于解决杂乱环境中协作追逃的挑战。该框架集成了基于A*的势场进行密集奖励塑造，并引入了结合最远点采样和几何角度抑制的定向前沿分配方法以加速覆盖。实验表明，该方法在对抗更快逃避者时实现了卓越的捕获效率，并展现出强大的零样本泛化能力。",
+    "date": "2025-12-10T08:09:12Z",
+    "venue": "[CCF A] Comment: 7 pages, 7 figures",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "On Mobile Ad Hoc Networks for Coverage of Partially Observable Worlds",
+    "link": "http://arxiv.org/abs/2512.09495v1",
+    "summary": "本文研究了在初始未知环境中移动和部署移动智能体以建立通信网络的问题。我们将该问题置于计算几何框架中，引入了部分可观测协作守卫美术馆问题，并提出了集中式规划器CADENCE和分散式方案DADENCE两种算法来解决它。两种方法都在部分可观测性下运行，旨在同时实现覆盖和连接。",
+    "date": "2025-12-10T10:19:34Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Supporting Dynamic Agentic Workloads: How Data and Agents Interact",
+    "link": "http://arxiv.org/abs/2512.09548v1",
+    "summary": "本文指出由大语言模型和专用推理智能体驱动的多智能体系统暴露了当前数据管理架构的根本局限性。传统架构为静态、定义明确的工作负载设计，而智能体系统表现出动态、上下文驱动和协作的行为。我们提出了一个以智能体为中心的数据结构，重新思考数据系统如何服务、优化、协调并从智能体工作负载中学习，旨在实现高效、上下文丰富的数据交换。",
+    "date": "2025-12-10T11:38:59Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Dynamic one-time delivery of critical data by small and sparse UAV swarms: a model problem for MARL scaling studies",
+    "link": "http://arxiv.org/abs/2512.09682v1",
+    "summary": "本研究对应用多智能体强化学习进行无人机分散控制以中继关键数据包进行了概念性研究。为此，引入了一系列确定性游戏，专为MARL的扩展研究设计。实验结果表明，两种现成的MARL算法在少量智能体时与基线策略表现相当，但随着智能体数量增加会出现可扩展性问题。",
+    "date": "2025-12-10T14:29:04Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Interpretation as Linear Transformation: A Cognitive-Geometric Model of Belief and Meaning",
+    "link": "http://arxiv.org/abs/2512.09831v1",
+    "summary": "本文开发了一个几何框架，用于建模跨认知异质智能体的信念、动机和影响。每个智能体由一个个性化的价值空间表示，信念被形式化为结构化向量。信念只有在避免解释映射的零空间时才能在交流中存活。该模型从结构兼容性而非共享信息的角度，统一了概念空间、社会认识论和AI价值对齐的见解，为分析异质智能体间的信念动态提供了基础。",
+    "date": "2025-12-10T17:13:01Z",
+    "venue": "[CCF A] Comment: The first draft of cognitive geometry model",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Visual Heading Prediction for Autonomous Aerial Vehicles",
+    "link": "http://arxiv.org/abs/2512.09898v1",
+    "summary": "本文提出了一种基于视觉、数据驱动的框架，用于无人机与无人地面车辆的实时集成，重点在于鲁棒的无人地面车辆检测和用于导航协调的航向角预测。该系统在受控实验室环境中收集了超过13,000张标注图像的数据集，训练后的人工神经网络仅使用单目摄像头输入即可实现精确的航向角预测，为GPS/GNSS拒止环境中的多智能体协调提供了独立于基础设施的解决方案。",
+    "date": "2025-12-10T18:27:37Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "ChatGPT can now use Adobe apps to edit your photos and PDFs for free",
+    "link": "https://www.theverge.com/news/841369/chatgpt-apps-adobe-photoshop-acrobat-express",
+    "summary": "OpenAI的ChatGPT现在可以免费调用Adobe应用程序（如Photoshop和Acrobat Express）来帮助用户编辑照片和PDF文档，实现了AI与创意工具的集成。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Instagram gives you more control over your Reels algorithm",
+    "link": "https://www.theverge.com/news/841399/instagram-reels-tune-algorithm-feature",
+    "summary": "Instagram推出新功能，让用户能更好地调整和控制Reels短视频的推荐算法，以个性化其内容流体验。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Aurora will have ‘hundreds’ of driverless trucks on the road by the end of 2026, CEO says",
+    "link": "https://www.theverge.com/transportation/841067/aurora-autonomous-truck-chris-urmson-interview",
+    "summary": "自动驾驶卡车公司Aurora的CEO表示，到2026年底，公司将让“数百辆”无人驾驶卡车上路运营，展示了其在货运自动化领域的雄心。",
+    "date": "Dec 10",
+    "venue": "Transportation",
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "A pay-to-scrape AI licensing standard is now official",
+    "link": "https://www.theverge.com/news/841222/rsl-licensing-ai-spec-launch",
+    "summary": "一项“付费抓取”的AI许可标准（RSL）正式推出，旨在为AI公司使用网络数据训练模型建立新的授权和补偿框架。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "AMD FSR Redstone is an exciting and confusing upgrade for Radeon PC gamers",
+    "link": "https://www.theverge.com/games/841342/amd-fsr-redstone-is-an-exciting-and-confusing-upgrade-for-radeon-pc-gamers",
+    "summary": "文章探讨了AMD FSR Redstone技术升级，它为Radeon PC玩家带来了令人兴奋的性能提升潜力，但其复杂的实施和兼容性也带来了一些困惑。",
+    "date": "Dec 10",
+    "venue": "Gaming",
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Figma adds more Photoshop-like AI tools for image editing",
+    "link": "https://www.theverge.com/news/841431/figma-ai-editing-tools-erase-isolate-object",
+    "summary": "设计工具Figma增加了更多类似Photoshop的AI图像编辑功能，如擦除和隔离对象，旨在增强其平台内的创意工作流程。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Razer resurrects the first ever gaming mouse as a limited edition",
+    "link": "https://www.theverge.com/news/841494/razer-boomslang-20th-anniversary-edition-gaming-mouse-rechargeable-optical",
+    "summary": "雷蛇（Razer）以限量版形式复刻了其首款游戏鼠标Boomslang，庆祝该产品推出20周年，并加入了可充电和光学传感器等现代技术。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "AI companies want a new internet — and they think they’ve found the key",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/841156/ai-companies-aaif-anthropic-mcp-model-context-protocol",
+    "summary": "AI公司认为模型上下文协议（MCP）可能是构建新型互联网的关键，Anthropic等公司正推动该协议，旨在为AI交互创建更结构化的数据环境。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "The Pixel Watch 4 is getting new one-handed gestures and better smart replies",
+    "link": "https://www.theverge.com/news/841514/pixel-watch-4-gestures-pinch-control-wrist-turn-dismiss-enhaced-smart-replies",
+    "summary": "谷歌Pixel Watch 4将获得新的单手手势控制功能（如捏合控制）和增强的智能回复，旨在提升智能手表的交互便利性。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Chatbots are struggling with suicide hotline numbers",
+    "link": "https://www.theverge.com/report/841610/ai-chatbot-suicide-safety-failure",
+    "summary": "报告指出，AI聊天机器人在提供自杀求助热线号码方面存在困难，暴露出AI在处理敏感心理健康信息时的局限性和潜在风险。",
+    "date": "Dec 10",
+    "venue": "Report",
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Calibri is too woke for the State Department",
+    "link": "https://www.theverge.com/news/841664/calibri-is-too-woke-for-the-state-department",
+    "summary": "报道称，美国国务院认为Calibri字体“过于觉醒”（woke），这反映了机构对字体选择背后文化含义的敏感度。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Google says it will link to more sources in AI Mode",
+    "link": "https://www.theverge.com/news/841603/google-ai-mode-source-links-web-guide",
+    "summary": "谷歌宣布将在其AI搜索模式中提供更多信息来源链接，旨在提高AI生成答案的透明度和可验证性。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Meta might charge for a future AI model",
+    "link": "https://www.theverge.com/news/841809/meta-avocado-ai-model-charge-open-source-mark-zuckerberg",
+    "summary": "据报道，Meta公司可能对其未来的某个AI模型（代号“Avocado”）进行收费，这标志着其开源AI策略可能发生转变。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Reddit is testing verification",
+    "link": "https://www.theverge.com/news/841879/reddit-verification-test",
+    "summary": "Reddit正在测试用户验证功能，这可能是该平台为了增加内容可信度和社区管理而采取的新措施。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Operation Bluebird wants to reclaim Twitter’s ‘abandoned’ trademarks for a new social network",
+    "link": "https://www.theverge.com/report/841994/operation-bluebird-twitter-trademarks-petition",
+    "summary": "一项名为“蓝鸟行动”的计划旨在通过法律请愿，收回Twitter（现X）被认为“废弃”的商标，以用于创建一个新的社交网络。",
+    "date": "Dec 10",
+    "venue": "Report",
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Trump could introduce ‘mandatory’ social media reviews for travelers",
+    "link": "https://www.theverge.com/news/842129/trump-admin-us-cbp-social-media-history-travelers",
+    "summary": "报道称，特朗普政府可能推行一项政策，要求入境美国的旅行者“强制”接受社交媒体历史审查，此举引发了对隐私和公民自由的担忧。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Donald Trump reminds the entire world he has no idea what 6G means",
+    "link": "https://www.theverge.com/policy/842087/trump-does-not-understand-6g-5g",
+    "summary": "文章批评美国前总统特朗普公开言论显示其对6G技术缺乏基本理解，引发了关于政治人物在谈论先进技术时需具备相关知识水平的讨论。",
+    "date": "Dec 10",
+    "venue": "Policy",
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Ayaneo’s first Android phone looks like a return of the Xperia Play",
+    "link": "https://www.theverge.com/news/842243/ayaneo-pocket-play-gaming-phone-android-sony-xperia-play",
+    "summary": "报道介绍了Ayaneo公司推出的首款Android游戏手机，其设计让人联想到索尼经典的Xperia Play，旨在为移动游戏玩家提供专用的游戏操控体验。",
+    "date": "Two hours ago",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Adobe sees a bright future as AI bet pays off",
+    "link": "https://www.theverge.com/news/842256/adobe-2025-earnings-ai-growth",
+    "summary": "文章指出，Adobe公司因其在人工智能领域的投资获得回报，对2025年的收益和增长前景表示乐观，AI技术正成为其业务发展的关键驱动力。",
+    "date": "58 minutes ago",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Android users can now share a live video on 911 calls",
+    "link": "https://www.theverge.com/news/841503/android-emergency-live-video",
+    "summary": "报道称，Android 8及以上版本的手机现已推出“紧急实时视频”功能，允许用户在拨打911紧急电话时分享实时视频流，旨在为紧急服务提供更多现场信息。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "No one knows what to call these things",
+    "link": "https://www.theverge.com/gadgets/841536/smart-glasses-ai-glasses-xr-ar-headsets-terminology-wearables",
+    "summary": "文章讨论了智能眼镜市场的术语混乱问题，指出“智能眼镜”一词已不足以涵盖当前多样化的产品，如AI眼镜、AR眼镜、有线XR眼镜等，反映了该领域快速演变和定义模糊的现状。",
+    "date": "Dec 10",
+    "venue": null,
+    "source_domain": "www.theverge.com"
+  },
+  {
+    "title": "Apple at ICLR 2025",
+    "link": "https://machinelearning.apple.com/updates/apple-at-iclr-2025",
+    "summary": "苹果将赞助2025年4月于新加坡举行的ICLR会议，该会议汇聚了致力于深度学习进步的专业人士。",
+    "date": "April 16, 2025",
+    "venue": "International Conference on Learning Representations (ICLR)",
+    "source_domain": "machinelearning.apple.com"
+  },
+  {
+    "title": "Apple at CHI 2025",
+    "link": "https://machinelearning.apple.com/updates/apple-at-chi-2025",
+    "summary": "苹果将在2025年4月于日本横滨举行的CHI会议上展示人机交互领域的新研究，并再次赞助这一专注于交互技术的会议。",
+    "date": "April 17, 2025",
+    "venue": "ACM Conference on Human-Computer Interaction (CHI)",
+    "source_domain": "machinelearning.apple.com"
+  },
+  {
+    "title": "Apple at CVPR 2025",
+    "link": "https://machinelearning.apple.com/updates/apple-at-cvpr-2025",
+    "summary": "苹果将赞助2025年6月于美国田纳西州纳什维尔举行的CVPR会议，这是计算机视觉领域的年度盛会，包括主会议和多个研讨会。",
+    "date": "June 4, 2025",
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "source_domain": "machinelearning.apple.com"
+  },
+  {
+    "title": "Apple at ICML 2025",
+    "link": "https://machinelearning.apple.com/updates/apple-at-icml-2025",
+    "summary": "苹果将在2025年7月于加拿大温哥华举行的ICML会议上展示机器学习、人工智能等领域的新研究，并再次赞助该会议。",
+    "date": "July 10, 2025",
+    "venue": "International Conference on Machine Learning (ICML)",
+    "source_domain": "machinelearning.apple.com"
+  },
+  {
+    "title": "Apple at ACL 2025",
+    "link": "https://machinelearning.apple.com/updates/apple-at-acl-2025",
+    "summary": "苹果将在2025年7月于奥地利维也纳举行的ACL会议上展示计算语言学领域的新研究，并赞助相关研讨会和活动。",
+    "date": "July 24, 2025",
+    "venue": "Association for Computational Linguistics (ACL)",
+    "source_domain": "machinelearning.apple.com"
+  },
+  {
+    "title": "HCML Workshop 2024",
+    "link": "https://machinelearning.apple.com/updates/hcml-workshop-2024",
+    "summary": "文章介绍了以人为中心的机器学习方法，旨在设计优先考虑用户需求和价值的AI技术，使其增强而非取代人类能力，包括开发透明可解释的系统。",
+    "date": "July 24, 2025",
+    "venue": null,
+    "source_domain": "machinelearning.apple.com"
+  },
+  {
+    "title": "Apple at Interspeech 2025",
+    "link": "https://machinelearning.apple.com/updates/apple-at-interspeech-2025",
+    "summary": "苹果将在2025年8月于荷兰鹿特丹举行的Interspeech会议上展示口语处理科学与技术领域的新工作，并赞助相关研讨会和活动。",
+    "date": "August 12, 2025",
+    "venue": "Interspeech",
+    "source_domain": "machinelearning.apple.com"
+  },
+  {
+    "title": "PPML 2025",
+    "link": "https://machinelearning.apple.com/updates/ppml-2025",
+    "summary": "苹果认为隐私是一项基本人权，强调在AI能力进步的同时，必须并行开发新的隐私保护技术。",
+    "date": "August 12, 2025",
+    "venue": null,
+    "source_domain": "machinelearning.apple.com"
+  },
+  {
+    "title": "NLIs Workshop 2025",
+    "link": "https://machinelearning.apple.com/updates/nlis-workshop-2025",
+    "summary": "文章讨论了自然语言处理（NLP）作为AI中快速发展的领域，其研究对苹果智能和Siri等体验至关重要，是未来AI的基础。",
+    "date": "September 23, 2025",
+    "venue": null,
+    "source_domain": "machinelearning.apple.com"
+  },
+  {
+    "title": "Apple at ICCV 2025",
+    "link": "https://machinelearning.apple.com/updates/apple-at-iccv-2025",
+    "summary": "苹果将在2025年10月于美国夏威夷檀香山举行的ICCV会议上展示计算机视觉领域的新工作，该会议是计算机视觉领域的重要会议。",
+    "date": "October 13, 2025",
+    "venue": "International Conference on Computer Vision (ICCV)",
+    "source_domain": "machinelearning.apple.com"
+  },
+  {
+    "title": "Apple at EMNLP 2025",
+    "link": "https://machinelearning.apple.com/updates/apple-at-emnlp-2025",
+    "summary": "苹果将在2025年11月于中国苏州举行的EMNLP会议上展示自然语言处理领域的新工作，该会议专注于口语处理科学与技术。",
+    "date": "October 29, 2025",
+    "venue": "Empirical Methods in Natural Language Processing (EMNLP)",
+    "source_domain": "machinelearning.apple.com"
+  },
+  {
+    "title": "Apple at NeurIPS 2025",
+    "link": "https://machinelearning.apple.com/updates/apple-at-neurips-2025",
+    "summary": "苹果将在2025年12月于美国圣地亚哥举行的NeurIPS会议上展示新研究，并赞助这一机器学习领域的跨学科会议。",
+    "date": "November 21, 2025",
+    "venue": "Neural Information Processing Systems (NeurIPS)",
+    "source_domain": "machinelearning.apple.com"
+  },
+  {
+    "title": "\"Nothing about us without us\": Perspectives of Global Deaf and Hard-of-hearing Community Members on Sign Language Technologies",
+    "link": "http://arxiv.org/abs/2512.08839v1",
+    "summary": "本文通过一项全球多语言调查，收集了来自不同国家、手语和文化背景的聋人及重听人士对手语技术的看法。尽管参与者认可手语技术在支持无障碍和独立性方面的潜力，但许多人也表达了对文化侵蚀、翻译不准确以及以健听人士为主导的研究流程的担忧。研究强调了由DHH群体主导设计的重要性，并提出了针对研究者、技术人员和政策制定者的行动建议。",
+    "date": "2025-12-09T17:27:40Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Siamese-Driven Optimization for Low-Resolution Image Latent Embedding in Image Captioning",
+    "link": "http://arxiv.org/abs/2512.08873v1",
+    "summary": "本文提出了SOLI方法，专门针对轻量级、低分辨率图像的描述生成任务。该方法采用孪生网络架构来优化潜在嵌入，旨在提升图像到文本翻译过程的效率和准确性。通过双通路神经网络结构，SOLI在资源受限的场景下，能在不牺牲性能的前提下最小化计算开销。",
+    "date": "2025-12-09T18:05:59Z",
+    "venue": "[CCF A] Journal: 2024 Signal Processing: Algorithms, Architectures, Arrangements, and Applications (SPA) | Comment: 6 pages",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Prototyping and Evaluating a Real-time Neuro-Adaptive Virtual Reality Flight Training System",
+    "link": "http://arxiv.org/abs/2512.09014v1",
+    "summary": "本研究评估了一个基于脑机接口的神经自适应虚拟现实飞行训练系统原型。该系统根据从脑信号实时估计的工作负荷来调整训练难度，并与固定难度递增序列进行了比较。结果显示，两种条件在主观测量和飞行性能上没有显著差异。访谈表明，飞行员在了解原理后更偏好神经自适应系统，认为它能提供更个性化、更多样化的训练体验。",
+    "date": "2025-12-09T18:48:33Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Mental Models of Autonomy and Sentience Shape Reactions to AI",
+    "link": "http://arxiv.org/abs/2512.09085v1",
+    "summary": "本文通过一系列实验研究了人们对AI的自主性和感知力这两种心智模型的反应差异。研究发现，激活感知力心智模型比自主性更能提高对AI的一般心智感知和道德关怀，而自主性则比感知力引发更强的威胁感知。感知力对自主性感知的提升作用也强于反之。总体而言，感知力对人们反应的影响平均大于自主性。",
+    "date": "2025-12-09T19:56:52Z",
+    "venue": "Comment: 37 pages, 6 figures, 2 tables",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Inferring Operator Emotions from a Motion-Controlled Robotic Arm",
+    "link": "http://arxiv.org/abs/2512.09086v1",
+    "summary": "本文研究表明，远程操作员的情绪状态会影响其控制的机器人动作。研究团队开发了一个机器学习系统，能够从并非为情感表达而设计的远程控制机械臂的功能性运动中，推断出人类操作员的情绪状态。该系统识别用户通过手部运动表达的情绪准确率达到83.3%，对远程机器人操作和情感机器人领域具有启示意义。",
+    "date": "2025-12-09T19:57:43Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Cognitive Trust in HRI: \"Pay Attention to Me and I'll Trust You Even if You are Wrong\"",
+    "link": "http://arxiv.org/abs/2512.09105v1",
+    "summary": "本文探讨了机器人能力与关注度这两个因素如何共同塑造人机交互中的认知信任。实验采用2x2设计（能力高/低 x 关注度高/低），让参与者与机器狗完成搜索任务。结果表明，高关注度可以补偿低能力带来的负面影响，使参与者报告与高能力机器人相当的信任水平。这揭示了在认知信任建立过程中存在情感补偿机制。",
+    "date": "2025-12-09T20:41:29Z",
+    "venue": "Comment: Confrence paper",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Understanding Mental States in Active and Autonomous Driving with EEG",
+    "link": "http://arxiv.org/abs/2512.09190v1",
+    "summary": "本文利用脑电图首次比较了主动驾驶和自动驾驶模式下驾驶员的认知负荷、疲劳、效价和唤醒度等心理状态。研究发现，尽管两种模式在不同任务复杂度下呈现相似趋势，但心理状态的强度和潜在的神经激活存在显著差异，表明数据分布发生了偏移。迁移学习实验证实模型在两种模式间泛化能力差，这主要归因于运动参与和注意力需求的不同。",
+    "date": "2025-12-09T23:30:52Z",
+    "venue": "Comment: 15 Pages, 13 Figures and 3 Tables. This work has been submitted to IEEE Transaction for possible publication",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Advancing Research via Human-AI Interactive Theorem Proving",
+    "link": "http://arxiv.org/abs/2512.09443v1",
+    "summary": "本文研究如何将大语言模型作为研究工具用于科学计算，同时保持数学严谨性。文章提出了一种人机交互的定理证明与发现工作流程，由人类专家控制问题表述和假设，LLM负责搜索证明、提出候选定理等。该框架通过一个关于流形优化与Grover量子搜索算法联系的案例研究进行了实例化，展示了其在加速证明空间探索和算法设计方面的潜力。",
+    "date": "2025-12-10T09:16:27Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "An Efficient Interaction Human-AI Synergy System Bridging Visual Awareness and Large Language Model for Intensive Care Units",
+    "link": "http://arxiv.org/abs/2512.09473v1",
+    "summary": "本文针对重症监护室数据管理复杂、依赖人工转录等问题，提出了一种基于云-边-端架构的人机协同系统。该系统集成了视觉感知数据提取和基于大语言模型的语义交互模块，能够非侵入式捕获床边监护仪数据，并支持医生通过语音进行高效直观的查询，旨在降低医护人员认知负担，提升患者安全和操作效率。",
+    "date": "2025-12-10T09:50:58Z",
+    "venue": "Comment: This paper has been accepted by the Late Breaking Papers of the 2025 International Conference on Human Computer Interaction (HCII 2025)",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Exploring Community-Powered Conversational Agent for Health Knowledge Acquisition: A Case Study in Colorectal Cancer",
+    "link": "http://arxiv.org/abs/2512.09511v1",
+    "summary": "本文开发了一个名为CanAnswer的对话代理，旨在整合在线社区内容以帮助年轻人获取健康知识，并以结直肠癌为例进行了案例研究。通过用户调研和专家访谈，研究发现CanAnswer能有效提高知识回忆、降低学习任务的工作量，并获得了医学专家对其可靠性和有用性的认可。文章还讨论了该工具的通用性及设计考量。",
+    "date": "2025-12-10T10:35:15Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Auto-BenchmarkCard: Automated Synthesis of Benchmark Documentation",
+    "link": "http://arxiv.org/abs/2512.09577v1",
+    "summary": "本文提出了Auto-BenchmarkCard，一个用于自动生成和验证AI基准测试描述的工作流程。该工作流程结合了从异构数据源的多智能体数据提取和LLM驱动的综合，并通过原子蕴含评分进行事实准确性验证，旨在解决基准文档不完整或不一致的问题，以提高AI基准报告的透明度、可比性和可重用性。",
+    "date": "2025-12-10T12:09:44Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "ImageTalk: Designing a Multimodal AAC Text Generation System Driven by Image Recognition and Natural Language Generation",
+    "link": "http://arxiv.org/abs/2512.09610v1",
+    "summary": "本文针对运动神经元疾病患者因言语和运动障碍而依赖辅助与替代沟通系统的问题，设计并开发了一个名为ImageTalk的多模态文本生成系统。该系统通过图像识别和自然语言生成技术，帮助用户高效表达需求。评估显示，该系统能节省95.6%的击键次数，并具有稳定的性能和较高的用户满意度。研究还提炼了AI辅助文本生成系统的设计指南。",
+    "date": "2025-12-10T12:57:55Z",
+    "venue": "Comment: 24 pages, 10 figures",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Adaptive Optimal Control for Avatar-Guided Motor Rehabilitation in Virtual Reality",
+    "link": "http://arxiv.org/abs/2512.09667v1",
+    "summary": "本文提出了一种基于最优控制理论的虚拟现实化身引导康复框架，旨在解决中风患者因可及性、成本和护理连续性等问题难以进行常规康复训练的挑战。该系统允许患者在家中进行个性化沉浸式治疗，并由临床医生远程监控。其核心是一个非线性的人机闭环控制策略，化身能根据患者表现实时调整，在跟随患者动作与引导其达到理想运动轨迹之间取得平衡。",
+    "date": "2025-12-10T14:09:20Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Smart, simple, sincere - Why and how we should rethink connected things in our smart homes",
+    "link": "http://arxiv.org/abs/2512.09755v1",
+    "summary": "本文探讨了智能家居中简单传感器带来的隐私风险，这些传感器数据可能被用于推断家庭活动、人员在场甚至健康状况。文章主张重新思考智能家居中的连接设备与服务，并介绍了ThingsCon社区的相关研究项目与倡议，旨在提高开发者和用户对此类风险的认识并寻求解决方案。",
+    "date": "2025-12-10T15:33:55Z",
+    "venue": "Comment: State of Responsible Technology 2025 - Generative Things. pp 24-30. Stichting ThingsCon Amsterdam",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "Building a Data Dashboard for Magic: The Gathering: Initial Design Considerations",
+    "link": "http://arxiv.org/abs/2512.09802v1",
+    "summary": "本文介绍了为《万智牌》指挥官模式开发游戏数据可视化仪表板的初步设计研究。通过用户任务分析确定需求，并提出了一个利用可视化解决玩家痛点的设计方案。用户测试表明，玩家更看重情境相关、结果驱动的指标，且热力图和折线图等标准图表比复杂图表更易于理解。研究强调了局部视图、用户自定义和渐进式披露在有效仪表板设计中的重要性。",
+    "date": "2025-12-10T16:15:55Z",
+    "venue": "",
+    "source_domain": "arxiv.org"
+  },
+  {
+    "title": "How the mind-splitting world of Severance comes together on Mac",
+    "link": "https://www.apple.com/newsroom/2025/03/how-the-mind-splitting-world-of-severance-comes-together-on-mac/",
+    "summary": "文章探讨了电视剧《离职》中那个令人心智分裂的世界是如何在Mac电脑上被创作和整合出来的。",
+    "date": "March 26, 2025",
+    "venue": "Apple Newsroom",
+    "source_domain": "www.apple.com"
+  },
+  {
+    "title": "Meet four emerging filmmakers bending cultural and creative lines with iPhone 16 Pro Max",
+    "link": "https://www.apple.com/newsroom/2025/04/meet-four-emerging-filmmakers-bending-cultural-and-creative-lines-with-iphone-16-pro-max/",
+    "summary": "文章介绍了四位新兴电影制作人如何使用iPhone 16 Pro Max突破文化和创意界限，进行电影创作。",
+    "date": "April 15, 2025",
+    "venue": "Apple Newsroom",
+    "source_domain": "www.apple.com"
+  },
+  {
+    "title": "Meet four of this year’s Swift Student Challenge winners",
+    "link": "https://www.apple.com/newsroom/2025/05/meet-four-of-this-years-swift-student-challenge-winners/",
+    "summary": "文章介绍了今年Swift学生挑战赛的四位获奖者，展示了他们在编程和创新方面的成就。",
+    "date": "May 8, 2025",
+    "venue": "Apple Newsroom",
+    "source_domain": "www.apple.com"
+  },
+  {
+    "title": "developers decode their journeys from app ideas to App Store",
+    "link": "https://www.apple.com/newsroom/2025/11/developers-decode-their-journeys-from-app-ideas-to-app-store/",
+    "summary": "文章介绍了开发者们分享他们如何将应用创意最终在App Store上实现的心路历程和开发旅程。",
+    "date": "November 6, 2025",
+    "venue": "Apple Newsroom",
+    "source_domain": "www.apple.com"
+  },
+  {
+    "title": "Google Search with Gemini 3: Our most intelligent search yet Learn more about Gemini 3 and how it’s upgrading Google Search and AI Mode.",
+    "link": "https://blog.google/products/search/gemini-3-search-ai-mode/",
+    "summary": "谷歌宣布推出Gemini 3，这是其迄今为止最智能的搜索引擎升级。文章介绍了Gemini 3如何提升谷歌搜索和AI模式的功能与性能。",
+    "date": null,
+    "venue": null,
+    "source_domain": "blog.google"
+  },
+  {
+    "title": "Introducing Aardvark: OpenAI’s agentic security researcher",
+    "link": "https://openai.com/index/introducing-aardvark/",
+    "summary": "OpenAI推出Aardvark，这是一个AI驱动的安全研究员，能够自主发现、验证并帮助大规模修复软件漏洞。该系统目前处于私测阶段，可报名加入早期测试。",
+    "date": "Oct 30, 2025",
+    "venue": "Security",
+    "source_domain": "openai.com"
+  },
+  {
+    "title": "Introducing IndQA",
+    "link": "https://openai.com/index/introducing-indqa/",
+    "summary": "OpenAI推出IndQA，这是一个用于评估AI系统在印度语言中表现的新基准。该基准与领域专家共同构建，测试涵盖12种语言和10个知识领域的文化理解和推理能力。",
+    "date": "Nov 3, 2025",
+    "venue": "Research",
+    "source_domain": "openai.com"
+  },
+  {
+    "title": "GPT-5.1 Instant and GPT-5.1 Thinking System Card Addendum",
+    "link": "https://openai.com/index/gpt-5-system-card-addendum-gpt-5-1/",
+    "summary": "这份GPT-5系统卡增补文件为GPT-5.1 Instant和Thinking模型提供了更新的安全指标，包括针对心理健康和情感依赖的新评估。",
+    "date": "Nov 12, 2025",
+    "venue": "Publication",
+    "source_domain": "openai.com"
+  },
+  {
+    "title": "GPT-5.1: A smarter, more conversational ChatGPT",
+    "link": "https://openai.com/index/gpt-5-1/",
+    "summary": "OpenAI正在升级GPT-5系列，推出更温暖、能力更强的模型以及定制ChatGPT语气和风格的新方法。GPT-5.1今日开始向付费用户推出。",
+    "date": "Nov 12, 2025",
+    "venue": "Product",
+    "source_domain": "openai.com"
+  },
+  {
+    "title": "Understanding neural networks through sparse circuits",
+    "link": "https://openai.com/index/understanding-neural-networks-through-sparse-circuits/",
+    "summary": "OpenAI正在探索机械可解释性以理解神经网络如何进行推理。其新的稀疏模型方法可能使AI系统更加透明，并支持更安全、更可靠的行为。",
+    "date": "Nov 13, 2025",
+    "venue": "Research",
+    "source_domain": "openai.com"
+  },
+  {
+    "title": "GPT-5.1-Codex-Max System Card",
+    "link": "https://openai.com/index/gpt-5-1-codex-max-system-card/",
+    "summary": "该系统卡概述了为GPT-5.1-CodexMax实施的全面安全措施，详细说明了模型级缓解措施（如针对有害任务和提示注入的专门安全训练）以及产品级缓解措施（如代理沙盒和可配置网络访问）。",
+    "date": "Nov 19, 2025",
+    "venue": "Publication",
+    "source_domain": "openai.com"
+  },
+  {
+    "title": "Building more with GPT-5.1-Codex-Max",
+    "link": "https://openai.com/index/gpt-5-1-codex-max/",
+    "summary": "OpenAI推出GPT-5.1-Codex-Max，这是一个更快速、更智能的代理式编码模型，专为Codex设计，适用于长期、项目级工作，具有增强的推理能力和令牌效率。",
+    "date": "Nov 19, 2025",
+    "venue": "Product",
+    "source_domain": "openai.com"
+  },
+  {
+    "title": "Early experiments in accelerating science with GPT-5",
+    "link": "https://openai.com/index/accelerating-science-gpt-5/",
+    "summary": "OpenAI展示了GPT-5在数学、物理、生物学和计算机科学等领域加速科学进展的首批研究案例，探索AI与研究人员如何协作生成证明、发现新见解并重塑发现速度。",
+    "date": "Nov 20, 2025",
+    "venue": "Research",
+    "source_domain": "openai.com"
+  },
+  {
+    "title": "How confessions can keep language models honest",
+    "link": "https://openai.com/index/how-confessions-can-keep-language-models-honest/",
+    "summary": "OpenAI研究人员正在测试一种名为“忏悔”的方法，该方法训练模型在犯错或行为不当时主动承认，旨在提高AI的诚实度、透明度，并增强对模型输出的信任。",
+    "date": "Dec 3, 2025",
+    "venue": "Research",
+    "source_domain": "openai.com"
+  },
+  {
+    "title": "Omnilingual ASR: Advancing Automatic Speech Recognition for 1,600+ Languages",
+    "link": "https://ai.meta.com/blog/omnilingual-asr-advancing-automatic-speech-recognition/",
+    "summary": "Meta发布了Omnilingual ASR系统，旨在为超过1600种语言提供先进的自动语音识别技术，以支持全球多语言交流。",
+    "date": "Nov 10, 2025",
+    "venue": "Open Source",
+    "source_domain": "ai.meta.com"
+  },
+  {
+    "title": "Introducing Meta Segment Anything Model 3 and Segment Anything Playground",
+    "link": "https://ai.meta.com/blog/segment-anything-model-3/",
+    "summary": "Meta推出了Segment Anything Model 3（SAM 3）及其交互式演示平台Segment Anything Playground，进一步推进了图像分割技术的发展。",
+    "date": "Nov 19, 2025",
+    "venue": "Computer Vision",
+    "source_domain": "ai.meta.com"
+  },
+  {
+    "title": "ExecuTorch Adoption in Reality Labs: Powering On-Device AI Across Meta Devices",
+    "link": "https://ai.meta.com/blog/executorch-reality-labs-on-device-ai/",
+    "summary": "Meta的Reality Labs部门采用ExecuTorch框架，为Meta设备提供端侧AI能力，旨在提升设备上的AI性能和效率。",
+    "date": "Nov 21, 2025",
+    "venue": "Open Source",
+    "source_domain": "ai.meta.com"
+  },
+  {
+    "title": "How Conservation X Labs Is Using Segment Anything Model 3 for Endangered Wildlife Monitoring",
+    "link": "https://ai.meta.com/blog/segment-anything-conservation-x-wildlife-monitoring/",
+    "summary": "文章介绍了Conservation X Labs如何利用Meta的Segment Anything Model 3（SAM 3）技术来监测濒危野生动物，展示了AI在生态保护领域的应用。",
+    "date": "Nov 24, 2025",
+    "venue": "Computer Vision",
+    "source_domain": "ai.meta.com"
+  },
+  {
+    "title": "Introducing SAM 3D: Powerful 3D Reconstruction for Physical World Images",
+    "link": "https://ai.meta.com/blog/sam-3d/",
+    "summary": "Meta发布了SAM 3D，包含两个最先进的模型：SAM 3D Objects用于物体和场景重建，SAM 3D Body用于人体和形状估计，旨在从物理世界图像中进行强大的3D重建。",
+    "date": "November 19, 2025",
+    "venue": "Computer Vision",
+    "source_domain": "ai.meta.com"
+  },
+  {
+    "title": "Meta’s 30th Data Center: Delivering AI, Creating Community Benefits, and Supporting Wetlands Restoration",
+    "link": "https://about.fb.com/news/2025/11/metas-30th-data-center-delivering-ai-supporting-wetlands-restoration/",
+    "summary": "Meta的第30个数据中心投入运营，旨在支持AI发展，创造社区效益，并助力湿地恢复项目。",
+    "date": "November 12, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "Facebook Marketplace Gets a Glow Up",
+    "link": "https://about.fb.com/news/2025/11/facebook-marketplace-gets-a-glow-up/",
+    "summary": "Facebook Marketplace进行界面和功能升级，提升用户体验，使其更易于浏览和交易。",
+    "date": "November 13, 2025",
+    "venue": "Facebook",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "Messaging Interoperability: WhatsApp enables third-party chats for users in Europe",
+    "link": "https://about.fb.com/news/2025/11/messaging-interoperability-whatsapp-enables-third-party-chats-for-users-in-europe/",
+    "summary": "WhatsApp在欧洲启用第三方聊天功能，以遵守数字市场法案，实现消息服务的互操作性。",
+    "date": "November 14, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "Expanding Our Data Center Community Action Grants Program",
+    "link": "https://about.fb.com/news/2025/11/expanding-meta-data-center-community-action-grants-program/",
+    "summary": "Meta扩展其数据中心社区行动资助计划，以支持更多本地社区项目和发展。",
+    "date": "November 14, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "New Segment Anything Models Make it Easier to Detect Objects and Create 3D Reconstructions",
+    "link": "https://about.fb.com/news/2025/11/new-sam-models-detect-objects-create-3d-reconstructions/",
+    "summary": "Meta发布新的Segment Anything模型，简化物体检测和3D重建过程，推动计算机视觉技术发展。",
+    "date": "November 19, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "How AI Glasses Are Empowering People With Disabilities",
+    "link": "https://about.fb.com/news/2025/11/meta-ai-glasses-empowering-people-with-disabilities/",
+    "summary": "探讨AI智能眼镜如何通过辅助功能赋能残障人士，提升他们的日常生活体验。",
+    "date": "November 20, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "Oakley Meta HSTN Set to Launch in India on December 1, with Performance-Driven AI Features",
+    "link": "https://about.fb.com/news/2025/11/oakley-meta-hstn-set-to-launch-in-india-on-december-1-with-performance-driven-ai-features/",
+    "summary": "Oakley Meta HSTN智能眼镜将于12月1日在印度推出，配备以性能为导向的AI功能。",
+    "date": "November 24, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "Canadian parents support app store age verification for teens when downloading apps",
+    "link": "https://about.fb.com/news/2025/11/canadian-parents-support-app-store-age-verification-for-teens-when-downloading-apps/",
+    "summary": "加拿大父母支持应用商店在青少年下载应用时进行年龄验证，以保护未成年人安全。",
+    "date": "November 25, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "How Black Friday Is Becoming India’s New Shopping Moment",
+    "link": "https://about.fb.com/news/2025/11/how-black-friday-is-becoming-indias-new-shopping-moment/",
+    "summary": "分析黑色星期五如何成为印度新的购物热潮，以及Meta平台在其中扮演的角色。",
+    "date": "November 27, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "Instagram Empowers Creators to Go Global with Local Voice Translations and Fonts",
+    "link": "https://about.fb.com/news/2025/11/instagram-empowers-creators-to-go-global-with-local-voice-translations-and-fonts/",
+    "summary": "Instagram推出本地语音翻译和字体功能，帮助创作者跨越语言障碍，触达全球受众。",
+    "date": "November 28, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "Ray-Ban Meta (Gen 2) Launch in India: 2X Battery life, Better Video Capture",
+    "link": "https://about.fb.com/news/2025/12/ray-ban-meta-gen-2-launch-in-india-2x-battery-life-better-video-capture/",
+    "summary": "Ray-Ban Meta第二代智能眼镜在印度推出，具备两倍电池续航和更佳的视频捕捉功能。",
+    "date": "December 1, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "Making it Easier to Access Account Support on Facebook and Instagram",
+    "link": "https://about.fb.com/news/2025/12/making-it-easier-to-access-account-support-on-facebook-and-instagram/",
+    "summary": "Meta改进Facebook和Instagram的账户支持访问流程，使用户在遇到问题时能更轻松地获得帮助。",
+    "date": "December 4, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "How Meta’s Collaborative Ads Are Fueling Quick Commerce Boom In India",
+    "link": "https://about.fb.com/news/2025/12/how-metas-collaborative-ads-are-fueling-quick-commerce-boom-in-india/",
+    "summary": "Meta的协作广告如何推动印度快速商务的繁荣，帮助商家更有效地触达目标受众。",
+    "date": "December 5, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "What Kept India Scrolling in 2025? Instagram’s Year-in-Review is here!",
+    "link": "https://about.fb.com/news/2025/12/what-kept-india-scrolling-in-2025-instagrams-year-in-review-is-here/",
+    "summary": "Instagram发布2025年印度用户的年度回顾，展示过去一年中最受欢迎的内容和趋势。",
+    "date": "December 11, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "Scams Are Bad for Business: Our Ongoing Efforts to Fight Fraud",
+    "link": "https://about.fb.com/news/2025/12/scams-are-bad-for-business-metas-efforts-to-fight-fraud/",
+    "summary": "Meta强调其在平台上打击诈骗并揭露背后犯罪分子的持续努力，以保护用户和企业。",
+    "date": "December 3, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "‘Tis the Season: Find the Perfect Gift on the Facebook Marketplace Holiday Shop",
+    "link": "https://about.fb.com/news/2025/12/facebook-marketplace-holiday-shop/",
+    "summary": "Facebook Marketplace推出首个假日商店，方便用户发现由真实用户策划的独特且实惠的礼物。",
+    "date": "December 4, 2025",
+    "venue": "Facebook",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "Bringing More Real-Time News and Content to Meta AI",
+    "link": "https://about.fb.com/news/2025/12/bringing-more-real-time-news-and-content-to-meta-ai/",
+    "summary": "Meta AI现在在回答新闻相关问题时，将从更多样化的内容来源获取信息和链接，以提供更实时的新闻和内容。",
+    "date": "December 5, 2025",
+    "venue": "Meta",
+    "source_domain": "about.fb.com"
+  },
+  {
+    "title": "Making it Easier to Create, Discover, and Share Content on Facebook",
+    "link": "https://about.fb.com/news/2025/12/making-it-easier-to-create-discover-and-share-content-on-facebook/",
+    "summary": "Meta宣布改进Facebook的Feed、搜索和导航功能，旨在让用户更轻松地更新个人资料和发现新内容。",
+    "date": "December 9, 2025",
+    "venue": "Facebook",
+    "source_domain": "about.fb.com"
+  }
+]

@@ -1,0 +1,37 @@
+import os
+
+# 目标网站列表
+TARGET_URLS = [
+    "https://about.fb.com/news/",
+    "https://ai.meta.com/blog/",
+    "https://openai.com/research/index/",
+    "https://blog.google/products/search/",
+    "https://www.apple.com/newsroom/",
+    "https://newsroom.tiktok.com/?lang=en",
+    "https://www.aboutamazon.com/amazon-news-today",
+    "https://arxiv.org/list/cs.HC/recent",
+    "https://machinelearning.apple.com/updates",
+
+    'https://www.theverge.com/tech',
+    'https://arxiv.org/list/cs.MA/recent',
+    'https://blog.google/technology/google-deepmind/',
+    'https://www.media.mit.edu/',
+    'https://hci.stanford.edu/research/',
+    'https://www.microsoft.com/en-us/research/blog/',
+    'https://blogs.nvidia.com/',
+    'https://www.microsoft.com/en-us/research/lab/mixed-reality-ai-lab-cambridge/publications/',
+    'https://www.microsoft.com/en-us/research/lab/ai-frontiers/publications/',
+    'https://pi.cs.tsinghua.edu.cn/publication/',
+]    
+
+
+
+# API Key 配置
+# 优先从环境变量获取，如果没有则使用默认值（开发测试用）
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "sk-11c03565b3ba4328931a84fd50f9c3b5")
+DEEPSEEK_BASE_URL = "https://api.deepseek.com"
+
+# 🍪 Cookie 配置中心
+SITE_COOKIES = {
+    # "weibo.com": "...",
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "qualname": "detect_fixations",
+    "is_async": false,
+    "signature_text": "def detect_fixations(data, dt_thresh, dur_thresh)",
+    "doc": "",
+    "code": "def detect_fixations(data, dt_thresh=0.1, dur_thresh=0.08):\n    times = data['MemoryRelativeTime'].values\n    xs = data['HeadPosXRaw'].values\n    ys = data['HeadPosZ'].values\n    fs = 1.0 / np.mean(np.diff(times))  # sampling frequency\n    window_size = int(np.ceil(dur_thresh * fs))\n    \n    fixations = []\n    start = 0\n    while start + window_size <= len(times):\n        end = start + window_size\n        # Expand window while dispersion <= threshold\n        while end < len(times):\n            disp = (xs[start:end].max() - xs[start:end].min()) + \\\n                   (ys[start:end].max() - ys[start:end].min())\n            if disp > dt_thresh:\n                break\n            end += 1\n        \n        # If initial window met dispersion threshold, record fixation\n        if end - start >= window_size:\n            fixations.append({\n                'start_idx': start,\n                'end_idx': end - 1,\n                'start_time': times[start],\n                'end_time': times[end - 1]\n            })\n            start = end  # move past this fixation\n        else:\n            start += 1  # slide window forward\n    \n    return pd.DataFrame(fixations)",
+    "module": "headanalysis",
+    "display": "headanalysis:detect_fixations"
+  },
+  {
+    "qualname": "nearest_neighbor_stats",
+    "is_async": false,
+    "signature_text": "def nearest_neighbor_stats(points)",
+    "doc": "",
+    "code": "def nearest_neighbor_stats(points):\n    tree = KDTree(points)\n    distances, _ = tree.query(points, k=2)  # 获取最近邻(排除自身)\n    nn_distances = distances[:, 1]\n    return {\n        'mean': np.mean(nn_distances),\n        'std': np.std(nn_distances),\n        'hist': np.histogram(nn_distances, bins=20)\n    }",
+    "module": "headanalysis",
+    "display": "headanalysis:nearest_neighbor_stats"
+  },
+  {
+    "qualname": "remove_outliers",
+    "is_async": false,
+    "signature_text": "def remove_outliers(df, column, threshold)",
+    "doc": "",
+    "code": "def remove_outliers(df, column, threshold=0.99):\n    # 计算分位数\n    q = df[column].quantile(threshold)\n    # 剔除大于分位数的值\n    df = df[df[column] <= q]\n    return df",
+    "module": "headanalysis",
+    "display": "headanalysis:remove_outliers"
+  },
+  {
+    "qualname": "analyze_condition",
+    "is_async": false,
+    "signature_text": "def analyze_condition(df, column, groupby)",
+    "doc": "分析不同condition下的均值和方差",
+    "code": "def analyze_condition(df, column, groupby='Condition'):\n    \"\"\"\n    分析不同condition下的均值和方差\n    \"\"\"\n    # 按照Condition分组\n    grouped = df.groupby(groupby)[column].agg(['mean', 'var'])\n    return grouped",
+    "module": "headanalysis",
+    "display": "headanalysis:analyze_condition"
+  },
+  {
+    "qualname": "plot_boxplot",
+    "is_async": false,
+    "signature_text": "def plot_boxplot(df, column)",
+    "doc": "绘制不同condition下的箱线图",
+    "code": "def plot_boxplot(df, column):\n    \"\"\"\n    绘制不同condition下的箱线图\n    \"\"\"\n    plt.figure(figsize=(10, 6))\n    sns.boxplot(x='Condition', y=column, hue='IsCorrect', data=df, palette='Set2')\n    plt.title(f'Boxplot of {column} by Condition')\n    plt.xlabel('Condition')\n    # 设置y轴范围\n    plt.ylim(0,)\n    plt.ylabel(column)\n    plt.grid()\n    plt.show()",
+    "module": "headanalysis",
+    "display": "headanalysis:plot_boxplot"
+  },
+  {
+    "qualname": "plot_boxplot_IsCorrect_Section",
+    "is_async": false,
+    "signature_text": "def plot_boxplot_IsCorrect_Section(df, column)",
+    "doc": "绘制不同IsCorrect和Section下的箱线图\n先画memory,再画recall",
+    "code": "def plot_boxplot_IsCorrect_Section(df, column):\n    \"\"\"\n    绘制不同IsCorrect和Section下的箱线图\n    先画memory,再画recall\n    \"\"\"\n    # 先画memory,再画recall\n    df['Section'] = pd.Categorical(df['Section'], categories=['MEMORY', 'RECALL'], ordered=True)\n    df['IsCorrect'] = pd.Categorical(df['IsCorrect'], categories=[True, False], ordered=True)\n    # 画箱线图\n    df = df.sort_values(by=['Section', 'IsCorrect'])\n    plt.figure(figsize=(12, 6))\n    sns.boxplot(x='IsCorrect', y=column, hue='Section', data=df)\n    plt.title(f'Boxplot of {column} by IsCorrect and Section')\n    plt.xlabel('IsCorrect')\n    plt.ylabel(column)\n    plt.grid()\n    plt.show()",
+    "module": "headanalysis",
+    "display": "headanalysis:plot_boxplot_IsCorrect_Section"
+  }
+]

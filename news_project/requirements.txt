@@ -1,0 +1,5 @@
+httpx[http2]
+openai
+beautifulsoup4
+google-cloud-storage
+curl_cffi>=0.7.0
