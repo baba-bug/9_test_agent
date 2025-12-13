@@ -171,12 +171,41 @@ CCF_RANKINGS = {
     "VR Software and Technology": "CCF C",
 }
 
-JOURNAL_SCORES = {
-    "NATURE": 20,
-    "SCIENCE": 20,
-    "CELL": 20,
-    "TPAMI": 15,
-    "IJCV": 12,
+# Impact Factors (Approximate 2024/2023 values)
+# Used to calculate impact score if venue matches.
+# Formula: Score = min(50, round(IF * 2))
+JOURNAL_IFS = {
+    "NATURE": 64.8,
+    "SCIENCE": 56.9,
+    "CELL": 64.5,
+    "IEEE COMMUNICATIONS SURVEYS & TUTORIALS": 46.7,
+    "SCIENCE ROBOTICS": 44.7,
+    "INTERNATIONAL JOURNAL OF INFORMATION MANAGEMENT": 27.0,
+    "NATURE BIOMEDICAL ENGINEERING": 26.6,
+    "PROCEEDINGS OF THE IEEE": 25.9,
+    "FOUNDATIONS AND TRENDS IN MACHINE LEARNING": 25.4,
+    "TPAMI": 25.25,
+    "TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE": 25.25,
+    "NATURE MACHINE INTELLIGENCE": 23.9,
+    "ACM COMPUTING SURVEYS": 23.8,
+    "IEEE COMMUNICATIONS MAGAZINE": 22.1,
+    "IEEE TRANSACTIONS ON IMAGE PROCESSING": 20.1,
+    "IEEE JOURNAL ON SELECTED AREAS IN COMMUNICATIONS": 19.8,
+    "IEEE-CAA JOURNAL OF AUTOMATICA SINICA": 19.2,
+    "IEEE TRANSACTIONS ON WIRELESS COMMUNICATIONS": 18.6,
+    "NATURE COMPUTATIONAL SCIENCE": 18.3,
+    "IEEE INTERNET OF THINGS JOURNAL": 17.6,
+    "PATTERN RECOGNITION": 17.3,
+    "IEEE TRANSACTIONS ON COMMUNICATIONS": 16.3,
+    "IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS": 16.1,
+    "INFORMATION FUSION": 15.5,
+    "NPJ DIGITAL MEDICINE": 15.1,
+    "AI OPEN": 14.8,
+    "IEEE TRANSACTIONS ON INTELLIGENT VEHICLES": 14.3,
+    "PHYSICS OF LIFE REVIEWS": 14.3,
+    "JOURNAL OF MANUFACTURING SYSTEMS": 14.2,
+    "IJCV": 12.0, # Approximate
+    "INTERNATIONAL JOURNAL OF COMPUTER VISION": 12.0,
 }
 
 def get_ranking(text: str) -> str:
@@ -207,7 +236,7 @@ def get_ranking(text: str) -> str:
 def get_venue_score(venue: str) -> int:
     """
     Calculate score based on venue reputation (CCF, Impact Factor).
-    Returns basic score integer.
+    Returns basic score integer (0-50).
     """
     if not venue:
         return 0
@@ -215,31 +244,28 @@ def get_venue_score(venue: str) -> int:
     score = 0
     venue_upper = venue.upper()
     
-    # 1. Check Explicit High Impact Journals
-    for j, s in JOURNAL_SCORES.items():
+    # 1. Check Impact Factor (High Precision)
+    for j, if_val in JOURNAL_IFS.items():
         if j in venue_upper:
-            return s # Return immediately as these are top tier
+            # Score formula: IF * 2, capped at 50
+            # e.g., TPAMI (25.25) -> 50. IEEE IoT (17.6) -> 35.
+            return min(50, int(if_val * 2))
             
     # 2. Check CCF Rankings
-    # Use keys from CCF_RANKINGS but mapped to scores
-    # A=10, B=5, C=2
+    # A=50, B=25, C=10 (Aligned with core.py impact_score scale)
     
     # If already tagged with [CCF A], use that
-    if "[CCF A]" in venue:
-        return 10
-    if "[CCF B]" in venue:
-        return 5
-    if "[CCF C]" in venue:
-        return 2
+    if "[CCF A]" in venue: return 50
+    if "[CCF B]" in venue: return 25
+    if "[CCF C]" in venue: return 10
         
     # Fallback: Check raw name if not yet tagged
-    # This might be redundant if get_ranking was called, but safe.
     keys = sorted(CCF_RANKINGS.keys(), key=len, reverse=True)
     for key in keys:
         if key.upper() in venue_upper:
             rank = CCF_RANKINGS[key]
-            if rank == "CCF A": return 10
-            if rank == "CCF B": return 5
-            if rank == "CCF C": return 2
+            if rank == "CCF A": return 50
+            if rank == "CCF B": return 25
+            if rank == "CCF C": return 10
             
     return 0

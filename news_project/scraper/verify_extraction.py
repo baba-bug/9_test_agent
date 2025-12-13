@@ -27,17 +27,18 @@ def calculate_final_score(article):
         return 0
 
 async def debug_one_url():
-    url = "https://about.fb.com/news/"
-    print(f"🔬 Debugging AI Scoring for: {url}")
+    # URL = "https://about.fb.com/news/"
+    URL = "https://arxiv.org/list/cs.MA/recent"
+    
+    print(f"🔬 Debugging AI Scoring for: {URL}")
     
     # 1. Fetch
-    html = await fetch_webpage(url)
-    if not html:
-        print("❌ Failed to fetch HTML")
-        return
-
-    # 2. Extract with AI (this triggers the new Prompt)
-    articles = await extract_news_with_ai(html, url, mode="news")
+    html = await fetch_webpage(URL)
+    print(f"📡 Fetching {URL} (curl_cffi)...")
+    
+    # 2. Extract with AI
+    # Force 'paper' mode to test strict logic
+    articles = await extract_news_with_ai(html, URL, mode="paper")
     
     if not articles:
         print("❌ No articles extracted.")
@@ -75,7 +76,8 @@ async def debug_one_url():
     print("💾 Saved mock scores to mock_results.txt")
 
     for art in articles:
-        art['type'] = 'news' # Simulate logic
+        # Determine type based on URL (Mirroring main.py logic)
+        art['type'] = 'paper' if "arxiv.org" in URL else 'news'
         # Simulate main.py logic
         final_score = calculate_final_score(art)
         art['final_score'] = final_score

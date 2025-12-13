@@ -93,7 +93,7 @@ async def monitor_news():
             # User wanted Nature=20, CCF A=10. 
             # If AI returns 10 for CCF A, then x1 is 10. x2 is 20.
             # Let's use x2 to make Impact very visible.
-            impact = int(article.get('impact_score', 0)) * 2
+            impact = int(article.get('impact_score', 0))
             
             # 3. Tech Release Boost (+200)
             # Papers: MUST have code_url to get boost (ignore "paper with code" claims if no link)
@@ -132,45 +132,55 @@ async def monitor_news():
         print(f"\n🎉 {result_message}")
         
         if not os.getenv("NEWS_BUCKET_NAME"): # 本地模式才写文件
-            output_file = "latest_new_articles.json"
-            history_file = "history_news.json"
             
-            # 1. 保存本次新文章 (Sorted with Score)
-            with open(output_file, "w", encoding="utf-8") as f:
-                json.dump(all_new_articles, f, ensure_ascii=False, indent=2)
-            print(f"💾 Saved latest articles to {output_file}")
+            def save_to_json_files(articles: list, latest_file: str, history_file: str):
+                if not articles:
+                    return
+                # 1. Save Latest
+                with open(latest_file, "w", encoding="utf-8") as f:
+                    json.dump(articles, f, ensure_ascii=False, indent=2)
+                print(f"💾 Saved {len(articles)} items to {latest_file}")
+                
+                # 2. Append to History
+                history_data = []
+                if os.path.exists(history_file):
+                    try:
+                        with open(history_file, "r", encoding="utf-8") as f:
+                            history_data = json.load(f)
+                    except Exception as e:
+                        print(f"⚠ Failed to load {history_file}: {e}")
+                
+                existing_links = {item['link'] for item in history_data}
+                added_count = 0
+                for art in reversed(articles): 
+                    if art['link'] not in existing_links:
+                        history_data.insert(0, art)
+                        added_count += 1
+                
+                if added_count > 0:
+                    with open(history_file, "w", encoding="utf-8") as f:
+                        json.dump(history_data, f, ensure_ascii=False, indent=2)
+                    print(f"📚 Appended {added_count} items to {history_file}")
+
+            # Save News (Non-Arxiv)
+            # User request: "Only separate Arxiv... others follow original logic"
+            # So we split specifically by Domain (arxiv.org) vs Others
             
-            # 2. 追加到历史档案 (History Persistence)
-            history_data = []
-            if os.path.exists(history_file):
-                try:
-                    with open(history_file, "r", encoding="utf-8") as f:
-                        history_data = json.load(f)
-                except Exception as e:
-                    print(f"⚠ Failed to load history file: {e}")
+            arxiv_articles = [a for a in all_new_articles if "arxiv.org" in a.get('link', '')]
+            other_articles = [a for a in all_new_articles if "arxiv.org" not in a.get('link', '')]
+
+            # Save Others (News + Non-Arxiv Papers) to standard 'news' file
+            save_to_json_files(other_articles, "latest_news.json", "history_news.json")
             
-            # 合并新数据
-            existing_links = {item['link'] for item in history_data}
-            added_count = 0
-            # 稍微逆序插入，保持最新的在最前 (但我们要保持高分在前？)
-            # 策略：历史记录按时间倒序。本次更新按分数排序。
-            # 简单追加：
-            for art in reversed(all_new_articles): 
-                if art['link'] not in existing_links:
-                    history_data.insert(0, art)
-                    added_count += 1
-            
-            if added_count > 0:
-                with open(history_file, "w", encoding="utf-8") as f:
-                    json.dump(history_data, f, ensure_ascii=False, indent=2)
-                print(f"📚 Appended {added_count} articles to {history_file}")
+            # Save Arxiv to dedicated 'arxiv' file
+            save_to_json_files(arxiv_articles, "latest_arxiv.json", "history_arxiv.json")
             
         # 打印预览 (分栏)
         print("\n" + "="*40)
         print("📰 INDUSTRY NEWS & UPDATES (Recommended)")
         print("="*40)
         for i, news in enumerate(news_list, 1):
-            print(f"{i}. [Score:{news['score']}] {news['title']}")
+            print(f"[N{i}] [Score:{news['score']}] {news['title']}")
             print(f"    ⭐ {news.get('score_reason', 'Base')}")
             print(f"   📅 {news.get('date', 'N/A')} | 🏢 {news.get('venue', news.get('source_domain', ''))}")
             print(f"   🔗 {news['link']}")
@@ -183,7 +193,7 @@ async def monitor_news():
         print("📜 ACADEMIC PAPERS & RESEARCH (Recommended)")
         print("="*40)
         for i, paper in enumerate(paper_list, 1):
-            print(f"{i}. [Score:{paper['score']}] {paper['title']}")
+            print(f"[P{i}] [Score:{paper['score']}] {paper['title']}")
             print(f"    ⭐ {paper.get('score_reason', 'Base')}")
             print(f"   📅 {paper.get('date', 'N/A')} | 🏛 {paper.get('venue', 'Arxiv')}")
             print(f"   🔗 {paper['link']}")
@@ -199,6 +209,51 @@ async def monitor_news():
     # 无论有无新文章，都要保存状态（包括 hashes）
     storage.save()
     print("✅ History updated (including content hashes).")
+
+    # --- INTERACTIVE BOOKMARK MODE (Local Only) ---
+    # Only run if not on Cloud (Cloud doesn't have stdin)
+    if not os.getenv("NEWS_BUCKET_NAME"): 
+        print("\n" + "="*40)
+        print("⭐ BOOKMARK TIME (Interactive)")
+        print("="*40)
+        
+        while True:
+            selection = input("👉 Enter article numbers to bookmark (e.g. '1 3 5', or Enter to skip): ").strip()
+            if not selection:
+                break
+                
+            try:
+                # Process Input:
+                # "n1" -> news_list[0]
+                # "p2" -> paper_list[1]
+                
+                parts = selection.split()
+                saved_count = 0
+                
+                for item in parts:
+                    prefix = item[0].lower()
+                    if prefix not in ['n', 'p']:
+                         print(f"⚠ Invalid format '{item}'. Use 'n1' for News #1, 'p2' for Paper #2.")
+                         continue
+                    
+                    try:
+                        idx = int(item[1:]) - 1 # 0-indexed
+                        target_list = news_list if prefix == 'n' else paper_list
+                        
+                        if 0 <= idx < len(target_list):
+                            storage.save_to_favorites(target_list[idx])
+                            saved_count += 1
+                        else:
+                            print(f"⚠ Index {item} out of range.")
+                    except ValueError:
+                        print(f"⚠ Invalid number in '{item}'.")
+                        
+                if saved_count > 0:
+                    print(f"✨ Successfully bookmarked {saved_count} articles!")
+                    break # Exit after successful save? Or allow more? Let's loop.
+                
+            except Exception as e:
+                print(f"Error processing input: {e}")
 
     return result_message
 

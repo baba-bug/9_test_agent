@@ -1,0 +1,18 @@
+[
+  {
+    "title": "An update to Google’s Live with Search feature",
+    "link": "https://blog.google/products/search/live-audio-gemini-model-update/",
+    "summary": "谷歌更新了其“Live with Search”语音对话功能，现在采用了最新的Gemini原生音频模型，使AI语音响应更加流畅和富有表现力。",
+    "date": "2025-12-13",
+    "venue": "Google Blog",
+    "ai_score": 95,
+    "impact_score": 30,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及最新的Gemini音频模型更新，属于AI、Generation和语音交互领域。",
+    "negtive_score": 0,
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 125
+  }
+]

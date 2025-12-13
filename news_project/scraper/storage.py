@@ -114,3 +114,33 @@ class Storage:
             if link and self.is_new(link):
                 new_articles.append(art)
         return new_articles
+
+    def load_favorites(self) -> List[Dict[str, Any]]:
+        """加载收藏夹"""
+        fav_path = "favorites.json"
+        if not os.path.exists(fav_path):
+            return []
+        try:
+            with open(fav_path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"⚠ Failed to load favorites: {e}")
+            return []
+
+    def save_to_favorites(self, article: Dict[str, Any]):
+        """保存文章到收藏夹 (自动去重)"""
+        fav_path = "favorites.json"
+        favorites = self.load_favorites()
+        
+        # Check for duplicate link
+        if any(f['link'] == article['link'] for f in favorites):
+            print(f"⚠ Article already in favorites: {article['title']}")
+            return
+
+        favorites.insert(0, article) # Add to top
+        try:
+            with open(fav_path, "w", encoding="utf-8") as f:
+                json.dump(favorites, f, ensure_ascii=False, indent=2)
+            print(f"⭐ Saved to favorites: {article['title']}")
+        except Exception as e:
+            print(f"❌ Failed to save favorite: {e}")

@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 
 from .utils import clean_html_for_ai
 from .config import DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL, SITE_COOKIES
-from .rankings import get_ranking, CCF_RANKINGS # Import CCF_RANKINGS
+from .rankings import get_ranking, CCF_RANKINGS, get_venue_score # Updated Import
 
 from curl_cffi.requests import AsyncSession
 
@@ -32,55 +32,106 @@ async def fetch_webpage(url: str) -> str:
             # Extract category from URL: https://arxiv.org/list/cs.HC/recent -> cs.HC
             # or https://arxiv.org/list/cs.MA/recent
             import re
+            # Extract category from URL: https://arxiv.org/list/cs.HC/recent -> cs.HC
+            import re
+            from datetime import datetime, timedelta, timezone
+            
             match = re.search(r"list/([^/]+)", url)
             if match:
                 category = match.group(1)
-                # Query the last 15 papers to save tokens
-                api_url = f"http://export.arxiv.org/api/query?search_query=cat:{category}&sortBy=submittedDate&sortOrder=descending&max_results=30"
                 
+                # Pagination Logic: Fetch all papers from past 24 hours (or slightly more buffer)
+                # Setting a safety cap of 100 papers or 5 pages to prevent infinite loops
+                html_parts = [f"<html><body><h1>Arxiv {category} Recent Papers</h1>"]
+                
+                offset = 0
+                max_results = 20 # Batch size per request
+                fetched_count = 0
+                cutoff_date = datetime.now(timezone.utc) - timedelta(hours=72) # 24h -> 3 days to cover weekends
+                stop_fetching = False
+                
+                print(f"🔄 Arxiv Pagination: Fetching {category} papers since {cutoff_date.date()}...")
+
                 async with AsyncSession(impersonate="chrome120") as s:
-                    response = await s.get(api_url)
-                    
-                    if response.status_code == 200:
-                        root = ET.fromstring(response.content)
-                        ns = {'atom': 'http://www.w3.org/2005/Atom', 'arxiv': 'http://arxiv.org/schemas/atom'}
+                    while not stop_fetching and fetched_count < 100:
+                        api_url = f"http://export.arxiv.org/api/query?search_query=cat:{category}&sortBy=submittedDate&sortOrder=descending&start={offset}&max_results={max_results}"
                         
-                        html_parts = [f"<html><body><h1>Arxiv {category} Recent Papers</h1>"]
-                        
-                        for entry in root.findall("atom:entry", ns):
-                            title = entry.find("atom:title", ns).text.strip().replace("\n", " ")
-                            summary = entry.find("atom:summary", ns).text.strip().replace("\n", " ")
-                            link = entry.find("atom:id", ns).text.strip()
-                            published = entry.find("atom:published", ns).text.strip()
-                        
-                        # Extract Venue Info
-                            # Extract Venue Info
-                            journal_ref = entry.find("arxiv:journal_ref", ns)
-                            comment = entry.find("arxiv:comment", ns)
+                        try:
+                            response = await s.get(api_url)
+                            if response.status_code != 200:
+                                print(f"⚠ Arxiv API Error {response.status_code} at offset {offset}")
+                                break
+                                
+                            root = ET.fromstring(response.content)
+                            ns = {'atom': 'http://www.w3.org/2005/Atom', 'arxiv': 'http://arxiv.org/schemas/atom'}
                             
-                            venue_info = []
-                            if journal_ref is not None:
-                                venue_info.append(f"Journal: {journal_ref.text}")
-                            if comment is not None:
-                                venue_info.append(f"Comment: {comment.text}")
+                            entries = root.findall("atom:entry", ns)
+                            if not entries:
+                                break # No more results
+                                
+                            batch_valid_count = 0
+                            for entry in entries:
+                                # Date Check
+                                published_str = entry.find("atom:published", ns).text.strip()
+                                # Format: 2025-12-11T14:30:00Z
+                                try:
+                                    pub_date = datetime.strptime(published_str, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+                                except:
+                                    # Fallback if format fails
+                                    pub_date = datetime.now(timezone.utc)
+
+                                if pub_date < cutoff_date:
+                                    stop_fetching = True
+                                    # Don't break immediately if mixed sort, but Arxiv is sorted by Date.
+                                    # However, "submittedDate" isn't strictly "published" date? 
+                                    # Arxiv API: sortBy=submittedDate is reliable for new papers.
+                                    break 
+                                
+                                batch_valid_count += 1
+                                fetched_count += 1
+                                
+                                title = entry.find("atom:title", ns).text.strip().replace("\n", " ")
+                                summary = entry.find("atom:summary", ns).text.strip().replace("\n", " ")
+                                link = entry.find("atom:id", ns).text.strip()
+                                
+                                # Extract Venue Info
+                                journal_ref = entry.find("arxiv:journal_ref", ns)
+                                comment = entry.find("arxiv:comment", ns)
+                                
+                                venue_info = []
+                                if journal_ref is not None:
+                                    venue_info.append(f"Journal: {journal_ref.text}")
+                                if comment is not None:
+                                    venue_info.append(f"Comment: {comment.text}")
+                                
+                                venue_str = " | ".join(venue_info)
+                                if venue_str:
+                                    venue_str = get_ranking(venue_str)
+                                
+                                html_parts.append(f"<article>")
+                                html_parts.append(f"<h2>{title}</h2>")
+                                html_parts.append(f"<p>Date: {published_str}</p>")
+                                html_parts.append(f"<p>Venue: {venue_str}</p>")
+                                # Crucial: Expose Link as text because clean_html_for_ai strips tags/attributes
+                                html_parts.append(f"<p>Link: {link}</p>") 
+                                html_parts.append(f"<div>{summary}</div>")
+                                html_parts.append(f"</article><hr/>")
                             
-                            venue_str = " | ".join(venue_info)
-                            if venue_str:
-                                # Use RAG/Lookup to get rating
-                                venue_str = get_ranking(venue_str)
+                            print(f"   🔹 Batch {offset}: Found {batch_valid_count} recent papers (Total: {fetched_count})")
                             
-                            html_parts.append(f"<article>")
-                            html_parts.append(f"<h2>{title}</h2>")
-                            html_parts.append(f"<p>Date: {published}</p>")
-                            html_parts.append(f"<p>Venue: {venue_str}</p>")
-                            html_parts.append(f"<a href='{link}'>Paper Link</a>")
-                            html_parts.append(f"<div>{summary}</div>")
-                            html_parts.append(f"</article><hr/>")
+                            if batch_valid_count < len(entries):
+                                # If we filtered out some papers in this batch due to date, stop.
+                                stop_fetching = True
                             
-                        html_parts.append("</body></html>")
-                        return "".join(html_parts)
-                    else:
-                        print(f"⚠ Arxiv API Failed: {response.status_code}")
+                            offset += max_results
+                            
+                        except Exception as e:
+                            print(f"⚠ Arxiv Loop Error: {e}")
+                            break
+                            
+                html_parts.append("</body></html>")
+                return "".join(html_parts)
+                
         except Exception as e:
             print(f"⚠ Arxiv Logic Error: {e}")
 
@@ -144,21 +195,20 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
     from datetime import date
     today_str = date.today().strftime("%Y-%m-%d")
 
-    cleaned_text = clean_html_for_ai(html, url)
-    
-    if not cleaned_text:
-        return []
-
-    print(f"📝 Processing {url} as [{mode.upper()}] (Content len: {len(cleaned_text)})")
-    
-    # 构造 CCF 上下文简表 (减少 token，只列出 A 类和常见 B 类)
-    ccf_context = "CCF/Top Venue Reference (Class A=10, B=5, C=2):\n"
-    top_venues = [k for k, v in CCF_RANKINGS.items() if v == "CCF A"][:30] # Top 30 A-class
-    ccf_context += ", ".join(top_venues)
-    
-    # --- PROMPT DESIGN ---
-    if mode == "paper":
-        prompt = f"""你是一个顶尖科研论文鉴赏专家。请从网页文本中提取论文列表，并进行深度评分。
+    # Helper function to query AI
+    def _query_ai(text_content: str) -> List[Dict[str, Any]]:
+        # 构造 CCF 上下文简表
+        ccf_context = "Rankings Reference:\n"
+        class_a = [k for k, v in CCF_RANKINGS.items() if v == "CCF A"]
+        class_b = [k for k, v in CCF_RANKINGS.items() if v == "CCF B"]
+        class_c = [k for k, v in CCF_RANKINGS.items() if v == "CCF C"]
+        
+        ccf_context += f"Class A (Top): {', '.join(class_a[:50])}\n"
+        ccf_context += f"Class B (Excellent): {', '.join(class_b[:30])}\n"
+        
+        # --- PROMPT DESIGN ---
+        if mode == "paper":
+            prompt = f"""你是一个顶尖科研论文鉴赏专家。请从网页文本中提取论文列表，并进行深度评分。
 任务要求：
 1. 提取论文信息：
    - 标题 (title): 英文原题
@@ -166,9 +216,9 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
    - 摘要 (summary): **中文总结**，侧重研究方法、贡献和创新点。
    - 日期 (date): 格式统一为 `YYYY-MM-DD`. 如果文中日期不明确，默认为今天 ({today_str}).
    - 发表处 (venue): 期刊/会议名称。
-2. **深度评分 (Scoring)**：
-   - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation**. 相关度越高分数越高。
-   - `impact_score` (0-10): 学术影响力。发表在 CCF A (如 CVPR, CHI, NeurIPS) 或 Top Journal (Nature/Science) 得 10 分；CCF B 得 5 分；一般会议 2 分；Arxiv 预印本 1 分。
+2. **深度评分 (Scoring)** for Impact:
+   - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing, Brain, Recognition**. 相关度越高分数越高。
+   - `impact_score` (0-50): 学术影响力。发表在 CCF A (如 CVPR, CHI, NeurIPS) 或 Top Journal (Nature/Science) 得 50 分；CCF B 得 25 分；一般会议 10 分；Arxiv 预印本 5 分。
    - `is_tech_release` (bool): 论文是否伴随代码发布(GitHub)、模型权重发布(HuggingFace)或 Demo 发布。
    - `code_url` (str): 如果 `is_tech_release` 为真，提取具体的开源链接 (GitHub/HuggingFace), 否则为 null.
    - `score_reason` (str): 一句话解释打分理由 (e.g., "Agent领域CCF A类论文，且开源代码").
@@ -178,7 +228,7 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
 {ccf_context}
 
 网页内容：
-{cleaned_text[:50000]}
+{text_content[:60000]}
 
 返回 JSON 格式：
 [
@@ -189,15 +239,15 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
         "date": "2025-12-10",
         "venue": "CVPR 2025",
         "ai_score": 95,
-        "impact_score": 10,
+        "impact_score": 50,
         "is_tech_release": true,
         "code_url": "https://github.com/...",
         "score_reason": "High interest Agent paper in CVPR with Code."
     }}
 ]
 """
-    else: # mode == "news"
-        prompt = f"""你是一个前沿科技猎手。请从网页文本中提取新闻列表，并进行价值评估。
+        else: # mode == "news"
+            prompt = f"""你是一个前沿科技猎手。请从网页文本中提取新闻列表，并进行价值评估。
 任务要求：
 1. 提取新闻信息：
    - 标题 (title): 英文原题
@@ -206,8 +256,8 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
    - 日期 (date): 格式统一为 `YYYY-MM-DD`. 如果文中日期不明确，默认为今天 ({today_str}).
    - 来源 (venue): 新闻来源名称。
 2. **深度评分 (Scoring)**：
-   - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing**.
-   - `impact_score` (0-10): 行业影响力。重磅产品发布(GPT-5, Vision Pro 2) 或 重大技术突破(Sora) 得 10 分；普通更新 3-5 分。
+   - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing, Brain, Recognition**.
+   - `impact_score` (0-50): 行业影响力。重磅可穿戴产品发布(GPT-5, Vision Pro 2) 或 重大技术突破(Sora) 得 50 分；普通更新 10-20 分。
    - `is_tech_release` (bool): 是否有**即刻可用**的技术发布 (Open Source, Model Weights, Public Beta)。
    - `code_url` (str): 如果 `is_tech_release` 为真，提取具体的开源链接 (GitHub/HuggingFace), 否则为 null.
    - `score_reason` (str): 一句话解释打分理由 (e.g., "重磅模型 GPT-5 发布").
@@ -215,7 +265,7 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
 3. 过滤非新闻内容。只返回 JSON 数组。
 
 网页内容：
-{cleaned_text[:50000]}
+{text_content[:60000]}
 
 返回 JSON 格式：
 [
@@ -226,43 +276,107 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
         "date": "2025-12-10",
         "venue": "The Verge",
         "ai_score": 85,
-        "impact_score": 10,
+        "impact_score": 50,
         "is_tech_release": true,
         "score_reason": "Major model release."
     }}
 ]
 """
-    try:
-        response = client.chat.completions.create(
-            model="deepseek-chat",
-            messages=[
-                {"role": "system", "content": "你是一个新闻提取专家。只返回纯净的 JSON 数组。summary 必须是中文。"},
-                {"role": "user", "content": prompt}
-            ],
-            stream=False,
-            temperature=0.1
-        )
-        
-        result_text = response.choices[0].message.content.strip()
-        
-        # 清理 Markdown 标记
-        if result_text.startswith("```"):
-            result_text = re.sub(r"^```(json)?|```$", "", result_text, flags=re.MULTILINE).strip()
+        try:
+            response = client.chat.completions.create(
+                model="deepseek-chat",
+                messages=[
+                    {"role": "system", "content": "你是一个新闻提取专家。只返回纯净的 JSON 数组。summary 必须是中文。"},
+                    {"role": "user", "content": prompt}
+                ],
+                stream=False,
+                temperature=0.1
+            )
             
-        articles = json.loads(result_text)
-        
-        # 后处理和验证
-        valid_articles = []
-        if isinstance(articles, list):
-            for art in articles:
-                # 确保有标题和链接
-                if art.get('title') and art.get('link'):
-                    # 补全来源
-                    art['source_domain'] = url.split('/')[2]
-                    valid_articles.append(art)
-                    
-        return valid_articles
+            result_text = response.choices[0].message.content.strip()
+            if result_text.startswith("```"):
+                result_text = re.sub(r"^```(json)?|```$", "", result_text, flags=re.MULTILINE).strip()
+            
+            # DEBUG
+            print(f"🔍 DEBUG AI RESULT: {result_text[:500]}")
+                
+            data = json.loads(result_text)
+            return data if isinstance(data, list) else []
+            
+        except Exception as e:
+            print(f"❌ AI Extraction Inner Error: {e}")
+            print(f"🔍 DEBUG ERROR OUTPUT: {result_text if 'result_text' in locals() else 'N/A'}")
+            return []
 
-    except Exception as e:
-        print(f"❌ AI Extraction failed for {url}: {e}")
-        return []
+    # --- MAIN EXTRACTION LOGIC ---
+    
+    final_articles = []
+    
+    # Check for Arxiv Batching Strategy
+    if mode == "paper" and "arxiv.org" in url and "<h1>Arxiv" in html:
+        print("📦 Batching Arxiv papers for AI extraction...")
+        # Split raw HTML by article tag
+        raw_articles = re.findall(r"<article>.*?</article>", html, re.DOTALL)
+        
+        # Batch size of 8 is safe for DeepSeek output limits (4k tokens)
+        batch_size = 8
+        
+        for i in range(0, len(raw_articles), batch_size):
+            batch = raw_articles[i : i+batch_size]
+            print(f"   🤖 AI Processing Batch {i//batch_size + 1} ({len(batch)} items)...")
+            
+            # Clean just this batch
+            batch_text = "<html><body>" + "\n".join(batch) + "</body></html>"
+            cleaned_batch = clean_html_for_ai(batch_text, url)
+            
+            if cleaned_batch:
+                # print(f"   📄 Cleaned Batch Len: {len(cleaned_batch)}")
+                batch_results = _query_ai(cleaned_batch)
+                final_articles.extend(batch_results)
+                
+    else:
+        # Standard Single-Pass Logic
+        cleaned_text = clean_html_for_ai(html, url)
+        if cleaned_text:
+            print(f"📝 Processing {url} as [{mode.upper()}] (Content len: {len(cleaned_text)})")
+            final_articles = _query_ai(cleaned_text)
+
+    # --- POST PROCESSING & VALIDATION ---
+    valid_articles = []
+    
+    for art in final_articles:
+        # 确保有标题和链接
+        if art.get('title') and art.get('link'):
+            
+            # STRICT CHECK: Only for Arxiv papers
+            # If Arxiv paper claims release but has no code_url, reset is_tech_release
+            if mode == "paper" and "arxiv.org" in url:
+                code_url = art.get('code_url')
+                if art.get('is_tech_release') and (not code_url or str(code_url).lower() in ["none", "null", ""]):
+                    # print(f"⚠️ Strict Check (Arxiv): '{art['title']}' claimed release but no URL. Resetting to False.")
+                    art['is_tech_release'] = False
+                    art['code_url'] = None
+                    if "score_reason" in art:
+                        art['score_reason'] += " (Arxiv: Code link missing, boost removed)"
+            
+            # 补全来源
+            art['source_domain'] = url.split('/')[2]
+            
+            # RE-CALCULATE IMPACT SCORE using Python Logic (Authoritative)
+            # Trust the hardcoded list/IF values over LLM's guess if venue is recognized
+            raw_venue = art.get('venue', '')
+            python_score = get_venue_score(raw_venue)
+            try:
+                ai_score_val = int(art.get('impact_score', 0))
+            except:
+                ai_score_val = 0
+            
+            if python_score > ai_score_val:
+                print(f"📈 Boosting Impact Score for '{art['title']}': {ai_score_val} -> {python_score} (Venue: {raw_venue})")
+                art['impact_score'] = python_score
+                if "score_reason" in art:
+                    art['score_reason'] += f" [Impact Boosted by Verified Venue/IF: {raw_venue}]"
+
+            valid_articles.append(art)
+            
+    return valid_articles
