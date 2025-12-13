@@ -1,5 +1,17 @@
 [
   {
+    "score": 65,
+    "ai_score": 60,
+    "impact_score": 5,
+    "title": "TeleAbsence: Poetic encounters with the past",
+    "summary": "MIT研究人员提出了TeleAbsence的设计愿景与原则，旨在帮助人们应对失去。该研究探索如何利用技术（可能涉及XR/空间计算或生成式媒介）创造与过去进行诗意邂逅的体验，属于HCI与情感计算交叉领域，关注技术介导下的记忆与情感互动。",
+    "score_reason": "涉及HCI与可能的空间/生成体验，但非正式会议论文，影响力有限。",
+    "comment": "",
+    "date": "2025-12-13",
+    "venue": "MIT Media Lab Article",
+    "link": "https://www.media.mit.edu/articles/teleabsence-poetic-encounters-with-the-past/"
+  },
+  {
     "title": "Reject or Not?: A Benchmark for Voice Assistant Query Rejection in Smart Home Scenario and an Improved Method Based on LLMs",
     "link": "http://arxiv.org/abs/2512.10257v1",
     "summary": "本文针对智能家居语音助手场景，提出了首个中文开源查询拒绝基准及一种基于大语言模型的个性化查询拒绝方法。在数据方面，构建了首个面向家庭场景的多模态查询拒绝数据集，包含11,913个手工标注的文本-语音对，涵盖12种典型对话类型。在方法方面，提出了一个三层协作架构：1) 微调的Qwen-2.5-3B适配器，用于建模与模型家族无关的语义边界；2) 动态的家庭级历史对话模块，用于捕捉个性化习惯；3) 家庭特定的RAG知识库，用于显式记忆和修正过去的错误拒绝案例。实验表明，该方法在构建的数据集上显著优于零样本和微调的通用LLM。",

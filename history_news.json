@@ -13,7 +13,8 @@
     "negtive_score": 0,
     "source_domain": "www.theverge.com",
     "type": "news",
-    "score": 95
+    "score": 95,
+    "comment": ""
   },
   {
     "title": "Amazon Prime Video pulls AI-powered recaps after Fallout flub",
@@ -29,7 +30,8 @@
     "negtive_score": 0,
     "source_domain": "www.theverge.com",
     "type": "news",
-    "score": 90
+    "score": 90,
+    "comment": ""
   },
   {
     "title": "I quit all my AI fitness plans, and I feel free",
@@ -45,7 +47,8 @@
     "negtive_score": 0,
     "source_domain": "www.theverge.com",
     "type": "news",
-    "score": 75
+    "score": 75,
+    "comment": ""
   },
   {
     "title": "An update to Google’s Live with Search feature",
@@ -61,7 +64,8 @@
     "negtive_score": 0,
     "source_domain": "www.theverge.com",
     "type": "news",
-    "score": 125
+    "score": 125,
+    "comment": ""
   },
   {
     "title": "Generative Agents: Interactive Simulacra of Human Behavior",
@@ -76,7 +80,8 @@
     "score_reason": "高度相关的Agent研究，发表于CCF A类会议UIST，且开源代码。",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 350
+    "score": 350,
+    "comment": ""
   },
   {
     "title": "Introducing SAM 3D: Powerful 3D Reconstruction for Physical World Images",
@@ -92,7 +97,8 @@
     "negtive_score": 0,
     "source_domain": "ai.meta.com",
     "type": "news",
-    "score": 345
+    "score": 345,
+    "comment": ""
   },
   {
     "title": "Social Simulacra: Creating Populated Prototypes for Social Computing Systems",
@@ -107,7 +113,8 @@
     "score_reason": "Agent与社交计算交叉的CCF A类论文，提供在线演示。",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 345
+    "score": 345,
+    "comment": ""
   },
   {
     "title": "Introducing Meta Segment Anything Model 3 and Segment Anything Playground",
@@ -123,7 +130,8 @@
     "negtive_score": 0,
     "source_domain": "ai.meta.com",
     "type": "news",
-    "score": 340
+    "score": 340,
+    "comment": ""
   },
   {
     "title": "FLUX.2 Image Generation Models Now Released, Optimized for NVIDIA RTX GPUs",
@@ -139,7 +147,8 @@
     "negtive_score": 0,
     "source_domain": "blogs.nvidia.com",
     "type": "news",
-    "score": 340
+    "score": 340,
+    "comment": ""
   },
   {
     "title": "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
@@ -154,7 +163,8 @@
     "score_reason": "AI生成与优化方法的前沿研究，发表在CCF A类会议NeurIPS，且开源项目。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 340
+    "score": 340,
+    "comment": ""
   },
   {
     "title": "BodyGen: Advancing Towards Efficient Embodiment Co-Design",
@@ -169,7 +179,8 @@
     "score_reason": "AI与Agent领域顶会论文，且开源代码与结果。",
     "source_domain": "pi.cs.tsinghua.edu.cn",
     "type": "paper",
-    "score": 335
+    "score": 335,
+    "comment": ""
   },
   {
     "title": "New Segment Anything Models Make it Easier to Detect Objects and Create 3D Reconstructions",
@@ -185,7 +196,8 @@
     "negtive_score": 0,
     "source_domain": "about.fb.com",
     "type": "news",
-    "score": 330
+    "score": 330,
+    "comment": ""
   },
   {
     "title": "At NeurIPS, NVIDIA Advances Open Model Development for Digital and Physical AI",
@@ -201,7 +213,8 @@
     "negtive_score": 0,
     "source_domain": "blogs.nvidia.com",
     "type": "news",
-    "score": 330
+    "score": 330,
+    "comment": ""
   },
   {
     "title": "Omnilingual ASR: Advancing Automatic Speech Recognition for 1,600+ Languages",
@@ -217,7 +230,8 @@
     "negtive_score": 0,
     "source_domain": "ai.meta.com",
     "type": "news",
-    "score": 325
+    "score": 325,
+    "comment": ""
   },
   {
     "title": "Trainium3 UltraServers now available: Enabling customers to train and deploy AI models faster at lower cost",
@@ -233,7 +247,8 @@
     "negtive_score": 0,
     "source_domain": "www.aboutamazon.com",
     "type": "news",
-    "score": 305
+    "score": 305,
+    "comment": ""
   },
   {
     "title": "Fara-7B: An Efficient Agentic Model for Computer Use",
@@ -248,7 +263,8 @@
     "score_reason": "高度相关的Agent研究，但为微软技术报告（预印本），且提供模型访问。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 300
+    "score": 300,
+    "comment": ""
   },
   {
     "title": "ZoomShop: Depth-Aware Editing of Photographic Composition",
@@ -263,7 +279,8 @@
     "score_reason": "计算机图形学与图像生成编辑研究，发表于Eurographics（CCF B类），且开源项目。",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 295
+    "score": 295,
+    "comment": ""
   },
   {
     "title": "Magentic Marketplace: an open-source simulation environment for studying agentic markets",
@@ -278,7 +295,8 @@
     "score_reason": "涉及多Agent仿真且开源，但发表于企业博客，影响力中等。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 295
+    "score": 295,
+    "comment": ""
   },
   {
     "title": "Magentic Marketplace: An Open-Source Environment for Studying Agentic Markets",
@@ -293,7 +311,8 @@
     "score_reason": "高度相关的多智能体系统研究，开源环境，但为技术报告。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 295
+    "score": 295,
+    "comment": ""
   },
   {
     "title": "Inference-Time Scaling for Complex Tasks: Where We Stand and What Lies Ahead",
@@ -308,7 +327,8 @@
     "score_reason": "与AI推理方法高度相关的综述，开源相关资源，但为技术报告。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 290
+    "score": 290,
+    "comment": ""
   },
   {
     "title": "Phi-4-reasoning Technical Report",
@@ -323,7 +343,8 @@
     "score_reason": "与AI生成与推理相关的小型语言模型研究，提供模型访问，但为技术报告。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 285
+    "score": 285,
+    "comment": ""
   },
   {
     "title": "Dion: Distributed Orthonormalized Updates",
@@ -338,7 +359,8 @@
     "score_reason": "与AI基础技术（分布式训练）相关，开源代码，但发表信息不明确（视为预印本）。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 265
+    "score": 265,
+    "comment": ""
   },
   {
     "title": "Opt-In NVIDIA Software Enables Data Center Fleet Management",
@@ -354,7 +376,8 @@
     "negtive_score": -50,
     "source_domain": "blogs.nvidia.com",
     "type": "news",
-    "score": 225
+    "score": 225,
+    "comment": ""
   },
   {
     "title": "VoluMe – Authentic 3D Video Calls from Live Gaussian Splat Prediction",
@@ -369,7 +392,8 @@
     "score_reason": "高度相关的3D生成与XR论文，发表于顶级会议ICCV（CCF A类），并附有演示视频。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 145
+    "score": 145,
+    "comment": ""
   },
   {
     "title": "InterQuest: A Mixed-Initiative Framework for Dynamic User Interest Modeling in Conversational Search",
@@ -384,7 +408,8 @@
     "score_reason": "AI Agent与HCI高度相关的CCF A类顶会论文。",
     "source_domain": "pi.cs.tsinghua.edu.cn",
     "type": "paper",
-    "score": 145
+    "score": 145,
+    "comment": ""
   },
   {
     "title": "Apple at NeurIPS 2025",
@@ -400,7 +425,8 @@
     "negtive_score": 0,
     "source_domain": "machinelearning.apple.com",
     "type": "news",
-    "score": 140
+    "score": 140,
+    "comment": ""
   },
   {
     "title": "Apple at ICML 2025",
@@ -416,7 +442,8 @@
     "negtive_score": 0,
     "source_domain": "machinelearning.apple.com",
     "type": "news",
-    "score": 140
+    "score": 140,
+    "comment": ""
   },
   {
     "title": "Spellburst: A Node-based Interface for Exploratory Creative Coding with Natural Language Prompts",
@@ -431,7 +458,8 @@
     "score_reason": "结合自然语言、生成式AI（Diffusion）与创意编程的CCF A类HCI论文。",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 140
+    "score": 140,
+    "comment": ""
   },
   {
     "title": "GASP: Gaussian Avatars with Synthetic Priors",
@@ -446,7 +474,8 @@
     "score_reason": "高度相关的3D生成与AI论文，发表于顶级会议CVPR（CCF A类），并附有演示视频。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 140
+    "score": 140,
+    "comment": ""
   },
   {
     "title": "Navigating Rifts in Human-LLM Grounding: Study and Benchmark",
@@ -461,7 +490,8 @@
     "score_reason": "高度相关的Agent/HCI与LLM对齐研究，发表在CCF A类会议ACL。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 140
+    "score": 140,
+    "comment": ""
   },
   {
     "title": "AutoPBL: An LLM-powered Platform to Guide and Support Individual Learners Through Self Project-based Learning",
@@ -476,7 +506,8 @@
     "score_reason": "LLM与教育智能体领域CCF A类顶会论文。",
     "source_domain": "pi.cs.tsinghua.edu.cn",
     "type": "paper",
-    "score": 140
+    "score": 140,
+    "comment": ""
   },
   {
     "title": "Clarify: Improving Model Robustness With Natural Language Corrections",
@@ -491,7 +522,8 @@
     "score_reason": "AI与自然语言交互研究，发表于CCF A类会议UIST。",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 138
+    "score": 138,
+    "comment": ""
   },
   {
     "title": "Advancing science and math with GPT-5.2",
@@ -506,7 +538,8 @@
     "score_reason": "涉及AI和生成，但非CCF会议，且未提及开源。 [Impact Boosted by Verified Venue/IF: OpenAI Publication]",
     "source_domain": "openai.com",
     "type": "paper",
-    "score": 135
+    "score": 135,
+    "comment": ""
   },
   {
     "title": "Early experiments in accelerating science with GPT-5",
@@ -521,7 +554,8 @@
     "score_reason": "涉及AI和科学生成，但非CCF会议，且未提及开源。 [Impact Boosted by Verified Venue/IF: OpenAI Research]",
     "source_domain": "openai.com",
     "type": "paper",
-    "score": 135
+    "score": 135,
+    "comment": ""
   },
   {
     "title": "Google Search with Gemini 3: Our most intelligent search yet",
@@ -537,7 +571,8 @@
     "negtive_score": 0,
     "source_domain": "blog.google",
     "type": "news",
-    "score": 135
+    "score": 135,
+    "comment": ""
   },
   {
     "title": "Apple at EMNLP 2025",
@@ -553,7 +588,8 @@
     "negtive_score": 0,
     "source_domain": "machinelearning.apple.com",
     "type": "news",
-    "score": 135
+    "score": 135,
+    "comment": ""
   },
   {
     "title": "Apple at ICLR 2025",
@@ -569,7 +605,8 @@
     "negtive_score": 0,
     "source_domain": "machinelearning.apple.com",
     "type": "news",
-    "score": 135
+    "score": 135,
+    "comment": ""
   },
   {
     "title": "Beyond Being Real: A Sensorimotor Control Perspective on Interactions in Virtual Reality",
@@ -584,7 +621,8 @@
     "score_reason": "VR/HCI领域的CCF A类最佳论文，与XR/空间计算高度相关。",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 135
+    "score": 135,
+    "comment": ""
   },
   {
     "title": "GPTCoach: Towards LLM-Based Physical Activity Coaching",
@@ -599,7 +637,8 @@
     "score_reason": "LLM Agent在健康与HCI领域的应用，发表于CCF A类会议CHI。",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 135
+    "score": 135,
+    "comment": ""
   },
   {
     "title": "DAViD: Data-efficient and Accurate Vision Models from Synthetic Data",
@@ -614,7 +653,8 @@
     "score_reason": "AI与生成模型相关论文，发表于顶级会议ICCV（CCF A类），并附有演示视频。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 135
+    "score": 135,
+    "comment": ""
   },
   {
     "title": "Look Ma, no markers: holistic performance capture without the hassle",
@@ -629,7 +669,8 @@
     "score_reason": "3D生成与计算机图形学顶级期刊/会议TOG/SIGGRAPH（CCF A类）论文，并附有演示视频。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 135
+    "score": 135,
+    "comment": ""
   },
   {
     "title": "Generation Probabilities Are Not Enough: Uncertainty Highlighting in AI Code Completions",
@@ -644,7 +685,8 @@
     "score_reason": "AI与HCI交叉研究，发表在CCF A类期刊ToCHI，具有高学术影响力。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 135
+    "score": 135,
+    "comment": ""
   },
   {
     "title": "Palmpad: Enabling Real-Time Index-to-Palm Touch Interaction with a Single RGB Camera",
@@ -659,7 +701,8 @@
     "score_reason": "MR/XR交互与HCI高度相关的CCF A类顶会论文。",
     "source_domain": "pi.cs.tsinghua.edu.cn",
     "type": "paper",
-    "score": 135
+    "score": 135,
+    "comment": ""
   },
   {
     "title": "How Conservation X Labs Is Using Segment Anything Model 3 for Endangered Wildlife Monitoring",
@@ -675,7 +718,8 @@
     "negtive_score": 0,
     "source_domain": "ai.meta.com",
     "type": "news",
-    "score": 130
+    "score": 130,
+    "comment": ""
   },
   {
     "title": "How confessions can keep language models honest",
@@ -690,7 +734,8 @@
     "score_reason": "涉及AI和语言模型，但非CCF会议，且未提及开源。 [Impact Boosted by Verified Venue/IF: OpenAI Research]",
     "source_domain": "openai.com",
     "type": "paper",
-    "score": 130
+    "score": 130,
+    "comment": ""
   },
   {
     "title": "Understanding neural networks through sparse circuits",
@@ -705,7 +750,8 @@
     "score_reason": "涉及AI可解释性，但非CCF会议，且未提及开源。 [Impact Boosted by Verified Venue/IF: OpenAI Research]",
     "source_domain": "openai.com",
     "type": "paper",
-    "score": 130
+    "score": 130,
+    "comment": ""
   },
   {
     "title": "Frontier agents, Trainium chips, and Amazon Nova: key announcements from AWS re:Invent 2025",
@@ -721,7 +767,8 @@
     "negtive_score": 0,
     "source_domain": "www.aboutamazon.com",
     "type": "news",
-    "score": 130
+    "score": 130,
+    "comment": ""
   },
   {
     "title": "Apple at ICCV 2025",
@@ -737,7 +784,8 @@
     "negtive_score": 0,
     "source_domain": "machinelearning.apple.com",
     "type": "news",
-    "score": 130
+    "score": 130,
+    "comment": ""
   },
   {
     "title": "Apple at ACL 2025",
@@ -753,7 +801,8 @@
     "negtive_score": 0,
     "source_domain": "machinelearning.apple.com",
     "type": "news",
-    "score": 130
+    "score": 130,
+    "comment": ""
   },
   {
     "title": "Apple at CVPR 2025",
@@ -769,7 +818,8 @@
     "negtive_score": 0,
     "source_domain": "machinelearning.apple.com",
     "type": "news",
-    "score": 130
+    "score": 130,
+    "comment": ""
   },
   {
     "title": "Embodying Physics-Aware Avatars in Virtual Reality",
@@ -784,7 +834,8 @@
     "score_reason": "VR与物理模拟结合的CCF A类荣誉提名论文，属于XR核心领域。",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 130
+    "score": 130,
+    "comment": ""
   },
   {
     "title": "Nods of Agreement: Webcam-Driven Avatars Improve Meeting Outcomes and Avatar Satisfaction Over Audio-Driven or Static Avatars in All-Avatar Work Videoconferencing",
@@ -799,7 +850,8 @@
     "score_reason": "HCI与Agent领域的顶级会议CSCW（CCF A类）论文，但未提及代码发布。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 130
+    "score": 130,
+    "comment": ""
   },
   {
     "title": "Scribble: Auto-Generated 2D Avatars with Diverse and Inclusive Art-Direction",
@@ -814,7 +866,8 @@
     "score_reason": "生成式AI与HCI相关论文，发表于顶级会议SIGGRAPH（CCF A类）。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 130
+    "score": 130,
+    "comment": ""
   },
   {
     "title": "EchoMind: Supporting Real-time Complex Problem Discussions through Human-AI Collaborative Facilitation",
@@ -829,7 +882,8 @@
     "score_reason": "AI与HCI协同领域CCF A类论文。",
     "source_domain": "pi.cs.tsinghua.edu.cn",
     "type": "paper",
-    "score": 130
+    "score": 130,
+    "comment": ""
   },
   {
     "title": "GPT-5.1-Codex-Max System Card",
@@ -844,7 +898,8 @@
     "score_reason": "涉及AI和Agent安全，但非CCF会议，且未提及开源。 [Impact Boosted by Verified Venue/IF: OpenAI Publication]",
     "source_domain": "openai.com",
     "type": "paper",
-    "score": 125
+    "score": 125,
+    "comment": ""
   },
   {
     "title": "New Amazon Bedrock AgentCore capabilities power the next wave of agentic AI development",
@@ -860,7 +915,8 @@
     "negtive_score": 0,
     "source_domain": "www.aboutamazon.com",
     "type": "news",
-    "score": 125
+    "score": 125,
+    "comment": ""
   },
   {
     "title": "Natural Language Processing Workshop 2025",
@@ -876,7 +932,8 @@
     "negtive_score": 0,
     "source_domain": "machinelearning.apple.com",
     "type": "news",
-    "score": 125
+    "score": 125,
+    "comment": ""
   },
   {
     "title": "Apple at Interspeech 2025",
@@ -892,7 +949,8 @@
     "negtive_score": 0,
     "source_domain": "machinelearning.apple.com",
     "type": "news",
-    "score": 125
+    "score": 125,
+    "comment": ""
   },
   {
     "title": "Apple at CHI 2025",
@@ -908,7 +966,8 @@
     "negtive_score": 0,
     "source_domain": "machinelearning.apple.com",
     "type": "news",
-    "score": 125
+    "score": 125,
+    "comment": ""
   },
   {
     "title": "DreamWalker: Substituting Real-World Walking Experiences with a Virtual Reality",
@@ -923,7 +982,8 @@
     "score_reason": "创新的VR/空间移动交互研究，发表于CCF A类会议UIST。",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 125
+    "score": 125,
+    "comment": ""
   },
   {
     "title": "Understanding Users’ Perceptions and Expectations toward a Social Balloon Robot via an Exploratory Study",
@@ -938,7 +998,8 @@
     "score_reason": "HCI与具身Agent领域CCF A类论文。",
     "source_domain": "pi.cs.tsinghua.edu.cn",
     "type": "paper",
-    "score": 125
+    "score": 125,
+    "comment": ""
   },
   {
     "title": "GeoGen: Geometry-Aware Generative Modeling via Signed Distance Functions",
@@ -953,7 +1014,8 @@
     "score_reason": "高度相关的3D生成与AI论文，但发表于CVPR Workshops（一般会议），影响力分数较低。 [Impact Boosted by Verified Venue/IF: Computer Vision and Pattern Recognition 2024 Workshops]",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 124
+    "score": 124,
+    "comment": ""
   },
   {
     "title": "ExecuTorch Adoption in Reality Labs: Powering On-Device AI Across Meta Devices",
@@ -969,7 +1031,8 @@
     "negtive_score": 0,
     "source_domain": "ai.meta.com",
     "type": "news",
-    "score": 120
+    "score": 120,
+    "comment": ""
   },
   {
     "title": "Update to GPT-5 System Card: GPT-5.2",
@@ -984,7 +1047,8 @@
     "score_reason": "涉及AI安全，但非CCF会议，且未提及开源。 [Impact Boosted by Verified Venue/IF: OpenAI Publication]",
     "source_domain": "openai.com",
     "type": "paper",
-    "score": 120
+    "score": 120,
+    "comment": ""
   },
   {
     "title": "GPT-5.1 Instant and GPT-5.1 Thinking System Card Addendum",
@@ -999,7 +1063,8 @@
     "score_reason": "涉及AI安全评估，但非CCF会议，且未提及开源。 [Impact Boosted by Verified Venue/IF: OpenAI Publication]",
     "source_domain": "openai.com",
     "type": "paper",
-    "score": 120
+    "score": 120,
+    "comment": ""
   },
   {
     "title": "Human-Centered Machine Learning Workshop 2024",
@@ -1015,7 +1080,8 @@
     "negtive_score": 0,
     "source_domain": "machinelearning.apple.com",
     "type": "news",
-    "score": 120
+    "score": 120,
+    "comment": ""
   },
   {
     "title": "An update to Google’s Live with Search feature",
@@ -1031,7 +1097,8 @@
     "negtive_score": 0,
     "source_domain": "www.theverge.com",
     "type": "news",
-    "score": 120
+    "score": 120,
+    "comment": ""
   },
   {
     "title": "Into the Omniverse: Open World Foundation Models Generate Synthetic Worlds for Physical AI Development",
@@ -1047,7 +1114,8 @@
     "negtive_score": 0,
     "source_domain": "blogs.nvidia.com",
     "type": "news",
-    "score": 120
+    "score": 120,
+    "comment": ""
   },
   {
     "title": "Eyelid Fold Consistency in Facial Modeling",
@@ -1062,7 +1130,8 @@
     "score_reason": "计算机图形学与3D建模相关论文，发表于顶级会议SIGGRAPH Asia（CCF A类）。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 120
+    "score": 120,
+    "comment": ""
   },
   {
     "title": "Unknown Word Detection for English as a Second Language (ESL) Learners using Gaze and Pre-trained Language Models",
@@ -1077,7 +1146,8 @@
     "score_reason": "AI与HCI交叉领域CCF A类论文，涉及语言模型应用。",
     "source_domain": "pi.cs.tsinghua.edu.cn",
     "type": "paper",
-    "score": 120
+    "score": 120,
+    "comment": ""
   },
   {
     "title": "AWS simplifies model customization to help customers build faster, more efficient AI agents",
@@ -1093,7 +1163,8 @@
     "negtive_score": 0,
     "source_domain": "www.aboutamazon.com",
     "type": "news",
-    "score": 115
+    "score": 115,
+    "comment": ""
   },
   {
     "title": "Hairmony: Fairness-aware hairstyle classification",
@@ -1108,7 +1179,8 @@
     "score_reason": "AI与HCI交叉领域论文，发表于顶级会议SIGGRAPH Asia（CCF A类），并附有演示视频。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 115
+    "score": 115,
+    "comment": ""
   },
   {
     "title": "WritingRing: Enabling Natural Handwriting Input with a Single IMU Ring",
@@ -1123,7 +1195,8 @@
     "score_reason": "可穿戴交互与HCI领域CCF A类论文，涉及AI模型应用。",
     "source_domain": "pi.cs.tsinghua.edu.cn",
     "type": "paper",
-    "score": 115
+    "score": 115,
+    "comment": ""
   },
   {
     "title": "Google brings Gemini’s Chrome integration to iPhone and iPad",
@@ -1139,7 +1212,8 @@
     "negtive_score": 0,
     "source_domain": "www.theverge.com",
     "type": "news",
-    "score": 110
+    "score": 110,
+    "comment": ""
   },
   {
     "title": "ChatGPT’s ‘adult mode’ is expected to debut in Q1 2026",
@@ -1155,7 +1229,8 @@
     "negtive_score": 0,
     "source_domain": "www.theverge.com",
     "type": "news",
-    "score": 110
+    "score": 110,
+    "comment": ""
   },
   {
     "title": "Google is building an experimental new browser and a new kind of web app",
@@ -1171,7 +1246,8 @@
     "negtive_score": 0,
     "source_domain": "www.theverge.com",
     "type": "news",
-    "score": 110
+    "score": 110,
+    "comment": ""
   },
   {
     "title": "AI On: 3 Ways Specialized AI Agents Are Reshaping Businesses",
@@ -1187,7 +1263,8 @@
     "negtive_score": 0,
     "source_domain": "blogs.nvidia.com",
     "type": "news",
-    "score": 105
+    "score": 105,
+    "comment": ""
   },
   {
     "title": "Into the Omniverse: How Smart City AI Agents Transform Urban Operations",
@@ -1203,7 +1280,8 @@
     "negtive_score": 0,
     "source_domain": "blogs.nvidia.com",
     "type": "news",
-    "score": 105
+    "score": 105,
+    "comment": ""
   },
   {
     "title": "Google Translate brings real-time speech translations to any headphones",
@@ -1219,7 +1297,8 @@
     "negtive_score": 0,
     "source_domain": "www.theverge.com",
     "type": "news",
-    "score": 100
+    "score": 100,
+    "comment": ""
   },
   {
     "title": "On the Opportunities and Risks of Foundation Models: §2.5 Interaction",
@@ -1234,7 +1313,8 @@
     "score_reason": "AI与HCI交叉领域的重要综述，但为预印本，影响力分数较低。",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 100
+    "score": 100,
+    "comment": ""
   },
   {
     "title": "Agent Lightning: Adding reinforcement learning to AI agents without code rewrites",
@@ -1249,7 +1329,8 @@
     "score_reason": "高度相关的Agent研究，但发表于企业博客而非学术会议，影响力有限。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 100
+    "score": 100,
+    "comment": ""
   },
   {
     "title": "Fara-7B: An Efficient Agentic Model for Computer Use",
@@ -1264,7 +1345,8 @@
     "score_reason": "高度相关的Agent模型研究，但发表于企业博客，非正式学术出版物。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 100
+    "score": 100,
+    "comment": ""
   },
   {
     "title": "Avatars in mixed-reality meetings: A longitudinal field study of realistic versus cartoon facial likeness effects on communication, task satisfaction, presence, and emotional perception",
@@ -1279,7 +1361,8 @@
     "score_reason": "HCI与XR领域的期刊论文，发表于CCF B类期刊IJHCS，但未提及代码发布。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 100
+    "score": 100,
+    "comment": ""
   },
   {
     "title": "Magentic-UI: Towards Human-in-the-loop Agentic Systems",
@@ -1294,7 +1377,8 @@
     "score_reason": "高度相关的Agent与HCI交叉研究，但为技术报告，提供项目链接而非直接代码库。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 100
+    "score": 100,
+    "comment": ""
   },
   {
     "title": "Explorer: Scaling Exploration-driven Web Trajectory Synthesis for Multimodal Web Agents",
@@ -1309,7 +1393,8 @@
     "score_reason": "高度相关的多模态网页Agent研究，但发表信息不明确（视为预印本）。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 100
+    "score": 100,
+    "comment": ""
   },
   {
     "title": "Ray-Ban Meta (Gen 2) Launch in India: 2X Battery life, Better Video Capture",
@@ -1325,7 +1410,8 @@
     "negtive_score": 0,
     "source_domain": "about.fb.com",
     "type": "news",
-    "score": 95
+    "score": 95,
+    "comment": ""
   },
   {
     "title": "Bringing More Real-Time News and Content to Meta AI",
@@ -1341,7 +1427,8 @@
     "negtive_score": 0,
     "source_domain": "about.fb.com",
     "type": "news",
-    "score": 95
+    "score": 95,
+    "comment": ""
   },
   {
     "title": "MMCTAgent: Enabling multimodal reasoning over large video and image collections",
@@ -1356,7 +1443,8 @@
     "score_reason": "涉及多模态AI与Agent，但发表于企业博客，学术影响力有限。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 95
+    "score": 95,
+    "comment": ""
   },
   {
     "title": "BlueCodeAgent: A blue teaming agent enabled by automated red teaming for CodeGen AI",
@@ -1371,7 +1459,8 @@
     "score_reason": "高度相关的Code Agent与安全研究，但发表于企业博客。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 95
+    "score": 95,
+    "comment": ""
   },
   {
     "title": "RedCodeAgent: Automatic red-teaming agent against diverse code agents",
@@ -1386,7 +1475,8 @@
     "score_reason": "涉及Code Agent与安全测试，但发表于企业博客。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 95
+    "score": 95,
+    "comment": ""
   },
   {
     "title": "Tell me when: Building agents that can wait, monitor, and act",
@@ -1401,7 +1491,8 @@
     "score_reason": "高度相关的长期任务Agent研究，但发表于企业博客。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 95
+    "score": 95,
+    "comment": ""
   },
   {
     "title": "Privacy-Preserving Machine Learning 2025",
@@ -1417,7 +1508,8 @@
     "negtive_score": -20,
     "source_domain": "machinelearning.apple.com",
     "type": "news",
-    "score": 90
+    "score": 90,
+    "comment": ""
   },
   {
     "title": "New training approach could help AI agents perform better in uncertain conditions",
@@ -1432,7 +1524,8 @@
     "score_reason": "高度相关的AI Agent研究，但仅为媒体报道，非正式学术出版物。",
     "source_domain": "www.media.mit.edu",
     "type": "paper",
-    "score": 90
+    "score": 90,
+    "comment": ""
   },
   {
     "title": "Promptions helps make AI prompting more precise with dynamic UI controls",
@@ -1447,7 +1540,8 @@
     "score_reason": "涉及AI生成与HCI，但发表于企业博客，非正式学术出版物。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 90
+    "score": 90,
+    "comment": ""
   },
   {
     "title": "Computing with Smart Rings: A Systematic Literature Review",
@@ -1462,7 +1556,8 @@
     "score_reason": "HCI与可穿戴计算领域CCF A类期刊，但为综述性文章，与AI/生成技术直接相关性较低。",
     "source_domain": "pi.cs.tsinghua.edu.cn",
     "type": "paper",
-    "score": 90
+    "score": 90,
+    "comment": "智能指环综述"
   },
   {
     "title": "Oakley Meta HSTN Set to Launch in India on December 1, with Performance-Driven AI Features",
@@ -1478,7 +1573,8 @@
     "negtive_score": 0,
     "source_domain": "about.fb.com",
     "type": "news",
-    "score": 85
+    "score": 85,
+    "comment": ""
   },
   {
     "title": "Reducing Privacy leaks in AI: Two approaches to contextual integrity",
@@ -1493,7 +1589,8 @@
     "score_reason": "涉及AI Agent与安全，但发表于企业博客，学术影响力低。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 85
+    "score": 85,
+    "comment": ""
   },
   {
     "title": "New York’s new law forces advertisers to say when they’re using AI avatars",
@@ -1509,7 +1606,8 @@
     "negtive_score": -50,
     "source_domain": "www.theverge.com",
     "type": "news",
-    "score": 80
+    "score": 80,
+    "comment": ""
   },
   {
     "title": "How AI Glasses Are Empowering People With Disabilities",
@@ -1525,7 +1623,8 @@
     "negtive_score": 0,
     "source_domain": "about.fb.com",
     "type": "news",
-    "score": 75
+    "score": 75,
+    "comment": ""
   },
   {
     "title": "Jump right to the movie scene you describe with the launch of Fire TV's new Alexa+ feature",
@@ -1541,7 +1640,8 @@
     "negtive_score": 0,
     "source_domain": "www.aboutamazon.com",
     "type": "news",
-    "score": 75
+    "score": 75,
+    "comment": ""
   },
   {
     "title": "GigaTIME: Scaling tumor microenvironment modeling using virtual population generated by multimodal AI",
@@ -1556,7 +1656,8 @@
     "score_reason": "涉及AI生成技术，但主要应用于生物医学领域，与核心兴趣点相关度中等。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 75
+    "score": 75,
+    "comment": ""
   },
   {
     "title": "Instagram Empowers Creators to Go Global with Local Voice Translations and Fonts",
@@ -1572,7 +1673,8 @@
     "negtive_score": 0,
     "source_domain": "about.fb.com",
     "type": "news",
-    "score": 70
+    "score": 70,
+    "comment": ""
   },
   {
     "title": "TeleAbsence: Poetic encounters with the past",
@@ -1587,7 +1689,8 @@
     "score_reason": "涉及HCI与可能的空间/生成体验，但非正式会议论文，影响力有限。",
     "source_domain": "www.media.mit.edu",
     "type": "paper",
-    "score": 65
+    "score": 65,
+    "comment": ""
   },
   {
     "title": "Amazon unveils redesigned Kindle Scribe lineup with first-ever color Scribe",
@@ -1603,7 +1706,8 @@
     "negtive_score": 0,
     "source_domain": "www.aboutamazon.com",
     "type": "news",
-    "score": 55
+    "score": 55,
+    "comment": ""
   },
   {
     "title": "At the Mysterious Boundary Between Waking Life and Sleep, What Happens in the Brain?",
@@ -1618,7 +1722,8 @@
     "score_reason": "涉及HCI与认知增强技术，与生成、交互相关，但为科普文章非论文。",
     "source_domain": "www.media.mit.edu",
     "type": "paper",
-    "score": 55
+    "score": 55,
+    "comment": ""
   },
   {
     "title": "New platform lets anyone rapidly prototype large, sturdy interactive structures",
@@ -1633,7 +1738,8 @@
     "score_reason": "涉及交互结构与原型平台，属于HCI和物理交互范畴，但非核心AI/XR论文。",
     "source_domain": "www.media.mit.edu",
     "type": "paper",
-    "score": 45
+    "score": 45,
+    "comment": ""
   },
   {
     "title": "Handweaving shows potential in robotic textiles",
@@ -1648,7 +1754,8 @@
     "score_reason": "涉及机器人技术与智能材料，但与核心AI/XR兴趣点关联度中等，非正式出版物。",
     "source_domain": "www.media.mit.edu",
     "type": "paper",
-    "score": 35
+    "score": 35,
+    "comment": ""
   },
   {
     "title": "Meet four emerging filmmakers bending cultural and creative lines with iPhone 16 Pro Max",
@@ -1664,7 +1771,8 @@
     "negtive_score": 0,
     "source_domain": "www.apple.com",
     "type": "news",
-    "score": 30
+    "score": 30,
+    "comment": ""
   },
   {
     "title": "How the mind-splitting world of Severance comes together on Mac",
@@ -1680,7 +1788,8 @@
     "negtive_score": 0,
     "source_domain": "www.apple.com",
     "type": "news",
-    "score": 20
+    "score": 20,
+    "comment": ""
   },
   {
     "title": "developers decode their journeys from app ideas to App Store",
@@ -1696,7 +1805,8 @@
     "negtive_score": 0,
     "source_domain": "www.apple.com",
     "type": "news",
-    "score": 15
+    "score": 15,
+    "comment": ""
   },
   {
     "title": "Meet four of this year’s Swift Student Challenge winners",
@@ -1712,7 +1822,8 @@
     "negtive_score": 0,
     "source_domain": "www.apple.com",
     "type": "news",
-    "score": 15
+    "score": 15,
+    "comment": ""
   },
   {
     "title": "AWS introduces Graviton5: the company’s most powerful and efficient CPU",
@@ -1728,6 +1839,7 @@
     "negtive_score": -50,
     "source_domain": "www.aboutamazon.com",
     "type": "news",
-    "score": 15
+    "score": 15,
+    "comment": ""
   }
 ]
