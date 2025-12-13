@@ -32,7 +32,7 @@ jobs:
         
     - name: 🤖 Run Scraper (DeepSeek)
       env:
-        DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        DEEPSEEK_API: ${{ secrets.DEEPSEEK_API }}
         DEEPSEEK_BASE_URL: https://api.deepseek.com
         GITHUB_ACTIONS: true
       run: |

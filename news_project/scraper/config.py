@@ -30,7 +30,7 @@ TARGET_URLS = [
 
 # API Key 配置
 # 优先从环境变量获取，如果没有则使用默认值（开发测试用）
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "sk-11c03565b3ba4328931a84fd50f9c3b5")
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API", "sk-11c03565b3ba4328931a84fd50f9c3b5")
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 
 # DEBUG: Check which key is loaded
