@@ -12,7 +12,7 @@ from news_project.scraper.utils import clean_html_for_ai
 def calculate_final_score(article):
     try:
         semantic = int(article.get('ai_score', 0))
-        impact = int(article.get('impact_score', 0)) * 2
+        impact = int(article.get('impact_score', 0))
         is_paper = article.get('type') == 'paper'
         has_code = bool(article.get('code_url'))
         is_release = article.get('is_tech_release')
