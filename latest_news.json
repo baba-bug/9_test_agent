@@ -87,7 +87,8 @@
     "score_reason": "涉及AI推理与生成的前沿综述，并开源了相关代码库，但属于技术报告。",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 285
+    "score": 285,
+    "comment": "复杂任务综述"
   },
   {
     "title": "Dion: Distributed Orthonormalized Updates",

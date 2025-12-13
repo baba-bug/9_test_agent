@@ -182,18 +182,26 @@ async def fetch_webpage(url: str) -> str:
             print(f"❌ Fetch Error: {e}")
             return ""
 
-async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[Dict[str, Any]]:
+async def extract_news_with_ai(html: str, url: str, mode: str = "news", user_interests: List[str] = None) -> List[Dict[str, Any]]:
     """
     使用 AI 智能提取信息
     mode: "news" (默认新闻) 或 "paper" (科研论文)
+    user_interests: 用户收藏夹关键词列表 (用于 Personal Score)
     """
-    client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url=DEEPSEEK_BASE_URL)
-    
     client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url=DEEPSEEK_BASE_URL)
     
     # 获取今天日期
     from datetime import date
     today_str = date.today().strftime("%Y-%m-%d")
+    
+    # Build Personal Context
+    personal_context = ""
+    if user_interests and len(user_interests) > 0:
+        interest_str = ", ".join(user_interests[:20]) # Limit to top 20
+        personal_context = f"\n   - `personal_score` (0-100): **用户个性化推荐分**。基于用户历史收藏关键词 ({interest_str}) 打分。越匹配越高。"
+        # print(f"👤 Including User Interests in Prompt: {interest_str}")
+    else:
+        personal_context = "\n   - `personal_score` (0-100): 默认为 0 (无用户偏好数据)。"
 
     # Helper function to query AI
     def _query_ai(text_content: str) -> List[Dict[str, Any]]:
@@ -218,10 +226,11 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
    - 发表处 (venue): 期刊/会议名称。
 2. **深度评分 (Scoring)** for Impact:
    - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing, Brain, Recognition, Cognitive, Health, Sense Control, Emotion, Affective, Eye Tracking, Gesture, Face**. 相关度越高分数越高。
-   - `impact_score` (0-50): 学术影响力。发表在 CCF A (如 CVPR, CHI, NeurIPS) 或 Top Journal (Nature/Science) 得 50 分；CCF B 得 25 分；一般会议 10 分；Arxiv 预印本 5 分。
+   - `impact_score` (0-50): 学术影响力。发表在 CCF A (如 CVPR, CHI, NeurIPS) 或 Top Journal (Nature/Science) 得 50 分；CCF B 得 25 分；一般会议 10 分；Arxiv 预印本 5 分。{personal_context}
    - `is_tech_release` (bool): 论文是否伴随代码发布(GitHub)、模型权重发布(HuggingFace)或 Demo 发布。
    - `code_url` (str): 如果 `is_tech_release` 为真，提取具体的开源链接 (GitHub/HuggingFace), 否则为 null.
    - `score_reason` (str): 一句话解释打分理由 (e.g., "Agent领域CCF A类论文，且开源代码").
+   - `tags` (List[str]): 3-5个技术标签 (e.g. "LLM", "Vision", "Robotics", "Agent", "3D", "Hardware", "Audio", "RL").
 3. 过滤非论文内容。只返回 JSON 数组。
 
 参考：
@@ -240,9 +249,11 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
         "venue": "CVPR 2025",
         "ai_score": 95,
         "impact_score": 50,
+        "personal_score": 85,
         "is_tech_release": true,
         "code_url": "https://github.com/...",
-        "score_reason": "High interest Agent paper in CVPR with Code."
+        "score_reason": "High interest Agent paper in CVPR with Code.",
+        "tags": ["Agent", "LLM", "Planning"]
     }}
 ]
 """
@@ -257,11 +268,12 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
    - 来源 (venue): 新闻来源名称。
 2. **深度评分 (Scoring)**：
    - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing, Brain, Recognition, Cognitive, Health, Sense, Control, Emotion, Affective, Eye Tracking, Gesture, Face, Disability,**.
-   - `impact_score` (0-50): 行业影响力。重磅可穿戴产品发布(GPT-5, Vision Pro 2) 或 重大技术突破(Sora) 得 50 分；普通更新 10-20 分。
+   - `impact_score` (0-50): 行业影响力。重磅可穿戴产品发布(GPT-5, Vision Pro 2) 或 重大技术突破(Sora) 得 50 分；普通更新 10-20 分。{personal_context}
    - `is_tech_release` (bool): 是否有**即刻可用**的技术发布 (Open Source, Model Weights, Public Beta)。
    - `code_url` (str): 如果 `is_tech_release` 为真，提取具体的开源链接 (GitHub/HuggingFace), 否则为 null.
    - `score_reason` (str): 一句话解释打分理由 (e.g., "重磅模型 GPT-5 发布").
    - 'negtive score'(-100-0): 不关心监管政策、法律还有CPU和显卡的基础设施硬件消息, 出现给负分。
+   - `tags` (List[str]): 3-5个技术标签 (e.g. "LLM", "Hardware", "Mobile", "App", "Policy", "Vision").
 3. 过滤非新闻内容。只返回 JSON 数组。
 
 网页内容：
@@ -277,8 +289,10 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
         "venue": "The Verge",
         "ai_score": 85,
         "impact_score": 50,
+        "personal_score": 90,
         "is_tech_release": true,
-        "score_reason": "Major model release."
+        "score_reason": "Major model release.",
+        "tags": ["LLM", "Product-Launch"]
     }}
 ]
 """

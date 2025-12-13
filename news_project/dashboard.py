@@ -3,6 +3,7 @@ import json
 import os
 import pandas as pd
 from datetime import datetime
+import asyncio
 import sys
 
 # Add project root to path
@@ -41,7 +42,7 @@ def render_table(articles, key_prefix, storage, file_path=None, allow_delete=Fal
         return
 
     # 1. Sorting Controls (Multi-column) & View Toggle
-    cols_available = ["score", "impact_score", "ai_score", "date"]
+    cols_available = ["score", "personal_score", "impact_score", "ai_score", "date"]
     
     c1, c2, c3 = st.columns([1, 1, 2])
     with c1:
@@ -55,12 +56,15 @@ def render_table(articles, key_prefix, storage, file_path=None, allow_delete=Fal
     df = pd.DataFrame(articles)
     
     # Ensure columns exist
-    required_cols = ['score', 'ai_score', 'impact_score', 'title', 'date', 'venue', 'summary', 'link', 'score_reason', 'comment']
+    required_cols = ['score', 'ai_score', 'impact_score', 'personal_score', 'title', 'date', 'venue', 'summary', 'link', 'score_reason', 'comment', 'tags']
     for c in required_cols:
         if c not in df.columns:
-            df[c] = "" # Default empty string
-            if c in ['score', 'ai_score', 'impact_score']:
-                 df[c] = 0
+            if c == 'tags':
+                df[c] = pd.Series([[]] * len(df)) # Initialize as empty lists
+            else:
+                df[c] = "" # Default empty string
+                if c in ['score', 'ai_score', 'impact_score', 'personal_score']:
+                     df[c] = 0
 
     # Sort Data
     sort_cols = [sort_by_1]
@@ -78,6 +82,7 @@ def render_table(articles, key_prefix, storage, file_path=None, allow_delete=Fal
         column_config = {
             "select": st.column_config.CheckboxColumn("📌", width="small"),
             "score": st.column_config.NumberColumn("Total", format="%d ⭐️", width="small"),
+            "personal_score": st.column_config.NumberColumn("Pers", format="%d ❤️", width="small"),
             "ai_score": st.column_config.NumberColumn("AI", format="%d", width="small"),
             "impact_score": st.column_config.NumberColumn("Imp", format="%d", width="small"),
             
@@ -93,7 +98,7 @@ def render_table(articles, key_prefix, storage, file_path=None, allow_delete=Fal
         }
 
         # Display Order
-        display_cols = ["select", "score", "ai_score", "impact_score", "title", "summary", "score_reason", "comment", "date", "venue", "link"]
+        display_cols = ["select", "score", "personal_score", "ai_score", "impact_score", "title", "summary", "score_reason", "comment", "date", "venue", "link"]
 
         # --- DATA EDITOR ---
         edited_df = st.data_editor(
@@ -102,7 +107,7 @@ def render_table(articles, key_prefix, storage, file_path=None, allow_delete=Fal
             hide_index=True,
             use_container_width=True,
             key=f"editor_{key_prefix}",
-            disabled=["score", "ai_score", "impact_score", "title", "date", "venue", "summary", "link", "score_reason"] # 'select' and 'comment' are editable
+            disabled=["score", "personal_score", "ai_score", "impact_score", "title", "date", "venue", "summary", "link", "score_reason"] # 'select' and 'comment' are editable
         )
     
     # --- RENDER CARD VIEW ---
@@ -117,21 +122,40 @@ def render_table(articles, key_prefix, storage, file_path=None, allow_delete=Fal
         # Iterate and render cards
         for index, row in df.iterrows():
             with st.container():
-                # Layout: Checkbox | Content
-                # NOTE: Nested columns limit. We are already inside [Tab] -> [Col].
-                # If we use columns here, we are at level 3. Streamlit might allow it, but let's be safe and use [0.5, 9.5]
-                col_check, col_content = st.columns([0.5, 9.5])
+                # Layout: Action Button | Content
+                col_btn, col_content = st.columns([0.5, 9.5])
                 
-                with col_check:
-                    # Unique key based on link + prefix
-                    is_selected = st.checkbox("Select", key=f"chk_{key_prefix}_{index}", label_visibility="collapsed")
-                    if is_selected:
-                        selected_links.append(row['link'])
+                with col_btn:
+                    # Determine Action based on context
+                    if allow_delete and file_path:
+                        if st.button("🗑️", key=f"del_{key_prefix}_{index}", help="Remove from Favorites"):
+                            # Delete logic
+                            current_data = load_data(file_path)
+                            new_data = [d for d in current_data if d.get('link') != row['link']]
+                            save_data(file_path, new_data)
+                            st.toast(f"Removed: {row['title'][:20]}...")
+                            st.rerun()
+                    else:
+                        # Default: Add to Favorites
+                        # Check if already favored? (Optional, simplifies to just Add)
+                        if st.button("⭐", key=f"fav_{key_prefix}_{index}", help="Save to Favorites"):
+                            article_data = row.to_dict()
+                            # Clean up internal fields if needed
+                            if 'select' in article_data: del article_data['select']
+                            
+                            storage.save_to_favorites(article_data)
+                            st.toast(f"Saved: {row['title'][:20]}...")
                 
                 with col_content:
                     st.markdown(f"#### [{row['title']}]({row['link']})")
-                    st.caption(f"**{row['date']}** | {row['venue']} | Total: **{row['score']}** ⭐️ (AI: {row['ai_score']}, Imp: {row['impact_score']})")
+                    st.caption(f"**{row['date']}** | {row['venue']} | Total: **{row['score']}** ⭐️ (Pers: **{row['personal_score']}** ❤️, AI: {row['ai_score']}, Imp: {row['impact_score']})")
                     
+                    # Display Tags (if any)
+                    if row['tags'] and isinstance(row['tags'], list):
+                        # Simple badge style using colored text or code block style
+                        tags_html = " ".join([f"`{t}`" for t in row['tags'][:5]])
+                        st.markdown(f"🏷️ {tags_html}")
+
                     st.markdown(f"**📝 Summary:** {row['summary']}")
                     st.markdown(f"**🤖 Reason:** {row['score_reason']}")
                     
@@ -248,7 +272,7 @@ def main():
     
     storage = Storage()
 
-    tab1, tab2, tab3 = st.tabs(["🔥 Latest Updates", "📜 History", "⭐ Favorites (Editable)"])
+    tab1, tab2, tab3, tab4 = st.tabs(["🔥 Latest Updates", "📜 History", "⭐ Favorites (Editable)", "🤖 Hub Chat"])
 
     with tab1:
         st.header("Latest Updates")
@@ -264,23 +288,111 @@ def main():
             
     with tab2:
         st.header("🗄️ Full History")
-        filter_type = st.radio("Type", ["News", "Papers"], horizontal=True)
-        if filter_type == "News":
-            data = load_data("history_news.json") 
-            render_table(data, "hist_news", storage, "history_news.json") # Allow comment-saving to history
-        else:
-            data = load_data("history_arxiv.json")
-            render_table(data, "hist_arxiv", storage, "history_arxiv.json")
+        col1, col2 = st.columns(2)
+        
+        with col1:
+             st.subheader("📰 News History")
+             data_news = load_data("history_news.json")
+             render_table(data_news, "hist_news", storage, "history_news.json")
+             
+        with col2:
+             st.subheader("📜 Paper History")
+             data_arxiv = load_data("history_arxiv.json")
+             render_table(data_arxiv, "hist_arxiv", storage, "history_arxiv.json")
 
     with tab3:
         st.header("⭐ My Favorites")
         # Reload to capture regrade updates
         favs = load_data("favorites.json")
+        
         if favs:
-            # Pass file_path="favorites.json" to enable Comment Saving and allow_delete=True
-            render_table(favs, "favs", storage, "favorites.json", allow_delete=True)
+            # Split by type (heuristic: arxiv link = paper)
+            fav_papers = [f for f in favs if "arxiv.org" in f.get('link', '').lower()]
+            fav_news = [f for f in favs if "arxiv.org" not in f.get('link', '').lower()]
+            
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.subheader("📰 Favorite News")
+                if fav_news:
+                    render_table(fav_news, "fav_news", storage, "favorites.json", allow_delete=True)
+                else:
+                    st.info("No favorite news.")
+                    
+            with col2:
+                st.subheader("📜 Favorite Papers")
+                if fav_papers:
+                    render_table(fav_papers, "fav_papers", storage, "favorites.json", allow_delete=True)
+                else:
+                    st.info("No favorite papers.")
         else:
             st.info("No favorites yet.")
+
+    with tab4:
+        st.header("💬 Chat with your Library")
+        st.caption("Ask questions about your captured news, papers, and favorites.")
+        
+        # Initialize Chat Engine
+        if "rag_chat" not in st.session_state:
+            from news_project.rag_core import LibraryChat
+            st.session_state.rag_chat = LibraryChat()
+            st.session_state.rag_chat.load_library()
+            
+        if "messages" not in st.session_state:
+            st.session_state.messages = [{"role": "assistant", "content": "Hello! I've indexed your library. Ask me anything about recent AI papers or news."}]
+
+        # Display Chat History
+        for msg in st.session_state.messages:
+            with st.chat_message(msg["role"]):
+                st.markdown(msg["content"])
+
+        # Chat Input
+        if prompt := st.chat_input("Ex: What are the latest 3D Gaussian Splatting papers?"):
+            # Add user message
+            st.session_state.messages.append({"role": "user", "content": prompt})
+            with st.chat_message("user"):
+                st.markdown(prompt)
+
+            # Generate Answer
+            with st.chat_message("assistant"):
+                message_placeholder = st.empty()
+                full_response = ""
+                
+                # Retrieve Context
+                with st.status("🔍 Searching Index...", expanded=False) as status:
+                    docs = st.session_state.rag_chat.retrieve_relevant(prompt)
+                    st.write(f"Found {len(docs)} relevant articles.")
+                    for d in docs[:3]:
+                        st.write(f"- {d['title']}")
+                    status.update(label="✅ Search Complete", state="complete", expanded=False)
+                
+                # Stream Response
+                try:
+                    stream = asyncio.run(st.session_state.rag_chat.ask_deepseek(prompt, docs))
+                    
+                    # DeepSeek/OpenAI Stream handling
+                    for chunk in stream:
+                        if chunk.choices[0].delta.content:
+                            full_response += chunk.choices[0].delta.content
+                            message_placeholder.markdown(full_response + "▌")
+                            
+                    message_placeholder.markdown(full_response)
+                except Exception as e:
+                    st.error(f"Error generating response: {e}")
+                    full_response = "Sorry, I encountered an error."
+            
+            # Save history
+            st.session_state.messages.append({"role": "assistant", "content": full_response})
+            
+            # Show References (Ephemeral for this turn, or we could append to history too? 
+            # For now, just show immediately)
+            with st.expander("📚 Referenced Sources", expanded=False):
+                for i, d in enumerate(docs, 1):
+                    # Check if cited? Simple check: if f"[{i}]" in full_response: ...
+                    # Or just list all relevant ones (since context stuffing uses them all)
+                    highlight = " **(Cited)**" if f"[{i}]" in full_response else ""
+                    st.markdown(f"**[{i}]** [{d['title']}]({d['link']}){highlight}")
+                    st.caption(f"{d.get('date', '')} | {d.get('venue', '')} | Tags: {d.get('tags', [])}")
 
 if __name__ == "__main__":
     main()

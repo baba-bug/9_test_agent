@@ -1,27 +1,60 @@
 [
   {
-    "score": 90,
-    "ai_score": 40,
+    "title": "Inference-Time Scaling for Complex Tasks: Where We Stand and What Lies Ahead",
+    "link": "https://www.microsoft.com/en-us/research/publication/inference-time-scaling-for-complex-tasks-where-we-stand-and-what-lies-ahead/",
+    "summary": "该论文对复杂任务的推理时缩放技术进行了综述与展望。研究方法包括系统化分析现有技术（如思维链、自洽性）并指出未来方向。主要贡献是梳理了提升大型语言模型在推理任务上性能的关键范式与挑战。",
+    "date": "2025-03-13",
+    "venue": "Microsoft Tech Report (MSR-TR-2025-16)",
+    "ai_score": 80,
+    "impact_score": 5,
+    "is_tech_release": true,
+    "code_url": "https://github.com/microsoft/eureka-ml-insights",
+    "score_reason": "涉及AI推理与生成的前沿综述，并开源了相关代码库，但属于技术报告。",
+    "source_domain": "www.microsoft.com",
+    "type": "paper",
+    "score": 285,
+    "comment": "复杂任务综述",
+    "negtive_score": NaN,
+    "personal_score": 0,
+    "tags": []
+  },
+  {
+    "score": 115,
+    "ai_score": 65,
     "impact_score": 50,
     "title": "Computing with Smart Rings: A Systematic Literature Review",
     "summary": "本文对智能指环领域进行了系统性文献综述，共收集206篇相关出版物。研究提供了关于传感与反馈模态、应用及现象的 taxonomy，并将文献归类为四个主要领域：(1) 交互-输入，(2) 交互-输出，(3) 被动感知-体内特征，(4) 被动感知-体外活动。该综述总结了当前进展并指出了未来研究方向。",
-    "score_reason": "HCI与可穿戴计算领域CCF A类期刊，但为综述性文章，与AI/生成技术直接相关性较低。",
+    "score_reason": "This is a systematic literature review on smart rings, covering sensing, feedback, applications, and interaction modalities. It's highly relevant to HCI, interaction, control, and computing (personal keywords), with strong connections to gesture recognition, health sensing, and affective computing. The impact is moderate as it's a review paper summarizing existing research rather than a product release. No immediate tech release or code is provided.",
     "comment": "智能指环综述",
     "date": "2025-12-13",
     "venue": "IMWUT 2025",
-    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/08/smart_ring_survey.pdf"
+    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/08/smart_ring_survey.pdf",
+    "personal_score": 70,
+    "is_tech_release": false,
+    "tags": [
+      "HCI",
+      "Wearable Computing",
+      "Interaction"
+    ]
   },
   {
-    "score": 65,
-    "ai_score": 60,
-    "impact_score": 5,
+    "score": 100,
+    "ai_score": 85,
+    "impact_score": 15,
     "title": "TeleAbsence: Poetic encounters with the past",
     "summary": "MIT研究人员提出了TeleAbsence的设计愿景与原则，旨在帮助人们应对失去。该研究探索如何利用技术（可能涉及XR/空间计算或生成式媒介）创造与过去进行诗意邂逅的体验，属于HCI与情感计算交叉领域，关注技术介导下的记忆与情感互动。",
-    "score_reason": "涉及HCI与可能的空间/生成体验，但非正式会议论文，影响力有限。",
+    "score_reason": "High AI score due to strong relevance to HCI, XR/Spatial Computing, Emotion/Affective computing, and generative media. Impact score moderate as it's a research vision/design principles paper rather than a product release. Personal score moderate due to relevance to 'interaction', 'computing', 'virtual', 'reality', and 'reconstruction' keywords, but not directly matching many others.",
     "comment": "",
     "date": "2025-12-13",
     "venue": "MIT Media Lab Article",
-    "link": "https://www.media.mit.edu/articles/teleabsence-poetic-encounters-with-the-past/"
+    "link": "https://www.media.mit.edu/articles/teleabsence-poetic-encounters-with-the-past/",
+    "personal_score": 60,
+    "is_tech_release": false,
+    "tags": [
+      "HCI",
+      "XR/Spatial Computing",
+      "Affective Computing"
+    ]
   },
   {
     "title": "Reject or Not?: A Benchmark for Voice Assistant Query Rejection in Smart Home Scenario and an Improved Method Based on LLMs",
@@ -31,12 +64,19 @@
     "venue": "ArXiv",
     "ai_score": 85,
     "impact_score": 5,
-    "is_tech_release": false,
+    "is_tech_release": true,
     "code_url": null,
-    "score_reason": "高度相关（AI, LLM, 语音交互，智能家居），提及构建了开源基准，但未明确给出代码仓库链接，为ArXiv预印本。 (Arxiv: Code link missing, boost removed)",
+    "score_reason": "High AI score due to strong relevance to Agent (voice assistant), AI (LLM methods), and Recognition (query rejection). Personal score reflects keywords: smart, benchmark, interaction, control. Impact score is 5 as it's an arXiv preprint. Tech release is true as it's described as 'open source' but no specific code URL provided.",
     "source_domain": "arxiv.org",
     "type": "paper",
-    "score": 90
+    "score": 90,
+    "personal_score": 75,
+    "tags": [
+      "Agent",
+      "LLM",
+      "Benchmark",
+      "Multimodal"
+    ]
   },
   {
     "title": "An Efficient Interaction Human-AI Synergy System Bridging Visual Awareness and Large Language Model for Intensive Care Units",
@@ -44,14 +84,22 @@
     "summary": "本文针对重症监护室中高风险监控和复杂数据管理的挑战，提出了一种基于云-边-端架构的人机协同系统。该系统集成了视觉感知数据提取和语义交互机制。具体而言，一个视觉感知边缘模块非侵入式地从床边监护仪捕获实时生理数据，减少了人工录入错误。为了改善对碎片化数据源的访问，一个由大语言模型驱动的语义交互模块使医生能够对结构化患者数据进行高效、直观的语音查询。分层云-边-端部署确保了低延迟通信和可扩展的系统性能。该系统减轻了ICU护士和医生的认知负担，并展示了在智能医疗系统中更广泛应用的潜力。",
     "date": "2025-12-10",
     "venue": "HCII 2025 Late Breaking Papers",
-    "ai_score": 90,
-    "impact_score": 10,
+    "ai_score": 85,
+    "impact_score": 5,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "涉及AI、LLM、视觉感知和HCI，发表于CCF C类会议HCII，未提及代码发布。",
+    "score_reason": "The paper describes a human-AI synergy system integrating visual awareness (edge module capturing physiological data) and large language models (semantic interaction for voice queries) in ICU settings. High AI score due to strong relevance to AI, Agent, HCI, Recognition, Cognitive, Health, Sense, and Control categories. Personal score is moderate based on keywords like 'efficient', 'interaction', 'smart', and 'computing'. Impact score is low (5) as it's an Arxiv preprint without specified top-tier publication. No code release mentioned.",
     "source_domain": "arxiv.org",
     "type": "paper",
-    "score": 100
+    "score": 90,
+    "personal_score": 70,
+    "tags": [
+      "Agent",
+      "Vision",
+      "LLM",
+      "HCI",
+      "Healthcare"
+    ]
   },
   {
     "title": "Adaptive Optimal Control for Avatar-Guided Motor Rehabilitation in Virtual Reality",
@@ -59,14 +107,22 @@
     "summary": "本文提出了一种基于可解释、自适应最优控制的控制理论框架，用于虚拟现实中自主化身引导的运动康复。该系统使中风后患者能够在家中进行沉浸式VR个性化治疗。核心是一个非线性的人机交互控制策略，化身根据患者的实时表现进行自适应调整。通过多目标最优控制在跟随患者运动和引导其达到理想运动轨迹之间取得平衡，并利用数据驱动的“能力指数”动态调整控制增益。",
     "date": "2025-12-10",
     "venue": "arXiv",
-    "ai_score": 95,
+    "ai_score": 85,
     "impact_score": 5,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "高度相关，完美结合了VR、Avatar（代理）、自适应控制（AI）和康复应用，但发表于arXiv预印本。",
+    "score_reason": "High AI score due to strong relevance to AI (adaptive optimal control), Agent (autonomous avatar), HCI (human-computer interaction), VR/XR (virtual reality rehabilitation), Control (nonlinear control strategy), and Health (stroke rehabilitation). Personal score is high because it matches keywords: control, virtual, reality, interaction, computing. Impact score is low (5) as it's an arXiv preprint without established academic ranking. No code release indicated.",
     "source_domain": "arxiv.org",
     "type": "paper",
-    "score": 100
+    "score": 90,
+    "personal_score": 75,
+    "tags": [
+      "Agent",
+      "Control",
+      "VR",
+      "Health",
+      "HCI"
+    ]
   },
   {
     "title": "Empirical Hardness in Multi-Agent Pathfinding: Research Challenges and Opportunities",
@@ -75,13 +131,19 @@
     "date": "2025-12-10",
     "venue": "AAMAS 2025",
     "ai_score": 85,
-    "impact_score": 50,
+    "impact_score": 5,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "高度相关的多智能体路径规划（MAPF）研究，发表于CCF A类顶级会议AAMAS，学术影响力高。",
+    "score_reason": "High AI score due to strong relevance to Agent, Control, and Computing categories. Personal score reflects alignment with keywords like computing, benchmark, efficient, control, and virtual. Impact score is low (5) as it's an arXiv preprint without specified journal/conference ranking. No code/weights released indicated.",
     "source_domain": "arxiv.org",
     "type": "paper",
-    "score": 135
+    "score": 90,
+    "personal_score": 70,
+    "tags": [
+      "Agent",
+      "Pathfinding",
+      "Benchmark"
+    ]
   },
   {
     "title": "Relightable and Dynamic Gaussian Avatar Reconstruction from Monocular Video",
@@ -89,14 +151,20 @@
     "summary": "本文提出了RnD-Avatar框架，基于3D高斯泼溅从单目视频重建可重光照和可驱动的动态人体化身。其主要贡献在于引入动态蒙皮权重来定义基于姿态的关节运动并学习由身体运动引起的额外形变，同时提出新的正则化方法在稀疏视觉线索下捕捉精细几何细节。该框架支持在新姿态和新视角下的真实感渲染，并能在任意光照条件下实现照片级真实感的光照效果。",
     "date": "2025-12-10",
     "venue": "ACM Multimedia 2025",
-    "ai_score": 88,
+    "ai_score": 85,
     "impact_score": 50,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "涉及3D、生成、XR（Avatar）和扩散相关技术（3DGS），发表在CCF B类会议ACM MM，但未提及代码发布。 [Impact Boosted by Verified Venue/IF: ACM Multimedia 2025]",
+    "score_reason": "High AI score due to strong relevance to 3D reconstruction, generation, XR/spatial computing (avatars for VR/AR/MR), and potential HCI applications. High personal score matches user keywords: gaussian, video, computing, virtual, reality, reconstruction, images. Low impact score because it's an arXiv preprint (not peer-reviewed in top venue). No code release mentioned.",
     "source_domain": "arxiv.org",
     "type": "paper",
-    "score": 138
+    "score": 135,
+    "personal_score": 90,
+    "tags": [
+      "3D Reconstruction",
+      "Computer Vision",
+      "XR/Avatar"
+    ]
   },
   {
     "title": "Composing Concepts from Images and Videos via Concept-prompt Binding",
@@ -104,14 +172,20 @@
     "summary": "本文提出了一种名为Bind & Compose的单样本视觉概念组合方法。其核心是通过分层绑定器结构将视觉概念编码到对应的提示词令牌中，实现复杂概念的准确分解与灵活组合。创新点包括：设计“多样化-吸收”机制以提高概念-令牌绑定精度；提出时序解耦策略与双分支绑定器结构，以增强图像与视频概念的兼容性。该方法基于Diffusion Transformers实现。",
     "date": "2025-12-10",
     "venue": "ArXiv (CCF C)",
-    "ai_score": 95,
-    "impact_score": 10,
-    "is_tech_release": true,
+    "ai_score": 85,
+    "impact_score": 5,
+    "is_tech_release": false,
     "code_url": "https://refkxh.github.io/BiCo_Webpage/",
-    "score_reason": "高度涉及AI、生成、Diffusion和视频处理，有项目页（通常含代码），但会议等级为CCF C。",
+    "score_reason": "High AI score due to strong relevance to Generation, Diffusion, and Vision concepts. Personal score reflects alignment with keywords like video, images, and computing. Low impact score as it's an arXiv preprint (not peer-reviewed in top venue). No code release indicated.",
     "source_domain": "arxiv.org",
     "type": "paper",
-    "score": 305
+    "score": 90,
+    "personal_score": 70,
+    "tags": [
+      "Generation",
+      "Vision",
+      "Diffusion"
+    ]
   },
   {
     "title": "At the Mysterious Boundary Between Waking Life and Sleep, What Happens in the Brain?",
@@ -119,14 +193,20 @@
     "summary": "MIT的Adam Horowitz及流体界面小组利用梦境工程和睡眠科学来提升创造力和认知能力。该研究探索清醒与睡眠边界的大脑活动，并尝试通过技术手段（可能涉及传感、刺激或生成式内容）干预这一过程，属于HCI与认知科学的前沿交叉。",
     "date": "2025-12-13",
     "venue": "MIT Media Lab Article",
-    "ai_score": 50,
+    "ai_score": 85,
     "impact_score": 5,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "涉及HCI与认知增强技术，与生成、交互相关，但为科普文章非论文。",
+    "score_reason": "High AI score due to strong relevance to HCI, cognitive science, brain research, and potential generation/control aspects. Personal score is moderate with some relevance to computing, interaction, and virtual concepts. Impact score is low as it appears to be a media article rather than a formal academic publication. No technical release indicated.",
     "source_domain": "www.media.mit.edu",
     "type": "paper",
-    "score": 55
+    "score": 90,
+    "personal_score": 40,
+    "tags": [
+      "HCI",
+      "Cognitive Science",
+      "Brain-Computer Interface"
+    ]
   },
   {
     "title": "Ray-Ban Meta (Gen 2) Launch in India: 2X Battery life, Better Video Capture",
@@ -134,15 +214,21 @@
     "summary": "Ray-Ban Meta智能眼镜第二代在印度发布，电池续航翻倍，视频捕捉能力提升。",
     "date": "2025-12-01",
     "venue": "Meta",
-    "ai_score": 70,
-    "impact_score": 25,
+    "ai_score": 40,
+    "impact_score": 10,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "发布了新一代可穿戴智能眼镜产品，属于XR/Spatial领域的产品更新。",
+    "score_reason": "The Ray-Ban Meta (Gen 2) is a hardware product launch with improvements in battery life and video capture. It relates to XR/AR through smart glasses form factor and involves interaction/control elements. It's a product update rather than a major new release. Personal score is moderate due to relevance to 'video', 'smart', and 'interaction' keywords, but not directly related to core AI/ML technologies.",
     "negtive_score": 0,
     "source_domain": "about.fb.com",
     "type": "news",
-    "score": 95
+    "score": 50,
+    "personal_score": 60,
+    "tags": [
+      "Hardware",
+      "AR",
+      "Wearable"
+    ]
   },
   {
     "title": "ChatGPT’s ‘adult mode’ is expected to debut in Q1 2026",
@@ -150,15 +236,21 @@
     "summary": "OpenAI预计将在2026年第一季度为ChatGPT推出“成人模式”。",
     "date": "2025-12-13",
     "venue": "The Verge",
-    "ai_score": 80,
-    "impact_score": 30,
+    "ai_score": 70,
+    "impact_score": 25,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "涉及ChatGPT的重要功能更新，属于AI和Agent范畴。",
+    "score_reason": "AI score: High relevance to AI (ChatGPT) and HCI/interaction aspects. Impact score: Moderate (significant product feature update, not a major new product). Personal score: Some relevance to 'interaction' and 'computing' keywords, but limited connection to other specified terms. Not an immediate tech release - it's a planned feature announcement.",
     "negtive_score": 0,
     "source_domain": "www.theverge.com",
     "type": "news",
-    "score": 110
+    "score": 95,
+    "personal_score": 30,
+    "tags": [
+      "LLM",
+      "HCI",
+      "Content Moderation"
+    ]
   },
   {
     "title": "WritingRing: Enabling Natural Handwriting Input with a Single IMU Ring",
@@ -166,14 +258,22 @@
     "summary": "本文提出WritingRing系统，使用单个佩戴在指根的IMU指环实现自然手写输入并实时提供2D轨迹。方法改进了LSTM模型，结合流式输入和TCN网络，显著提升了精度和计算效率，平均轨迹精度达1.63mm。实时可用性研究显示，系统实现了88.7%的字母识别准确率，在3000词词汇表限制下单词识别准确率达84.36%。",
     "date": "2025-12-13",
     "venue": "CHI 2025",
-    "ai_score": 65,
+    "ai_score": 85,
     "impact_score": 50,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "可穿戴交互与HCI领域CCF A类论文，涉及AI模型应用。",
+    "score_reason": "High AI score due to strong relevance to HCI, gesture recognition, and interaction technologies. Personal score reflects alignment with keywords like interaction, control, and computing. Impact score is maximum as it appears to be a published conference paper (likely CCF A/Top venue). No code release mentioned.",
     "source_domain": "pi.cs.tsinghua.edu.cn",
     "type": "paper",
-    "score": 115
+    "score": 135,
+    "personal_score": 75,
+    "tags": [
+      "HCI",
+      "Gesture Recognition",
+      "IMU",
+      "LSTM",
+      "Real-time Interaction"
+    ]
   },
   {
     "title": "Unknown Word Detection for English as a Second Language (ESL) Learners using Gaze and Pre-trained Language Models",
@@ -181,14 +281,20 @@
     "summary": "本文提出EyeLingo方法，利用预训练语言模型和眼动轨迹实时高精度预测英语学习者阅读时的生词概率。该方法实现了97.6%的准确率和71.1%的F1分数。研究还实现了一个实时阅读辅助原型，用户研究表明其在使用意愿和有用性上优于基线方法。",
     "date": "2025-12-13",
     "venue": "CHI 2025",
-    "ai_score": 70,
+    "ai_score": 85,
     "impact_score": 50,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "AI与HCI交叉领域CCF A类论文，涉及语言模型应用。",
+    "score_reason": "High AI score due to strong relevance to Eye Tracking, Cognitive, and Recognition categories. Personal score moderate with matches to 'computing', 'interaction', 'smart'. Impact score maximum (50) assuming conference publication (CCF A) based on academic link. No code release indicated.",
     "source_domain": "pi.cs.tsinghua.edu.cn",
     "type": "paper",
-    "score": 120
+    "score": 135,
+    "personal_score": 60,
+    "tags": [
+      "Eye Tracking",
+      "Language Models",
+      "HCI"
+    ]
   },
   {
     "title": "Palmpad: Enabling Real-Time Index-to-Palm Touch Interaction with a Single RGB Camera",
@@ -200,10 +306,18 @@
     "impact_score": 50,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "MR/XR交互与HCI高度相关的CCF A类顶会论文。",
+    "score_reason": "High relevance to HCI, XR/MR, gesture recognition, and interaction technologies. Strong alignment with user keywords like interaction, control, virtual, reality, and computing. Published in a CCF A/top journal venue (CHI 2025). No code release mentioned in summary.",
     "source_domain": "pi.cs.tsinghua.edu.cn",
     "type": "paper",
-    "score": 135
+    "score": 135,
+    "personal_score": 70,
+    "tags": [
+      "HCI",
+      "Vision",
+      "Gesture",
+      "MR",
+      "Interaction"
+    ]
   },
   {
     "title": "Generation Probabilities Are Not Enough: Uncertainty Highlighting in AI Code Completions",
@@ -211,14 +325,20 @@
     "summary": "该论文研究了在AI代码补全中，仅提供生成概率不足以有效传达不确定性。研究方法通过用户实验，探索并评估了多种可视化或交互式的不确定性高亮技术对程序员效率、信任和代码质量的影响。贡献在于为AI辅助编程工具提供了改进不确定性沟通的HCI设计指南。",
     "date": "2025-04-01",
     "venue": "ToCHI",
-    "ai_score": 85,
+    "ai_score": 75,
     "impact_score": 50,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "AI与HCI交叉研究，发表在CCF A类期刊ToCHI，具有高学术影响力。",
+    "score_reason": "High relevance to AI (code completion), HCI (user studies, design guidelines), and Generation (AI-generated code). Moderate relevance to personal keywords: 'interaction', 'computing', 'smart'. High academic impact: Microsoft Research publication likely peer-reviewed. No code/weights released mentioned.",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 135
+    "score": 125,
+    "personal_score": 40,
+    "tags": [
+      "AI",
+      "HCI",
+      "Generation"
+    ]
   },
   {
     "title": "Look Ma, no markers: holistic performance capture without the hassle",
@@ -230,10 +350,16 @@
     "impact_score": 50,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "3D生成与计算机图形学顶级期刊/会议TOG/SIGGRAPH（CCF A类）论文，并附有演示视频。",
+    "score_reason": "High AI score due to relevance to AI (deep learning), Generation (synthetic data), 3D (human pose/shape reconstruction), VR/AR/MR (performance capture applications), Recognition (human pose/expression), and Gesture/Face (capturing expressions). Personal score moderate due to relevance to video, computing, virtual, reality, reconstruction, and images. Impact score low as it appears to be an arXiv preprint (based on typical Microsoft Research publication patterns). No code release indicated in summary.",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 135
+    "score": 135,
+    "personal_score": 70,
+    "tags": [
+      "Vision",
+      "3D Reconstruction",
+      "Deep Learning"
+    ]
   },
   {
     "title": "GPTCoach: Towards LLM-Based Physical Activity Coaching",
@@ -245,10 +371,17 @@
     "impact_score": 50,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "LLM Agent在健康与HCI领域的应用，发表于CCF A类会议CHI。",
+    "score_reason": "High AI score due to strong relevance to AI, Agent, HCI, Generation, and Health domains. Personal score moderate with partial relevance to keywords like 'smart', 'interaction', 'control'. Impact score low as it appears to be a conference paper (Stanford HCI publication) rather than top-tier journal. No code release mentioned in summary.",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 135
+    "score": 135,
+    "personal_score": 40,
+    "tags": [
+      "Agent",
+      "LLM",
+      "HCI",
+      "Health"
+    ]
   },
   {
     "title": "Beyond Being Real: A Sensorimotor Control Perspective on Interactions in Virtual Reality",
@@ -260,10 +393,16 @@
     "impact_score": 50,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "VR/HCI领域的CCF A类最佳论文，与XR/空间计算高度相关。",
+    "score_reason": "High relevance to VR, HCI, and sensorimotor control topics. Strong academic impact from Stanford HCI publication. Good match to user keywords 'interaction', 'control', 'virtual', 'reality'. No code release indicated.",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 135
+    "score": 135,
+    "personal_score": 70,
+    "tags": [
+      "VR",
+      "HCI",
+      "Sensorimotor Control"
+    ]
   },
   {
     "title": "Google Search with Gemini 3: Our most intelligent search yet",
@@ -271,15 +410,21 @@
     "summary": "谷歌宣布推出其最智能的搜索引擎，由Gemini 3模型驱动，升级了Google Search和AI Mode。",
     "date": "2025-12-13",
     "venue": "The Keyword",
-    "ai_score": 95,
-    "impact_score": 40,
-    "is_tech_release": false,
+    "ai_score": 80,
+    "impact_score": 10,
+    "is_tech_release": true,
     "code_url": null,
-    "score_reason": "谷歌核心搜索产品集成最新大模型Gemini 3，属于重大AI产品更新。",
+    "score_reason": "Article announces a major AI-powered search engine update (Gemini 3 model) directly relevant to AI, Generation, and Search technologies. High personal score due to strong match with 'search', 'computing', 'smart', and 'interaction' keywords. Impact is significant as a Google product update but not a completely new product launch.",
     "negtive_score": 0,
     "source_domain": "blog.google",
     "type": "news",
-    "score": 135
+    "score": 90,
+    "personal_score": 85,
+    "tags": [
+      "LLM",
+      "Search",
+      "AI"
+    ]
   },
   {
     "title": "Navigating Rifts in Human-LLM Grounding: Study and Benchmark",
@@ -287,14 +432,22 @@
     "summary": "该研究关注人类与大语言模型（LLM）在协作任务中出现的“认知鸿沟”。它通过实证研究，识别和分类了导致人-LLM协作失败的根本误解类型，并建立了一个基准测试来系统评估模型在维持与人类共同基础（grounding）方面的能力。创新点在于为人机交互中的对齐问题提供了系统的分析框架和评估工具。",
     "date": "2025-03-01",
     "venue": "ACL",
-    "ai_score": 90,
+    "ai_score": 85,
     "impact_score": 50,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "高度相关的Agent/HCI与LLM对齐研究，发表在CCF A类会议ACL。",
+    "score_reason": "High AI score due to strong relevance to AI, Agent, HCI, Cognitive, and Interaction domains. Personal score elevated by keywords: benchmark, interaction, computing. Impact score maxed as Microsoft Research publication likely in top venue. No code/weights mentioned.",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 140
+    "score": 135,
+    "personal_score": 75,
+    "tags": [
+      "Agent",
+      "HCI",
+      "Benchmark",
+      "Cognitive",
+      "Interaction"
+    ]
   },
   {
     "title": "GASP: Gaussian Avatars with Synthetic Priors",
@@ -302,14 +455,22 @@
     "summary": "GASP提出了一种利用合成先验知识创建高斯化身的框架。该方法结合了3D高斯溅射与从合成数据中学习到的先验知识，用于生成高质量、可动画的虚拟人物，是3D生成与图形学的重要进展。",
     "date": "2025-01-01",
     "venue": "2025 Computer Vision and Pattern Recognition",
-    "ai_score": 90,
+    "ai_score": 85,
     "impact_score": 50,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "高度相关的3D生成与AI论文，发表于顶级会议CVPR（CCF A类），并附有演示视频。",
+    "score_reason": "High AI score due to strong relevance to 3D generation, Gaussian methods, and virtual reality applications. Personal score reflects alignment with 'gaussian', 'virtual', 'reality', 'reconstruction', and 'images' keywords. Impact score of 50 assumes publication in top venue (Microsoft Research publication likely CCF A). No code release indicated in summary.",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 140
+    "score": 135,
+    "personal_score": 75,
+    "tags": [
+      "3D Generation",
+      "Computer Graphics",
+      "Gaussian Splatting",
+      "Virtual Avatars",
+      "Synthetic Data"
+    ]
   },
   {
     "title": "Spellburst: A Node-based Interface for Exploratory Creative Coding with Natural Language Prompts",
@@ -317,14 +478,20 @@
     "summary": "该研究介绍了Spellburst，一个基于节点的创意编程界面，允许用户通过自然语言提示探索生成式AI模型（如扩散模型）。它将提示迭代、图像生成和代码编辑可视化地结合在一个工作流中，支持探索性创作。",
     "date": "2023-10-29",
     "venue": "UIST 2023",
-    "ai_score": 90,
+    "ai_score": 85,
     "impact_score": 50,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "结合自然语言、生成式AI（Diffusion）与创意编程的CCF A类HCI论文。",
+    "score_reason": "High relevance to AI (generative models, diffusion), HCI (node-based interface, exploratory interaction), and Generation (creative coding with prompts). Personal score based on keywords: 'interaction' (node-based interface), 'control' (workflow integration), 'images' (image generation), 'computing' (creative coding). Impact score assumes Stanford HCI publication likely in top venue (CCF A/Top Journal). No code release mentioned.",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 140
+    "score": 135,
+    "personal_score": 70,
+    "tags": [
+      "Generation",
+      "HCI",
+      "Diffusion"
+    ]
   },
   {
     "title": "VoluMe – Authentic 3D Video Calls from Live Gaussian Splat Prediction",
@@ -332,14 +499,22 @@
     "summary": "VoluMe提出了一种从实时高斯溅射预测中生成逼真3D视频通话的方法。该技术利用高斯溅射进行高效的神经渲染，旨在实现沉浸式、真实的3D远程呈现，是XR和3D生成领域的前沿工作。",
     "date": "2025-10-01",
     "venue": "2025 International Conference on Computer Vision",
-    "ai_score": 95,
+    "ai_score": 85,
     "impact_score": 50,
     "is_tech_release": false,
     "code_url": null,
-    "score_reason": "高度相关的3D生成与XR论文，发表于顶级会议ICCV（CCF A类），并附有演示视频。",
+    "score_reason": "High AI score due to strong relevance to XR/Spatial, 3D, Generation, and HCI. High personal score matches user keywords: gaussian, video, computing, virtual, reality, reconstruction, images. Impact score 50 as Microsoft Research publication likely in top venue. No code release indicated.",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 145
+    "score": 135,
+    "personal_score": 90,
+    "tags": [
+      "3D Generation",
+      "Neural Rendering",
+      "XR",
+      "Computer Vision",
+      "HCI"
+    ]
   },
   {
     "title": "Fara-7B: An Efficient Agentic Model for Computer Use",
@@ -347,14 +522,20 @@
     "summary": "该论文提出了Fara-7B，一个用于计算机操作的高效智能体模型。其核心贡献在于设计了一个专门针对图形用户界面（GUI）交互进行优化的轻量级模型架构，旨在实现高效、准确的计算机任务自动化。创新点在于平衡了模型效率与在复杂、开放世界计算机使用场景中的智能体性能。",
     "date": "2025-11-01",
     "venue": "MSR-TR-2025-54",
-    "ai_score": 95,
+    "ai_score": 85,
     "impact_score": 5,
-    "is_tech_release": true,
+    "is_tech_release": false,
     "code_url": "https://labs.ai.azure.com/projects/fara-7b/",
-    "score_reason": "高度相关的Agent研究，但为微软技术报告（预印本），且提供模型访问。",
+    "score_reason": "The paper introduces Fara-7B, an agentic model for computer use with a lightweight architecture optimized for GUI interaction, aligning strongly with AI, Agent, and HCI categories. It matches user keywords like 'efficient', 'interaction', and 'computing'. The link suggests it's a Microsoft Research publication, likely on Arxiv or similar, giving it a low academic impact score. No code or weights are mentioned as released.",
     "source_domain": "www.microsoft.com",
     "type": "paper",
-    "score": 300
+    "score": 90,
+    "personal_score": 70,
+    "tags": [
+      "Agent",
+      "HCI",
+      "Efficient Computing"
+    ]
   },
   {
     "title": "New Segment Anything Models Make it Easier to Detect Objects and Create 3D Reconstructions",
@@ -362,15 +543,21 @@
     "summary": "Meta发布了新的Segment Anything模型，该模型能更轻松地检测物体并创建3D重建。",
     "date": "2025-11-19",
     "venue": "Meta",
-    "ai_score": 95,
-    "impact_score": 35,
+    "ai_score": 85,
+    "impact_score": 25,
     "is_tech_release": true,
     "code_url": "https://github.com/facebookresearch/segment-anything",
-    "score_reason": "发布了新的AI模型，涉及3D重建和物体检测，技术相关性高且已开源。",
+    "score_reason": "High AI relevance due to object detection, 3D reconstruction, and segmentation capabilities. Moderate impact as a significant model update from Meta. High personal score matches keywords: segment, computing, reconstruction, images, virtual, reality. Tech release is a new model announcement.",
     "negtive_score": 0,
     "source_domain": "about.fb.com",
     "type": "news",
-    "score": 330
+    "score": 1110,
+    "personal_score": 85,
+    "tags": [
+      "Computer Vision",
+      "3D Reconstruction",
+      "Segmentation"
+    ]
   },
   {
     "title": "Introducing Meta Segment Anything Model 3 and Segment Anything Playground",
@@ -378,15 +565,21 @@
     "summary": "Meta发布了Segment Anything Model 3（SAM 3）模型以及Segment Anything Playground交互式演示平台。",
     "date": "2025-11-19",
     "venue": "Meta AI Blog",
-    "ai_score": 90,
+    "ai_score": 85,
     "impact_score": 50,
     "is_tech_release": true,
     "code_url": null,
-    "score_reason": "发布了重要的图像分割模型SAM 3及演示平台，属于AI和生成技术的重要更新。 [Impact Boosted by Verified Venue/IF: Meta AI Blog]",
+    "score_reason": "SAM 3 is a major AI model release for segmentation with interactive demo platform. Highly relevant to AI, Recognition, Generation, and Interaction fields. Scores high on personal keywords: segment, computing, interaction, control, images, video. Impact is significant as a major model update from Meta.",
     "negtive_score": 0,
     "source_domain": "ai.meta.com",
     "type": "news",
-    "score": 340
+    "score": 135,
+    "personal_score": 75,
+    "tags": [
+      "Computer Vision",
+      "Segmentation",
+      "Interactive AI"
+    ]
   },
   {
     "title": "Social Simulacra: Creating Populated Prototypes for Social Computing Systems",
@@ -394,14 +587,20 @@
     "summary": "该研究提出Social Simulacra方法，利用大型语言模型生成虚拟社群及其互动内容，用于快速原型化社交计算系统。该方法允许设计者在部署前评估系统在模拟社会环境中的潜在影响。",
     "date": "2022-10-29",
     "venue": "UIST 2022",
-    "ai_score": 95,
+    "ai_score": 75,
     "impact_score": 50,
-    "is_tech_release": true,
+    "is_tech_release": false,
     "code_url": "https://social-simulacra.herokuapp.com",
-    "score_reason": "Agent与社交计算交叉的CCF A类论文，提供在线演示。",
+    "score_reason": "High relevance to AI (LLMs), Agent (virtual communities), HCI (social computing), and Generation (content creation). Personal score based on keywords: computing, interaction, virtual. Academic impact high (Stanford HCI publication likely top-tier). No code release indicated.",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 345
+    "score": 125,
+    "personal_score": 60,
+    "tags": [
+      "Agent",
+      "HCI",
+      "Generation"
+    ]
   },
   {
     "title": "Introducing SAM 3D: Powerful 3D Reconstruction for Physical World Images",
@@ -409,15 +608,21 @@
     "summary": "Meta发布了SAM 3D，包含两个新的最先进模型：用于物体和场景重建的SAM 3D Objects，以及用于人体和形状估计的SAM 3D Body。",
     "date": "2025-11-19",
     "venue": "Meta AI Blog",
-    "ai_score": 95,
+    "ai_score": 85,
     "impact_score": 50,
     "is_tech_release": true,
     "code_url": null,
-    "score_reason": "发布了先进的3D重建与人体估计模型，与3D、计算机视觉高度相关。 [Impact Boosted by Verified Venue/IF: Meta AI Blog]",
+    "score_reason": "SAM 3D is a direct AI release by Meta focusing on 3D reconstruction from images, highly relevant to AI, 3D, Generation, and Spatial Computing. It introduces two state-of-the-art models for object/scene reconstruction and human/shape estimation, making it a significant tech release with moderate industry impact as a new product line. It aligns well with user keywords like 'reconstruction', 'images', 'computing', and 'virtual'.",
     "negtive_score": 0,
     "source_domain": "ai.meta.com",
     "type": "news",
-    "score": 345
+    "score": 135,
+    "personal_score": 75,
+    "tags": [
+      "3D Reconstruction",
+      "Computer Vision",
+      "AI Models"
+    ]
   },
   {
     "title": "Generative Agents: Interactive Simulacra of Human Behavior",
@@ -425,15 +630,23 @@
     "summary": "该研究提出了一种生成式智能体架构，利用大型语言模型模拟可信的人类行为。智能体能够记忆、反思过去经验，并基于此规划未来行动，从而在交互式沙盒环境中产生逼真的社会行为模拟。",
     "date": "2023-10-05",
     "venue": "UIST 2023",
-    "ai_score": 100,
+    "ai_score": 85,
     "impact_score": 50,
-    "is_tech_release": true,
+    "is_tech_release": false,
     "code_url": "https://github.com/joonspk-research/generative_agents",
-    "score_reason": "高度相关的Agent研究，发表于CCF A类会议UIST，且开源代码。",
+    "score_reason": "High AI score due to strong relevance to AI, Agent, HCI, and Generation concepts. Personal score moderate based on partial match to keywords like 'interaction', 'computing', 'virtual', and 'smart'. Impact score high as it appears to be a CCF A/Top Journal publication from Stanford HCI. No code release mentioned in summary.",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 350,
-    "comment": "nice try"
+    "score": 135,
+    "comment": "nice try",
+    "personal_score": 60,
+    "tags": [
+      "Agent",
+      "LLM",
+      "HCI",
+      "Simulation",
+      "Generation"
+    ]
   },
   {
     "title": "An update to Google’s Live with Search feature",
@@ -441,14 +654,22 @@
     "summary": "谷歌更新了其“Live with Search”语音对话功能，现在采用了最新的Gemini原生音频模型，使AI语音响应更加流畅和富有表现力。",
     "date": "2025-12-13",
     "venue": "Google Blog",
-    "ai_score": 95,
-    "impact_score": 30,
-    "is_tech_release": false,
+    "ai_score": 85,
+    "impact_score": 10,
+    "is_tech_release": true,
     "code_url": null,
-    "score_reason": "涉及最新的Gemini音频模型更新，属于AI、Generation和语音交互领域。",
+    "score_reason": "The article describes an update to Google's 'Live with Search' feature using the Gemini native audio model, which directly relates to AI (speech generation, conversational AI), HCI (voice interaction), and Generation (AI-generated speech). It's a product update rather than a major release, impacting search and interaction. It aligns with user keywords like 'search', 'interaction', and 'smart', but lacks direct links to other specified areas like XR, 3D, or video. No code or demo link is provided in the summary.",
     "negtive_score": 0,
     "source_domain": "www.theverge.com",
     "type": "news",
-    "score": 125
+    "score": 95,
+    "personal_score": 60,
+    "tags": [
+      "AI",
+      "Speech Generation",
+      "Search",
+      "Conversational AI",
+      "HCI"
+    ]
   }
 ]

@@ -13,13 +13,19 @@ from scraper.config import TARGET_URLS
 from scraper.core import fetch_webpage, extract_news_with_ai
 from scraper.storage import Storage
 from scraper.utils import clean_html_for_ai 
-from scraper.rankings import get_venue_score # Added import
+from scraper.rankings import get_venue_score 
+from scraper.personalization import extract_user_interests
 
 async def monitor_news():
     """核心监控逻辑 (Async)"""
     print("=" * 60)
     print("🌍 AI Multi-Site News Monitor (Optimized)")
     print("=" * 60)
+    
+    # 0. Load User Interests
+    user_interests = extract_user_interests("favorites.json")
+    if user_interests:
+        print(f"👤 Personalization Active. Interests: {user_interests[:5]}...")
     
     # 初始化存储
     storage = Storage()
@@ -56,7 +62,7 @@ async def monitor_news():
                 mode = "news" # Keep OpenAI as news/product unless strictly research
             
             # extract_news_with_ai 内部会重新 cleaning，我们传 mode 进去
-            articles = await extract_news_with_ai(html, url, mode=mode)
+            articles = await extract_news_with_ai(html, url, mode=mode, user_interests=user_interests)
             
             # 更新 Hash (无论是否提取到文章，只要内容变了就更新，避免重复尝试)
             storage.save_page_hash(url, content_hash)
@@ -90,14 +96,12 @@ async def monitor_news():
             
             # 2. Impact Score (0-10) - Academic/Industry status
             # Weight x 2 (Max +20 for CCF A / Major Release)
-            # User wanted Nature=20, CCF A=10. 
-            # If AI returns 10 for CCF A, then x1 is 10. x2 is 20.
-            # Let's use x2 to make Impact very visible.
             impact = int(article.get('impact_score', 0))
             
-            # 3. Tech Release Boost (+200)
-            # Papers: MUST have code_url to get boost (ignore "paper with code" claims if no link)
-            # News: Trust is_tech_release (for Product Launches) or code_url
+            # 3. Personal Boost (0-100)
+            personal = int(article.get('personal_score', 0))
+            
+            # 4. Tech Release Boost (+200)
             is_paper = article.get('type') == 'paper'
             has_code = bool(article.get('code_url'))
             is_release = article.get('is_tech_release')
@@ -107,7 +111,7 @@ async def monitor_news():
             else:
                 tech_boost = 200 if (is_release or has_code) else 0
             
-            return semantic + impact + tech_boost
+            return semantic + impact + personal + tech_boost
         except:
             return 0
 
