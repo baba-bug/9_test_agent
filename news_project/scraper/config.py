@@ -33,6 +33,12 @@ TARGET_URLS = [
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "sk-11c03565b3ba4328931a84fd50f9c3b5")
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 
+# DEBUG: Check which key is loaded
+if DEEPSEEK_API_KEY:
+    print(f"🔑 Loaded API Key: {DEEPSEEK_API_KEY[:4]}... (Length: {len(DEEPSEEK_API_KEY)})")
+else:
+    print("❌ No API Key loaded!")
+
 # 🍪 Cookie 配置中心
 SITE_COOKIES = {
     # "weibo.com": "...",
