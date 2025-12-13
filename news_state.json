@@ -1,0 +1,24 @@
+{
+  "seen_links": [],
+  "page_hashes": {
+    "https://about.fb.com/news/": "8f7c2ee0a584c9aa7b05e6c0a7a95876",
+    "https://ai.meta.com/blog/": "75983016904b4089c9d7662e901ada5a",
+    "https://openai.com/research/index/": "6e0b9f5a4c66cc02e6e6b4472a860b41",
+    "https://blog.google/products/search/": "87e191505b44f58efd017c4edd5e71e1",
+    "https://www.apple.com/newsroom/": "64e3b9b6e89f7f76e5ecd334991d797d",
+    "https://www.aboutamazon.com/amazon-news-today": "189f89c61bb5237a4c7602f4f79b8db5",
+    "https://machinelearning.apple.com/updates": "c249fb93fa2089a527f35f3351c14c2b",
+    "https://www.theverge.com/tech": "89401df7ff4c883f91bfe4337a729bd9",
+    "https://arxiv.org/list/cs.HC/recent": "2d331bbecf9b9eea52cc22fc2e04ffdd",
+    "https://arxiv.org/list/cs.MA/recent": "eae9134161864be39e65c0c88cee5630",
+    "https://arxiv.org/list/cs.MM/recent": "4a140e5fdb24fee69e5ae3f170f117f2",
+    "https://blog.google/technology/google-deepmind/": "3a07b3011f90223bf5648acf6c4e9144",
+    "https://www.media.mit.edu/": "0330ae4e33eb43ba4914f7dd806ccb27",
+    "https://hci.stanford.edu/research/": "eb6586ae3adedcca3dffc13c923075ff",
+    "https://www.microsoft.com/en-us/research/blog/": "6af252086d8c34cf0ca17ef62660becf",
+    "https://blogs.nvidia.com/": "a48344ea8eafa777202c77d7079252e4",
+    "https://www.microsoft.com/en-us/research/lab/mixed-reality-ai-lab-cambridge/publications/": "66c2fd928c1230369a0770224cdde22e",
+    "https://www.microsoft.com/en-us/research/lab/ai-frontiers/publications/": "042532cb4a50872f16cbf714552119b3",
+    "https://pi.cs.tsinghua.edu.cn/publication/": "ff1b4172f7279ac6451abcbecd8529e2"
+  }
+}
