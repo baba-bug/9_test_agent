@@ -22,6 +22,8 @@ TARGET_URLS = [
     'https://www.microsoft.com/en-us/research/lab/mixed-reality-ai-lab-cambridge/publications/',
     'https://www.microsoft.com/en-us/research/lab/ai-frontiers/publications/',
     'https://pi.cs.tsinghua.edu.cn/publication/',
+    'https://icilab.cn/publication/',
+    
 ]    
 
 
