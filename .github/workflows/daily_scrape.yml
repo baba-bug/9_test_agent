@@ -45,4 +45,5 @@ jobs:
         git add latest_*.json history_*.json news_state.json favorites.json
         # Only commit if there are changes
         git commit -m "🤖 Daily News Update: $(date +'%Y-%m-%d')" || echo "No changes to commit"
+        git pull --rebase
         git push
