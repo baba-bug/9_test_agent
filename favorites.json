@@ -1,5 +1,17 @@
 [
   {
+    "score": 90,
+    "ai_score": 40,
+    "impact_score": 50,
+    "title": "Computing with Smart Rings: A Systematic Literature Review",
+    "summary": "本文对智能指环领域进行了系统性文献综述，共收集206篇相关出版物。研究提供了关于传感与反馈模态、应用及现象的 taxonomy，并将文献归类为四个主要领域：(1) 交互-输入，(2) 交互-输出，(3) 被动感知-体内特征，(4) 被动感知-体外活动。该综述总结了当前进展并指出了未来研究方向。",
+    "score_reason": "HCI与可穿戴计算领域CCF A类期刊，但为综述性文章，与AI/生成技术直接相关性较低。",
+    "comment": "智能指环综述",
+    "date": "2025-12-13",
+    "venue": "IMWUT 2025",
+    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/08/smart_ring_survey.pdf"
+  },
+  {
     "score": 65,
     "ai_score": 60,
     "impact_score": 5,
@@ -115,21 +127,6 @@
     "source_domain": "www.media.mit.edu",
     "type": "paper",
     "score": 55
-  },
-  {
-    "title": "Computing with Smart Rings: A Systematic Literature Review",
-    "link": "https://pi.cs.tsinghua.edu.cn/wp-content/uploads/2025/08/smart_ring_survey.pdf",
-    "summary": "本文对智能指环领域进行了系统性文献综述，共收集206篇相关出版物。研究提供了关于传感与反馈模态、应用及现象的 taxonomy，并将文献归类为四个主要领域：(1) 交互-输入，(2) 交互-输出，(3) 被动感知-体内特征，(4) 被动感知-体外活动。该综述总结了当前进展并指出了未来研究方向。",
-    "date": "2025-12-13",
-    "venue": "IMWUT 2025",
-    "ai_score": 40,
-    "impact_score": 50,
-    "is_tech_release": false,
-    "code_url": null,
-    "score_reason": "HCI与可穿戴计算领域CCF A类期刊，但为综述性文章，与AI/生成技术直接相关性较低。",
-    "source_domain": "pi.cs.tsinghua.edu.cn",
-    "type": "paper",
-    "score": 90
   },
   {
     "title": "Ray-Ban Meta (Gen 2) Launch in India: 2X Battery life, Better Video Capture",
@@ -435,7 +432,8 @@
     "score_reason": "高度相关的Agent研究，发表于CCF A类会议UIST，且开源代码。",
     "source_domain": "hci.stanford.edu",
     "type": "paper",
-    "score": 350
+    "score": 350,
+    "comment": "nice try"
   },
   {
     "title": "An update to Google’s Live with Search feature",
