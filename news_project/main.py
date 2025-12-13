@@ -211,8 +211,8 @@ async def monitor_news():
     print("✅ History updated (including content hashes).")
 
     # --- INTERACTIVE BOOKMARK MODE (Local Only) ---
-    # Only run if not on Cloud (Cloud doesn't have stdin)
-    if not os.getenv("NEWS_BUCKET_NAME"): 
+    # Only run if not on Cloud or CI (Cloud doesn't have stdin)
+    if not os.getenv("NEWS_BUCKET_NAME") and not os.getenv("GITHUB_ACTIONS"): 
         print("\n" + "="*40)
         print("⭐ BOOKMARK TIME (Interactive)")
         print("="*40)

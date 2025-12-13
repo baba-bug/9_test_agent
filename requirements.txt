@@ -3,3 +3,6 @@ openai
 beautifulsoup4
 google-cloud-storage
 curl_cffi>=0.7.0
+streamlit
+pandas
+pytz
