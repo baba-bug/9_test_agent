@@ -217,7 +217,7 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
    - 日期 (date): 格式统一为 `YYYY-MM-DD`. 如果文中日期不明确，默认为今天 ({today_str}).
    - 发表处 (venue): 期刊/会议名称。
 2. **深度评分 (Scoring)** for Impact:
-   - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing, Brain, Recognition**. 相关度越高分数越高。
+   - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing, Brain, Recognition, Cognitive, Health, Sense Control, Emotion, Affective, Eye Tracking, Gesture, Face**. 相关度越高分数越高。
    - `impact_score` (0-50): 学术影响力。发表在 CCF A (如 CVPR, CHI, NeurIPS) 或 Top Journal (Nature/Science) 得 50 分；CCF B 得 25 分；一般会议 10 分；Arxiv 预印本 5 分。
    - `is_tech_release` (bool): 论文是否伴随代码发布(GitHub)、模型权重发布(HuggingFace)或 Demo 发布。
    - `code_url` (str): 如果 `is_tech_release` 为真，提取具体的开源链接 (GitHub/HuggingFace), 否则为 null.
@@ -256,7 +256,7 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news") -> List[
    - 日期 (date): 格式统一为 `YYYY-MM-DD`. 如果文中日期不明确，默认为今天 ({today_str}).
    - 来源 (venue): 新闻来源名称。
 2. **深度评分 (Scoring)**：
-   - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing, Brain, Recognition**.
+   - `ai_score` (0-100): 语义相关性打分。用户兴趣点：**AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing, Brain, Recognition, Cognitive, Health, Sense, Control, Emotion, Affective, Eye Tracking, Gesture, Face, Disability,**.
    - `impact_score` (0-50): 行业影响力。重磅可穿戴产品发布(GPT-5, Vision Pro 2) 或 重大技术突破(Sora) 得 50 分；普通更新 10-20 分。
    - `is_tech_release` (bool): 是否有**即刻可用**的技术发布 (Open Source, Model Weights, Public Beta)。
    - `code_url` (str): 如果 `is_tech_release` 为真，提取具体的开源链接 (GitHub/HuggingFace), 否则为 null.
