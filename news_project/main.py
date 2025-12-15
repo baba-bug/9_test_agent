@@ -140,31 +140,32 @@ async def monitor_news():
             def save_to_json_files(articles: list, latest_file: str, history_file: str):
                 if not articles:
                     return
-                # 1. Save Latest
-                with open(latest_file, "w", encoding="utf-8") as f:
-                    json.dump(articles, f, ensure_ascii=False, indent=2)
-                print(f"💾 Saved {len(articles)} items to {latest_file}")
                 
-                # 2. Append to History
-                history_data = []
-                if os.path.exists(history_file):
+                # 1. Load existing Latest (to append, not overwrite)
+                existing_latest = []
+                if os.path.exists(latest_file):
                     try:
-                        with open(history_file, "r", encoding="utf-8") as f:
-                            history_data = json.load(f)
-                    except Exception as e:
-                        print(f"⚠ Failed to load {history_file}: {e}")
+                        with open(latest_file, "r", encoding="utf-8") as f:
+                            existing_latest = json.load(f)
+                    except:
+                        pass
                 
-                existing_links = {item['link'] for item in history_data}
-                added_count = 0
-                for art in reversed(articles): 
-                    if art['link'] not in existing_links:
-                        history_data.insert(0, art)
-                        added_count += 1
+                # Merge new articles (avoid duplicates just in case)
+                existing_links_latest = {item['link'] for item in existing_latest}
+                for art in reversed(articles): # Add new ones at top? No, reversed usually means old->new. 
+                     # We want New ones at TOP. "articles" is usually ordered Top=Newest?
+                     # Let's assume 'articles' list is Newest First.
+                     if art['link'] not in existing_links_latest:
+                         existing_latest.insert(0, art)
                 
-                if added_count > 0:
-                    with open(history_file, "w", encoding="utf-8") as f:
-                        json.dump(history_data, f, ensure_ascii=False, indent=2)
-                    print(f"📚 Appended {added_count} items to {history_file}")
+                # Save to Latest
+                with open(latest_file, "w", encoding="utf-8") as f:
+                    json.dump(existing_latest, f, ensure_ascii=False, indent=2)
+                print(f"💾 Updated {latest_file} (Total: {len(existing_latest)} items)")
+                
+                # NOTE: We DO NOT auto-archive to history anymore.
+                # The Dashboard will handle that when user clicks "Archive".
+                pass
 
             # Save News (Non-Arxiv)
             # User request: "Only separate Arxiv... others follow original logic"

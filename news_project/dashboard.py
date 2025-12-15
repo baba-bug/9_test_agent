@@ -36,7 +36,7 @@ def save_data(file_path, data):
     except Exception as e:
         st.error(f"Error saving {file_path}: {e}")
 
-def render_table(articles, key_prefix, storage, file_path=None, allow_delete=False):
+def render_table(articles, key_prefix, storage, file_path=None, allow_delete=False, archive_target=None):
     if not articles:
         st.info("No data available.")
         return
@@ -122,11 +122,11 @@ def render_table(articles, key_prefix, storage, file_path=None, allow_delete=Fal
         # Iterate and render cards
         for index, row in df.iterrows():
             with st.container():
-                # Layout: Action Button | Content
-                col_btn, col_content = st.columns([0.5, 9.5])
+                # Layout: Action Controls | Content
+                col_btn, col_content = st.columns([1.2, 8.8]) # Widen generic action column
                 
                 with col_btn:
-                    # Determine Action based on context
+                    # Case 1: Favorites Mode (Delete)
                     if allow_delete and file_path:
                         if st.button("🗑️", key=f"del_{key_prefix}_{index}", help="Remove from Favorites"):
                             # Delete logic
@@ -135,16 +135,36 @@ def render_table(articles, key_prefix, storage, file_path=None, allow_delete=Fal
                             save_data(file_path, new_data)
                             st.toast(f"Removed: {row['title'][:20]}...")
                             st.rerun()
+                    
+                    # Case 2: Latest Mode (Save + Archive)
                     else:
-                        # Default: Add to Favorites
-                        # Check if already favored? (Optional, simplifies to just Add)
+                        # 2A: Favorite Star
                         if st.button("⭐", key=f"fav_{key_prefix}_{index}", help="Save to Favorites"):
                             article_data = row.to_dict()
-                            # Clean up internal fields if needed
                             if 'select' in article_data: del article_data['select']
-                            
                             storage.save_to_favorites(article_data)
                             st.toast(f"Saved: {row['title'][:20]}...")
+                            
+                        # 2B: Archive Checkmark (If archive_target provided)
+                        if archive_target and file_path:
+                            if st.button("✅", key=f"arc_{key_prefix}_{index}", help="Mark as Read (Move to History)"):
+                                # 1. Add to History
+                                hist_data = load_data(archive_target)
+                                hist_links = {d['link'] for d in hist_data}
+                                article_data = row.to_dict()
+                                if 'select' in article_data: del article_data['select']
+                                
+                                if article_data['link'] not in hist_links:
+                                    hist_data.insert(0, article_data)
+                                    save_data(archive_target, hist_data)
+                                
+                                # 2. Remove from Current (Latest)
+                                cur_data = load_data(file_path)
+                                new_cur_data = [d for d in cur_data if d.get('link') != row['link']]
+                                save_data(file_path, new_cur_data)
+                                
+                                st.toast("Archived!")
+                                st.rerun()
                 
                 with col_content:
                     st.markdown(f"#### [{row['title']}]({row['link']})")
@@ -275,16 +295,57 @@ def main():
     tab1, tab2, tab3, tab4 = st.tabs(["🔥 Latest Updates", "📜 History", "⭐ Favorites (Editable)", "🤖 Hub Chat"])
 
     with tab1:
-        st.header("Latest Updates")
+        c_title, c_btn = st.columns([8, 2])
+        with c_title:
+            st.header("Latest Updates")
+        with c_btn:
+             if st.button("📭 Archive All (Mark as Read)", type="primary"):
+                 # Archive News
+                 news_latest = load_data("latest_news.json")
+                 if news_latest:
+                     news_hist = load_data("history_news.json")
+                     existing_links = {x['link'] for x in news_hist}
+                     count = 0
+                     for item in reversed(news_latest):
+                         if item['link'] not in existing_links:
+                             news_hist.insert(0, item)
+                             count += 1
+                     save_data("history_news.json", news_hist)
+                     save_data("latest_news.json", []) # Clear latest
+                     st.toast(f"Archived {count} news items.")
+                 
+                 # Archive Papers
+                 paper_latest = load_data("latest_arxiv.json")
+                 if paper_latest:
+                     paper_hist = load_data("history_arxiv.json")
+                     existing_links = {x['link'] for x in paper_hist}
+                     count = 0
+                     for item in reversed(paper_latest):
+                         if item['link'] not in existing_links:
+                             paper_hist.insert(0, item)
+                             count += 1
+                     save_data("history_arxiv.json", paper_hist)
+                     save_data("latest_arxiv.json", []) # Clear latest
+                     st.toast(f"Archived {count} papers.")
+                 
+                 st.rerun()
+
         col1, col2 = st.columns(2)
         with col1:
             st.subheader("📰 News")
             news = load_data("latest_news.json")
-            render_table(news, "latest_news", storage, "latest_news.json") # Enable comments
+            if news:
+                render_table(news, "latest_news", storage, "latest_news.json", archive_target="history_news.json")
+            else:
+                st.info("All caught up!")
+
         with col2:
             st.subheader("📜 Papers")
             papers = load_data("latest_arxiv.json")
-            render_table(papers, "latest_arxiv", storage, "latest_arxiv.json")
+            if papers:
+                render_table(papers, "latest_arxiv", storage, "latest_arxiv.json", archive_target="history_arxiv.json")
+            else:
+                st.info("All caught up!")
             
     with tab2:
         st.header("🗄️ Full History")

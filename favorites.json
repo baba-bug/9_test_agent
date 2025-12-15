@@ -1,24 +1,5 @@
 [
   {
-    "title": "Inference-Time Scaling for Complex Tasks: Where We Stand and What Lies Ahead",
-    "link": "https://www.microsoft.com/en-us/research/publication/inference-time-scaling-for-complex-tasks-where-we-stand-and-what-lies-ahead/",
-    "summary": "该论文对复杂任务的推理时缩放技术进行了综述与展望。研究方法包括系统化分析现有技术（如思维链、自洽性）并指出未来方向。主要贡献是梳理了提升大型语言模型在推理任务上性能的关键范式与挑战。",
-    "date": "2025-03-13",
-    "venue": "Microsoft Tech Report (MSR-TR-2025-16)",
-    "ai_score": 80,
-    "impact_score": 5,
-    "is_tech_release": true,
-    "code_url": "https://github.com/microsoft/eureka-ml-insights",
-    "score_reason": "涉及AI推理与生成的前沿综述，并开源了相关代码库，但属于技术报告。",
-    "source_domain": "www.microsoft.com",
-    "type": "paper",
-    "score": 285,
-    "comment": "复杂任务综述",
-    "negtive_score": NaN,
-    "personal_score": 0,
-    "tags": []
-  },
-  {
     "score": 115,
     "ai_score": 65,
     "impact_score": 50,
