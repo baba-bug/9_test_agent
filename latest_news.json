@@ -1,29 +1,5 @@
 [
   {
-    "title": "Introducing SAM Audio: The First Unified Multimodal Model for Audio Separation",
-    "link": "https://ai.meta.com/blog/sam-audio/",
-    "summary": "Meta发布了SAM Audio，这是首个用于音频分离的统一多模态模型。它能够通过文本、视觉提示或时间标记等自然方式，轻松从复杂的音频混合物中分离出任何声音，从而革新音频处理。",
-    "date": "2025-12-16",
-    "venue": "Meta AI Blog",
-    "ai_score": 95,
-    "impact_score": 50,
-    "personal_score": 85,
-    "is_tech_release": true,
-    "code_url": null,
-    "score_reason": "发布了创新的多模态音频分离模型，与用户兴趣点（AI, Generation, Recognition, Sense）高度相关，且是技术发布。 [Impact Boosted by Verified Venue/IF: Meta AI Blog]",
-    "negtive_score": 0,
-    "tags": [
-      "AI",
-      "Audio",
-      "Multimodal",
-      "Generation",
-      "Computer Vision"
-    ],
-    "source_domain": "ai.meta.com",
-    "type": "news",
-    "score": 430
-  },
-  {
     "title": "Our New SAM Audio Model Transforms Audio Editing",
     "link": "https://about.fb.com/news/2025/12/our-new-sam-audio-model-transforms-audio-editing/",
     "summary": "Meta发布了SAM Audio模型，这是一个先进的AI模型，能够对声音进行分割，从而变革音频编辑方式。",
@@ -45,30 +21,6 @@
     "source_domain": "about.fb.com",
     "type": "news",
     "score": 425
-  },
-  {
-    "title": "How Conservation X Labs Is Using Segment Anything Model 3 for Endangered Wildlife Monitoring",
-    "link": "https://ai.meta.com/blog/segment-anything-conservation-x-wildlife-monitoring/",
-    "summary": "报道了Conservation X Labs如何利用Meta的Segment Anything Model 3（SAM 3）进行濒危野生动物的监测，展示了该模型在生态保护领域的应用案例。",
-    "date": "2025-11-24",
-    "venue": "Meta AI Blog",
-    "ai_score": 85,
-    "impact_score": 50,
-    "personal_score": 90,
-    "is_tech_release": false,
-    "code_url": null,
-    "score_reason": "展示了SAM 3在具体应用（野生动物监测）中的价值，与用户历史关键词（segment, search, images）高度匹配。 [Impact Boosted by Verified Venue/IF: Meta AI Blog]",
-    "negtive_score": 0,
-    "tags": [
-      "AI",
-      "Computer Vision",
-      "Segment",
-      "Conservation",
-      "Application"
-    ],
-    "source_domain": "ai.meta.com",
-    "type": "news",
-    "score": 225
   },
   {
     "title": "Into the Omniverse: Open World Foundation Models Generate Synthetic Worlds for Physical AI Development",
@@ -187,7 +139,8 @@
     ],
     "source_domain": "ai.meta.com",
     "type": "news",
-    "score": 195
+    "score": 195,
+    "comment": "就是一个框架可以用在他们的VR设备，同时兼容Torch"
   },
   {
     "title": "How to Fine-Tune an LLM on NVIDIA GPUs With Unsloth",

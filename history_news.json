@@ -1,5 +1,30 @@
 [
   {
+    "title": "Introducing SAM Audio: The First Unified Multimodal Model for Audio Separation",
+    "link": "https://ai.meta.com/blog/sam-audio/",
+    "summary": "Meta发布了SAM Audio，这是首个用于音频分离的统一多模态模型。它能够通过文本、视觉提示或时间标记等自然方式，轻松从复杂的音频混合物中分离出任何声音，从而革新音频处理。",
+    "date": "2025-12-16",
+    "venue": "Meta AI Blog",
+    "ai_score": 95,
+    "impact_score": 50,
+    "personal_score": 85,
+    "is_tech_release": true,
+    "code_url": null,
+    "score_reason": "发布了创新的多模态音频分离模型，与用户兴趣点（AI, Generation, Recognition, Sense）高度相关，且是技术发布。 [Impact Boosted by Verified Venue/IF: Meta AI Blog]",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Audio",
+      "Multimodal",
+      "Generation",
+      "Computer Vision"
+    ],
+    "source_domain": "ai.meta.com",
+    "type": "news",
+    "score": 430,
+    "comment": "非常重要，可以做对应任务的对话框了，以及他的应答"
+  },
+  {
     "title": "Absynth is back and weirder than ever after 16 years",
     "link": "https://www.theverge.com/entertainment/844432/native-instruments-absynth-6-mpe-brian-eno",
     "summary": "Native Instruments发布了16年来的首个Absynth合成器更新，支持MPE并引入了由Brian Eno设计的预设。",

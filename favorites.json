@@ -1,5 +1,55 @@
 [
   {
+    "title": "ExecuTorch Adoption in Reality Labs: Powering On-Device AI Across Meta Devices",
+    "link": "https://ai.meta.com/blog/executorch-reality-labs-on-device-ai/",
+    "summary": "Meta Reality Labs采用ExecuTorch框架，为Meta旗下设备提供端侧AI能力，旨在提升设备上的AI计算效率和性能。",
+    "date": "2025-11-21",
+    "venue": "Meta AI Blog",
+    "ai_score": 75,
+    "impact_score": 50,
+    "personal_score": 70,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及端侧AI和计算效率，与用户兴趣（computing, efficient, smart）部分相关，但非核心模型发布。 [Impact Boosted by Verified Venue/IF: Meta AI Blog]",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "On-Device AI",
+      "Framework",
+      "Mobile",
+      "Efficiency"
+    ],
+    "source_domain": "ai.meta.com",
+    "type": "news",
+    "score": 195,
+    "comment": "就是一个框架可以用在他们的VR设备，同时兼容Torch"
+  },
+  {
+    "title": "Introducing SAM Audio: The First Unified Multimodal Model for Audio Separation",
+    "link": "https://ai.meta.com/blog/sam-audio/",
+    "summary": "Meta发布了SAM Audio，这是首个用于音频分离的统一多模态模型。它能够通过文本、视觉提示或时间标记等自然方式，轻松从复杂的音频混合物中分离出任何声音，从而革新音频处理。",
+    "date": "2025-12-16",
+    "venue": "Meta AI Blog",
+    "ai_score": 95,
+    "impact_score": 50,
+    "personal_score": 85,
+    "is_tech_release": true,
+    "code_url": null,
+    "score_reason": "发布了创新的多模态音频分离模型，与用户兴趣点（AI, Generation, Recognition, Sense）高度相关，且是技术发布。 [Impact Boosted by Verified Venue/IF: Meta AI Blog]",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Audio",
+      "Multimodal",
+      "Generation",
+      "Computer Vision"
+    ],
+    "source_domain": "ai.meta.com",
+    "type": "news",
+    "score": 430,
+    "comment": "非常重要，可以做对应任务的对话框了，以及他的应答"
+  },
+  {
     "score": 115,
     "ai_score": 65,
     "impact_score": 50,
