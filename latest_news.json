@@ -1,5 +1,28 @@
 [
   {
+    "title": "The sold-out Nex Playground made my kids laugh and cry",
+    "link": "https://www.theverge.com/games/848449/nex-playground-review-nintendo-wii-microsoft-kinect-motion-tracking-camera",
+    "summary": "Nex Playground是一款结合动作追踪摄像头的体感游戏设备，评测称其能带来强烈的情绪反应，类似任天堂Wii和微软Kinect的体验。",
+    "date": "2025-12-20",
+    "venue": "The Verge",
+    "ai_score": 60,
+    "impact_score": 20,
+    "personal_score": 50,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及动作追踪和体感交互，与HCI和XR相关，但非核心AI技术。",
+    "negtive_score": 0,
+    "tags": [
+      "HCI",
+      "Motion Tracking",
+      "Gaming",
+      "Gesture"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 130
+  },
+  {
     "title": "Meta Is Developing a New AI Image and Video Model Code-Named ‘Mango’",
     "link": "https://www.wsj.com/tech/ai/meta-developing-new-ai-image-and-video-model-code-named-mango-16e785c7?st=BwUmJw&reflink=desktopwebshare_permalink",
     "summary": "Meta正在开发一款代号为“Mango”的新AI图像和视频生成模型。",
