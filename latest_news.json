@@ -1,5 +1,157 @@
 [
   {
+    "title": "Advancing science and math with GPT-5.2",
+    "link": "https://openai.com/index/gpt-5-2-for-science-and-math/",
+    "summary": "该报告介绍了GPT-5.2模型，这是OpenAI迄今为止在数学和科学工作方面最强大的模型。",
+    "date": "2025-12-11",
+    "venue": "OpenAI Publication",
+    "ai_score": 90,
+    "impact_score": 50,
+    "personal_score": 60,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "报告涉及前沿AI模型发布，与‘introducing’关键词相关，但作为公司技术报告，非学术会议论文。 [Impact Boosted by Verified Venue/IF: OpenAI Publication]",
+    "tags": [
+      "LLM",
+      "AI",
+      "Science"
+    ],
+    "source_domain": "openai.com",
+    "type": "paper",
+    "score": 200
+  },
+  {
+    "title": "Evaluating AI’s ability to perform scientific research tasks",
+    "link": "https://openai.com/index/frontierscience/",
+    "summary": "该研究介绍了FrontierScience基准，用于评估AI在物理、化学和生物学领域进行专家级科学推理的能力。",
+    "date": "2025-12-16",
+    "venue": "OpenAI Research",
+    "ai_score": 80,
+    "impact_score": 50,
+    "personal_score": 40,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "研究涉及AI在科学领域的基准测试，与‘benchmark’关键词相关，但作为公司研究报告，非顶级会议发表。 [Impact Boosted by Verified Venue/IF: OpenAI Research]",
+    "tags": [
+      "AI",
+      "Benchmark",
+      "Science"
+    ],
+    "source_domain": "openai.com",
+    "type": "paper",
+    "score": 170
+  },
+  {
+    "title": "Evaluating chain-of-thought monitorability",
+    "link": "https://openai.com/index/evaluating-chain-of-thought-monitorability/",
+    "summary": "该研究引入了思维链可监控性的评估方法，并研究了其如何随测试时计算、强化学习和预训练的扩展而变化。",
+    "date": "2025-12-18",
+    "venue": "OpenAI Research",
+    "ai_score": 85,
+    "impact_score": 50,
+    "personal_score": 30,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "研究涉及AI Agent的思维链评估，但作为公司研究报告，非顶级会议发表，且与用户历史关键词匹配度一般。 [Impact Boosted by Verified Venue/IF: OpenAI Research]",
+    "tags": [
+      "LLM",
+      "Agent",
+      "Evaluation"
+    ],
+    "source_domain": "openai.com",
+    "type": "paper",
+    "score": 165
+  },
+  {
+    "title": "Measuring AI’s capability to accelerate biological research in the wet lab",
+    "link": "https://openai.com/index/accelerating-biological-research-in-the-wet-lab/",
+    "summary": "该研究展示了GPT-5在湿实验室中创建新颖的实验方案改进，将分子克隆方案的效率优化了79倍。",
+    "date": "2025-12-16",
+    "venue": "OpenAI Research",
+    "ai_score": 75,
+    "impact_score": 50,
+    "personal_score": 20,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "研究涉及AI在生物领域的应用，但作为公司研究报告，非顶级会议发表，且与用户核心兴趣领域（如XR、3D）相关性较低。 [Impact Boosted by Verified Venue/IF: OpenAI Research]",
+    "tags": [
+      "AI",
+      "Biology",
+      "Optimization"
+    ],
+    "source_domain": "openai.com",
+    "type": "paper",
+    "score": 145
+  },
+  {
+    "title": "Humanoid robots are coming. Eventually?",
+    "link": "https://www.theverge.com/column/843418/humanoid-robot-hype",
+    "summary": "文章探讨了人形机器人的发展前景，指出中国将其视为经济引擎，而马斯克则希望打造“机器人军队”。",
+    "date": "2025-12-21",
+    "venue": "The Verge",
+    "ai_score": 75,
+    "impact_score": 20,
+    "personal_score": 40,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及机器人（Robotics）和AI控制，但属于评论性文章，非技术发布。",
+    "negtive_score": 0,
+    "tags": [
+      "Robotics",
+      "AI",
+      "Hardware",
+      "Industry"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 135
+  },
+  {
+    "title": "SmartThings is the first platform to support Matter cameras.",
+    "link": "https://news.samsung.com/global/samsung-smartthings-becomes-the-industrys-first-to-support-matter-cameras",
+    "summary": "三星SmartThings成为首个支持Matter摄像头标准的平台，本月开始更新，并与Aqara等厂商合作。",
+    "date": "2025-12-18",
+    "venue": "Samsung",
+    "ai_score": 20,
+    "impact_score": 15,
+    "personal_score": 25,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及智能家居标准和摄像头，与用户兴趣点关联度较低。",
+    "negtive_score": 0,
+    "tags": [
+      "Smart Home",
+      "Hardware",
+      "Standard",
+      "Camera"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 60
+  },
+  {
+    "title": "The RAM shortage is here to stay, raising prices on PCs and phones",
+    "link": "https://www.theverge.com/news/848199/ram-shortage-pc-phone-price-increases",
+    "summary": "报道指出RAM短缺将持续，导致PC和手机价格上涨。",
+    "date": "2025-12-19",
+    "venue": "The Verge",
+    "ai_score": 0,
+    "impact_score": 10,
+    "personal_score": 0,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "属于基础设施硬件消息，用户不关心，给负分。",
+    "negtive_score": -80,
+    "tags": [
+      "Hardware",
+      "Memory",
+      "Market"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 10
+  },
+  {
     "title": "The sold-out Nex Playground made my kids laugh and cry",
     "link": "https://www.theverge.com/games/848449/nex-playground-review-nintendo-wii-microsoft-kinect-motion-tracking-camera",
     "summary": "Nex Playground是一款结合动作追踪摄像头的体感游戏设备，评测称其能带来强烈的情绪反应，类似任天堂Wii和微软Kinect的体验。",
