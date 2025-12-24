@@ -1,5 +1,72 @@
 [
   {
+    "title": "Waymo is working on a Google Gemini-powered in-car AI assistant.",
+    "link": "https://www.theverge.com/news/850096/waymo-explains-saturdays-self-driving-shutdown-in-san-francisco",
+    "summary": "Waymo正在开发一款由Google Gemini驱动的车载AI助手，旨在提升自动驾驶汽车的交互体验。",
+    "date": "2025-12-24",
+    "venue": "The Verge",
+    "ai_score": 95,
+    "impact_score": 25,
+    "personal_score": 85,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "结合了AI Agent与自动驾驶，高度匹配用户兴趣点。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Agent",
+      "Autonomous Driving",
+      "LLM"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 205
+  },
+  {
+    "title": "Nvidia tests of Intel’s 18A chip manufacturing process “stopped moving forward.”",
+    "link": "https://www.theverge.com/news/622871/intel-is-reportedly-testing-its-18a-process-again-for-nvidia-and-broadcom",
+    "summary": "据报道，英伟达对英特尔18A芯片制造工艺的测试已停止推进，可能与该工艺的良率未达预期有关。",
+    "date": "2025-12-24",
+    "venue": "The Verge",
+    "ai_score": 15,
+    "impact_score": 25,
+    "personal_score": 10,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "属于芯片制造基础设施硬件消息，与用户兴趣点关联较弱。",
+    "negtive_score": -30,
+    "tags": [
+      "Hardware",
+      "Chip",
+      "Manufacturing"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 50
+  },
+  {
+    "title": "The FCC’s foreign drone ban is here",
+    "link": "https://www.theverge.com/news/849460/fcc-foreign-drone-ban-dji-congress-deadline",
+    "summary": "美国联邦通信委员会（FCC）的外国无人机禁令生效，未经国防部或国土安全部授权，进口无人机（如大疆）被视为“不可接受的风险”。",
+    "date": "2025-12-23",
+    "venue": "The Verge",
+    "ai_score": 10,
+    "impact_score": 20,
+    "personal_score": 5,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "属于监管政策消息，与用户核心技术兴趣点匹配度低。",
+    "negtive_score": -50,
+    "tags": [
+      "Policy",
+      "Drones",
+      "Regulation"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 35
+  },
+  {
     "title": "ChatGPT’s yearly recap sums up your conversations with the chatbot",
     "link": "https://www.theverge.com/news/849348/openai-chatgpt-2025-year-in-review-wrapped",
     "summary": "OpenAI为ChatGPT推出了“年度回顾”功能，可以总结用户与聊天机器人在一年中的对话。",
