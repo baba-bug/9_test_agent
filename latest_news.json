@@ -1,5 +1,96 @@
 [
   {
+    "title": "Nvidia pays a reported $20 billion for most of the AI chip startup Groq",
+    "link": "https://www.theverge.com/tech/849998/gemini-ai-stuffed-animal-commercial",
+    "summary": "据报道，英伟达以约200亿美元收购了AI芯片初创公司Groq的大部分业务，以获得其据称比GPU便宜10倍的推理技术非独家许可及相关团队。",
+    "date": "2025-12-24",
+    "venue": "The Verge",
+    "ai_score": 95,
+    "impact_score": 45,
+    "personal_score": 80,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及AI芯片（AI, Hardware）重大商业收购，与用户历史兴趣（computing, efficient）高度相关。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Hardware",
+      "Acquisition",
+      "Chip"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 220
+  },
+  {
+    "title": "Alexa, upgrade?",
+    "link": "https://www.theverge.com/news/621008/hands-on-with-alexa-plus-smart-home-echo-show-21",
+    "summary": "亚马逊下一代语音助手Alexa Plus现已向拥有旧款Echo设备的Prime会员开放，用户可通过语音指令“Alexa, upgrade”进行升级。",
+    "date": "2025-12-21",
+    "venue": "The Verge",
+    "ai_score": 80,
+    "impact_score": 25,
+    "personal_score": 75,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "亚马逊AI语音助手（AI, Agent）重大版本升级，涉及智能家居交互。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Agent",
+      "Voice Assistant",
+      "Smart Home"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 180
+  },
+  {
+    "title": "I re-created Google’s cute Gemini ad with my own kid’s stuffie, and I wish I hadn’t",
+    "link": "https://www.theverge.com/tech/849998/gemini-ai-stuffed-animal-commercial",
+    "summary": "文章作者尝试使用AI技术（类似谷歌Gemini广告）让自己的毛绒玩具看起来像在环游世界，但对此体验和创意价值表示怀疑。",
+    "date": "2025-12-24",
+    "venue": "The Verge",
+    "ai_score": 75,
+    "impact_score": 10,
+    "personal_score": 65,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及AI生成内容（Generation），但属于个人体验分享，非技术发布。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Generation",
+      "Content Creation"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 150
+  },
+  {
+    "title": "ASUS ProArt GoPro edition laptop",
+    "link": "https://press.asus.com/news/press-releases/asus-proart-gopro-partnership-ai-video-workflow/",
+    "summary": "华硕与GoPro合作，推出带有专用GoPro按钮的ProArt GoPro版笔记本电脑，旨在用AI简化创作者视频工作流。",
+    "date": "2025-12-22",
+    "venue": "The Verge",
+    "ai_score": 65,
+    "impact_score": 15,
+    "personal_score": 70,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及AI赋能创作者工作流（AI, video），属于硬件产品合作与预告。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Hardware",
+      "Video",
+      "Creator Tools"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 150
+  },
+  {
     "title": "Waymo is working on a Google Gemini-powered in-car AI assistant.",
     "link": "https://www.theverge.com/news/850096/waymo-explains-saturdays-self-driving-shutdown-in-san-francisco",
     "summary": "Waymo正在开发一款由Google Gemini驱动的车载AI助手，旨在提升自动驾驶汽车的交互体验。",
