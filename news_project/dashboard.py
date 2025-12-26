@@ -202,7 +202,7 @@ def render_table(articles, key_prefix, storage, file_path=None, allow_delete=Fal
                         if updated:
                             save_data(file_path, all_data)
                             st.toast(f"Saved comment for: {row['title'][:30]}...")
-                            st.rerun() # Force reload to show updated state
+                            # st.rerun() # Removed to prevent page refresh, as requested
 
                 st.divider()
 

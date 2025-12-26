@@ -37,6 +37,21 @@ class Storage:
                     self.seen_links = set(data.get("seen_links", []))
                     self.page_hashes = data.get("page_hashes", {})
                 print(f"📂 [Local] Loaded history: {len(self.seen_links)} articles, {len(self.page_hashes)} page hashes.")
+                
+                # IMPORTANT: Also load links from History/Favorites files to ensure sync
+                other_files = ["history_news.json", "history_arxiv.json", "favorites.json", "latest_news.json", "latest_arxiv.json"]
+                for fname in other_files:
+                    if os.path.exists(fname):
+                        try:
+                            with open(fname, "r", encoding="utf-8") as f:
+                                items = json.load(f)
+                                for i in items:
+                                    if i.get('link'):
+                                        self.seen_links.add(i['link'])
+                        except:
+                            pass
+                print(f"🔗 Aggregated seen links: {len(self.seen_links)}")
+
             except Exception as e:
                 print(f"⚠ [Local] Failed to load state: {e}")
                 self.seen_links = set()
