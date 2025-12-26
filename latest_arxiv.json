@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "title": "MMSRARec: Summarization and Retrieval Augumented Sequential Recommendation Based on Multimodal Large Language Model",
+    "link": "http://arxiv.org/abs/2512.20916v1",
+    "summary": "本文提出MMSRARec，一个基于多模态大语言模型的摘要与检索增强序列推荐方法。针对现有MLLM推荐方法在可解释性、计算成本或协同信号整合上的不足，该方法首先使用MLLM将物品总结为简洁关键词，并通过融入摘要长度、信息损失和重建难度的奖励进行微调，以实现自适应摘要策略。受检索增强生成启发，它将协同信号转化为对应关键词并作为补充上下文。最后，通过多任务学习的监督微调使MLLM与多模态序列推荐任务对齐。该方法在常见推荐数据集上验证了其高效、可解释地理解用户行为历史和物品信息的能力。",
+    "date": "2025-12-24",
+    "venue": "Under Review",
+    "ai_score": 80,
+    "impact_score": 5,
+    "personal_score": 75,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "论文核心涉及LLM、Agent（推荐代理）、多模态和生成技术，与用户兴趣点匹配度高，但目前处于评审阶段，按arXiv预印本计分。",
+    "tags": [
+      "LLM",
+      "Multimodal",
+      "Recommendation Systems",
+      "Agent",
+      "Retrieval-Augmented Generation"
+    ],
+    "source_domain": "arxiv.org",
+    "type": "paper",
+    "score": 160
+  },
+  {
+    "title": "Blurb-Refined Inference from Crowdsourced Book Reviews using Hierarchical Genre Mining with Dual-Path Graph Convolutions",
+    "link": "http://arxiv.org/abs/2512.21076v1",
+    "summary": "本文提出HiGeMine，一个两阶段的层次化图书流派挖掘框架，用于提升分类可靠性。第一阶段采用零样本语义对齐策略过滤用户评论，保留与权威书籍简介语义一致的内容以降低噪声。第二阶段引入双路径、两层的图分类架构：第一层粗粒度分类器区分小说与非小说，第二层多标签分类器进行细粒度流派预测，并利用标签共现图显式建模流派间依赖关系。该方法在构建的新数据集上验证了有效性。",
+    "date": "2025-12-24",
+    "venue": "arXiv",
+    "ai_score": 15,
+    "impact_score": 5,
+    "personal_score": 5,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "论文主题为文本分类与图神经网络，与用户核心兴趣点（AI Agent, XR, Generation等）相关性较弱，且为arXiv预印本。",
+    "tags": [
+      "NLP",
+      "Graph Neural Networks",
+      "Classification",
+      "Text Mining"
+    ],
+    "source_domain": "arxiv.org",
+    "type": "paper",
+    "score": 25
+  }
+]

@@ -1,1 +1,95 @@
-[]
+[
+  {
+    "title": "Waymo is working on a Google Gemini-powered in-car AI assistant",
+    "link": "https://www.theverge.com/news/850096/waymo-gemini-ai-ride-assistant",
+    "summary": "Waymo正在开发一款由谷歌Gemini驱动的车内AI助手，代码显示其具备安抚乘客的“ reassurance_protocol ”等功能。",
+    "date": "2025-12-24",
+    "venue": "The Verge",
+    "ai_score": 90,
+    "impact_score": 30,
+    "personal_score": 85,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "结合了AI Agent、车载交互（HCI）和大型语言模型应用，与用户兴趣高度匹配。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Agent",
+      "LLM",
+      "Automotive",
+      "HCI"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 205
+  },
+  {
+    "title": "Nvidia pays a reported $20 billion for most of the AI chip startup Groq",
+    "link": "https://www.theverge.com/news/850096/nvidia-groq-ai-chip-acquisition-20-billion",
+    "summary": "据报道，英伟达以约200亿美元收购了AI芯片初创公司Groq的大部分业务，旨在获得其高效的AI推理技术许可和团队。",
+    "date": "2025-12-24",
+    "venue": "The Verge",
+    "ai_score": 75,
+    "impact_score": 40,
+    "personal_score": 60,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "重大AI硬件公司收购，涉及AI芯片（基础设施），但非用户核心兴趣点，影响力高。",
+    "negtive_score": -20,
+    "tags": [
+      "AI",
+      "Hardware",
+      "Chip",
+      "Business"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 175
+  },
+  {
+    "title": "LG teases a new chore-completing home robot",
+    "link": "https://www.theverge.com/news/850242/lg-cloid-home-robot-chores-ces-2026",
+    "summary": "LG预告了一款名为Cloid的新型家用机器人，旨在完成家务，并将在CES 2026上展示。",
+    "date": "2025-12-26",
+    "venue": "The Verge",
+    "ai_score": 70,
+    "impact_score": 20,
+    "personal_score": 65,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及家用机器人（Agent）和硬件发布，具有一定行业关注度。",
+    "negtive_score": 0,
+    "tags": [
+      "Robotics",
+      "Hardware",
+      "Agent",
+      "Smart Home"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 155
+  },
+  {
+    "title": "A GoPro laptop from ASUS",
+    "link": "https://www.theverge.com/news/850096/asus-proart-gopro-laptop-ces-2026",
+    "summary": "华硕与GoPro合作，将在CES 2026上发布一款ProArt GoPro特别版笔记本电脑，配备专用按钮以优化创作者视频工作流，并可能集成AI功能。",
+    "date": "2025-12-22",
+    "venue": "The Verge",
+    "ai_score": 50,
+    "impact_score": 15,
+    "personal_score": 55,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及AI视频工作流和硬件发布，与“generation”、“video”等用户兴趣点有部分关联。",
+    "negtive_score": 0,
+    "tags": [
+      "Hardware",
+      "AI",
+      "Video",
+      "Creator Tools"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 120
+  }
+]
