@@ -1,6 +1,31 @@
 [
   {
     "title": "Waymo is working on a Google Gemini-powered in-car AI assistant",
+    "link": "https://www.theverge.com/news/850096/waymo-gemini-in-car-ai-assistant",
+    "summary": "Waymo正在开发一款由谷歌Gemini驱动的车内AI助手，代码显示其具备安抚乘客的“ reassurance_protocol ”等功能。",
+    "date": "2025-12-24",
+    "venue": "The Verge",
+    "ai_score": 95,
+    "impact_score": 30,
+    "personal_score": 90,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "结合了AI Agent、车载HCI、情感识别（Affective/Emotion）等多项用户高度关注的前沿领域。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Agent",
+      "HCI",
+      "Automotive",
+      "Gemini",
+      "Affective Computing"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 215
+  },
+  {
+    "title": "Waymo is working on a Google Gemini-powered in-car AI assistant",
     "link": "https://www.theverge.com/news/850096/waymo-gemini-ai-ride-assistant",
     "summary": "Waymo正在开发一款由谷歌Gemini驱动的车内AI助手，代码显示其具备安抚乘客的“ reassurance_protocol ”等功能。",
     "date": "2025-12-24",
