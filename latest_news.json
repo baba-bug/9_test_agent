@@ -1,5 +1,96 @@
 [
   {
+    "title": "Improving Instruction-Following in Language Models through Activation Steering",
+    "link": "https://www.microsoft.com/en-us/research/publication/improving-instruction-following-in-language-models-through-activation-steering/",
+    "summary": "本研究探索通过激活导向（Activation Steering）技术来改进语言模型的指令遵循能力。该方法在模型前向传播过程中，对内部神经激活施加特定的引导向量，从而在不更新模型权重的情况下，实时调整模型的行为以更好地符合人类指令。创新点在于提供了一种轻量级、可干预的模型控制手段，增强了LLM的可控性和安全性。",
+    "date": "2024-10-01",
+    "venue": "ICLR 2025",
+    "ai_score": 85,
+    "impact_score": 50,
+    "personal_score": 75,
+    "is_tech_release": true,
+    "code_url": "https://github.com/microsoft/llm-steer-instruct",
+    "score_reason": "顶级会议ICLR论文，研究LLM可控性（与agentic相关），提供GitHub代码。",
+    "tags": [
+      "LLM",
+      "Controllability",
+      "Interpretability",
+      "Activation Engineering",
+      "Open Source"
+    ],
+    "source_domain": "www.microsoft.com",
+    "type": "paper",
+    "score": 410
+  },
+  {
+    "title": "Unearthing Skill-Level Insights for Understanding Trade-Offs of Foundation Models",
+    "link": "https://www.microsoft.com/en-us/research/publication/unearthing-skill-level-insights-for-understanding-trade-offs-of-foundation-models/",
+    "summary": "本研究提出了一种在“技能”粒度上分析和理解基础模型权衡的新方法。不同于整体性能评估，该方法将模型能力分解为细粒度的技能单元，从而更精确地揭示模型在不同技能上的优势、劣势及它们之间的取舍关系。贡献在于提供了一个可解释的分析框架，帮助开发者根据下游任务需求更明智地选择或改进模型。",
+    "date": "2024-10-01",
+    "venue": "ICLR 2025",
+    "ai_score": 78,
+    "impact_score": 50,
+    "personal_score": 70,
+    "is_tech_release": true,
+    "code_url": "https://github.com/microsoft/skill-slice-insights",
+    "score_reason": "顶级会议ICLR论文，提供模型能力分析的创新视角和开源代码，与AI模型评估相关。",
+    "tags": [
+      "Foundation Models",
+      "Model Evaluation",
+      "Interpretability",
+      "Analysis",
+      "Open Source"
+    ],
+    "source_domain": "www.microsoft.com",
+    "type": "paper",
+    "score": 398
+  },
+  {
+    "title": "LoRA vs Full Fine-tuning: An Illusion of Equivalence",
+    "link": "https://www.microsoft.com/en-us/research/publication/lora-vs-full-fine-tuning-an-illusion-of-equivalence/",
+    "summary": "本研究通过系统的实验分析，挑战了“LoRA微调与全参数微调效果等价”的普遍认知。研究发现，在某些任务和评估指标下，全参数微调显著优于LoRA，揭示了参数高效微调技术存在的局限性。该工作贡献在于提供了深入的经验证据，促使社区重新思考轻量级适配方法的能力边界与适用场景。",
+    "date": "2024-10-01",
+    "venue": "NeurIPS 2025",
+    "ai_score": 80,
+    "impact_score": 50,
+    "personal_score": 70,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "发表在顶级会议NeurIPS，探讨大模型微调的核心技术，与生成、AI高度相关。",
+    "tags": [
+      "LLM",
+      "Fine-tuning",
+      "Efficiency",
+      "Model Analysis",
+      "NeurIPS"
+    ],
+    "source_domain": "www.microsoft.com",
+    "type": "paper",
+    "score": 200
+  },
+  {
+    "title": "This experimental camera can focus on everything at once",
+    "link": "https://www.theverge.com/news/850689/camera-focal-lens-technology-research",
+    "summary": "研究人员开发了一种实验性相机技术，能够同时对所有距离的物体进行对焦，突破了传统镜头的物理限制。",
+    "date": "2025-12-29",
+    "venue": "The Verge",
+    "ai_score": 30,
+    "impact_score": 15,
+    "personal_score": 40,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及视觉与感知技术，但属于早期研究，非产品发布。",
+    "negtive_score": 0,
+    "tags": [
+      "Vision",
+      "Hardware",
+      "Research"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 85
+  },
+  {
     "title": "You can now download this cancelled Windows OS for your Surface Duo",
     "link": "https://www.xda-developers.com/download-cancelled-windows-os-surface-duo/",
     "summary": "微软为Surface Duo开发的、代号为“Andromeda”的Windows 10操作系统（已取消）的不稳定版本现已可供下载。",
