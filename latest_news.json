@@ -1,5 +1,138 @@
 [
   {
+    "title": "Nvidia pays a reported $20 billion for most of the AI chip startup Groq",
+    "link": "https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale",
+    "summary": "据报道，英伟达以约200亿美元收购了AI芯片初创公司Groq的大部分业务，双方达成了一项非独家推理技术许可协议，旨在加速全球AI推理能力。",
+    "date": "2025-12-24",
+    "venue": "Groq",
+    "ai_score": 75,
+    "impact_score": 40,
+    "personal_score": 65,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及AI芯片巨头重大收购，影响AI硬件基础设施格局，但非直接技术发布。",
+    "negtive_score": -10,
+    "tags": [
+      "AI",
+      "Hardware",
+      "Business",
+      "Chip"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 180
+  },
+  {
+    "title": "This smart garden turned my black thumb green",
+    "link": "https://www.theverge.com/tech/850224/gardyn-studio-2-review-smart-indoor-garden",
+    "summary": "Gardyn Studio 2智能室内花园通过AI、水培技术和智能照明，实现了几乎无需动手的室内种植体验。",
+    "date": "2025-12-30",
+    "venue": "The Verge",
+    "ai_score": 50,
+    "impact_score": 10,
+    "personal_score": 40,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "产品应用了AI进行环境管理与优化，属于AI在垂直领域的应用。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "IoT",
+      "Consumer-Tech"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 100
+  },
+  {
+    "title": "Nvidia tests of Intel’s 18A chip manufacturing process “stopped moving forward.”",
+    "link": "https://www.reuters.com/world/us/how-silicon-valley-dealmaker-charmed-trump-gave-intel-lifeline-2025-12-24/",
+    "summary": "据报道，英伟达对英特尔18A芯片制造工艺的测试已经停止，可能源于该工艺的良率未达预期。",
+    "date": "2025-12-24",
+    "venue": "Reuters",
+    "ai_score": 20,
+    "impact_score": 25,
+    "personal_score": 15,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及芯片制造工艺，属于AI基础设施的上游，但更偏向制造与商业合作，非前沿AI/Agent技术。",
+    "negtive_score": -30,
+    "tags": [
+      "Chip",
+      "Manufacturing",
+      "Business"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 60
+  },
+  {
+    "title": "NY Governor Kathy Hochul signs warning labels for ‘addictive social media’ into law.",
+    "link": "https://www.governor.ny.gov/news/governor-hochul-signs-legislation-require-warning-labels-social-media-platforms",
+    "summary": "纽约州州长签署法案，要求社交媒体平台对可能危害青少年心理健康的功能添加成瘾性警告标签。",
+    "date": "2025-12-27",
+    "venue": "Governor Kathy Hochul",
+    "ai_score": 0,
+    "impact_score": 10,
+    "personal_score": 20,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "属于社交媒体监管政策，与用户不关心的领域（监管、法律）高度重合，给予负分。",
+    "negtive_score": -80,
+    "tags": [
+      "Policy",
+      "Social",
+      "Legal"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 30
+  },
+  {
+    "title": "The FCC has probably killed a plan to improve smart home security",
+    "link": "https://www.theverge.com/news/851271/cyber-trust-mark-program-lead-administrator-withdraws",
+    "summary": "美国联邦通信委员会（FCC）的一项旨在通过“网络信任标志”计划提升智能家居安全性的提案，很可能因主要管理方退出而夭折。",
+    "date": "2025-12-30",
+    "venue": "The Verge",
+    "ai_score": 0,
+    "impact_score": 10,
+    "personal_score": 5,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "属于监管政策和网络安全新闻，与用户不关心的领域（监管、政策）高度重合，给予负分。",
+    "negtive_score": -70,
+    "tags": [
+      "Policy",
+      "Security",
+      "IoT"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 15
+  },
+  {
+    "title": "Framework announces another memory price hike — and it likely won’t be its last",
+    "link": "https://www.theverge.com/news/850376/framework-ram-memory-ddr5-price-hikes",
+    "summary": "模块化笔记本电脑公司Framework宣布再次上调内存价格，并暗示由于全球RAM成本上涨，未来可能还会继续涨价。",
+    "date": "2025-12-26",
+    "venue": "The Verge",
+    "ai_score": 0,
+    "impact_score": 5,
+    "personal_score": 5,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "属于PC硬件供应链和价格变动新闻，与用户不关心的基础设施硬件消息重合，给予负分。",
+    "negtive_score": -60,
+    "tags": [
+      "Hardware",
+      "Business",
+      "PC"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 10
+  },
+  {
     "title": "Improving Instruction-Following in Language Models through Activation Steering",
     "link": "https://www.microsoft.com/en-us/research/publication/improving-instruction-following-in-language-models-through-activation-steering/",
     "summary": "本研究探索通过激活导向（Activation Steering）技术来改进语言模型的指令遵循能力。该方法在模型前向传播过程中，对内部神经激活施加特定的引导向量，从而在不更新模型权重的情况下，实时调整模型的行为以更好地符合人类指令。创新点在于提供了一种轻量级、可干预的模型控制手段，增强了LLM的可控性和安全性。",
