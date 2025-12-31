@@ -1,5 +1,74 @@
 [
   {
+    "title": "Instagram head Adam Mosseri says, “Feed is dead.”",
+    "link": "https://www.instagram.com/p/DS7pz7-DuZG/?img_index=7&igsh=a2tydDIwd3ZtM2xq",
+    "summary": "Instagram负责人Adam Mosseri在新年帖子中表示“信息流已死”，并谈及在生成式AI产生更逼真内容的背景下平台的未来。",
+    "date": "2025-12-31",
+    "venue": "Instagram (via The Verge)",
+    "ai_score": 70,
+    "impact_score": 30,
+    "personal_score": 85,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "平台负责人直接讨论生成式AI对社交媒体的影响，高度匹配用户对generation、social、meta的兴趣。",
+    "negtive_score": 0,
+    "tags": [
+      "Social Media",
+      "Generation",
+      "AI",
+      "Meta"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 185
+  },
+  {
+    "title": "Unitree Robotics Productions presents: Man Getting Hit By Robot.",
+    "link": "https://www.youtube.com/watch?v=PTCEPBDekH4",
+    "summary": "宇树科技发布了一段人形机器人踢人的视频，旨在展示其真实性和能力，引发了关于其真实性的讨论。",
+    "date": "2025-12-27",
+    "venue": "The Verge",
+    "ai_score": 60,
+    "impact_score": 20,
+    "personal_score": 65,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "展示了先进的人形机器人动作与控制，与AI、Agent、Control领域高度相关。",
+    "negtive_score": 0,
+    "tags": [
+      "Robotics",
+      "AI",
+      "Control",
+      "Hardware"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 145
+  },
+  {
+    "title": "How to tweak your online platform algorithms",
+    "link": "https://www.theverge.com/tech/849742/how-to-tune-algorithms-recommendations-online-platforms",
+    "summary": "文章介绍了用户如何调整各大在线平台的推荐算法，以更好地控制自己看到的内容。",
+    "date": "2025-12-29",
+    "venue": "The Verge",
+    "ai_score": 55,
+    "impact_score": 15,
+    "personal_score": 50,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及算法推荐系统的用户交互与控制，与HCI、AI、social兴趣点相关。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "HCI",
+      "Social Media",
+      "Algorithm"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 120
+  },
+  {
     "title": "Nvidia pays a reported $20 billion for most of the AI chip startup Groq",
     "link": "https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale",
     "summary": "据报道，英伟达以约200亿美元收购了AI芯片初创公司Groq的大部分业务，双方达成了一项非独家推理技术许可协议，旨在加速全球AI推理能力。",
