@@ -1,5 +1,98 @@
 [
   {
+    "title": "You can’t trust your eyes to tell you what’s real anymore, says the head of Instagram",
+    "link": "https://www.theverge.com/news/852124/adam-mosseri-ai-images-video-instagram",
+    "summary": "Instagram负责人Adam Mosseri表示，随着生成式AI产生更多逼真内容，人们已无法再相信自己的眼睛来判断什么是真实的。",
+    "date": "2025-12-31",
+    "venue": "The Verge",
+    "ai_score": 85,
+    "impact_score": 30,
+    "personal_score": 85,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "直接讨论生成式AI（Generation）对现实认知（reality）和社会（social）的影响，高度匹配用户兴趣。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Generation",
+      "Social Media",
+      "Policy",
+      "Vision"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 200
+  },
+  {
+    "title": "Clippers fans love getting their face scanned.",
+    "link": "https://www.theverge.com/science/786067/clippers-kawhi-leonard-salary-cap-investigation-carbon-credit-climate-change",
+    "summary": "在快船队新主场Intuit Dome，接近75%的观众选择注册面部扫描（或称“面部认证”）用于票务等便利服务，远超预期。",
+    "date": "2026-01-01",
+    "venue": "The Verge",
+    "ai_score": 75,
+    "impact_score": 25,
+    "personal_score": 70,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及面部识别（Face/Recognition）技术的大规模实际应用、用户接受度及隐私讨论，匹配多个兴趣点。",
+    "negtive_score": 0,
+    "tags": [
+      "Recognition",
+      "Face",
+      "HCI",
+      "Social",
+      "Privacy"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 170
+  },
+  {
+    "title": "LG’s new karaoke-ready party speaker uses AI to remove song vocals",
+    "link": "https://www.theverge.com/news/852362/lg-xboom-stage-501-karaoke-launch-ces-2026",
+    "summary": "LG在CES 2026上发布了一款新的派对音箱XBOOM Stage 501，该音箱利用AI技术来移除歌曲中的人声，以实现卡拉OK功能。",
+    "date": "2026-01-01",
+    "venue": "The Verge",
+    "ai_score": 40,
+    "impact_score": 15,
+    "personal_score": 10,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及AI音频处理（人声分离），但属于消费电子产品发布，技术突破性一般。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Audio",
+      "Hardware",
+      "Consumer Electronics"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 65
+  },
+  {
+    "title": "NY Governor Kathy Hochul signs warning labels for ‘addictive social media’ into law",
+    "link": "https://www.theverge.com/news/850876/lg-gallery-tv-ces-2026#comments",
+    "summary": "纽约州州长签署法案，要求社交媒体平台对可能对青少年心理健康造成危害的“成瘾性”功能显示警告标签。",
+    "date": "2025-12-27",
+    "venue": "The Verge",
+    "ai_score": 20,
+    "impact_score": 20,
+    "personal_score": 15,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及社交媒体监管政策，与AI技术本身关联较弱，属于社会政策层面。",
+    "negtive_score": -70,
+    "tags": [
+      "Policy",
+      "Social Media",
+      "Health"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 55
+  },
+  {
     "title": "Instagram head Adam Mosseri says, “Feed is dead.”",
     "link": "https://www.instagram.com/p/DS7pz7-DuZG/?img_index=7&igsh=a2tydDIwd3ZtM2xq",
     "summary": "Instagram负责人Adam Mosseri在新年帖子中表示“信息流已死”，并谈及在生成式AI产生更逼真内容的背景下平台的未来。",
