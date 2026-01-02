@@ -1,5 +1,115 @@
 [
   {
+    "title": "Grok is undressing anyone, including minors",
+    "link": "https://www.theverge.com/news/853191/grok-explicit-bikini-pictures-minors",
+    "summary": "报道称Grok AI模型存在生成不雅图片（包括未成年人）的问题，引发了关于AI生成内容安全与伦理的担忧。",
+    "date": "2026-01-02",
+    "venue": "The Verge",
+    "ai_score": 95,
+    "impact_score": 35,
+    "personal_score": 85,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及AI生成内容（Generation）的重大伦理与安全问题，与用户兴趣高度相关。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Generation",
+      "Ethics",
+      "Safety"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 215
+  },
+  {
+    "title": "Microsoft CEO Satya Nadella is now blogging about AI slop",
+    "link": "https://www.theverge.com/news/852630/microsoft-ceo-satya-nadella-scratchpad-blog-ai-slop-comments",
+    "summary": "微软CEO萨提亚·纳德拉在其博客中评论了“AI slop”（低质量AI生成内容）现象，反映了行业对AI内容质量的关注。",
+    "date": "2026-01-02",
+    "venue": "The Verge",
+    "ai_score": 90,
+    "impact_score": 25,
+    "personal_score": 80,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "行业领袖讨论AI生成内容（Generation）质量，与用户兴趣点匹配。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Generation",
+      "Industry"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 195
+  },
+  {
+    "title": "GameSir put a tiny force feedback steering wheel on its new Swift Drive controller",
+    "link": "https://www.theverge.com/news/851259/gamesir-swift-drive-controller-steering-wheel-wireless-force-feedback",
+    "summary": "GameSir发布了新款Swift Drive游戏控制器，其特色是集成了一个带有力反馈功能的微型方向盘。",
+    "date": "2025-12-30",
+    "venue": "The Verge",
+    "ai_score": 10,
+    "impact_score": 10,
+    "personal_score": 30,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "游戏外设硬件更新，与核心AI/XR/Agent兴趣点关联度低。",
+    "negtive_score": 0,
+    "tags": [
+      "Gaming",
+      "Hardware",
+      "Controller"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 50
+  },
+  {
+    "title": "Two cybersecurity employees plead guilty to carrying out ransomware attacks",
+    "link": "https://www.theverge.com/news/851467/cybersecurity-employees-plead-guilty-alphv-blackcat-ransomware",
+    "summary": "两名网络安全公司的员工对参与实施针对其公司客户的勒索软件攻击表示认罪。",
+    "date": "2025-12-30",
+    "venue": "The Verge",
+    "ai_score": 0,
+    "impact_score": 10,
+    "personal_score": 5,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "网络安全犯罪事件，与AI/XR/Generation等前沿科技兴趣点无关。",
+    "negtive_score": -50,
+    "tags": [
+      "Security",
+      "Crime"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 15
+  },
+  {
+    "title": "Billion-dollar Bitcoin hacker Ilya Lichtenstein thanks Trump for early prison release",
+    "link": "https://www.theverge.com/news/853160/ilya-lichtenstein-released-razzlekhan-bitcoin-hack",
+    "summary": "涉及数十亿美元比特币黑客案的Ilya Lichtenstein感谢特朗普总统使其获得提前释放。",
+    "date": "2026-01-02",
+    "venue": "The Verge",
+    "ai_score": 0,
+    "impact_score": 5,
+    "personal_score": 5,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "加密货币犯罪与法律事件，与用户指定的前沿科技兴趣点完全无关。",
+    "negtive_score": -90,
+    "tags": [
+      "Crypto",
+      "Crime",
+      "Legal"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 10
+  },
+  {
     "title": "You can’t trust your eyes to tell you what’s real anymore, says the head of Instagram",
     "link": "https://www.theverge.com/news/852124/adam-mosseri-ai-images-video-instagram",
     "summary": "Instagram负责人Adam Mosseri表示，随着生成式AI产生更多逼真内容，人们已无法再相信自己的眼睛来判断什么是真实的。",
