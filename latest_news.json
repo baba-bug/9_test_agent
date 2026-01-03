@@ -1,5 +1,118 @@
 [
   {
+    "title": "OpenAI Is Taking On Apple’s App Store. It’s Got a Long Way to Go.",
+    "link": "https://www.wsj.com/tech/ai/openai-apple-app-store-sam-altman-7a9b08ca",
+    "summary": "报道指出，OpenAI正在挑战苹果的App Store，但其ChatGPT应用商店中的许多AI应用目前速度慢、有漏洞且复杂，体验仍不及传统iPhone应用。",
+    "date": "2026-01-03",
+    "venue": "The Wall Street Journal",
+    "ai_score": 95,
+    "impact_score": 35,
+    "personal_score": 90,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "核心涉及AI Agent应用生态和商业竞争，高度匹配用户对agentic和app的兴趣。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Agent",
+      "App",
+      "LLM"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 220
+  },
+  {
+    "title": "Why hang a painting in your home, when you can tell an AI to put slop on your wall?",
+    "link": "https://fraimic.com/",
+    "summary": "Fraimic公司在CES 2026上首次展示Smart Canvas智能画框，这是一款E-ink屏幕，可通过语音提示生成并显示AI“艺术”作品，现已开放预购。",
+    "date": "2026-01-03",
+    "venue": "The Verge",
+    "ai_score": 90,
+    "impact_score": 20,
+    "personal_score": 85,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "结合AI生成艺术与硬件产品，高度匹配用户对Generation和Devices的兴趣。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Generation",
+      "Hardware",
+      "Art"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 195
+  },
+  {
+    "title": "Clippers fans love getting their face scanned.",
+    "link": "https://www.sportico.com/business/tech/2025/facial-recognition-ai-scanning-sports-teams-stadium-laws-1234880030/",
+    "summary": "报道称，在快船队新主场Intuit Dome，接近75%的观众选择注册面部扫描（被称为“面部认证”）以换取便利，尽管存在隐私担忧，但抵制似乎并未增加。",
+    "date": "2026-01-01",
+    "venue": "Sportico",
+    "ai_score": 85,
+    "impact_score": 20,
+    "personal_score": 70,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及面部识别（Face）和AI在现实场景中的应用，匹配用户兴趣。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Recognition",
+      "Face",
+      "Biometrics"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 175
+  },
+  {
+    "title": "CES 2026: all the news, gadgets, and innovations from the biggest tech show",
+    "link": "https://www.theverge.com/tech/836627/ces-2026-news-gadgets-announcements",
+    "summary": "CES 2026消费电子展的新闻汇总，涵盖最新科技产品、小工具和创新发布。",
+    "date": "2026-01-03",
+    "venue": "The Verge",
+    "ai_score": 60,
+    "impact_score": 30,
+    "personal_score": 65,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "大型科技展会，可能涉及XR/硬件发布，但非单一技术突破。",
+    "negtive_score": 0,
+    "tags": [
+      "Hardware",
+      "XR",
+      "Gadgets"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 155
+  },
+  {
+    "title": "This smart home controller is literally a piece of wood",
+    "link": "https://www.theverge.com/tech/852598/mui-board-smart-home-controller-matter",
+    "summary": "Mui公司推出了一款名为Mui Board的智能家居控制器，它是一块木质面板，通过触摸和灯光显示进行交互，旨在提供一种无屏幕的“平静科技”体验。",
+    "date": "2026-01-03",
+    "venue": "The Verge",
+    "ai_score": 40,
+    "impact_score": 15,
+    "personal_score": 50,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "创新的智能家居硬件，涉及HCI和交互设计，但AI相关性较低。",
+    "negtive_score": 0,
+    "tags": [
+      "HCI",
+      "Hardware",
+      "Smart Home"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 105
+  },
+  {
     "title": "Grok is undressing anyone, including minors",
     "link": "https://www.theverge.com/news/853191/grok-explicit-bikini-pictures-minors",
     "summary": "报道称Grok AI模型存在生成不雅图片（包括未成年人）的问题，引发了关于AI生成内容安全与伦理的担忧。",
