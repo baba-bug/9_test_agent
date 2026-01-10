@@ -1,5 +1,92 @@
 [
   {
+    "title": "Decision-Aware Trust Signal Alignment for SOC Alert Triage",
+    "link": "http://arxiv.org/abs/2601.04486v1",
+    "summary": "本文提出了一种面向安全运营中心（SOC）警报分诊的决策感知信任信号对齐框架。该框架将校准后的置信度、轻量级不确定性提示和成本敏感的决策阈值结合到一个连贯的决策支持层中，而无需修改底层检测模型。研究方法包括使用后处理方法进行概率校准，提供不确定性提示以在模型确定性低时提供保守保护，并应用逻辑回归和随机森林分类器在UNSW-NB15入侵检测基准上进行模型无关的性能评估。贡献在于解决了现有系统置信度显示与决策成本不对称性不匹配的问题，仿真结果表明，对齐的信任信号能显著减少漏报并降低成本加权损失。",
+    "date": "2026-01-08",
+    "venue": "",
+    "ai_score": 40,
+    "impact_score": 5,
+    "personal_score": 10,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及机器学习在安全决策中的应用，与AI有一定相关性，但与用户核心兴趣点（如XR、生成、3D等）匹配度不高，且为arXiv预印本。",
+    "tags": [
+      "Machine Learning",
+      "Security",
+      "Decision Support",
+      "HCI"
+    ],
+    "source_domain": "arxiv.org",
+    "type": "paper",
+    "score": 55
+  },
+  {
+    "title": "The UnScripted Trip: Fostering Policy Discussion on Future Human-Vehicle Collaboration in Autonomous Driving Through Design-Oriented Methods",
+    "link": "http://arxiv.org/abs/2601.04601v1",
+    "summary": "本文提出了一种名为“The UnScripted Trip”的卡牌游戏，旨在通过设计导向的方法促进关于未来自动驾驶中人与车辆协作的政策讨论。该研究基于虚构的自动驾驶叙事，旨在揭示未来AV场景中围绕人车协作的紧张关系，并激发对设计解决方案和政策方向的批判性反思。研究方法是通过组织研讨会，将汽车社区的研究人员和从业者聚集起来，利用该游戏作为一个参与式空间和方法，共同探索和塑造人车协作的未来及其政策含义。贡献在于搭建了HCI研究与政策制定之间的桥梁。",
+    "date": "2026-01-08",
+    "venue": "",
+    "ai_score": 25,
+    "impact_score": 5,
+    "personal_score": 15,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及HCI和未来人机协作场景，与Agent、HCI有一定相关性，但为研讨会描述/方法论文，且为arXiv预印本。",
+    "tags": [
+      "HCI",
+      "Autonomous Vehicles",
+      "Policy",
+      "Design Methods"
+    ],
+    "source_domain": "arxiv.org",
+    "type": "paper",
+    "score": 45
+  },
+  {
+    "title": "How Users Consider Web Tracking When Seeking Health Information Online",
+    "link": "http://arxiv.org/abs/2601.04485v1",
+    "summary": "本研究通过访谈35名加拿大居民，探讨了在线健康信息搜索者如何考虑网络追踪以及他们采取的保护措施。研究方法侧重于定性分析，调查用户是否及如何运用网站选择、隐私增强技术和自我审查这三种潜在的保护手段来对抗监控，以及他们对网络追踪的理解。研究发现，用户保护隐私的有限主动性和有效性，可能与他们对网络上第三方如何进行隐性数据收集以及谁在收集数据缺乏或存在不准确的理解有关。创新点在于指出隐私意识努力可能需要从关注“收集什么信息”转向“如何收集信息”，以帮助互联网用户实现更好的自我数据保护。",
+    "date": "2026-01-08",
+    "venue": "",
+    "ai_score": 15,
+    "impact_score": 5,
+    "personal_score": 20,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及在线行为与隐私，与HCI和健康信息相关，但AI技术相关性弱，且为arXiv预印本。",
+    "tags": [
+      "HCI",
+      "Privacy",
+      "Online Behavior",
+      "Health"
+    ],
+    "source_domain": "arxiv.org",
+    "type": "paper",
+    "score": 40
+  },
+  {
+    "title": "RecruitScope: A Visual Analytics System for Multidimensional Recruitment Data Analysis",
+    "link": "http://arxiv.org/abs/2601.04630v1",
+    "summary": "本文介绍了RecruitScope，一个用于多维招聘数据分析的可视化分析系统。该系统通过协调的可视化视图，支持求职者和雇主（特别是人力资源专家）从多个角度分析职位和薪资模式，在宏观层面解读行业动态，并在微观层面识别新兴职位。研究方法侧重于构建一个支持跨层级探索的交互式分析平台，并通过案例研究验证其有效性，揭示了区域薪资分布模式、行业增长轨迹以及市场中的高需求新兴角色。创新点在于将可视化分析技术应用于在线招聘领域，以弥补现有平台仅提供基础过滤功能的不足。",
+    "date": "2026-01-08",
+    "venue": "",
+    "ai_score": 10,
+    "impact_score": 5,
+    "personal_score": 5,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "论文主题为可视化分析，与用户指定的AI、Agent、XR等核心兴趣点相关性较弱，且为arXiv预印本。",
+    "tags": [
+      "Visual Analytics",
+      "HCI",
+      "Data Analysis"
+    ],
+    "source_domain": "arxiv.org",
+    "type": "paper",
+    "score": 20
+  },
+  {
     "title": "Defense Against Indirect Prompt Injection via Tool Result Parsing",
     "link": "http://arxiv.org/abs/2601.04795v1",
     "summary": "本文针对LLM智能体在向物理控制系统（如机器人）过渡时面临的间接提示注入（IPI）威胁，提出了一种新颖的防御方法。攻击者通过将对抗性指令嵌入工具调用结果中，可以劫持智能体的决策过程以执行未授权操作。现有防御方法（如专用检测模型或提示工程）存在计算开销高或攻击成功率（ASR）高的问题。本文方法的核心是通过工具结果解析，为LLM提供精确数据，同时有效过滤注入的恶意代码。该方法在保持有竞争力的受攻击下效用（UA）的同时，实现了迄今为止最低的攻击成功率，显著优于现有方法。",
