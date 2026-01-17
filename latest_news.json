@@ -1,5 +1,51 @@
 [
   {
+    "title": "A high-speed camera reveals how the Virtual Boy’s unique displays worked",
+    "link": "https://www.youtube.com/watch?v=jW7M8H99x7Y",
+    "summary": "高速摄像机揭示了任天堂失败产品Virtual Boy独特的3D显示系统是如何工作的。",
+    "date": "2026-01-16",
+    "venue": "The Verge",
+    "ai_score": 60,
+    "impact_score": 5,
+    "personal_score": 80,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "对经典VR硬件Virtual Boy的技术剖析，与VR、3D兴趣点相关。",
+    "negtive_score": 0,
+    "tags": [
+      "VR",
+      "3D",
+      "Hardware",
+      "Retro"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 145
+  },
+  {
+    "title": "Motorola’s latest smartwatch promises 13-day battery life and Polar-powered health tracking",
+    "link": "https://www.theverge.com/gadgets/851643/moto-watch-android-smarwatch-ces-2026",
+    "summary": "摩托罗拉在CES上发布新款智能手表，承诺13天续航并采用Polar健康追踪技术。",
+    "date": "2026-01-07",
+    "venue": "The Verge",
+    "ai_score": 40,
+    "impact_score": 15,
+    "personal_score": 60,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "新款可穿戴设备发布，涉及健康追踪，但AI相关性较弱。",
+    "negtive_score": 0,
+    "tags": [
+      "Hardware",
+      "Wearable",
+      "Health",
+      "CES"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 115
+  },
+  {
     "title": "Siri is a Gemini",
     "link": "https://www.theverge.com/podcast/863340/siri-is-a-gemini",
     "summary": "播客内容讨论了苹果Siri与谷歌Gemini AI模型的关系或整合可能性。",
