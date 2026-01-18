@@ -1,5 +1,51 @@
 [
   {
+    "title": "Fear and blogging (and prerelease laptop testing) in Las Vegas",
+    "link": "https://www.theverge.com/tech/862985/asus-zenbook-a16-snapdragon-x2-ces-early-testing-hands-on",
+    "summary": "记者在CES期间全程使用搭载高通Snapdragon X2处理器的华硕Zenbook A16原型机，并留下了深刻印象。",
+    "date": "2026-01-17",
+    "venue": "The Verge",
+    "ai_score": 10,
+    "impact_score": 10,
+    "personal_score": 5,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "关于笔记本电脑硬件评测，与核心兴趣点相关性低。",
+    "negtive_score": -20,
+    "tags": [
+      "Hardware",
+      "Laptop",
+      "CES",
+      "Review"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 25
+  },
+  {
+    "title": "Sony, Anker, and other headphones have a serious Google Fast Pair security vulnerability",
+    "link": "https://www.theverge.com/tech/863338/google-fast-pair-whisperpair-security-vulnerability-bluetooth-headphones-speakers",
+    "summary": "索尼、安克等品牌的耳机被发现存在严重的Google Fast Pair安全漏洞。",
+    "date": "2026-01-16",
+    "venue": "The Verge",
+    "ai_score": 5,
+    "impact_score": 10,
+    "personal_score": 5,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "关于蓝牙耳机的安全漏洞，与核心兴趣点无关。",
+    "negtive_score": -30,
+    "tags": [
+      "Security",
+      "Hardware",
+      "Bluetooth",
+      "Vulnerability"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 20
+  },
+  {
     "title": "A high-speed camera reveals how the Virtual Boy’s unique displays worked",
     "link": "https://www.youtube.com/watch?v=jW7M8H99x7Y",
     "summary": "高速摄像机揭示了任天堂失败产品Virtual Boy独特的3D显示系统是如何工作的。",
