@@ -1,5 +1,96 @@
 [
   {
+    "title": "Gamers will learn to love AI, says Razer CEO",
+    "link": "https://www.theverge.com/podcast/863361/razer-ceo-min-liang-tan-ces-2026-ai-gaming-project-ava-interview",
+    "summary": "雷蛇CEO表示，尽管存在对AI内容的抵制，但他认为AI未来将帮助游戏开发者制作更好的游戏。",
+    "date": "2026-01-19",
+    "venue": "The Verge",
+    "ai_score": 75,
+    "impact_score": 15,
+    "personal_score": 70,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "讨论AI在游戏开发中的应用，与用户兴趣点AI、Generation相关。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Gaming",
+      "Industry-Trends"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 160
+  },
+  {
+    "title": "A high-speed camera reveals how the Virtual Boy’s unique displays worked",
+    "link": "https://www.theverge.com/tech/862861/amd-ces-2026-socketed-laptop-chips-strix-halo-price",
+    "summary": "通过高速摄像机揭示了任天堂失败产品Virtual Boy如何利用红色LED和移动镜片产生3D图像。",
+    "date": "2026-01-16",
+    "venue": "The Verge",
+    "ai_score": 60,
+    "impact_score": 10,
+    "personal_score": 85,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及经典VR硬件技术解析，与用户兴趣点VR、3D、Spatial Computing高度相关。",
+    "negtive_score": 0,
+    "tags": [
+      "VR",
+      "3D",
+      "Hardware",
+      "Retro-Tech"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 155
+  },
+  {
+    "title": "California’s attorney general sent xAI a cease and desist letter over Grok’s nonconsensual AI deepfakes.",
+    "link": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-sends-cease-and-desist-letter-xai-demands-it-halt-illegal",
+    "summary": "加州总检察长就Grok生成非自愿AI深度伪造内容向xAI发出停止令，并已展开调查。",
+    "date": "2026-01-17",
+    "venue": "State of California - Department of Justice - Office of the Attorney General",
+    "ai_score": 55,
+    "impact_score": 30,
+    "personal_score": 40,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及AI生成内容（深度伪造）的监管和法律问题，与用户兴趣点AI、Generation相关，但属于监管政策范畴。",
+    "negtive_score": -60,
+    "tags": [
+      "AI",
+      "Generation",
+      "Policy",
+      "Deepfake",
+      "Legal"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 125
+  },
+  {
+    "title": "The two things AMD subtly revealed at CES that actually excite me",
+    "link": "https://www.theverge.com/tech/862861/amd-ces-2026-socketed-laptop-chips-strix-halo-price",
+    "summary": "AMD在CES上低调透露了可更换的笔记本芯片和更实惠的Strix Halo平台。",
+    "date": "2026-01-16",
+    "venue": "The Verge",
+    "ai_score": 10,
+    "impact_score": 15,
+    "personal_score": 10,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "主要关于CPU硬件基础设施更新，与用户核心兴趣点相关性低。",
+    "negtive_score": -80,
+    "tags": [
+      "Hardware",
+      "CPU",
+      "CES"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 35
+  },
+  {
     "title": "Fear and blogging (and prerelease laptop testing) in Las Vegas",
     "link": "https://www.theverge.com/tech/862985/asus-zenbook-a16-snapdragon-x2-ces-early-testing-hands-on",
     "summary": "记者在CES期间全程使用搭载高通Snapdragon X2处理器的华硕Zenbook A16原型机，并留下了深刻印象。",
