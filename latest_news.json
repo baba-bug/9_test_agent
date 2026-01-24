@@ -1,5 +1,98 @@
 [
   {
+    "title": "Claude Code is suddenly everywhere inside Microsoft",
+    "link": "https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad",
+    "summary": "Anthropic的Claude Code模型通过与微软的合作，正被快速集成到微软的多种产品（如记事本）中。",
+    "date": "2026-01-24",
+    "venue": "The Verge",
+    "ai_score": 95,
+    "impact_score": 40,
+    "personal_score": 90,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "重大AI模型（Claude）与科技巨头的深度集成与合作，影响广泛。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "LLM",
+      "Microsoft",
+      "Partnership",
+      "Integration"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 225
+  },
+  {
+    "title": "Gemini with Personal Intelligence is awfully familiar",
+    "link": "https://www.theverge.com/tech/866931/gemini-personal-intelligence-ai",
+    "summary": "谷歌Gemini AI推出“个人智能”功能，但其体验与市场上已有的AI助手（如ChatGPT）颇为相似。",
+    "date": "2026-01-24",
+    "venue": "The Verge",
+    "ai_score": 90,
+    "impact_score": 30,
+    "personal_score": 85,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及主流AI Agent的功能更新与竞争分析。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Agent",
+      "Google",
+      "Product-Update"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 205
+  },
+  {
+    "title": "Get ready for the AI ad-pocalypse",
+    "link": "https://www.theverge.com/report/866775/ai-generated-ads-slop-human-creativity",
+    "summary": "报道探讨AI生成广告的泛滥可能对广告创意行业和用户体验带来的冲击与挑战。",
+    "date": "2026-01-24",
+    "venue": "The Verge",
+    "ai_score": 85,
+    "impact_score": 25,
+    "personal_score": 75,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "深度讨论AI生成内容对创意产业的影响，与用户兴趣高度相关。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Generation",
+      "Media",
+      "Report"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 185
+  },
+  {
+    "title": "Get stuff done by yelling at your phone",
+    "link": "https://www.theverge.com/tech/866946/todoist-ramble-nexphone-crossplay-installe",
+    "summary": "介绍通过语音指令（如“吼叫”）来控制手机完成任务的新交互方式或应用。",
+    "date": "2026-01-24",
+    "venue": "The Verge",
+    "ai_score": 70,
+    "impact_score": 10,
+    "personal_score": 60,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及新颖的人机交互（HCI）方式，但非技术发布。",
+    "negtive_score": 0,
+    "tags": [
+      "HCI",
+      "Voice",
+      "App",
+      "Productivity"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 140
+  },
+  {
     "title": "Microsoft Paint can now make AI coloring books",
     "link": "https://www.theverge.com/news/866524/microsoft-paint-notepad-ai-coloring-book",
     "summary": "微软为 Paint 和 Notepad 应用添加 AI 功能，可以生成填色书。",
