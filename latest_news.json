@@ -1,5 +1,97 @@
 [
   {
+    "title": "ChatGPT isn’t the only chatbot pulling answers from Elon Musk’s Grokipedia",
+    "link": "https://www.theverge.com/report/870910/ai-chatbots-citing-grokipedia",
+    "summary": "报告指出，不止ChatGPT，多个AI聊天机器人都在从埃隆·马斯克的Grokipedia中提取答案。",
+    "date": "2026-01-31",
+    "venue": "The Verge",
+    "ai_score": 90,
+    "impact_score": 25,
+    "personal_score": 85,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及AI聊天机器人的数据来源和可靠性问题，匹配用户对AI、Search的兴趣。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "LLM",
+      "Chatbot",
+      "Data"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 200
+  },
+  {
+    "title": "Nvidia CEO denies he’s ‘unhappy’ with OpenAI",
+    "link": "https://www.theverge.com/tech/871818/nvidia-ceo-jensen-huang-unhappy-openai",
+    "summary": "英伟达CEO黄仁勋否认其对OpenAI感到“不满”的传闻。",
+    "date": "2026-01-31",
+    "venue": "The Verge",
+    "ai_score": 85,
+    "impact_score": 20,
+    "personal_score": 75,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及AI领域两大关键公司的关系，但属于公关回应。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Nvidia",
+      "OpenAI",
+      "Business"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 180
+  },
+  {
+    "title": "Peloton lays off 11 percent of its staff just a few months after launching its AI hardware",
+    "link": "https://www.theverge.com/gadgets/871422/peloton-layoffs-cost-cutting-2026",
+    "summary": "Peloton在发布其AI硬件几个月后，裁员了11%的员工。",
+    "date": "2026-01-30",
+    "venue": "The Verge",
+    "ai_score": 50,
+    "impact_score": 10,
+    "personal_score": 60,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及AI硬件和公司动态，但主要是商业裁员新闻。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Hardware",
+      "Business",
+      "Fitness"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 120
+  },
+  {
+    "title": "Fitbit users now have until May to migrate to a Google account",
+    "link": "https://www.theverge.com/gadgets/871218/fitbit-account-migration-google-deadline-may-2026",
+    "summary": "Fitbit用户迁移至谷歌账户的截止日期延长至2026年5月。",
+    "date": "2026-01-30",
+    "venue": "The Verge",
+    "ai_score": 40,
+    "impact_score": 10,
+    "personal_score": 50,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及可穿戴设备账户迁移，与健康数据相关。",
+    "negtive_score": 0,
+    "tags": [
+      "Wearable",
+      "Health",
+      "Google",
+      "Policy"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 100
+  },
+  {
     "title": "There’s a social network for AI agents, and it’s getting weird",
     "link": "https://www.theverge.com/ai-artificial-intelligence/871006/social-network-facebook-for-ai-agents-moltbook-moltbot-openclaw",
     "summary": "报道了一个名为MoltBook的AI智能体社交网络，其中AI智能体可以自主互动、创建内容，甚至出现了一些奇怪的行为，展示了AI智能体社会化的前沿探索。",
