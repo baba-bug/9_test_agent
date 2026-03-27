@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "title": "Google’s ‘live’ AI search assistant can handle conversations in dozens more languages",
+    "link": "https://www.theverge.com/tech/901816/google-search-live-ai-assistant-expansion",
+    "summary": "谷歌宣布扩展其AI搜索助手“Live”功能，现可支持数十种新语言的对话交互，提升搜索体验的自然度和覆盖范围。",
+    "date": "2026-03-26",
+    "venue": "The Verge",
+    "ai_score": 85,
+    "impact_score": 25,
+    "personal_score": 80,
+    "is_tech_release": false,
+    "score_reason": "AI搜索助手功能扩展，覆盖更多语言对话场景。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Search",
+      "NLP"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 190
+  },
+  {
+    "title": "Apple will reportedly allow other AI chatbots to plug into Siri",
+    "link": "https://www.theverge.com/tech/902048/apple-siri-ai-chatbot-update-ios-27",
+    "summary": "据报道，苹果计划在iOS 27中开放Siri，允许第三方AI聊天机器人接入，从而扩展Siri的功能和生态。",
+    "date": "2026-03-26",
+    "venue": "The Verge",
+    "ai_score": 80,
+    "impact_score": 30,
+    "personal_score": 75,
+    "is_tech_release": false,
+    "score_reason": "Siri或将开放支持第三方AI聊天机器人，改变助手生态。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Voice Assistant",
+      "Ecosystem"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 185
+  },
+  {
+    "title": "Wikipedia bans AI-generated articles",
+    "link": "https://www.theverge.com/tech/901461/wikipedia-ai-generated-article-ban",
+    "summary": "维基百科宣布禁止使用AI生成文章，以维护内容质量和可靠性，反映对AI生成内容的监管态度。",
+    "date": "2026-03-26",
+    "venue": "The Verge",
+    "ai_score": 70,
+    "impact_score": 15,
+    "personal_score": 40,
+    "is_tech_release": false,
+    "score_reason": "维基百科禁止AI生成文章，涉及内容政策与AI监管。",
+    "negtive_score": -30,
+    "tags": [
+      "AI",
+      "Policy",
+      "Content-Moderation"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 125
+  }
+]
