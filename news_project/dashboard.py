@@ -11,6 +11,7 @@ import concurrent.futures
 # Add project root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from news_project.scraper.storage import Storage
+from news_project.scraper.config import DATA_DIR
 
 st.set_page_config(layout="wide", page_title="AI News Dashboard", page_icon="🌍")
 
@@ -303,31 +304,31 @@ def main():
         with c_btn:
              if st.button("📭 Archive All (Mark as Read)", type="primary"):
                  # Archive News
-                 news_latest = load_data("latest_news.json")
+                 news_latest = load_data(os.path.join(DATA_DIR, "latest_news.json"))
                  if news_latest:
-                     news_hist = load_data("history_news.json")
+                     news_hist = load_data(os.path.join(DATA_DIR, "history_news.json"))
                      existing_links = {x['link'] for x in news_hist}
                      count = 0
                      for item in reversed(news_latest):
                          if item['link'] not in existing_links:
                              news_hist.insert(0, item)
                              count += 1
-                     save_data("history_news.json", news_hist)
-                     save_data("latest_news.json", []) # Clear latest
+                     save_data(os.path.join(DATA_DIR, "history_news.json"), news_hist)
+                     save_data(os.path.join(DATA_DIR, "latest_news.json"), []) # Clear latest
                      st.toast(f"Archived {count} news items.")
                  
                  # Archive Papers
-                 paper_latest = load_data("latest_arxiv.json")
+                 paper_latest = load_data(os.path.join(DATA_DIR, "latest_arxiv.json"))
                  if paper_latest:
-                     paper_hist = load_data("history_arxiv.json")
+                     paper_hist = load_data(os.path.join(DATA_DIR, "history_arxiv.json"))
                      existing_links = {x['link'] for x in paper_hist}
                      count = 0
                      for item in reversed(paper_latest):
                          if item['link'] not in existing_links:
                              paper_hist.insert(0, item)
                              count += 1
-                     save_data("history_arxiv.json", paper_hist)
-                     save_data("latest_arxiv.json", []) # Clear latest
+                     save_data(os.path.join(DATA_DIR, "history_arxiv.json"), paper_hist)
+                     save_data(os.path.join(DATA_DIR, "latest_arxiv.json"), []) # Clear latest
                      st.toast(f"Archived {count} papers.")
                  
                  st.rerun()
@@ -335,17 +336,17 @@ def main():
         col1, col2 = st.columns(2)
         with col1:
             st.subheader("📰 News")
-            news = load_data("latest_news.json")
+            news = load_data(os.path.join(DATA_DIR, "latest_news.json"))
             if news:
-                render_table(news, "latest_news", storage, "latest_news.json", archive_target="history_news.json")
+                render_table(news, "latest_news", storage, os.path.join(DATA_DIR, "latest_news.json"), archive_target=os.path.join(DATA_DIR, "history_news.json"))
             else:
                 st.info("All caught up!")
 
         with col2:
             st.subheader("📜 Papers")
-            papers = load_data("latest_arxiv.json")
+            papers = load_data(os.path.join(DATA_DIR, "latest_arxiv.json"))
             if papers:
-                render_table(papers, "latest_arxiv", storage, "latest_arxiv.json", archive_target="history_arxiv.json")
+                render_table(papers, "latest_arxiv", storage, os.path.join(DATA_DIR, "latest_arxiv.json"), archive_target=os.path.join(DATA_DIR, "history_arxiv.json"))
             else:
                 st.info("All caught up!")
             
@@ -355,18 +356,18 @@ def main():
         
         with col1:
              st.subheader("📰 News History")
-             data_news = load_data("history_news.json")
-             render_table(data_news, "hist_news", storage, "history_news.json")
+             data_news = load_data(os.path.join(DATA_DIR, "history_news.json"))
+             render_table(data_news, "hist_news", storage, os.path.join(DATA_DIR, "history_news.json"))
              
         with col2:
              st.subheader("📜 Paper History")
-             data_arxiv = load_data("history_arxiv.json")
-             render_table(data_arxiv, "hist_arxiv", storage, "history_arxiv.json")
+             data_arxiv = load_data(os.path.join(DATA_DIR, "history_arxiv.json"))
+             render_table(data_arxiv, "hist_arxiv", storage, os.path.join(DATA_DIR, "history_arxiv.json"))
 
     with tab3:
         st.header("⭐ My Favorites")
         # Reload to capture regrade updates
-        favs = load_data("favorites.json")
+        favs = load_data(os.path.join(DATA_DIR, "favorites.json"))
         
         if favs:
             # Split by type (heuristic: arxiv link = paper)
@@ -378,14 +379,14 @@ def main():
             with col1:
                 st.subheader("📰 Favorite News")
                 if fav_news:
-                    render_table(fav_news, "fav_news", storage, "favorites.json", allow_delete=True)
+                    render_table(fav_news, "fav_news", storage, os.path.join(DATA_DIR, "favorites.json"), allow_delete=True)
                 else:
                     st.info("No favorite news.")
                     
             with col2:
                 st.subheader("📜 Favorite Papers")
                 if fav_papers:
-                    render_table(fav_papers, "fav_papers", storage, "favorites.json", allow_delete=True)
+                    render_table(fav_papers, "fav_papers", storage, os.path.join(DATA_DIR, "favorites.json"), allow_delete=True)
                 else:
                     st.info("No favorite papers.")
         else:
@@ -471,16 +472,25 @@ def main():
             
             def check_url(url):
                 try:
-                    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
-                    response = requests.get(url, headers=headers, timeout=10)
+                    # 使用 curl_cffi 来模拟真实浏览器 (Chrome 120)，绕过 Cloudflare 和反爬机制
+                    from curl_cffi import requests as cffi_requests
+                    
+                    headers = {
+                        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+                        "Accept-Language": "en-US,en;q=0.9"
+                    }
+                    response = cffi_requests.get(url, headers=headers, impersonate="chrome120", timeout=10)
+                    
                     if response.status_code < 400:
                         return {"URL": url, "Status": f"✅ {response.status_code}", "Detail": "OK"}
                     else:
                         return {"URL": url, "Status": f"⚠️ {response.status_code}", "Detail": response.reason}
-                except requests.exceptions.Timeout:
-                    return {"URL": url, "Status": "❌ Timeout", "Detail": "Request took too long (>10s)"}
                 except Exception as e:
-                    return {"URL": url, "Status": "❌ Error", "Detail": str(e).split(':', 1)[0]}
+                    # Handle both timeout and other errors generically
+                    error_msg = str(e).split(':', 1)[0]
+                    if "timed out" in str(e).lower() or "timeout" in str(e).lower():
+                        return {"URL": url, "Status": "❌ Timeout", "Detail": "Request took too long (>10s)"}
+                    return {"URL": url, "Status": "❌ Error", "Detail": error_msg}
             
             with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
                 future_to_url = {executor.submit(check_url, url): url for url in TARGET_URLS}

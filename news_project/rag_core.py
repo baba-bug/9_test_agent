@@ -2,7 +2,7 @@ import json
 import os
 from datetime import datetime
 from typing import List, Dict, Any
-from news_project.scraper.config import DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL
+from news_project.scraper.config import DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL, DATA_DIR
 
 # RAG Configuration
 MAX_CONTEXT_ITEMS = 200 # How many articles to stuff into context
@@ -19,9 +19,10 @@ class LibraryChat:
         seen_links = set()
         
         for fname in files:
-            if os.path.exists(fname):
+            fpath = os.path.join(DATA_DIR, fname)
+            if os.path.exists(fpath):
                 try:
-                    with open(fname, "r", encoding="utf-8") as f:
+                    with open(fpath, "r", encoding="utf-8") as f:
                         data = json.load(f)
                         for art in data:
                             if art.get('link') and art['link'] not in seen_links:

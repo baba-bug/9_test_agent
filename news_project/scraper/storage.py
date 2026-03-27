@@ -3,13 +3,22 @@ import os
 from typing import Set, List, Dict, Any
 
 try:
+    from .config import DATA_DIR
+except ImportError:
+    from scraper.config import DATA_DIR
+
+try:
     from google.cloud import storage as gcs
 except ImportError:
     gcs = None
 
+def _data_path(filename: str) -> str:
+    """将裸文件名转换为基于 DATA_DIR 的绝对路径"""
+    return os.path.join(DATA_DIR, filename)
+
 class Storage:
     def __init__(self, file_path: str = "news_state.json"):
-        self.file_path = file_path
+        self.file_path = _data_path(file_path)
         self.bucket_name = os.getenv("NEWS_BUCKET_NAME") # 如果设置了此环境变量，则使用 GCS
         self.seen_links: Set[str] = set()
         self.page_hashes: Dict[str, str] = {}
@@ -41,9 +50,10 @@ class Storage:
                 # IMPORTANT: Also load links from History/Favorites files to ensure sync
                 other_files = ["history_news.json", "history_arxiv.json", "favorites.json", "latest_news.json", "latest_arxiv.json"]
                 for fname in other_files:
-                    if os.path.exists(fname):
+                    fpath = _data_path(fname)
+                    if os.path.exists(fpath):
                         try:
-                            with open(fname, "r", encoding="utf-8") as f:
+                            with open(fpath, "r", encoding="utf-8") as f:
                                 items = json.load(f)
                                 for i in items:
                                     if i.get('link'):
@@ -132,7 +142,7 @@ class Storage:
 
     def load_favorites(self) -> List[Dict[str, Any]]:
         """加载收藏夹"""
-        fav_path = "favorites.json"
+        fav_path = _data_path("favorites.json")
         if not os.path.exists(fav_path):
             return []
         try:
@@ -144,7 +154,7 @@ class Storage:
 
     def save_to_favorites(self, article: Dict[str, Any]):
         """保存文章到收藏夹 (自动去重)"""
-        fav_path = "favorites.json"
+        fav_path = _data_path("favorites.json")
         favorites = self.load_favorites()
         
         # Check for duplicate link

@@ -3,11 +3,18 @@ import os
 from collections import Counter
 import re
 
-def extract_user_interests(favorites_path="favorites.json", top_n=15):
+try:
+    from .config import DATA_DIR
+except ImportError:
+    from scraper.config import DATA_DIR
+
+def extract_user_interests(favorites_path=None, top_n=15):
     """
     Analyzes favorites.json to extract top keywords representing user interests.
     Returns a list of strings (keywords).
     """
+    if favorites_path is None:
+        favorites_path = os.path.join(DATA_DIR, "favorites.json")
     if not os.path.exists(favorites_path):
         return []
 

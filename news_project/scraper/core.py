@@ -320,7 +320,7 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news", user_int
         except Exception as e:
             print(f"❌ AI Extraction Inner Error: {e}")
             print(f"🔍 DEBUG ERROR OUTPUT: {result_text if 'result_text' in locals() else 'N/A'}")
-            return []
+            return None
 
     # --- MAIN EXTRACTION LOGIC ---
     
@@ -346,6 +346,8 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news", user_int
             if cleaned_batch:
                 # print(f"   📄 Cleaned Batch Len: {len(cleaned_batch)}")
                 batch_results = _query_ai(cleaned_batch)
+                if batch_results is None:
+                    return None # Propagate API error
                 final_articles.extend(batch_results)
                 
     else:
@@ -353,7 +355,10 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news", user_int
         cleaned_text = clean_html_for_ai(html, url)
         if cleaned_text:
             print(f"📝 Processing {url} as [{mode.upper()}] (Content len: {len(cleaned_text)})")
-            final_articles = _query_ai(cleaned_text)
+            batch_results = _query_ai(cleaned_text)
+            if batch_results is None:
+                return None # Propagate API error
+            final_articles = batch_results
 
     # --- POST PROCESSING & VALIDATION ---
     valid_articles = []

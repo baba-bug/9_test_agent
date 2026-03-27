@@ -9,7 +9,7 @@ import hashlib
 # 或者简单地把当前文件所在目录加入 path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from scraper.config import TARGET_URLS
+from scraper.config import TARGET_URLS, DATA_DIR
 from scraper.core import fetch_webpage, extract_news_with_ai
 from scraper.storage import Storage
 from scraper.utils import clean_html_for_ai 
@@ -23,7 +23,7 @@ async def monitor_news():
     print("=" * 60)
     
     # 0. Load User Interests
-    user_interests = extract_user_interests("favorites.json")
+    user_interests = extract_user_interests(os.path.join(DATA_DIR, "favorites.json"))
     if user_interests:
         print(f"👤 Personalization Active. Interests: {user_interests[:5]}...")
     
@@ -64,7 +64,11 @@ async def monitor_news():
             # extract_news_with_ai 内部会重新 cleaning，我们传 mode 进去
             articles = await extract_news_with_ai(html, url, mode=mode, user_interests=user_interests)
             
-            # 更新 Hash (无论是否提取到文章，只要内容变了就更新，避免重复尝试)
+            if articles is None:
+                print(f"⚠ API Unavailable/Error for {url}. Skipping hash update so we can retry later.")
+                continue
+            
+            # 更新 Hash (只有在 API 成功返回结果后，才更新 hash，避免浪费额度后页面被永久跳过)
             storage.save_page_hash(url, content_hash)
             
             if articles:
@@ -141,11 +145,13 @@ async def monitor_news():
                 if not articles:
                     return
                 
+                latest_path = os.path.join(DATA_DIR, latest_file)
+                
                 # 1. Load existing Latest (to append, not overwrite)
                 existing_latest = []
-                if os.path.exists(latest_file):
+                if os.path.exists(latest_path):
                     try:
-                        with open(latest_file, "r", encoding="utf-8") as f:
+                        with open(latest_path, "r", encoding="utf-8") as f:
                             existing_latest = json.load(f)
                     except:
                         pass
@@ -159,7 +165,7 @@ async def monitor_news():
                          existing_latest.insert(0, art)
                 
                 # Save to Latest
-                with open(latest_file, "w", encoding="utf-8") as f:
+                with open(latest_path, "w", encoding="utf-8") as f:
                     json.dump(existing_latest, f, ensure_ascii=False, indent=2)
                 print(f"💾 Updated {latest_file} (Total: {len(existing_latest)} items)")
                 

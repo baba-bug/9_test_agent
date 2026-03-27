@@ -1,5 +1,9 @@
 import os
 
+# 项目根目录 (仓库根目录)
+# config.py 在 news_project/scraper/config.py, 所以向上两级就是仓库根目录
+DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+
 # 目标网站列表
 TARGET_URLS = [
     "https://about.fb.com/news/",

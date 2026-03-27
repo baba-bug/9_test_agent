@@ -43,7 +43,7 @@ Content:
 
 Output JSON format:
 {{
-    "ai_score": (0-100), // Relevance to: AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing, Brain, Recognition, Cognitive, Health, Sense, Control, Emotion, Affective, Eye Tracking, Gesture, Face, Disability.
+    "ai_score": (0-100), // Relevance to: Memory,AI glasses, glasses, intelligent glasses,AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing, Brain, Recognition, Cognitive, Health, Sense, Control, Emotion, Affective, Eye Tracking, Gesture, Face, Disability.
     "impact_score": (0-50), // Industry Impact (Major Product=50, Update=10).{personal_context}
     "is_tech_release": (bool), // Is it an immediate tech release (code/model/demo)?
     "code_url": (str/null), // GitHub/HF link if present.
@@ -63,7 +63,7 @@ Content:
 
 Output JSON format:
 {{
-    "ai_score": (0-100), // Relevance to: AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing, Brain, Recognition, Cognitive, Health, Sense, Control, Emotion, Affective, Eye Tracking, Gesture, Face.{personal_context}
+    "ai_score": (0-100), // Relevance to: Memory, AI, Agent, HCI, XR/Spatial, Generation, Diffusion, 3D, VR, AR, MR, Spatial Computing, Brain, Recognition, Cognitive, Health, Sense, Control, Emotion, Affective, Eye Tracking, Gesture, Face.{personal_context}
     "impact_score": (0-50), // Academic Impact (CCF A/Top Journal=50, Arxiv=5).
     "is_tech_release": (bool), // Code/Weights released?
     "code_url": (str/null), // GitHub/HF link.
