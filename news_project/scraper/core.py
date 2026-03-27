@@ -298,7 +298,7 @@ async def extract_news_with_ai(html: str, url: str, mode: str = "news", user_int
 """
         try:
             response = client.chat.completions.create(
-                model="deepseek-chat",
+                model="deepseek-reasoner",
                 messages=[
                     {"role": "system", "content": "你是一个新闻提取专家。只返回纯净的 JSON 数组。summary 必须是中文。"},
                     {"role": "user", "content": prompt}
