@@ -5,6 +5,8 @@ import pandas as pd
 from datetime import datetime
 import asyncio
 import sys
+import requests
+import concurrent.futures
 
 # Add project root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -292,7 +294,7 @@ def main():
     
     storage = Storage()
 
-    tab1, tab2, tab3, tab4 = st.tabs(["🔥 Latest Updates", "📜 History", "⭐ Favorites (Editable)", "🤖 Hub Chat"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["🔥 Latest Updates", "📜 History", "⭐ Favorites (Editable)", "🤖 Hub Chat", "🌐 Status Check"])
 
     with tab1:
         c_title, c_btn = st.columns([8, 2])
@@ -454,6 +456,43 @@ def main():
                     highlight = " **(Cited)**" if f"[{i}]" in full_response else ""
                     st.markdown(f"**[{i}]** [{d['title']}]({d['link']}){highlight}")
                     st.caption(f"{d.get('date', '')} | {d.get('venue', '')} | Tags: {d.get('tags', [])}")
+
+    with tab5:
+        st.header("🌐 Website Connection Status")
+        st.caption("Check if all configured TARGET_URLS are accessible.")
+        
+        from news_project.scraper.config import TARGET_URLS
+        
+        if st.button("🔄 Run Health Check", type="primary"):
+            st.write(f"Testing {len(TARGET_URLS)} websites...")
+            progress_bar = st.progress(0)
+            
+            results = []
+            
+            def check_url(url):
+                try:
+                    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+                    response = requests.get(url, headers=headers, timeout=10)
+                    if response.status_code < 400:
+                        return {"URL": url, "Status": f"✅ {response.status_code}", "Detail": "OK"}
+                    else:
+                        return {"URL": url, "Status": f"⚠️ {response.status_code}", "Detail": response.reason}
+                except requests.exceptions.Timeout:
+                    return {"URL": url, "Status": "❌ Timeout", "Detail": "Request took too long (>10s)"}
+                except Exception as e:
+                    return {"URL": url, "Status": "❌ Error", "Detail": str(e).split(':', 1)[0]}
+            
+            with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+                future_to_url = {executor.submit(check_url, url): url for url in TARGET_URLS}
+                for i, future in enumerate(concurrent.futures.as_completed(future_to_url)):
+                    results.append(future.result())
+                    progress_bar.progress((i + 1) / len(TARGET_URLS))
+            
+            # Display results
+            results_df = pd.DataFrame(results)
+            # Sort by status to show errors first
+            results_df = results_df.sort_values(by="Status", ascending=False)
+            st.dataframe(results_df, use_container_width=True, hide_index=True)
 
 if __name__ == "__main__":
     main()

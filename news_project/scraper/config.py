@@ -31,6 +31,20 @@ TARGET_URLS = [
 # API Key 配置
 # 优先从环境变量获取，如果没有则使用默认值（开发测试用）
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API", "abc")
+
+# If running locally, load the API key from the local file
+local_key_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "deepseek_api_key.txt"))
+if os.path.exists(local_key_path):
+    try:
+        with open(local_key_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line.startswith("DEEPSEEK_API_KEY="):
+                    DEEPSEEK_API_KEY = line.split("=", 1)[1].strip()
+                    break
+    except Exception as e:
+        print(f"Error reading local API key file: {e}")
+
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 
 # DEBUG: Check which key is loaded

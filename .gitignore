@@ -1,7 +1,27 @@
-/aiagent_deepseek.ipynb
+# Standard Python Ignores
+__pycache__/
+*.pyc
+.env
+.conda/
+.vscode/
+
+# Jupyter Notebooks
+*.ipynb
+
+# Data / State / Result Files
+*.json
+mock_results.txt
+
+# Credentials / Secrets
+deepseek_api_key.txt
+
+# Testing / Debug Scripts at root
 /debug_ai_score.py
-/debug_result.json
-/mess
-/toolify_ds
-/paper_analysis
-/deepseek_api_key.txt
+/test_verify.py
+/update_scores.py
+
+# Unrelated Subdirectories (Experiments, Tests, Old projects)
+/mess/
+/testpy/
+/toolify_ds/
+/paper_analysis/
