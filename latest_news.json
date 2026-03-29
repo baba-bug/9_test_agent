@@ -1,5 +1,98 @@
 [
   {
+    "title": "Advancing Open Source AI, NVIDIA Donates Dynamic Resource Allocation Driver for GPUs to Kubernetes Community",
+    "link": "https://blogs.nvidia.com/blog/nvidia-at-kubecon-2026/",
+    "summary": "NVIDIA向Kubernetes社区捐赠了用于GPU的动态资源分配驱动程序，以推动开源AI基础设施的发展。",
+    "date": "2026-03-24",
+    "venue": "NVidia Blog",
+    "ai_score": 50,
+    "impact_score": 20,
+    "personal_score": 60,
+    "negtive_score": -50,
+    "is_tech_release": true,
+    "code_url": "https://github.com/NVIDIA",
+    "score_reason": "属于开源技术发布，但内容偏基础设施与社区捐赠，非前沿应用技术。",
+    "tags": [
+      "Open Source",
+      "Kubernetes",
+      "Infrastructure",
+      "GPU"
+    ],
+    "source_domain": "blogs.nvidia.com",
+    "type": "news",
+    "score": 330
+  },
+  {
+    "title": "Why OpenAI killed Sora",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/902368/openai-sora-dead-ai-video-generation-competition",
+    "summary": "报道分析了 OpenAI 关闭其AI视频生成模型 Sora 的原因，可能源于激烈的市场竞争和技术路线调整。",
+    "date": "2026-03-29",
+    "venue": "The Verge",
+    "ai_score": 95,
+    "impact_score": 40,
+    "personal_score": 95,
+    "negative_score": 0,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及重磅AI视频生成模型Sora的战略变动，属于重大行业动态。",
+    "tags": [
+      "AI",
+      "Generation",
+      "Video",
+      "Diffusion"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 230
+  },
+  {
+    "title": "Into the Omniverse: NVIDIA GTC Showcases Virtual Worlds Powering the Physical AI Era",
+    "link": "https://blogs.nvidia.com/blog/gtc-2026-virtual-worlds-physical-ai/",
+    "summary": "NVIDIA在GTC大会上展示其Omniverse虚拟世界平台如何推动物理AI时代的发展，连接数字与物理世界。",
+    "date": "2026-03-26",
+    "venue": "NVidia Blog",
+    "ai_score": 95,
+    "impact_score": 40,
+    "personal_score": 90,
+    "negtive_score": 0,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "核心涉及XR/Spatial Computing和虚拟世界，与用户兴趣高度匹配。",
+    "tags": [
+      "Spatial Computing",
+      "Simulation",
+      "Omniverse",
+      "XR",
+      "AI"
+    ],
+    "source_domain": "blogs.nvidia.com",
+    "type": "news",
+    "score": 225
+  },
+  {
+    "title": "Bluesky’s new app is an AI for customizing your feed",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/903190/bluesky-attie-ai-custom-feeds",
+    "summary": "社交媒体平台 Bluesky 发布了一款名为‘Attie’的新AI应用，用户可以通过自然语言指令来创建和定制自己的信息流。",
+    "date": "2026-03-29",
+    "venue": "The Verge",
+    "ai_score": 90,
+    "impact_score": 30,
+    "personal_score": 90,
+    "negative_score": 0,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "AI驱动的社交信息流定制工具发布，涉及Agent和个性化。",
+    "tags": [
+      "AI",
+      "Social Media",
+      "Agent",
+      "App"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 210
+  },
+  {
     "title": "Suno leans into customization with v5.5",
     "link": "https://www.theverge.com/entertainment/903056/suno-ai-music-v5-5-model",
     "summary": "AI音乐生成公司Suno发布了其模型的v5.5版本，新版本侧重于提供更强的个性化与定制化音乐生成能力。",
