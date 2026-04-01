@@ -1,5 +1,133 @@
 [
   {
+    "title": "Build with Veo 3.1 Lite, our most cost-effective video generation model",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite/",
+    "summary": "谷歌发布了其最新、最具成本效益的AI视频生成模型Veo 3.1 Lite，旨在让开发者更容易获得和使用视频生成技术。",
+    "date": "2026-03-31",
+    "venue": "The Verge",
+    "ai_score": 85,
+    "impact_score": 25,
+    "personal_score": 75,
+    "is_tech_release": true,
+    "code_url": null,
+    "score_reason": "发布新的成本效益AI视频生成模型，即刻可用。",
+    "tags": [
+      "AI",
+      "Generation",
+      "Video"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 385
+  },
+  {
+    "title": "You can now use ChatGPT with Apple’s CarPlay",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/904676/apple-carplay-openai-chatgpt",
+    "summary": "OpenAI的ChatGPT现已与苹果的CarPlay车载系统集成，允许用户在驾驶时通过语音指令使用AI助手。",
+    "date": "2026-03-31",
+    "venue": "The Verge",
+    "ai_score": 80,
+    "impact_score": 20,
+    "personal_score": 70,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "AI助手扩展至汽车信息娱乐系统。",
+    "tags": [
+      "AI",
+      "Automotive",
+      "Mobile"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 170
+  },
+  {
+    "title": "AI can push your Stream Deck buttons for you",
+    "link": "https://www.theverge.com/tech/905021/elgato-stream-deck-mcp-ai-agent-update",
+    "summary": "Elgato为其Stream Deck控制台发布了一项AI代理更新，允许AI自动执行按钮按压操作，旨在提升流媒体和生产力工作流。",
+    "date": "2026-04-01",
+    "venue": "The Verge",
+    "ai_score": 85,
+    "impact_score": 15,
+    "personal_score": 60,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "硬件控制台集成AI代理功能。",
+    "tags": [
+      "AI",
+      "Agent",
+      "Hardware"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 160
+  },
+  {
+    "title": "Alexa+ can now order delivery through Grubhub and Uber Eats",
+    "link": "https://www.aboutamazon.com/news/devices/alexa-plus-grubhub-uber-eats-food-delivery",
+    "summary": "Alexa+新增通过Grubhub和Uber Eats订购外卖的功能，允许用户自然浏览和定制订单，无需来回对话。",
+    "date": "2026-04-01",
+    "venue": "Amazon Devices News",
+    "ai_score": 75,
+    "impact_score": 10,
+    "personal_score": 70,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "Alexa+新增外卖订购功能",
+    "negative_score": 0,
+    "tags": [
+      "AI",
+      "Assistant",
+      "E-commerce"
+    ],
+    "source_domain": "www.aboutamazon.com",
+    "type": "news",
+    "score": 155
+  },
+  {
+    "title": "ADeLe: Predicting and explaining AI performance across tasks",
+    "link": "https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/",
+    "summary": "该研究提出ADeLe方法，用于预测和解释大型语言模型（LLMs）在跨任务中的性能，通过分析底层能力来克服传统基准测试的不足，创新点在于能够解释失败并可靠预测新任务结果。",
+    "date": "2026-04-01",
+    "venue": "Preprint",
+    "ai_score": 90,
+    "impact_score": 5,
+    "personal_score": 60,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "AI和LLM相关研究，但为预印本且未开源。",
+    "tags": [
+      "AI",
+      "LLM",
+      "Benchmark",
+      "Evaluation"
+    ],
+    "source_domain": "www.microsoft.com",
+    "type": "paper",
+    "score": 155
+  },
+  {
+    "title": "Turning muscles into motors gives static organs new life",
+    "link": "https://www.media.mit.edu/articles/turning-muscles-into-motors-gives-static-organs-new-life/",
+    "summary": "本研究开发了一种新型生物混合系统，首次利用重新连接的神经作为活体植入物，以恢复麻痹器官的功能。方法涉及神经重连和生物工程，贡献在于为器官瘫痪提供了创新的治疗策略，实现自然运动恢复。",
+    "date": "2026-04-01",
+    "venue": "MIT Media Lab Article",
+    "ai_score": 30,
+    "impact_score": 5,
+    "personal_score": 20,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涉及神经和健康研究，但与核心AI兴趣点相关度较低，未正式发表。",
+    "tags": [
+      "Biohybrid",
+      "Neural",
+      "Health"
+    ],
+    "source_domain": "www.media.mit.edu",
+    "type": "paper",
+    "score": 55
+  },
+  {
     "title": "Meta launches new ‘prescription optimized’ smart glasses",
     "link": "https://www.theverge.com/tech/904020/meta-scriber-blayzer-prescription-smart-glasses",
     "summary": "Meta发布了新款‘优化处方’的智能眼镜，并与合作伙伴推出了针对特定视力矫正需求的镜片更换服务。同时，AI食物记录功能也即将登陆Ray-Ban Meta智能眼镜。",
