@@ -1,5 +1,116 @@
 [
   {
+    "title": "Google’s new Gemma 4 ‘open’ AI model sets developers free.",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/627968/google-gemma-3-open-ai-model",
+    "summary": "谷歌发布新的Gemma 4开源AI模型，采用更宽松的Apache 2.0许可证，并带来性能提升，为开发者提供更大自由度。",
+    "date": "2026-04-02",
+    "venue": "The Verge",
+    "ai_score": 95,
+    "impact_score": 40,
+    "personal_score": 85,
+    "is_tech_release": true,
+    "code_url": null,
+    "score_reason": "重要开源AI模型发布，采用宽松许可并性能提升。",
+    "negative_score": 0,
+    "tags": [
+      "LLM",
+      "Open-Source",
+      "AI"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 420
+  },
+  {
+    "title": "Google’s AI-powered video editor is getting an upgrade.",
+    "link": "https://blog.google/products-and-platforms/products/workspace/google-vids-updates-lyria-veo/",
+    "summary": "谷歌AI视频编辑工具Vids升级，整合了更新的Veo和Lyria生成模型，支持定制AI虚拟人物，并增加了屏幕录制和直接上传YouTube功能。",
+    "date": "2026-04-02",
+    "venue": "Google Blog",
+    "ai_score": 75,
+    "impact_score": 25,
+    "personal_score": 80,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "AI视频生成与编辑工具的重要功能更新。",
+    "negative_score": 0,
+    "tags": [
+      "Generation",
+      "AI-Tools",
+      "Video"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 180
+  },
+  {
+    "title": "PlayStation is acquiring Cinemersive Labs, a ‘machine learning and computer vision company.’",
+    "link": "https://sonyinteractive.com/en/news/blog/sony-interactive-entertainment-acquires-cinemersive-labs/",
+    "summary": "索尼互动娱乐宣布收购专注于机器学习与计算机视觉的公司Cinemersive Labs，其团队将加入SIE的视觉计算部门，以增强游戏领域的视觉技术。",
+    "date": "2026-04-02",
+    "venue": "Sony Interactive Entertainment",
+    "ai_score": 70,
+    "impact_score": 30,
+    "personal_score": 60,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "大型游戏公司收购前沿AI/视觉技术团队。",
+    "negative_score": 0,
+    "tags": [
+      "AI",
+      "Vision",
+      "Acquisition",
+      "Gaming"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 160
+  },
+  {
+    "title": "Google Meet now has a native CarPlay experience.",
+    "link": "https://workspaceupdates.googleblog.com/2026/04/google-meet-is-now-available-on-carplay.html",
+    "summary": "谷歌Meet应用推出原生CarPlay支持，可在兼容车辆中进行音频通话，Android Auto版本也即将上线。",
+    "date": "2026-04-02",
+    "venue": "Google Workspace Updates",
+    "ai_score": 50,
+    "impact_score": 15,
+    "personal_score": 70,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "谷歌产品在移动和汽车场景的功能扩展。",
+    "negative_score": 0,
+    "tags": [
+      "Mobile",
+      "App",
+      "AI-Integration"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 135
+  },
+  {
+    "title": "Chatbots are now prescribing psychiatric drugs",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/906525/ai-chatbot-prescribe-refill-psychiatric-drugs",
+    "summary": "AI聊天机器人正被用于处方和续开精神类药物，这一应用引发了关于AI在敏感医疗领域作用与风险的讨论。",
+    "date": "2026-04-03",
+    "venue": "The Verge",
+    "ai_score": 65,
+    "impact_score": 20,
+    "personal_score": 50,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "AI在医疗健康领域（精神健康）的具体应用扩展。",
+    "negative_score": 0,
+    "tags": [
+      "AI",
+      "Health",
+      "Application"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 135
+  },
+  {
     "title": "From RTX to Spark: NVIDIA Accelerates Gemma 4 for Local Agentic AI",
     "link": "https://blogs.nvidia.com/blog/rtx-ai-garage-open-models-google-gemma-4/",
     "summary": "NVIDIA 宣布其 RTX AI 工具加速了 Google 的 Gemma 4 模型，以推动本地设备上的 Agentic AI 发展，使创新从云端扩展到日常设备。",
