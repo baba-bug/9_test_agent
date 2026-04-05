@@ -1,5 +1,52 @@
 [
   {
+    "title": "I let Gemini in Google Maps plan my day and it went surprisingly well",
+    "link": "https://www.theverge.com/tech/907015/gemini-google-maps-hands-on",
+    "summary": "谷歌将Gemini AI助手深度集成到Google Maps中，可以进行日常行程规划。实际体验表明，它表现良好，能提供实用的导航和日程建议。",
+    "date": "2026-04-04",
+    "venue": "The Verge",
+    "ai_score": 90,
+    "impact_score": 20,
+    "personal_score": 95,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "谷歌AI助手（Gemini）在核心地图应用中的实际集成与功能展示，与用户兴趣高度匹配。",
+    "negative_score": 0,
+    "tags": [
+      "AI",
+      "Agent",
+      "Google",
+      "Mobile",
+      "Navigation"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 205
+  },
+  {
+    "title": "Suno is a music copyright nightmare",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/906896/sunos-copyright-ai-music-covers",
+    "summary": "AI音乐生成平台Suno因其可能被轻易用于制作和分发模仿知名歌手的音乐，引发了严重的音乐版权问题和担忧。",
+    "date": "2026-04-04",
+    "venue": "The Verge",
+    "ai_score": 75,
+    "impact_score": 10,
+    "personal_score": 40,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "AI生成内容（音乐）引发的版权和伦理争议，属于监管政策相关话题。",
+    "negative_score": -30,
+    "tags": [
+      "AI",
+      "Music-Generation",
+      "Copyright",
+      "Policy"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 125
+  },
+  {
     "title": "Google’s new Gemma 4 ‘open’ AI model sets developers free",
     "link": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
     "summary": "Google 发布 Gemma 4 开源 AI 模型，采用 Apache 2.0 许可证，提供性能改进，使开发者更自由地使用和定制。",
