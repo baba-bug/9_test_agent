@@ -1,1 +1,186 @@
-[]
+[
+  {
+    "title": "Google has launched a free, offline AI dictation app that will automatically polish your speech.",
+    "link": "https://ai.google.dev/edge/eloquent",
+    "summary": "谷歌发布免费、离线的AI口述应用“Google AI Edge Eloquent”，可实时转录并自动过滤“嗯”等填充词，优化口语。",
+    "date": "2026-04-06",
+    "venue": "Google",
+    "ai_score": 90,
+    "impact_score": 20,
+    "personal_score": 85,
+    "is_tech_release": true,
+    "code_url": null,
+    "score_reason": "边缘设备上的AI语音识别与生成应用，具有实用性。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Speech Recognition",
+      "Generation",
+      "Mobile",
+      "Google"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 395
+  },
+  {
+    "title": "Valve has released a native visionOS version of its Steam Link app in beta.",
+    "link": "https://steamcommunity.com/app/353380/discussions/7/806847328212494915/",
+    "summary": "Valve正式为visionOS（Apple Vision Pro）发布原生Steam Link应用测试版，支持最高4K分辨率2D游戏流式传输。",
+    "date": "2026-04-07",
+    "venue": "Steam Community",
+    "ai_score": 30,
+    "impact_score": 50,
+    "personal_score": 85,
+    "is_tech_release": true,
+    "code_url": null,
+    "score_reason": "为重要XR平台（visionOS）带来原生游戏流应用，增强生态。 [Impact Boosted by Verified Venue/IF: Steam Community]",
+    "negtive_score": 0,
+    "tags": [
+      "XR/Spatial",
+      "Vision Pro",
+      "Gaming",
+      "Streaming",
+      "Beta"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 365
+  },
+  {
+    "title": "GPT-5.3 Instant System Card",
+    "link": "https://openai.com/index/gpt-5-3-instant-system-card/",
+    "summary": "介绍GPT-5.3 Instant模型的系统卡，涵盖其快速响应机制、安全特性和应用评估，研究方法包括性能测试和用户研究，贡献于提供高效AI模型的透明化文档。",
+    "date": "2026-03-03",
+    "venue": "OpenAI Publication",
+    "ai_score": 90,
+    "impact_score": 50,
+    "personal_score": 75,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "GPT模型技术报告，预印本形式，匹配用户Generation和AI兴趣。 [Impact Boosted by Verified Venue/IF: OpenAI Publication]",
+    "tags": [
+      "AI",
+      "GPT",
+      "Model Card",
+      "Efficiency"
+    ],
+    "source_domain": "openai.com",
+    "type": "paper",
+    "score": 215
+  },
+  {
+    "title": "GoDaddy-hosted sites can now manage access to AI crawlers.",
+    "link": "https://www.businesswire.com/news/home/20260407972799/en/Cloudflare-and-GoDaddy-Partner-to-Help-Enable-an-Open-Agentic-Web",
+    "summary": "GoDaddy与Cloudflare合作，为托管网站集成AI爬虫控制工具，允许网站所有者管理和限制AI代理对内容的抓取。",
+    "date": "2026-04-07",
+    "venue": "Businesswire",
+    "ai_score": 85,
+    "impact_score": 25,
+    "personal_score": 75,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "直接影响AI代理（Agent）与网络内容的交互方式，是Agentic Web发展的关键节点。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Agent",
+      "Web",
+      "Policy",
+      "Cloudflare"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 185
+  },
+  {
+    "title": "You can now turn 2D apps into 3D while using the Galaxy XR headset",
+    "link": "https://www.theverge.com/tech/908268/android-xr-samsung-galaxy-auto-spatialization-2d-3d",
+    "summary": "三星Galaxy XR头显的新功能允许将2D安卓应用自动空间化为3D体验。",
+    "date": "2026-04-07",
+    "venue": "The Verge",
+    "ai_score": 75,
+    "impact_score": 20,
+    "personal_score": 80,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "XR硬件上的关键软件功能更新，涉及3D化和空间交互。",
+    "negtive_score": 0,
+    "tags": [
+      "XR/Spatial",
+      "Hardware",
+      "3D",
+      "Samsung",
+      "Software"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 175
+  },
+  {
+    "title": "Jeff Bezos’ AI lab poaches xAI cofounder Kyle Kozic from OpenAI",
+    "link": "https://www.ft.com/content/e03c235d-8637-41e5-9e63-a872e398897a",
+    "summary": "杰夫·贝索斯的AI实验室“Project Prometheus”从OpenAI挖来了xAI联合创始人Kyle Kozic，以专注利用AI改进制造业基础设施。",
+    "date": "2026-04-07",
+    "venue": "Financial Times",
+    "ai_score": 80,
+    "impact_score": 25,
+    "personal_score": 70,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "顶级AI人才流动，涉及AI在工业制造中的应用。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Industry",
+      "Talent",
+      "Startup"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 175
+  },
+  {
+    "title": "Can Europe Seize the AI Moment?",
+    "link": "https://about.fb.com/news/2026/04/can-europe-seize-the-ai-moment/",
+    "summary": "探讨欧洲是否能抓住AI机遇，涉及政策或战略讨论。",
+    "date": "2026-04-07",
+    "venue": "Meta",
+    "ai_score": 70,
+    "impact_score": 10,
+    "personal_score": 60,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "政策讨论，用户不关心监管。",
+    "negative_score": -30,
+    "tags": [
+      "Policy",
+      "AI",
+      "Europe"
+    ],
+    "source_domain": "about.fb.com",
+    "type": "news",
+    "score": 140
+  },
+  {
+    "title": "Uber scales on AWS to help power millions of daily trips and train its AI models",
+    "link": "https://www.aboutamazon.com/news/aws/aws-uber-ai-trainium-graviton",
+    "summary": "叫车服务巨头Uber扩展其在AWS上的实时基础设施，以加速其每日数百万次的骑行和配送服务，并利用AWS芯片训练其AI模型。",
+    "date": "2026-04-07",
+    "venue": "Amazon",
+    "ai_score": 45,
+    "impact_score": 15,
+    "personal_score": 10,
+    "is_tech_release": false,
+    "score_reason": "涉及AI模型训练，但重点是云基础设施合作，非颠覆性技术发布。",
+    "negtive_score": 0,
+    "tags": [
+      "AI",
+      "Cloud",
+      "Infrastructure"
+    ],
+    "source_domain": "www.aboutamazon.com",
+    "type": "news",
+    "score": 70
+  }
+]
