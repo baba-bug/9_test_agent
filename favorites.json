@@ -1,5 +1,31 @@
 [
   {
+    "title": "Google has launched a free, offline AI dictation app that will automatically polish your speech.",
+    "link": "https://ai.google.dev/edge/eloquent",
+    "summary": "谷歌发布免费、离线的AI口述应用“Google AI Edge Eloquent”，可实时转录并自动过滤“嗯”等填充词，优化口语。",
+    "date": "2026-04-06",
+    "venue": "Google",
+    "ai_score": 90,
+    "impact_score": 20,
+    "personal_score": 85,
+    "is_tech_release": true,
+    "code_url": NaN,
+    "score_reason": "边缘设备上的AI语音识别与生成应用，具有实用性。",
+    "negative_score": NaN,
+    "tags": [
+      "AI",
+      "Speech Recognition",
+      "Generation",
+      "Mobile",
+      "Google"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 395,
+    "negtive_score": 0.0,
+    "comment": ""
+  },
+  {
     "title": "Self++: Co-Determined Agency for Human--AI Symbiosis in Extended Reality",
     "link": "http://arxiv.org/abs/2603.28306v1",
     "summary": "Self++ 是一个面向扩展现实（XR）中人类-AI共生的设计蓝图，旨在保留人类自主权的同时利用日益强大的AI智能体。该框架基于自决理论和自由能原理，通过“共同决定”原则（透明度、适应性、可协商性）来操作。它将增强功能组织为三个可同时激活的覆盖层：感觉运动能力支持、审慎自主支持、以及社交与长期目标支持。框架内定义了九种角色模式（如导师、教练、代理工作者等），可作为交互模式而非固定角色实现。本工作的贡献在于提供了一个基于角色的设计地图，用于设计和评估XR-AI系统，促进共生能力的发展。",
