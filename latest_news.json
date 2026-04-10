@@ -1,5 +1,237 @@
 [
   {
+    "title": "Cloudflare made a WordPress for AI agents",
+    "link": "https://www.theverge.com/tech/909730/cloudflare-emdash-wordpress-community",
+    "summary": "Cloudflare发布了一个类似WordPress的平台，专门为AI代理设计，旨在简化AI代理的创建、部署和管理。",
+    "date": "2026-04-09",
+    "venue": "The Verge",
+    "ai_score": 90,
+    "impact_score": 15,
+    "personal_score": 80,
+    "is_tech_release": true,
+    "code_url": null,
+    "score_reason": "AI代理平台发布，提升代理创建效率。",
+    "negative_score": 0,
+    "tags": [
+      "AI",
+      "Agent",
+      "Platform"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 385
+  },
+  {
+    "title": "Adobe’s ‘computational photography’ camera app is now available for the iPad.",
+    "link": "https://apps.apple.com/us/app/project-indigo/id6742591546",
+    "summary": "Adobe的计算摄影应用Project Indigo现已支持iPad，允许用户使用先进算法拍摄和编辑照片，但Adobe警告iPad体验尚未优化。",
+    "date": "2026-04-09",
+    "venue": "The Verge",
+    "ai_score": 70,
+    "impact_score": 10,
+    "personal_score": 75,
+    "is_tech_release": true,
+    "code_url": null,
+    "score_reason": "计算摄影应用发布，涉及生成技术。",
+    "negative_score": 0,
+    "tags": [
+      "Generation",
+      "App",
+      "Mobile"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 355
+  },
+  {
+    "title": "Snap is sticking with Qualcomm for its next AR glasses",
+    "link": "https://www.theverge.com/tech/909608/snap-specs-qualcomm-snapdragon-ar-glasses",
+    "summary": "Snap公司确认其下一代AR眼镜将继续使用高通骁龙芯片，表明在增强现实硬件上的持续投入。",
+    "date": "2026-04-09",
+    "venue": "The Verge",
+    "ai_score": 85,
+    "impact_score": 20,
+    "personal_score": 85,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "AR硬件技术更新，匹配用户兴趣。",
+    "negative_score": 0,
+    "tags": [
+      "XR",
+      "Hardware",
+      "AR"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 190
+  },
+  {
+    "title": "Apple at CHI 2026",
+    "link": "https://machinelearning.apple.com/updates/apple-at-chi-2026",
+    "summary": "苹果将在巴塞罗那举办的2026年ACM CHI人机交互大会上展示新的研究成果。",
+    "date": "2026-04-10",
+    "venue": "Apple Machine Learning",
+    "ai_score": 75,
+    "impact_score": 50,
+    "personal_score": 60,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "在顶级人机交互会议CHI上展示研究，但与用户关键词匹配度中等。 [Impact Boosted by Verified Venue/IF: Apple Machine Learning]",
+    "negtive_score": 0,
+    "tags": [
+      "Human-Computer Interaction",
+      "AI Research",
+      "Conference"
+    ],
+    "source_domain": "machinelearning.apple.com",
+    "type": "news",
+    "score": 185
+  },
+  {
+    "title": "The Iranian Lego AI video creators credit their virality to ‘heart’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/909948/explosive-media-lego-iran-war-trump-netanyahu",
+    "summary": "伊朗的Explosive Media团队使用AI生成乐高风格视频并在网络走红，他们将其成功归因于内容的“用心”而非技术。",
+    "date": "2026-04-09",
+    "venue": "The Verge",
+    "ai_score": 80,
+    "impact_score": 15,
+    "personal_score": 70,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "AI视频生成案例，展示内容创作应用。",
+    "negative_score": 0,
+    "tags": [
+      "AI",
+      "Generation",
+      "Video"
+    ],
+    "source_domain": "www.theverge.com",
+    "type": "news",
+    "score": 165
+  },
+  {
+    "title": "CEO Andy Jassy shares 3 ways Amazon is innovating to make customers’ lives easier and better",
+    "link": "https://www.aboutamazon.com/news/innovation-at-amazon/amazon-ceo-andy-jassy-robotics-rural-delivery-broadband",
+    "summary": "Andy Jassy分享亚马逊通过机器人技术、农村快速配送和宽带连接改善客户体验。",
+    "date": "2026-04-10",
+    "venue": "Amazon",
+    "ai_score": 40,
+    "impact_score": 20,
+    "personal_score": 30,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "涵盖机器人等创新，与AI部分相关。",
+    "tags": [
+      "Robotics",
+      "Innovation",
+      "Infrastructure"
+    ],
+    "source_domain": "www.aboutamazon.com",
+    "type": "news",
+    "score": 90
+  },
+  {
+    "title": "Amazon CEO Andy Jassy says it’s important to pursue multiple parallel paths when inventing and experimenting",
+    "link": "https://www.aboutamazon.com/news/innovation-at-amazon/amazon-ceo-andy-jassy-parallel-paths-inventing-experimenting",
+    "summary": "Andy Jassy强调在创新和实验中并行推进多条路径。",
+    "date": "2026-04-10",
+    "venue": "Amazon",
+    "ai_score": 10,
+    "impact_score": 10,
+    "personal_score": 15,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "创新方法论，与AI弱相关。",
+    "tags": [
+      "Innovation",
+      "Strategy"
+    ],
+    "source_domain": "www.aboutamazon.com",
+    "type": "news",
+    "score": 35
+  },
+  {
+    "title": "What is AWS Graviton? The custom chip powering applications for 90,000 customers",
+    "link": "https://www.aboutamazon.com/news/aws/what-is-aws-graviton",
+    "summary": "亚马逊发布Graviton定制芯片，旨在提升云计算速度、降低成本和能耗。",
+    "date": "2026-04-10",
+    "venue": "Amazon",
+    "ai_score": 10,
+    "impact_score": 15,
+    "personal_score": 5,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "硬件芯片更新，与AI兴趣点低相关。",
+    "tags": [
+      "Hardware",
+      "Cloud",
+      "Chip"
+    ],
+    "source_domain": "www.aboutamazon.com",
+    "type": "news",
+    "score": 30
+  },
+  {
+    "title": "Amazon introduces faster delivery with new 1-hour and 3-hour options",
+    "link": "https://www.aboutamazon.com/news/retail/amazon-fast-delivery-orders",
+    "summary": "亚马逊推出1小时和3小时快速配送选项，覆盖多个城市超9万产品。",
+    "date": "2026-04-10",
+    "venue": "Amazon",
+    "ai_score": 0,
+    "impact_score": 20,
+    "personal_score": 10,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "配送服务升级，商业影响中等。",
+    "tags": [
+      "Retail",
+      "Delivery"
+    ],
+    "source_domain": "www.aboutamazon.com",
+    "type": "news",
+    "score": 30
+  },
+  {
+    "title": "Andy Jassy explains how going back to the starting line drives reinvention at Amazon",
+    "link": "https://www.aboutamazon.com/news/innovation-at-amazon/andy-jassy-amazon-reinvention",
+    "summary": "亚马逊CEO Andy Jassy在股东信中强调，重新出发以改善客户体验的重要性。",
+    "date": "2026-04-10",
+    "venue": "Amazon",
+    "ai_score": 5,
+    "impact_score": 10,
+    "personal_score": 10,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "企业战略讨论，非技术发布。",
+    "tags": [
+      "Business",
+      "Leadership"
+    ],
+    "source_domain": "www.aboutamazon.com",
+    "type": "news",
+    "score": 25
+  },
+  {
+    "title": "Andy Jassy shares 9 things he’s learned over 28 years at Amazon",
+    "link": "https://www.aboutamazon.com/news/workplace/andy-jassy-lessons-learned-amazon",
+    "summary": "Andy Jassy分享在亚马逊28年的领导经验，强调文化建设。",
+    "date": "2026-04-10",
+    "venue": "Amazon",
+    "ai_score": 5,
+    "impact_score": 10,
+    "personal_score": 10,
+    "is_tech_release": false,
+    "code_url": null,
+    "score_reason": "职场文化内容，非技术新闻。",
+    "tags": [
+      "Workplace",
+      "Leadership"
+    ],
+    "source_domain": "www.aboutamazon.com",
+    "type": "news",
+    "score": 25
+  },
+  {
     "title": "You can now freely download Keychron keyboard and mouse design files",
     "link": "https://www.theverge.com/tech/783024/upgrade-mechanical-keyboard-prebuilt-best-affordable-typing-gaming-specs",
     "summary": "Keychron免费发布其键盘和鼠标的3D设计文件，供用户修改和定制，推动了开源硬件社区发展。",
