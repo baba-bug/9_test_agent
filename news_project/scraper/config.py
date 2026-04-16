@@ -1,5 +1,10 @@
 import os
 
+from .observability import get_logger
+
+
+logger = get_logger(__name__)
+
 # 项目根目录 (仓库根目录)
 # config.py 在 news_project/scraper/config.py, 所以向上两级就是仓库根目录
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -47,15 +52,14 @@ if os.path.exists(local_key_path):
                     DEEPSEEK_API_KEY = line.split("=", 1)[1].strip()
                     break
     except Exception as e:
-        print(f"Error reading local API key file: {e}")
+        logger.warning("local_api_key_read_failed error=%s", e)
 
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 
-# DEBUG: Check which key is loaded
 if DEEPSEEK_API_KEY:
-    print(f"🔑 Loaded API Key: {DEEPSEEK_API_KEY[:4]}... (Length: {len(DEEPSEEK_API_KEY)})")
+    logger.debug("deepseek_api_key_configured")
 else:
-    print("❌ No API Key loaded!")
+    logger.warning("deepseek_api_key_missing")
 
 # 🍪 Cookie 配置中心
 SITE_COOKIES = {

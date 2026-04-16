@@ -10,6 +10,11 @@ __pycache__/
 
 # Data / State / Result Files
 *.json
+*.db
+*.db-*
+*.db.bak.*
+*.sqlite
+*.sqlite3
 mock_results.txt
 
 # Credentials / Secrets
@@ -25,3 +30,5 @@ deepseek_api_key.txt
 /testpy/
 /toolify_ds/
 /paper_analysis/
+
+/backups/

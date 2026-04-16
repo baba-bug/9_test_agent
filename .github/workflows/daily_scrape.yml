@@ -1,7 +1,5 @@
 name: Daily AI News Scrape
 
-# Trigger everyday at 6 AM CST (22:00 UTC previous day)
-# Also allow manual trigger
 on:
   schedule:
     - cron: '0 22 * * *'
@@ -13,37 +11,39 @@ permissions:
 jobs:
   scrape-and-update:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: 📥 Checkout Code
+    - name: Checkout code
       uses: actions/checkout@v4
-      
-    - name: 🐍 Set up Python
+
+    - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
-        
-    - name: 📦 Install Dependencies
+
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        # Ensure critical dependencies are installed if missing from requirements
         pip install curl_cffi openai pytz
-        
-    - name: 🤖 Run Scraper (DeepSeek)
+
+    - name: Initialize SQLite database
+      run: |
+        python news_project/migrate_json_to_sqlite.py
+
+    - name: Run scraper
       env:
         DEEPSEEK_API: ${{ secrets.DEEPSEEK_API }}
         DEEPSEEK_BASE_URL: https://api.deepseek.com
         GITHUB_ACTIONS: true
       run: |
         python news_project/main.py
-        
-    - name: 💾 Commit & Push History
+
+    - name: Commit SQLite database
       run: |
         git config --global user.name 'NewsBot'
         git config --global user.email 'bot@noreply.github.com'
-        git add latest_*.json history_*.json news_state.json favorites.json
-        # Only commit if there are changes
-        git commit -m "🤖 Daily News Update: $(date +'%Y-%m-%d')" || echo "No changes to commit"
+        git add -f news_monitor.db
+        git commit -m "Daily News Update: $(date +'%Y-%m-%d')" || echo "No changes to commit"
         git pull --rebase
         git push

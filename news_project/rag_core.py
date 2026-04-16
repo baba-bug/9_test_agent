@@ -1,90 +1,82 @@
-import json
-import os
 from datetime import datetime
-from typing import List, Dict, Any
-from news_project.scraper.config import DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL, DATA_DIR
+from typing import Any, Dict, List
 
-# RAG Configuration
-MAX_CONTEXT_ITEMS = 200 # How many articles to stuff into context
+from news_project.scraper import sqlite_store as db
+from news_project.scraper.config import DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL
+
+
+MAX_CONTEXT_ITEMS = 200
+
 
 class LibraryChat:
     def __init__(self):
         self.articles = []
         self.last_load_time = None
-        
+
     def load_library(self):
-        """Loads all JSON data into memory."""
-        self.articles = []
-        files = ["favorites.json"]
-        seen_links = set()
-        
-        for fname in files:
-            fpath = os.path.join(DATA_DIR, fname)
-            if os.path.exists(fpath):
-                try:
-                    with open(fpath, "r", encoding="utf-8") as f:
-                        data = json.load(f)
-                        for art in data:
-                            if art.get('link') and art['link'] not in seen_links:
-                                self.articles.append(art)
-                                seen_links.add(art['link'])
-                except Exception as e:
-                    print(f"Error loading {fname}: {e}")
-                    
+        """Loads the favorite library from SQLite into memory."""
+        conn = db.connect()
+        try:
+            self.articles = db.load_articles(conn, favorites=True)
+        finally:
+            conn.close()
+
         self.last_load_time = datetime.now()
-        print(f"📚 RAG Library Loaded: {len(self.articles)} unique docs")
+        print(f"RAG Library Loaded: {len(self.articles)} unique docs")
 
     def retrieve_relevant(self, query: str) -> List[Dict]:
-        """
-        Simple retrieval strategy:
-        1. Keyword match (High priority)
-        2. Recent (Recency bias)
-        For small datasets, we can return the top N matches or just recent ones if no match.
-        """
         if not self.articles:
             self.load_library()
-            
+
         query_terms = query.lower().split()
-        
+
         scored_docs = []
-        for art in self.articles:
+        for article in self.articles:
             score = 0
-            # Search text fields
-            text = (art.get('title', '') + " " + art.get('summary', '') + " " + " ".join(art.get('tags', [])) + " " + art.get('comment', '')).lower()
-            
+            text = (
+                article.get("title", "")
+                + " "
+                + article.get("summary", "")
+                + " "
+                + " ".join(article.get("tags", []))
+                + " "
+                + article.get("comment", "")
+            ).lower()
+
             match_count = sum(1 for term in query_terms if term in text)
             if match_count > 0:
                 score += match_count * 10
-            
-            # Boost by Personal Score
-            score += int(art.get('personal_score', 0)) * 0.1
-            
+
+            score += int(article.get("personal_score", 0)) * 0.1
+
             if score > 0:
-                scored_docs.append((score, art))
-                
-        # Sort by score desc, then date desc
+                scored_docs.append((score, article))
+
         scored_docs.sort(key=lambda x: x[0], reverse=True)
-        
-        # If no keywords matched, maybe return favorites? Or just empty?
-        # Let's return top scored, or if empty, return top favorites.
+
         if not scored_docs:
-             # Fallback: Top Favorites
-             favorites = [a for a in self.articles if a.get('personal_score', 0) > 50]
-             return favorites[:MAX_CONTEXT_ITEMS]
-             
+            favorites = [a for a in self.articles if a.get("personal_score", 0) > 50]
+            return favorites[:MAX_CONTEXT_ITEMS]
+
         return [item[1] for item in scored_docs[:MAX_CONTEXT_ITEMS]]
 
-    async def ask_deepseek(self, query: str, context_docs: List[Dict]):
+    async def ask_deepseek(self, query: str, context_docs: List[Dict[str, Any]]):
         from openai import OpenAI
+
         client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url=DEEPSEEK_BASE_URL)
-        
-        # Prepare Context String
+
         context_str = ""
         for i, doc in enumerate(context_docs, 1):
-            tags = ", ".join(doc.get('tags', []))
-            comment = f"User Comment: {doc['comment']}" if doc.get('comment') else ""
-            context_str += f"[{i}] Title: {doc['title']}\n    Date: {doc.get('date')} | Tags: {tags}\n    Summary: {doc['summary']}\n    {comment}\n    Link: {doc['link']}\n\n"
-            
+            tags = ", ".join(doc.get("tags", []))
+            comment = f"User Comment: {doc['comment']}" if doc.get("comment") else ""
+            context_str += (
+                f"[{i}] Title: {doc['title']}\n"
+                f"    Date: {doc.get('date')} | Tags: {tags}\n"
+                f"    Summary: {doc['summary']}\n"
+                f"    {comment}\n"
+                f"    Link: {doc['link']}\n\n"
+            )
+
         system_prompt = f"""You are a personal Knowledge Assistant.
 You have access to a personal library of news and papers (Context).
 Answer the user's question using ONLY the information from the Context.
@@ -99,9 +91,9 @@ Context:
                 model="deepseek-chat",
                 messages=[
                     {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": query}
+                    {"role": "user", "content": query},
                 ],
-                stream=True
+                stream=True,
             )
             return response
         except Exception as e:
