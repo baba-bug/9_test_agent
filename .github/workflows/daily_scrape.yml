@@ -41,6 +41,13 @@ jobs:
 
     - name: Commit SQLite database
       run: |
+        python - <<'PY'
+        import sqlite3
+
+        conn = sqlite3.connect("news_monitor.db")
+        conn.execute("VACUUM")
+        conn.close()
+        PY
         git config --global user.name 'NewsBot'
         git config --global user.email 'bot@noreply.github.com'
         git add -f news_monitor.db

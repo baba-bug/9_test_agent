@@ -169,6 +169,10 @@ def as_json(value: Any) -> str:
     return json.dumps(value, ensure_ascii=False, default=str)
 
 
+def source_snapshot(entry: Dict[str, Any]) -> Dict[str, Any]:
+    return {key: value for key, value in entry.items() if key not in {"failure_queue", "id", "raw_json"}}
+
+
 def clean_tags(value: Any) -> List[str]:
     if isinstance(value, list):
         return sorted({str(tag).strip() for tag in value if str(tag).strip()})
@@ -482,7 +486,7 @@ def update_source(conn: sqlite3.Connection, url: str, updates: Dict[str, Any]) -
     entry = source_entry(conn, url)
     entry.update(updates)
     entry["health_score"] = compute_health_score(entry)
-    entry["raw_json"] = as_json(entry)
+    entry["raw_json"] = as_json(source_snapshot(entry))
     conn.execute(
         """
         UPDATE sources

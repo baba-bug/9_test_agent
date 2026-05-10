@@ -163,6 +163,10 @@ def clean_tags(value: Any) -> List[str]:
     return []
 
 
+def source_snapshot(entry: Dict[str, Any]) -> Dict[str, Any]:
+    return {key: value for key, value in entry.items() if key not in {"failure_queue", "id", "raw_json"}}
+
+
 def infer_type(article: Dict[str, Any], fallback_type: str = None) -> str:
     if article.get("type"):
         return str(article["type"])
@@ -426,7 +430,7 @@ def upsert_source(conn: sqlite3.Connection, url: str, page_hash: str, entry: Dic
             as_int(entry.get("unchanged_count")),
             as_int(entry.get("last_article_count")),
             as_int(entry.get("last_new_article_count")),
-            json.dumps(entry, ensure_ascii=False),
+            json.dumps(source_snapshot(entry), ensure_ascii=False),
         ),
     )
     return int(conn.execute("SELECT id FROM sources WHERE url = ?", (url,)).fetchone()[0])
