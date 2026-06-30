@@ -7,7 +7,7 @@ import sys
 # Add project root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 # from news_project.scraper.core import _query_ai
-from news_project.scraper.config import DEEPSEEK_API_KEY
+from news_project.scraper.config import LLM_API_KEY, LLM_BASE_URL, LLM_MODEL
 from news_project.scraper.rankings import get_venue_score
 
 from news_project.scraper.personalization import extract_user_interests
@@ -75,10 +75,10 @@ Only return JSON.
 
     try:
         from openai import OpenAI
-        client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com")
+        client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL)
         
         response = client.chat.completions.create(
-            model="deepseek-chat",
+            model=LLM_MODEL,
             messages=[
                 {"role": "system", "content": "You are a helpful assistant. Output valid JSON only."},
                 {"role": "user", "content": prompt}

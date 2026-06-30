@@ -37,29 +37,35 @@ TARGET_URLS = [
 
 
 
-# API Key 配置
-# 优先从环境变量获取，如果没有则使用默认值（开发测试用）
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API", "abc")
+# LLM API configuration.
+# Prefer Gemini environment variables; local development can use gemini_api_key.txt.
+LLM_API_KEY = os.getenv("GEMINI_API_KEY") or os.getenv("GEMINI_API") or os.getenv("GOOGLE_API_KEY") or ""
+LLM_BASE_URL = os.getenv("GEMINI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai/")
+LLM_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
 
-# If running locally, load the API key from the local file
-local_key_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "deepseek_api_key.txt"))
+# If running locally, load the API key from the local file.
+local_key_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "gemini_api_key.txt"))
 if os.path.exists(local_key_path):
     try:
         with open(local_key_path, "r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
-                if line.startswith("DEEPSEEK_API_KEY="):
-                    DEEPSEEK_API_KEY = line.split("=", 1)[1].strip()
+                if line.startswith("GEMINI_API_KEY="):
+                    LLM_API_KEY = line.split("=", 1)[1].strip()
+                    break
+                if line and "=" not in line:
+                    LLM_API_KEY = line
                     break
     except Exception as e:
         logger.warning("local_api_key_read_failed error=%s", e)
 
-DEEPSEEK_BASE_URL = "https://api.deepseek.com"
+DEEPSEEK_API_KEY = LLM_API_KEY
+DEEPSEEK_BASE_URL = LLM_BASE_URL
 
-if DEEPSEEK_API_KEY:
-    logger.debug("deepseek_api_key_configured")
+if LLM_API_KEY:
+    logger.debug("llm_api_key_configured model=%s", LLM_MODEL)
 else:
-    logger.warning("deepseek_api_key_missing")
+    logger.warning("llm_api_key_missing")
 
 # 🍪 Cookie 配置中心
 SITE_COOKIES = {

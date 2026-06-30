@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import Any, Dict, List
 
 from news_project.scraper import sqlite_store as db
-from news_project.scraper.config import DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL
+from news_project.scraper.config import LLM_API_KEY, LLM_BASE_URL, LLM_MODEL
 
 
 MAX_CONTEXT_ITEMS = 200
@@ -24,6 +24,9 @@ class LibraryChat:
         self.last_load_time = datetime.now()
         print(f"RAG Library Loaded: {len(self.articles)} unique docs")
 
+    def article_text(self, article: Dict[str, Any], key: str) -> str:
+        return str(article.get(key) or "")
+
     def retrieve_relevant(self, query: str) -> List[Dict]:
         if not self.articles:
             self.load_library()
@@ -34,13 +37,13 @@ class LibraryChat:
         for article in self.articles:
             score = 0
             text = (
-                article.get("title", "")
+                self.article_text(article, "title")
                 + " "
-                + article.get("summary", "")
+                + self.article_text(article, "summary")
                 + " "
                 + " ".join(article.get("tags", []))
                 + " "
-                + article.get("comment", "")
+                + self.article_text(article, "comment")
             ).lower()
 
             match_count = sum(1 for term in query_terms if term in text)
@@ -60,21 +63,21 @@ class LibraryChat:
 
         return [item[1] for item in scored_docs[:MAX_CONTEXT_ITEMS]]
 
-    async def ask_deepseek(self, query: str, context_docs: List[Dict[str, Any]]):
+    async def ask_llm(self, query: str, context_docs: List[Dict[str, Any]]):
         from openai import OpenAI
 
-        client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url=DEEPSEEK_BASE_URL)
+        client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL)
 
         context_str = ""
         for i, doc in enumerate(context_docs, 1):
             tags = ", ".join(doc.get("tags", []))
             comment = f"User Comment: {doc['comment']}" if doc.get("comment") else ""
             context_str += (
-                f"[{i}] Title: {doc['title']}\n"
+                f"[{i}] Title: {self.article_text(doc, 'title')}\n"
                 f"    Date: {doc.get('date')} | Tags: {tags}\n"
-                f"    Summary: {doc['summary']}\n"
+                f"    Summary: {self.article_text(doc, 'summary')}\n"
                 f"    {comment}\n"
-                f"    Link: {doc['link']}\n\n"
+                f"    Link: {self.article_text(doc, 'link')}\n\n"
             )
 
         system_prompt = f"""You are a personal Knowledge Assistant.
@@ -88,7 +91,7 @@ Context:
 
         try:
             response = client.chat.completions.create(
-                model="deepseek-chat",
+                model=LLM_MODEL,
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": query},
@@ -98,3 +101,6 @@ Context:
             return response
         except Exception as e:
             return f"Error: {e}"
+
+    async def ask_deepseek(self, query: str, context_docs: List[Dict[str, Any]]):
+        return await self.ask_llm(query, context_docs)

@@ -33,8 +33,9 @@ jobs:
 
     - name: Run scraper
       env:
-        DEEPSEEK_API: ${{ secrets.DEEPSEEK_API }}
-        DEEPSEEK_BASE_URL: https://api.deepseek.com
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        GEMINI_BASE_URL: https://generativelanguage.googleapis.com/v1beta/openai/
+        GEMINI_MODEL: gemini-3.5-flash
         GITHUB_ACTIONS: true
       run: |
         python news_project/main.py

@@ -39,10 +39,10 @@ def render_chat_page() -> None:
                     docs = st.session_state.rag_chat.retrieve_relevant(prompt)
                     st.write(f"Found {len(docs)} relevant articles.")
                     for doc in docs[:3]:
-                        st.write(f"- {doc['title']}")
+                        st.write(f"- {doc.get('title') or '(untitled)'}")
                     status.update(label="Search complete", state="complete", expanded=False)
 
-                stream = asyncio.run(st.session_state.rag_chat.ask_deepseek(prompt, docs))
+                stream = asyncio.run(st.session_state.rag_chat.ask_llm(prompt, docs))
                 for chunk in stream:
                     if chunk.choices[0].delta.content:
                         full_response += chunk.choices[0].delta.content
@@ -57,5 +57,5 @@ def render_chat_page() -> None:
         with st.expander("Referenced sources", expanded=False):
             for i, doc in enumerate(docs, 1):
                 highlight = " **(Cited)**" if f"[{i}]" in full_response else ""
-                st.markdown(f"**[{i}]** [{doc['title']}]({doc['link']}){highlight}")
+                st.markdown(f"**[{i}]** [{doc.get('title') or '(untitled)'}]({doc.get('link') or ''}){highlight}")
                 st.caption(f"{doc.get('date', '')} | {doc.get('venue', '')} | Tags: {doc.get('tags', [])}")

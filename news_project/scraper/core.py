@@ -10,7 +10,7 @@ import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 
 from .utils import clean_html_for_ai
-from .config import DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL, SITE_COOKIES
+from .config import LLM_API_KEY, LLM_BASE_URL, LLM_MODEL, SITE_COOKIES
 from .rankings import get_ranking, CCF_RANKINGS, get_venue_score # Updated Import
 from .observability import get_logger
 
@@ -303,7 +303,7 @@ async def _extract_news_with_ai_once(html: str, url: str, mode: str = "news", us
     mode: "news" (默认新闻) 或 "paper" (科研论文)
     user_interests: 用户收藏夹关键词列表 (用于 Personal Score)
     """
-    client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url=DEEPSEEK_BASE_URL)
+    client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL)
     
     # 获取今天日期
     from datetime import date
@@ -412,7 +412,7 @@ async def _extract_news_with_ai_once(html: str, url: str, mode: str = "news", us
 """
         try:
             response = client.chat.completions.create(
-                model="deepseek-reasoner",
+                model=LLM_MODEL,
                 messages=[
                     {"role": "system", "content": "你是一个新闻提取专家。只返回纯净的 JSON 数组。summary 必须是中文。"},
                     {"role": "user", "content": prompt}
@@ -449,7 +449,7 @@ async def _extract_news_with_ai_once(html: str, url: str, mode: str = "news", us
         raw_articles = re.findall(r"<article>.*?</article>", html, re.DOTALL)
         logger.info("ai_batch_start url=%s raw_articles=%s", url, len(raw_articles))
         
-        # Batch size of 8 is safe for DeepSeek output limits (4k tokens)
+        # Batch size of 8 keeps responses within typical hosted model output limits.
         batch_size = 8
         
         for i in range(0, len(raw_articles), batch_size):
